@@ -17,11 +17,24 @@ Then we’re going to setup to run the game as game server
 
 For **Windows**, go to folder that you build the game create shortcut of execution file (.exe), then right click the shortcut select **Properties** then add following arguments at **Target** field
 
-<script src="https://gist.github.com/insthync/227f6b9eb792f72f4e09f002d541dd0b.js"></script>
+```
+-startMapSpawnServer
+-spawnExePath "Path of your execution file such as C:\Game\Game.exe"
+-startCentralServer
+-startChatServer
+```
 
 If you are going to test on LAN you should set machine address to your LAN address by the command
 
+```
+-machineAddress "Address to your machine"
+```
+
 So for example, If you build the game to **D:/MMO/MMO.exe** and my LAN address is **192.168.1.102** I will set value in shortcut’s **Target** field to:
+
+```
+D:\MMO\MMO.exe -startMapSpawnServer -spawnExePath "D:\MMO\MMO.exe" -startCentralServer -startChatServer -machineAddress "192.168.1.102"
+```
 
 May see this video for example of how to set shortcut’s **Target** field (It’s not set machine address so it can run locally only)
 
@@ -36,6 +49,10 @@ Then run the game from the short cut
 If it’s running like image above it mean that it’s running correctly then run
 
 For **Linux / Mac**, use **Terminal** go to path where you build the game such as /Game/ then enter command like this
+
+```
+$ ./Game.app -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app" -startCentralServer -startChatServer
+```
 
 Then start the game to test it
 
