@@ -3,7 +3,7 @@
 MMORPG KIT — Getting Started (MMO)
 ==================================
 
-### Before reading this you should read [Getting Started](https://medium.com/suriyun-production/mmorpg-kit-getting-started-singleplayer-lan-47f7ce16a0b1) first from step 1–2
+** **Before reading this you should read [Getting Started](https://medium.com/suriyun-production/mmorpg-kit-getting-started-singleplayer-lan-47f7ce16a0b1) first from step 1–2** **
 
 * * *
 
@@ -16,6 +16,8 @@ Then build it
 Then we’re going to setup to run the game as game server
 
 For **Windows**, go to folder that you build the game create shortcut of execution file (.exe), then right click the shortcut select **Properties** then add following arguments at **Target** field
+
+<script src="https://gist.github.com/insthync/227f6b9eb792f72f4e09f002d541dd0b.js"></script>
 
 If you are going to test on LAN you should set machine address to your LAN address by the command
 
