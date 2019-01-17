@@ -7,7 +7,11 @@
     "doc": "docs"
   },
   "dependencies": {
-    "medium-to-markdown": "^0.0.2"
+    "bluebird": "^3.5.3",
+    "cheerio": "^1.0.0-rc.2",
+    "medium-to-markdown-enhanced": "0.0.4",
+    "request": "^2.88.0",
+    "turndown": "^5.0.1"
   },
   "devDependencies": {},
   "scripts": {
