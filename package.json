@@ -1,0 +1,27 @@
+{
+  "name": "mmorpg-kit-docs",
+  "version": "1.0.0",
+  "description": "This is document for MMORPG KIT project (https://www.assetstore.unity3d.com/#!/content/110188?aid=1100lGeN)",
+  "main": "import.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "medium-to-markdown": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suriyun-production/mmorpg-kit-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suriyun-production/mmorpg-kit-docs/issues"
+  },
+  "homepage": "https://github.com/suriyun-production/mmorpg-kit-docs#readme"
+}
