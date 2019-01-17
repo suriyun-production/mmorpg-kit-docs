@@ -1,12 +1,18 @@
 const fs = require('fs');
+const url = require("url");
+const path = require("path");
 const mediumToMarkdown = require('medium-to-markdown');
  
-// Enter url here
-function convert(url)
+function convert(mediumUrl, filePath, fileName)
 {
-    mediumToMarkdown.convertFromUrl(url)
+    if (!fileName)
+    {
+        var parsed = url.parse(mediumUrl);
+        fileName = path.basename(parsed.pathname);
+    }
+    mediumToMarkdown.convertFromUrl(mediumUrl)
     .then(function (markdown) {
-        fs.writeFile("/docs/pages", markdown, function(err) {
+        fs.writeFile(filePath + fileName + ".md", markdown, function(err) {
             if(err) {
                 return console.log(err);
             }
