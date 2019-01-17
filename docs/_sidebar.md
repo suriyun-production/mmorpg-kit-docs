@@ -1,3 +1,5 @@
+
+- [Index](/)
 - Generic
 
   - [Getting Started (Singleplay/LAN)](pages/001-getting-started-singleplayer-lan)
