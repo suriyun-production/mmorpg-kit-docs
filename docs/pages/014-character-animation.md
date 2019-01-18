@@ -27,19 +27,25 @@ You can see the demo’s animation controller as example, located at Assets/Unit
 
 As I explained about action changed at runtime by **CharacterModel** class function **PlayActionAnimation\_Animator**, Now I will tell how it works
 
-**CharacterModel** class will create [Animator Override Controller](https://docs.unity3d.com/Manual/AnimatorOverrideController.html) to change animation clip to play specific action animation, it will override clip named **\_Action** to other animations. So it requires the state to which has a clip named **\_Action**.
+(**TLDR** - If you don't want to know how it work, just want to setup. You have to set same **Animation Clip** to **Animator Controller → Action State** and **Character Model → Default Animator Data → Action Clip**)
 
-So you have to create a state with any name (for the demo it is Action) but you have to set the animation clip named **\_Action**, the animation clip can be any clip. I recommend to just create new empty animation clip, it will be used as the reference to change to other animation clips
+**CharacterModel** class will create [Animator Override Controller](https://docs.unity3d.com/Manual/AnimatorOverrideController.html) to change animation clip to play specific action animation, it will override clip which has same name as clip which you set to **Default Animator Data → Action Clip** to other animations. So it requires the state which has a same clip.
+
+So you have to create a state with any name (for the demo it is Action) but you have to set the animation clip uniquely named (the demo named as **_Action**), the animation clip can be any clip. I recommend to just create new empty animation clip, it will be used as the reference to change to other animation clips
+
+*   Then create state with any name for this example it is “Action”
 
 ![](https://cdn-images-1.medium.com/max/1600/1*jRE-lqrjiN9V3uv0L6voeQ.png)
 
-Create state with any name for this example it is “Action”
+*   Then set state clip to **_Action** clip
 
 ![](https://cdn-images-1.medium.com/max/1600/1*I1DSdEc6c9jg9Ze9lg0URw.png)
 
-Then set clip to **\_Action **clip
+*   Then set **Character Model → Default Animator Data → Action Clip** to **_Action** clip
 
-Then you set character action animation clip at character model class
+![](../images/set_action_clip_to_character_model.png)
+
+*   Then you can set character action animation clip at character model class
 
 ![](https://cdn-images-1.medium.com/max/1600/1*w0EwBq4-QxF03iy9Ix9Zdg.png)
 
