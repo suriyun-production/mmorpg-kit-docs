@@ -1,6 +1,6 @@
 * * *
 
-MMORPG KIT — Items (Equipment / Armor / Weapon / Potion / Ammo / Building / Pet)
+MMORPG KIT — Items (Item Refine Info / Equipment / Equipment Set / Armor / Weapon / Potion / Ammo / Building / Pet)
 ================================================================================
 
 With this project you can create Item as following types:
@@ -20,6 +20,8 @@ For generic item data you can set following data:
 *   **Drop Model**, model which will present in the ground when drop
 *   **Sell Price**, price when sell to Npc
 *   **Weight**, weight
+*   **Item Refine Info**, other item info such as rarity (with rarity title color), refine level/price and repair price. You can create this data by right click in **Project** tab select   
+**Create → Create GameData → Item Refine Info**
 *   **Max Stack**, max amount that can stack
 
 You can create new attribute by right click in **Project** tab select   
@@ -42,7 +44,9 @@ Armor, weapon and shield are equipment item, equipment item can set following da
 *   **Increase Resistances**, increasing resistances when equip this item
 *   **Increase Damages**, increasing damages when equip this item
 *   **Increase Stats**, increasing character stats when equip this item
-*   **Max Durability**, Equipment durability, If this set to 0 it will not broken
+*   **Equipment Set**, characters can gain more extra stats when equipped same set equipments. You can create this data by right click in **Project** tab select   
+**Create → Create GameData → Equipment Set**
+*   **Max Durability**, equipment durability, If this set to 0 it will not broken
 *   **Destroy If Broken**, If this is **TRUE**, your equipment will be destroyed when durability = 0
 
 * * *

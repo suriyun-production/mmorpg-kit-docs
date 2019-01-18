@@ -17,7 +17,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Game Database](pages/003-game-database)
 *   [Attributes](pages/004-attributes-and-how-to-create-it)
 *   [Damage Elements / Resistances](pages/005-damage-elements-resistances-and-how-to-create-it)
-*   [Items (Equipment / Armor / Weapon / Potion / Ammo / Building / Pet)](pages/006-items-equipment-armor-weapon-potion-ammo)
+*   [Items (Item Refine Info / Equipment / Equipment Set / Armor / Weapon / Potion / Ammo / Building / Pet)](pages/006-items-equipment-armor-weapon-potion-ammo)
 *   [Item Drop (Item Drop Entity)](pages/007-item-drops-item-drop-entity)
 *   [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
 *   [Skills](pages/009-skills)
