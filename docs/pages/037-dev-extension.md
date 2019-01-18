@@ -52,8 +52,8 @@ Support function for MMO database (SQLiteDatabase, MySQLDatabase)
 
 Support function for Character Stats class
 
-*   void Add(CharacterStats a, CharacterStats b)
-*   void Multiply(CharacterStats a, float multiplier)
+*   CharacterStats Add(CharacterStats a, CharacterStats b)
+*   CharacterStats Multiply(CharacterStats a, float multiplier)
 
 * * *
 
