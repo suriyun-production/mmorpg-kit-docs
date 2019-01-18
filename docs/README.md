@@ -7,6 +7,9 @@ MMORPG KIT — Setup guide table of content
 
 This is the guide for MMORPG KIT game template which selling at Unity Asset Store ([https://assetstore.unity.com/packages/templates/systems/mmorpg-kit-with-survival-mode-110188?aid=1100lGeN](https://assetstore.unity.com/packages/templates/systems/mmorpg-kit-with-survival-mode-110188?aid=1100lGeN))
 
+* [Issues Board](https://github.com/suriyun-production/mmorpg-kit-docs/issues) - You can use it to reports bugs / request features
+* [Roadmap](https://trello.com/b/u8UU1vML/mmorpg-kit-roadmap) - You can see under development features here
+
 ### Table of content
 
 *   [Getting Started (Singleplay/LAN)](pages/001-getting-started-singleplayer-lan)
