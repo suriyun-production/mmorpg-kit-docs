@@ -24,8 +24,6 @@ You can create new player character by right click in **Project** tab select 
 
 You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html) folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character data) then define its data as you wish
 
-![](https://cdn-images-1.medium.com/max/1600/1*JCQk6DgcRvo3XAQ1OWcsAA.png)
-
 * * *
 
 ### Prepare Character Model
@@ -100,6 +98,6 @@ Then set **Character Title** as title which you want it shows in character creat
 
 Then set created **Player Character** data to **Player Characters**
 
-![](../images/new_monster_character_entity_setting.png)
+![](../images/new_player_character_entity_setting.png)
 
 Then after preparation drag it to **Project** tab to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character entity)
