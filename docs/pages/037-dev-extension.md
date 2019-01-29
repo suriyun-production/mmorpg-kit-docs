@@ -48,7 +48,7 @@ Here is the list of functions that support dev extension:
 (SQLiteDatabase, MySQLDatabase)
 
 *   void CreateCharacter(string userId, IPlayerCharacterData characterData)
-*   void ReadCharacter(string userId, string id, bool withEquipWeapons, bool withAttributes, bool withSkills, bool withSkillUsages, bool withBuffs, bool withEquipItems, bool withNonEquipItems, bool withHotkeys, bool withQuests)
+*   void ReadCharacter(IPlayerCharacterData characterData, bool withEquipWeapons, bool withAttributes, bool withSkills, bool withSkillUsages, bool withBuffs, bool withEquipItems, bool withNonEquipItems, bool withHotkeys, bool withQuests)
 *   void UpdateCharacter(IPlayerCharacterData character)
 *   void DeleteCharacter(string userId, string id)
 
@@ -87,3 +87,10 @@ Here is the list of functions that support dev extension:
 *   static void ValidateCharacterData(IPlayerCharacterData character)
 *   static void SetNewPlayerCharacterData(IPlayerCharacterData character, string characterName, int dataId, int entityId)
 *   static void AddAllCharacterRelatesDataSurrogate(SurrogateSelector surrogateSelector)
+*   static void SerializeCharacterData(IPlayerCharacterData characterData, NetDataWriter writer)
+*   static void DeserializeCharacterData(IPlayerCharacterData characterData, NetDataReader reader)
+
+### Support functions for CentralNetworkManager
+
+*   void SerializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataWriter writer)
+*   void DeserializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataReader reader)

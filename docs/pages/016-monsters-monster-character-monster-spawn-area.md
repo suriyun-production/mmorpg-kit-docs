@@ -1,7 +1,39 @@
 * * *
 
-MMORPG KIT — How to add Monster Characters (Monster Character Entity / **Monster Character / Monster Spawn Area)**
+MMORPG KIT — How to add Monster Characters (Monster Character Entity / Monster Character / Monster Spawn Area)
 ==================================================================================================================
+
+### Monster Character
+
+You have to create Monster character to define its data such as stats and attributes, each Monster character you can set following data:
+
+*   **Attributes**, monster’s attributes
+*   **Stats**, monster’s stats
+*   **Resistances**, monster’s resistances
+*   **Characteristics**, set it to **Normal** monster will not attack player when nearby, **Aggressive** monster will attack player when nearby and **Assist** monster will attack player when another monster which have same **Ally Id** have been attacked by the player
+*   **Wander Move Speed**, move speed while wandering (Not chasing player)
+*   **Ally Id**, this will work with Assist characteristic only, to detect ally
+*   **Visual Range**, range to see enemies
+*   **Dead Hide Delay**, delay before hide this monster after dead
+*   **Dead Respawn Delay**, delay before respawn this monster after dead
+*   **Damage Info**, information of how character attacking
+*   **Damage Amount**, attack damage
+*   **Random Exp Min**, exp that character will gain when kill the monster
+*   **Random Exp Max**, exp that character will gain when kill the monster
+*   **Random Gold Min**, gold that character will gain when kill the monster
+*   **Random Gold Max**, gold that character will gain when kill the monster
+*   **Random Gold Items**, items that character will gain when kill the monster
+
+You can create new monster character by right click in **Project** tab select   
+**Create → Create GameData → MonsterCharacter**
+
+![](https://cdn-images-1.medium.com/max/1600/0*pGNyaTj56uFQCZvv)
+
+You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html) folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other monster character data) then define its data as you wish
+
+![](https://cdn-images-1.medium.com/max/1600/1*QmfGq-ao-OOwlEegDsUvWg.png)
+
+* * *
 
 ### Prepare Character Model
 
@@ -49,7 +81,7 @@ With Fantasy Customizable Pack, you can create new character easily try it!! ([h
 
 ### Prepare Monster Character Entity
 
-Is component which handle monster’s character data / character controlling / transforms / collision
+This is component which handle monster’s character data / character controlling / transforms / collision
 
 To create new **Monster Character Entity**, I recommend you to add **Monster Character Entity** to prepared **Character Model** or you may add **Monster Character Entity** to empty object then setup **Character Model** later
 
@@ -67,42 +99,11 @@ Then set an transforms / containers
 *   **Ui Element Transform**, is where instantiates UI Character Entity object which can use to show character’s name and other stats
 *   **Mini Map Element Container**, is where instantiates Mini Map objects, I usually use World Space Canvas with image as marker to show in Mini Map (And also set its layer to MiniMap)
 
+Then set created **Monster Character** data to **Monster Character**
+
+![](../images/new_monster_character_entity_setting.png)
+
 Then after preparation drag it to **Project** tab to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other monster character entity)
-
-* * *
-
-### Monster Character
-
-You have to create Monster character to define its data such as stats and attributes, each Monster character you can set following data:
-
-*   **Entity Prefab**, monster character entity which will appear in game
-*   **Attributes**, monster’s attributes
-*   **Stats**, monster’s stats
-*   **Resistances**, monster’s resistances
-*   **Characteristics**, set it to **Normal** monster will not attack player when nearby, **Aggressive** monster will attack player when nearby and **Assist** monster will attack player when another monster which have same **Ally Id** have been attacked by the player
-*   **Wander Move Speed**, move speed while wandering (Not chasing player)
-*   **Ally Id**, this will work with Assist characteristic only, to detect ally
-*   **Visual Range**, range to see enemies
-*   **Dead Hide Delay**, delay before hide this monster after dead
-*   **Dead Respawn Delay**, delay before respawn this monster after dead
-*   **Damage Info**, information of how character attacking
-*   **Damage Amount**, attack damage
-*   **Random Exp Min**, exp that character will gain when kill the monster
-*   **Random Exp Max**, exp that character will gain when kill the monster
-*   **Random Gold Min**, gold that character will gain when kill the monster
-*   **Random Gold Max**, gold that character will gain when kill the monster
-*   **Random Gold Items**, items that character will gain when kill the monster
-
-You can create new monster character by right click in **Project** tab select   
-**Create → Create GameData → MonsterCharacter**
-
-![](https://cdn-images-1.medium.com/max/1600/0*pGNyaTj56uFQCZvv)
-
-You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other monster character data) then define its data as you wish
-
-Then place it to Monster Character Entity → Database
-
-![](https://cdn-images-1.medium.com/max/1600/1*QmfGq-ao-OOwlEegDsUvWg.png)
 
 * * *
 
@@ -116,6 +117,6 @@ Then add **Monster Spawn Area** component
 
 ![](https://cdn-images-1.medium.com/max/1600/0*AmEuRolUdj6WS8yw)
 
-Set created Monster character to **Database** then set **Level**, **Amount** and **Random Radius** you can see area which monster will be spawned in the Scene
+Set created **Monster Character** data to **Database** then set **Level**, **Amount** and **Random Radius** you can see area which monster will be spawned in the Scene
 
 ![](https://cdn-images-1.medium.com/max/1600/0*uYLjZyGji7DHaps6)

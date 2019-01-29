@@ -3,6 +3,31 @@
 MMORPG KIT — How to add Player Characters (Player Entity / Player Character)
 ============================================================================
 
+### Player Character
+
+You have to create Player character data to define its data such as stats and attributes, each Player character you can set following data:
+
+*   **Entity Prefab**, player character entity which will appear in game
+*   **Attributes**, character’s attributes
+*   **Stats**, character’s stats
+*   **Resistances**, character’s resistances
+*   **Skill Levels**, character’s skills with start level
+*   **Right Hand Equip Item**, character will equip this item after created immediately
+*   **Left Hand Equip Item**, character will equip this item after created immediately
+*   **Armor Items**, character will equip this item after created immediately
+*   **Start Map**, which map scene you want this character to be spawned at first time after created
+
+You can create new player character by right click in **Project** tab select   
+**Create → Create GameData → PlayerCharacter**
+
+![](https://cdn-images-1.medium.com/max/1600/0*6e1EvN_jBzOeYGep)
+
+You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html) folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character data) then define its data as you wish
+
+![](https://cdn-images-1.medium.com/max/1600/1*JCQk6DgcRvo3XAQ1OWcsAA.png)
+
+* * *
+
 ### Prepare Character Model
 
 Character model will be used as part of **Player Character Entity**/**Monster Character Entity** to present in game scene to let player know where the character is and interact on it
@@ -71,31 +96,10 @@ Then set an transforms / containers
 *   **Ui Element Transform**, is where instantiates UI Character Entity object which can use to show character’s name and other stats
 *   **Mini Map Element Container**, is where instantiates Mini Map objects, I usually use World Space Canvas with image as marker to show in Mini Map (And also set its layer to MiniMap)
 
+Then set **Character Title** as title which you want it shows in character create UIs
+
+Then set created **Player Character** data to **Player Characters**
+
+![](../images/new_monster_character_entity_setting.png)
+
 Then after preparation drag it to **Project** tab to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character entity)
-
-* * *
-
-### Player Character
-
-You have to create Player character data to define its data such as stats and attributes, each Player character you can set following data:
-
-*   **Entity Prefab**, player character entity which will appear in game
-*   **Attributes**, character’s attributes
-*   **Stats**, character’s stats
-*   **Resistances**, character’s resistances
-*   **Skill Levels**, character’s skills with start level
-*   **Right Hand Equip Item**, character will equip this item after created immediately
-*   **Left Hand Equip Item**, character will equip this item after created immediately
-*   **Armor Items**, character will equip this item after created immediately
-*   **Start Map**, which map scene you want this character to be spawned at first time after created
-
-You can create new player character by right click in **Project** tab select   
-**Create → Create GameData → PlayerCharacter**
-
-![](https://cdn-images-1.medium.com/max/1600/0*6e1EvN_jBzOeYGep)
-
-You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character data) then define its data as you wish
-
-Then place it to Player Character Entity → Database
-
-![](https://cdn-images-1.medium.com/max/1600/1*JCQk6DgcRvo3XAQ1OWcsAA.png)
