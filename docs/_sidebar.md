@@ -26,6 +26,7 @@
   - [Customize UIs](pages/022-customize-uis)
   - [Customize Gameplay rules / Another settings](pages/023-customize-uis-gameplay-rules-another-settings)
   - [Chat Configs](pages/024-chat-configs)
+  - [How to change controller](pages/xxx-how-to-change-controller)
 
 - MMO Content
 
