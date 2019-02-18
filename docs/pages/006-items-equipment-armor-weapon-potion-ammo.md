@@ -68,7 +68,12 @@ We will use the armor type file name to define which position this item will be 
 
 ### Weapon Items
 
-For weapon item you can set **Damage Amount** is damage when attack target**, Harvest Damage Amount** is damage when attack (harvest) harvestable entity, **Sub Equipment Models** for weapons that can equip at off-hand (or left-hand)
+For weapon item you can set following data:
+*   **Weapon Type** the weapon type
+*   **Move Speed Rate While Attacking** this value will be multiplied with character move speed while using this weapon item to attack
+*   **Damage Amount** is damage when attack target
+*   **Harvest Damage Amount** is damage when attack (harvest) harvestable entity
+*   **Sub Equipment Models** for weapons that can equip at off-hand (or left-hand)
 
 Weapon item is required weapon type data
 

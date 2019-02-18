@@ -5,8 +5,9 @@ MMORPG KIT — Skills
 
 With this project you can define any skills as you wish, for each skill you can set following data:
 
-*   **Skill Type**, there are Active which can attack, buff characters, Passive which can buff characters, Craft Item which can craft an items
+*   **Skill Type**, there are `Active` which can attack, buff characters, `Passive` which can buff characters, `Craft Item` which can craft an items
 *   **Max Level**, max level of this skill
+*   **Move Speed Rate While Using Skill** this value will be multiplied with character move speed while using this skill
 *   **Available Weapons**, skill can use when equip weapon in this available weapon types, if this is empty every weapon types is available
 *   **Consume Mp**, require Mp to use this skill
 *   **Cool Down Duration**, cool down for this skill before use it again next time
