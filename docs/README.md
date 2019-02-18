@@ -42,6 +42,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Getting Started (MMO)](pages/025-getting-started-mmo)
 *   [Server Architecture](pages/026-server-architecture)
 *   [Server Configs](pages/027-server-configs)
+  - [MMO Workflows](pages/xxx-how-mmo-mode-work)
 *   [How to change database system](pages/028-how-to-change-database-system)
 *   [GM Commands](pages/029-gm-commands)
 *   [Server Command Line Arguments](pages/030-server-command-line-argument)
