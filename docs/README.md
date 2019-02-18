@@ -37,6 +37,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Customize Gameplay rules / Another settings](pages/023-customize-uis-gameplay-rules-another-settings)
 *   [Chat Configs](pages/024-chat-configs)
 *   [How to change controller](pages/xxx-how-to-change-controller)
+*   [How to change input](pages/xxx-how-to-change-input)
 
 #### MMO Content
 
