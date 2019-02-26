@@ -73,3 +73,4 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [1.32 — Character Database / Entity workflow changes](pages/041-1-32-character-database-entity-workflow-changes)
 *   [1.38 — Updates](pages/042-1-38-updates)
 *   [1.38b — Updates](pages/043-1-38b-updates)
+*   [1.42 — Updates](pages/044-1-42-updates)
