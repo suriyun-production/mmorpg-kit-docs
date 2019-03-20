@@ -23,6 +23,31 @@ As it is just root object for building model so we usually add building models a
 
 * * *
 
+### Door Entity
+
+Door entity is one of building entity which player can interact to toggle open state, there is an events for each states for developer to player open / close animation, toggle colliders and so on
+
+* * *
+
+### Storage Entity
+
+Storage entity is one of building entity which player can interact to open storage to manage items. Developer can set:
+
+*   **Weight Limit**, if this less than or equals to 0 it will not limit
+*   **Slot Limit**, if this less than or equals to 0 it will not limit
+
+It is also have an events for each states for developer to player open / close animation, toggle colliders and so on
+
+* * *
+
+### Workbench Entity
+
+Workbench entity is one of building entity which player can interact to craft an items. Developer can set:
+
+*   **Item Crafts**, the list of items that can craft with this workbench
+
+* * *
+
 ### Building Material
 
 Building material is component which handle building model’s material, it will change materials to **Can Build Materials** when building can place to target, will change materials to **Cannot Build Materials** when building cannot place to target, default materials will be used when building already built
