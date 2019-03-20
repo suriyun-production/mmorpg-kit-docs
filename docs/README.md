@@ -27,6 +27,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to prepare Character Model + Entity (Character Model / Player Character Entity / Monster Character Entity / Npc Entity)](pages/013-character-model-entity-player-character-entity-monster-character-entity-npc-entity)
 *   [Character Animation](pages/014-character-animation)
 *   [How to add NPCs (Npc Dialog / Npc Entity / Npc Database)](pages/015-npcs-npc-dialog-npc-entity-npc-database)
+*   [NPC Workflows](pages/xxx-npc-workflows)
 *   [How to add Monster Characters (Monster Character Entity / Monster Character / Monster Spawn Area)](pages/016-monsters-monster-character-monster-spawn-area)
 *   [How to add Player Characters (Player Character Entity / Player Character)](pages/017-player-characters)
 *   [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info-melee-damage-missile-damage-missile-damage-entit)

@@ -17,6 +17,7 @@
   - [How to prepare Character Model + Entity](pages/013-character-model-entity-player-character-entity-monster-character-entity-npc-entity)
   - [Character Animation](pages/014-character-animation)
   - [How to add NPCs](pages/015-npcs-npc-dialog-npc-entity-npc-database)
+  - [NPC Workflows](pages/xxx-npc-workflows)
   - [How to add Monster Characters](pages/016-monsters-monster-character-monster-spawn-area)
   - [How to add Player Characters](pages/017-player-characters)
   - [Damage Info](pages/018-damage-info-melee-damage-missile-damage-missile-damage-entit)
