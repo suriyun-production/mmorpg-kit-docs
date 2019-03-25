@@ -66,3 +66,4 @@
   - [1.38 — Updates](pages/042-1-38-updates)
   - [1.38b — Updates](pages/043-1-38b-updates)
   - [1.42 — Updates](pages/044-1-42-updates)
+  - [1.43b — Updates](pages/045-1-43b-updates)
