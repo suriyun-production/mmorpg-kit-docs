@@ -8,13 +8,19 @@
 - Fix invalid character attack/use skill animations settings in `Character Model`
 - Fix cannot access player inventory bug
 - Add camera collision
+
 ![](../images/1-43b-6.png)
+
 - Move character attack/skill/buff codes to new partial class files (BaseCharacterEntity_AttackFunctions, BaseCharacterEntity_BuffFunctions, BaseCharacterEntity_SkillFunctions)
 - Reduce DevExtMethods calls in BaseGameEntity and classes that extended from this class, it will be called only in Awake and OnDestroy function. For other function, developer has to implement an event delegates (You can see DevExtDemo_PlayerCharacterEntity, DevExtDemo_MonsterCharacterEntity) for example
 - Add `hideCompleteQuest` to `UICharacterQuests`, Developers can use it to filter quest list
+
 ![](../images/1-43b-4.png)
+
 - Add casting duration/animation/effect for skills, now you can set casting duration/animation/effect before activating the skill
+
 ![](../images/1-43b-5.png)
+
 - Add OnCastSkill(), OnApplySkill(), OnAttack() functions to `Skill` class. Developers can extend `Skill` class and change some skill functionality by those functions
 
 * * *
