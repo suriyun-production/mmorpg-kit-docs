@@ -6,7 +6,7 @@
 - Fix invalid character stats calculation in `UI Character`
 - Fix cannot press F to pick up items
 - Fix invalid character attack/use skill animations settings in `Character Model`
-- Fix cannot access player inventory bug
+- Fix cannot access player storage bug
 - Add camera collision
 
 ![](../images/1-43b-6.png)
