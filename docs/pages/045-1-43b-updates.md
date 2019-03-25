@@ -17,7 +17,7 @@
 ![](../images/1-43b-5.png)
 - Add OnCastSkill(), OnApplySkill(), OnAttack() functions to `Skill` class. Developers can extend `Skill` class and change some skill functionality by those functions
 
-==============
+* * *
 
 Developer might have to add **IsCastingSkill(Bool)** to character's **Animator Controller**.
 ![](../images/1-43b-1.png)
