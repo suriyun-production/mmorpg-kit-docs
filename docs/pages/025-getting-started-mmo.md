@@ -51,7 +51,7 @@ If it’s running like image above it mean that it’s running correctly then ru
 For **Linux / Mac**, use **Terminal** go to path where you build the game such as /Game/ then enter command like this
 
 ```
-$ ./Game.app -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app" -startCentralServer -startChatServer
+$ ./Game.app -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app" -startCentralServer -startChatServer -machineAddress "192.168.1.102"
 ```
 
 Then start the game to test it
