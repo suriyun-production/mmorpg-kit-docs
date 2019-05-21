@@ -48,6 +48,7 @@ Armor, weapon and shield are equipment item, equipment item can set following da
 **Create → Create GameData → Equipment Set**
 *   **Max Durability**, equipment durability, If this set to 0 it will not broken
 *   **Destroy If Broken**, If this is **TRUE**, your equipment will be destroyed when durability = 0
+*   **Max Socket**, this is nax amount of sockets that allow to enhance by **Socket Enhancer** items
 
 * * *
 
@@ -69,11 +70,15 @@ We will use the armor type file name to define which position this item will be 
 ### Weapon Items
 
 For weapon item you can set following data:
+*   **Sub Equipment Models** for weapons that can equip at off-hand (or left-hand)
 *   **Weapon Type** the weapon type
 *   **Move Speed Rate While Attacking** this value will be multiplied with character move speed while using this weapon item to attack
 *   **Damage Amount** is damage when attack target
 *   **Harvest Damage Amount** is damage when attack (harvest) harvestable entity
-*   **Sub Equipment Models** for weapons that can equip at off-hand (or left-hand)
+*   **Ammo Capacity** For macine gun, may set this to 30 as magazine capacity, if this is 0 it will not need to have ammo loaded to shoot but still need ammo in inventory if weapon type required ammo
+*   **Weapon Ability** weapon ability, for now there is only Zoom
+*   **Crosshair Setting** settings for crosshair, this will work with FPS-controller only
+*   **Fire Type** this will work with FPS-controller only if this is `Single Fire` player have to release button for next fire, if this is `Automatic` player can hold to fire without button release for next fire
 
 Weapon item is required weapon type data
 
@@ -141,3 +146,7 @@ For building item, you have to set created **Building Entity** to **Building Ent
 For pet item, you have to set created **Monster Character Entity** to **Pet Entity** to make it able to summon the pet
 
 ![](https://cdn-images-1.medium.com/max/1600/1*1r_cPZbCY-owsjzk6KcYIQ.png)
+
+### Socket Enhancer Item
+
+For socket enhancer item, you have to set **Socket Enhance Effect** as bonus you want to applies to **Equipment Item** when equip it

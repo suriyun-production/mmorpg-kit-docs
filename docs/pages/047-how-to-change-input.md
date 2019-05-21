@@ -15,3 +15,5 @@ Then set following keys to Project Settings → Input
 *   **PickUpItem** key for pick up dropped item
 *   **Attack** key for attack
 *   **Jump** key for jump
+*   **FindEnemy** key for find enemy
+*   **Reload** key for reload gun

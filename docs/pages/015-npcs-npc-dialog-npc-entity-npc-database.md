@@ -67,7 +67,7 @@ Then set created npc dialog to **Start Dialog**, this dialog will be first dialo
 
 To add NPCs via Npc Database you have to prepare Npc Entity prefab / Npc Dialogs
 
-About Npc Database, you can create new Npc Database by right click in **Project** tab select **Create → Create GameData → Npc Database**
+About Npc Database, you can create new Npc Database by right click in **Project** tab select **Create → Create GameDatabase → Npc Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*yc8ktAVxDGN34X9V)
 
