@@ -69,6 +69,15 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 *   [How to add more functionality without core codes changes with Dev Extension](pages/037-dev-extension)
 
+#### Extensions
+
+*   [Collection of dev extension for MMO](https://github.com/insthync/UnityMultiplayerARPG_MMO_Extension_Samples)
+*   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA)
+*   [Top-down controller](https://github.com/insthync/UnityMultiplayerARPG_TopDownController)
+*   [Race](https://github.com/insthync/UnityMultiplayerARPG_CharacterRace)
+*   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
+*   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
+
 #### Version Changes/Migration
 
 *   [1.22 — Changes Note](pages/038-1-22-changes-not)
