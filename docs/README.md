@@ -78,6 +78,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
 
+<!--
 #### Version Changes/Migration
 
 *   [1.22 — Changes Note](pages/038-1-22-changes-not)
@@ -88,3 +89,4 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [1.38b — Updates](pages/043-1-38b-updates)
 *   [1.42 — Updates](pages/044-1-42-updates)
 *   [1.43b — Updates](pages/045-1-43b-updates)
+-->
