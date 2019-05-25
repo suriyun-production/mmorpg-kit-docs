@@ -40,6 +40,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to change controller](pages/046-how-to-change-controller)
 *   [How to change input](pages/047-how-to-change-input)
 *   [FPS gameplay](pages/051-fps-gameplay)
+*   [Mobile platform](pages/052-mobile-platform)
 
 #### MMO Content
 
