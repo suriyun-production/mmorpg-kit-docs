@@ -59,6 +59,8 @@ Then in `Language Manager` if format for `UI_FORMAT_STAT_POINT` is set to `Stat 
 
 ![](../images/localization/2.png)
 
+![](../images/localization/3.png)
+
 <s>
 Some UI their are options to set string format.
 
