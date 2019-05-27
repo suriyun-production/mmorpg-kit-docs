@@ -55,7 +55,7 @@ For example, in `UI Character` you can set format key for `Format Key Stat Point
 
 ![](../images/localization/1.png)
 
-Then in `Language Manager` if format for `UI_FORMAT_STAT_POINT` is set to `Stat Point: {0}` it will show in the game as `Stat Point: 10`
+Then in `Language Manager` if format for `UI_FORMAT_STAT_POINT` is set to `Stat Point: {0}` it will show in the game as `Stat Point: 10` if your character have stat point = 10.
 
 ![](../images/localization/2.png)
 
