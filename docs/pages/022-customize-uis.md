@@ -59,7 +59,7 @@ Then in `Language Manager` if format for `UI_FORMAT_STAT_POINT` is set to `Stat 
 
 ![](../images/localization/2.png)
 
-~~
+<s>
 Some UI their are options to set string format.
 
 For example in **UI Character** it has Hp Format
@@ -69,7 +69,7 @@ If it set to “Hp: {0}/{1}” while gameplay if character has current Hp = 10 a
 But if it set to “Hp: {0}” it will show as “Hp: 10”
 
 Each formats have tool tip which showing when your mouse cursor is on it in inspector to tell about format information
-~~
+</s>
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Zr7QO1ONJVvKaoIUHiEIBQ.png)
 
