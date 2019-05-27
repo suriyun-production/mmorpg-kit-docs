@@ -47,6 +47,19 @@ This is like Text Wrapper but for dropdown components
 
 #### Text Formats
 
+**This is changed since version 1.45b**
+
+Now all format settings in UIs are changes to be key which you can changes format in `Language Manager` which usually attached to `Game Instance`.
+
+For example, in `UI Character` you can set format key for `Format Key Stat Point` to `UI_FORMAT_STAT_POINT`
+
+![](../images/localization/1.png)
+
+Then in `Language Manager` if format for `UI_FORMAT_STAT_POINT` is set to `Stat Point: {0}` it will show in the game as `Stat Point: 10`
+
+![](../images/localization/2.png)
+
+~~
 Some UI their are options to set string format.
 
 For example in **UI Character** it has Hp Format
@@ -56,6 +69,7 @@ If it set to “Hp: {0}/{1}” while gameplay if character has current Hp = 10 a
 But if it set to “Hp: {0}” it will show as “Hp: 10”
 
 Each formats have tool tip which showing when your mouse cursor is on it in inspector to tell about format information
+~~
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Zr7QO1ONJVvKaoIUHiEIBQ.png)
 
