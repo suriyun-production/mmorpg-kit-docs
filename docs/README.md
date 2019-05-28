@@ -76,6 +76,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA)
 *   [Top-down controller](https://github.com/insthync/UnityMultiplayerARPG_TopDownController)
 *   [Race](https://github.com/insthync/UnityMultiplayerARPG_CharacterRace)
+*   [2D AI](https://github.com/insthync/UnityMultiplayerARPG_2DAI)
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
 
