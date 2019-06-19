@@ -61,6 +61,10 @@
 
   - [How to add more functionality without core codes changes with Dev Extension](pages/037-dev-extension)
 
+- Troubleshooting
+
+  - [Common troubleshooting steps](pages/054-troubleshooting-steps)
+
 - Version Changes/Migration
 
   - [1.22 — Changes Note](pages/038-1-22-changes-not)
