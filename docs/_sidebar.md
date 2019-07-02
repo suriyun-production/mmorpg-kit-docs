@@ -1,5 +1,8 @@
 
 - [Index](/)
+
+- [Changelog](pages/000-changelog)
+
 - Generic
 
   - [Getting Started (Singleplay/LAN)](pages/001-getting-started-singleplayer-lan)

@@ -9,6 +9,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 * [Issues Board](https://github.com/suriyun-production/mmorpg-kit-docs/issues) - You can use it to reports bugs / request features
 * [Roadmap](https://trello.com/b/u8UU1vML/mmorpg-kit-roadmap) - You can see under development features here
+* [Changelog](pages/000-changelog)
 
 ### Table of content
 
