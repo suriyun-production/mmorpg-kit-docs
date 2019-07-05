@@ -83,6 +83,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 #### Version Changes/Migration
 
+*   [1.46 — Updates](pages/055-1-46-updates)
 <!--
 *   [1.22 — Changes Note](pages/038-1-22-changes-not)
 *   [1.25 — Text/InputField Migration](pages/039-1-25-text-inputfield-migration)
@@ -93,5 +94,3 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [1.42 — Updates](pages/044-1-42-updates)
 *   [1.43b — Updates](pages/045-1-43b-updates)
 -->
-
-*   [1.46 — Updates](pages/055-1-46-updates)

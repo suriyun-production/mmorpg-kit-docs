@@ -3,7 +3,7 @@
 
 - [Changelog](pages/000-changelog)
 
-- Generic
+- Guide
 
   - [Getting Started (Singleplay/LAN)](pages/001-getting-started-singleplayer-lan)
   - [Character Stats](pages/002-character-stats)
@@ -70,6 +70,7 @@
 
 - Version Changes/Migration
 
+  - [1.46 — Updates](pages/055-1-46-updates)
 <!--
   - [1.22 — Changes Note](pages/038-1-22-changes-not)
   - [1.25 — Text/InputField Migration](pages/039-1-25-text-inputfield-migration)
@@ -80,4 +81,3 @@
   - [1.42 — Updates](pages/044-1-42-updates)
   - [1.43b — Updates](pages/045-1-43b-updates)
 -->
-  - [1.46 — Updates](pages/055-1-46-updates)
