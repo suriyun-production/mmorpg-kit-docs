@@ -1,6 +1,6 @@
 ## 1.46
 
-See it in [1.46 Updates](./pages/055-1-46-updates.md)
+See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 ## 1.45c
 
