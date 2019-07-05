@@ -70,6 +70,7 @@
 
 - Version Changes/Migration
 
+<!--
   - [1.22 — Changes Note](pages/038-1-22-changes-not)
   - [1.25 — Text/InputField Migration](pages/039-1-25-text-inputfield-migration)
   - [1.27 — Move weapon attack animations, skill cast animations to Character Model](pages/040-1-27-move-weapon-attack-animations-skill-cast-animations-to-character-model)
@@ -78,3 +79,5 @@
   - [1.38b — Updates](pages/043-1-38b-updates)
   - [1.42 — Updates](pages/044-1-42-updates)
   - [1.43b — Updates](pages/045-1-43b-updates)
+-->
+  - [1.46 — Updates](pages/055-1-46-updates)

@@ -81,9 +81,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
 
-<!--
 #### Version Changes/Migration
 
+<!--
 *   [1.22 — Changes Note](pages/038-1-22-changes-not)
 *   [1.25 — Text/InputField Migration](pages/039-1-25-text-inputfield-migration)
 *   [1.27 — Move weapon attack animations, skill cast animations to Character Model](pages/040-1-27-move-weapon-attack-animations-skill-cast-animations-to-character-model)
@@ -93,3 +93,5 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [1.42 — Updates](pages/044-1-42-updates)
 *   [1.43b — Updates](pages/045-1-43b-updates)
 -->
+
+*   [1.46 — Updates](pages/055-1-46-updates)

@@ -1,3 +1,7 @@
+## 1.46
+
+See it in [1.46 Updates](../pages/055-1-46-updates.md)
+
 ## 1.45c
 
 - Add `GetTotalWeight` function to `BaseGameplayRule`, developer may override it to increase weight by gold :P 
