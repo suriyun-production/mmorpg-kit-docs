@@ -1,3 +1,10 @@
+## 1.46b
+
+- Fix invalid index of data in `UI Non Equip Items`, this is cause of un-able to equip items or use items issues
+- Add `Item Drop Table` game data, you can use it to create item drop table and set to `Monster Character` game data as more convenience way when you want to have same item drop table for difference monsters
+- Add `Exp Per Damage` to `Harvestable` game data, you can make character receive exp while harvesting with this value, if this is 10 when damage to harvestable entity = 2, character will receives 20 exp
+- Add network discovery component and also implemented it in Lan mode, see example in `01Home` scene → `CanvasHome` → `UILanConnection`
+
 ## 1.46
 
 See it in [1.46 Updates](pages/055-1-46-updates.md)
