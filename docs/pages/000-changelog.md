@@ -1,3 +1,22 @@
+## 1.47b
+- Fix invalid missile rotation in 2d mode
+- Fix cannot attack issues
+- Fix missile can hit other missile
+- Fix missile can hit non-ally character (it will explode but not apply damage)
+- Fix missile can hit dropped items
+
+## 1.47
+- Add attribute increase item, can use it to increase amount of attribute.
+- Add attribute reset item, can use it to reset amount of attributes.
+- Add skill use item, can use it to cast skill.
+- Add skill learn item, can use it to increase level of skill.
+- Add skill reset item, can use it to reset level of skills.
+- Can set equipment to hotkey.
+- Reduce packet size when update buff cooldown, now it will send only cooldown (float). Type (byte), Data Id (int), and Level (short) will not being sent.
+- Reduce packet size when update skill cooldown, now it will send only cooldown (float). Type (byte), and Data Id (int) will not being sent.
+- Reduce packet size when update summon cooldown, now it will send only cooldown (float). Type (byte), Data Id (int), and Object Id (uint) will not being sent.
+- Reduce packet for non-owner character item, now it will send only Data Id (int), Level (short) to non-owner client because non-owner client requires only Data Id and Level to update character equipments. Owner client still receive full data (Id (string), Data Id (int), Level (short), Amount (short), Durability (float), Exp (int), Lock Remains Duration (float), Ammo (short), and Sockets (int[])).
+
 ## 1.46b
 
 - Fix invalid index of data in `UI Non Equip Items`, this is cause of un-able to equip items or use items issues
