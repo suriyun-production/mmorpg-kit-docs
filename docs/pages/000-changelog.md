@@ -1,3 +1,15 @@
+## 1.47c
+- Monster can use skill
+- Add workbench building in demo
+- Fix monster drop always drop same items issues
+- Fix workbench craft item not working issues
+- Fix weapon / shield increase damages not working issues
+- Fix equipment sockets not saves issues
+- Fix invalid building entity location when building with shooter controller
+- Fix bugs when set `Game Instance` → `Inventory System` to `Limit Slots` that it fill empty slot incorrectly, also add `Game Instance` → `Base Slot Limit` can use it as base slot limit for all character while set `Game Instance` → `Inventory System` to `Limit Slots`
+- Add not enough MP message
+- Don't send request attack / use skill message to server if no enough ammo or MP
+
 ## 1.47b
 - Fix invalid missile rotation in 2d mode
 - Fix cannot attack issues
