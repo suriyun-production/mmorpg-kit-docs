@@ -5,6 +5,7 @@
 - Fix workbench craft item not working issues
 - Fix weapon / shield increase damages not working issues
 - Fix equipment sockets not saves issues
+- Fix invalid character item title with refine level format
 - Fix invalid building entity location when building with shooter controller
 - Fix bugs when set `Game Instance` → `Inventory System` to `Limit Slots` that it fill empty slot incorrectly, also add `Game Instance` → `Base Slot Limit` can use it as base slot limit for all character while set `Game Instance` → `Inventory System` to `Limit Slots`
 - Add not enough MP message
