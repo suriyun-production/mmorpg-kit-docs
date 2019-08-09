@@ -1,3 +1,8 @@
+## 1.47d
+- Fix invalid item remove index, that cause other bugs, such as represent invalid items when equip / unequip items
+- Fix infinite loop when fill empty slots, while `Game Instance` → `Inventory System` set to `Limit Slots`, this is cause of Unity freezing when equip / unequip items
+- Fix receiving items filling after empty slots, while `Game Instance` → `Inventory System` set to `Limit Slots
+
 ## 1.47c
 - Monster can use skill
 - Add workbench building in demo
