@@ -1,3 +1,17 @@
+## 1.48
+- Change settings in `Map Info` → `Can Pvp` to `Pvp Mode`
+- Change settings in `Map Info` → `Override Respawn Point` to `Override Respawn Point Mode`
+- Change settings in `Map Info` → `Override Respawn Point Map` and `Override Respawn Point Position` to `Override Respawn Points`
+- Add simple faction system, now player can select faction in character creation scene
+- Reduce settings in `Game Database`. Remove `Skills` because it can bring from character data, item data. Remove `Player Characters` because it can bring from `Player Character Entities` and Remove `Monster Characters` because it can bring from `Monster Character Entities`
+- Add context menu to `Character Model`, `AnimationCharacterModel` and `AnimatorCharacterModel` to copy / patse `Weapon Animations` and `Skill Animations`
+- Fix empty item slots not filled when `Game Instance` → `Inventory System` is `Limit Slots`
+- Fix chat input field focusing when spamming keys
+- Fix cannot learn skill with item while skill point == 0
+- Fix flying when spamming mount
+- Fix character UIs still remains in list after deleted all characters
+- Update demo to show how to setup factions, genders and character class selections
+
 ## 1.47d
 - Fix invalid item remove index, that cause other bugs, such as represent invalid items when equip / unequip items
 - Fix infinite loop when fill empty slots, while `Game Instance` → `Inventory System` set to `Limit Slots`, this is cause of Unity freezing when equip / unequip items
