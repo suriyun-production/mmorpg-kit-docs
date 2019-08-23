@@ -1,3 +1,14 @@
+## 1.48b
+- Add friend system (Press Z to toggle the dialog)
+- Add new damage type, `Raycast` should use it with gun weapon, which its bullet is very fast. `Missile Damage Entity` won't hit target sometime when its move speed is very fast
+- Add `ActivateButtonActivator` component, you can use it to activate UIs when your character nearby activatable entities
+- Add `ExitVehicleActivator` component, you can use it to activate UIs when your character passenging vehicle
+- Add `PickUpButtonActivator` component, you can use it to activate UIs when your character nearby item drop entities
+- Add `ZoomButtonActivator` component, you can use it to activate UIs when equipped weapon can zoom
+- Fix `UIAmmoAmounts` not updates when ammo reduce
+- Changes damage entities to non-networking object, so networking packet to spawn it will be removed
+- Reduce networking packet size by remove all play effect request network messages
+
 ## 1.48
 - Change settings in `Map Info` → `Can Pvp` to `Pvp Mode`
 - Change settings in `Map Info` → `Override Respawn Point` to `Override Respawn Point Mode`
