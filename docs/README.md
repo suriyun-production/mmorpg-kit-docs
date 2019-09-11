@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Setup guide table of content
-=========================================
+# MMORPG KIT — Setup guide table of content
 
 ![](https://cdn-images-1.medium.com/max/1600/1*181LgUonGXa8aTGEESkpsw.png)
 
