@@ -5,7 +5,8 @@
 
 - Guide
 
-  - [Getting Started (Singleplay/LAN)](pages/001-getting-started-singleplayer-lan)
+  - [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
+  - [Game Element](pages/102-game-element)
   - [Character Stats](pages/002-character-stats)
   - [Game Database](pages/003-game-database)
   - [Attributes](pages/004-attributes-and-how-to-create-it)
