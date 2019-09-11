@@ -30,3 +30,25 @@ There are 2 types of game database that can be created:
 You can change game database by drag created game database to **Game Instance → Game Database** field
 
 ![](../images/103/001.png)
+
+## Advance
+
+You may create your own **Game Database** system by create class which inherit from `BaseGameDatabase` 
+
+Then implement `void LoadData(GameInstance gameInstance)` function
+
+And call following functions to add game data to game instance to use in gameplay later.
+
+*   `GameInstance.AddAttributes(attributes)` add attributes to game instance
+*   `GameInstance.AddItems(items)` add items to game instance
+*   `GameInstance.AddNpcDialogs(npcDialogs)` add npc dialogs to game instance
+*   `GameInstance.AddQuests(quests)` add quests to game instance
+*   `GameInstance.AddGuildSkills(guildSkills)` add guild skills to game instance
+*   `GameInstance.AddCharacterEntities(characterEntities)` add character entities to game instance, you can use it to add player character entities and monster character entities
+*   `GameInstance.AddMountEntities(mountEntities)` add mount entities to game instance
+*   `GameInstance.AddMapInfos(mapInfos)` add map infos to game instance
+*   `GameInstance.AddFactions(factions)` add factions to game instance
+
+After added all game data, call this function to notify the game instance the everything are loaded then it will load home scene to start the game
+
+*   `gameInstance.LoadedGameData()`
