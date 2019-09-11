@@ -34,7 +34,7 @@ There are some helpers that attached to game instance game object in the demo th
 
 Some gameplay rule settings such as damage calculation, weapon durable calculation, amount of stat point that character will gain when levelup can be set in gameplay rule.
 
-You can create this database by Right click in **Project** tab, choose **Create → Create GameplayRule → Simple Gameplay Rule**
+You can create this database by right click in **Project** tab, choose **Create → Create GameplayRule → Simple Gameplay Rule**
 
 To enable it in your game, you have to set it in **Game Instance → Gameplay Rule**
 
@@ -56,13 +56,15 @@ This is database which store an game data, now there are following things that r
 *   **Map Info**, map scenes that allowed player to accesses and settings for each maps
 *   **Faction**, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game
 
+More Info: [Click Here](pages/103-game-database)
+
 * * *
 
 ## Warp Portal Database
 
 This is database which store warp portals that will be represented in gameplay scene to let players activate and warp to another position, you can set position of portal and position of warp target in this database. Or create warp portal entity in your map scene and set warp target position if you feels it's more convenience.
 
-You can create this database by Right click in **Project** tab, choose **Create → GameDatabase → Warp Portal Database**
+You can create this database by right click in **Project** tab, choose **Create → GameDatabase → Warp Portal Database**
 
 To enable it in your game, you have to set it in **Game Instance → Warp Portal Database**
 
@@ -72,7 +74,7 @@ To enable it in your game, you have to set it in **Game Instance → Warp Portal
 
 This is database which store Npcs that will be represented in gameplay scene with their dialogs to let players activate and talking with them, you can set position of Npcs, and their dialogs. Or create NPC entity in your map scene and dialogs if you feels it's more convenience.
 
-You can create this database by Right click in **Project** tab, choose **Create → GameDatabase → Npc Database**
+You can create this database by right click in **Project** tab, choose **Create → GameDatabase → Npc Database**
 
 To enable it in your game, you have to set it in **Game Instance → Npc Database**
 
@@ -82,7 +84,7 @@ To enable it in your game, you have to set it in **Game Instance → Npc Databas
 
 This is setting for social system such as party and guild, you can set max amount of party memeber, guild exp tree, gold and items that requried to create guild here
 
-You can create this setting by Right click in **Project** tab, choose **Create → GameData → Social System Setting**
+You can create this setting by right click in **Project** tab, choose **Create → GameData → Social System Setting**
 
 To enable it in your game, you have to set it in **Game Instance → Social System Setting**
 

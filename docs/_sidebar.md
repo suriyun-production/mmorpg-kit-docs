@@ -7,8 +7,8 @@
 
   - [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
   - [Game Element](pages/102-game-element)
+  - [Game Database](pages/103-game-database)
   - [Character Stats](pages/002-character-stats)
-  - [Game Database](pages/003-game-database)
   - [Attributes](pages/004-attributes-and-how-to-create-it)
   - [Damage Elements / Resistances](pages/005-damage-elements-resistances-and-how-to-create-it)
   - [Items](pages/006-items-equipment-armor-weapon-potion-ammo)
