@@ -21,7 +21,7 @@ You can find **Game Instance** in **00Init** scene
 
 ##### Game Instance - Helpers / Utilities
 
-There are some helpers that attached to game instance game object in the demo that some of them does's not required to use in the project, but I uses them to help me to setup gameplay as I wish it to be there are:
+There is some helpers that attached to game instance game object in the demo that some of them does's not required to use in the project, but I uses them to help me to setup gameplay as I wish it to be, there is:
 *   **Collision Ignore** (Not required to use in the project), I use it to ignore collision between colliders to make character able to move through other characters and also able to move through dropped items
 *   **Game Instance Tools**  (Not required to use in the project), I use it to generate Exp table, just set max character leve, first level exp and last level exp to generate
 *   **Audio Manager**, For most games nowsaday there are more than one volume settings so I made this to manage them
@@ -42,7 +42,7 @@ To enable it in your game, you have to set it in **Game Instance → Gameplay Ru
 
 ## Game Database
 
-This is database which store an game data, now there are following things that required to add into game database to make them able to work in your game:
+This is database which store an game data, now there is following things that required to add into game database to make them able to work in your game:
 
 *   **Attribute**, an attributes that player character levelup to increase character stats
 *   **Damage Element**, an elements of damage, you can make fire, ice, poison damage elements for more variety of gameplay. You can leave it empty if you don't want to have other damage elements than default damage element (which set to **Game Instance**)
