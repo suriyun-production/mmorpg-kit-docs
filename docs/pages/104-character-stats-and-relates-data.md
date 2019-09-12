@@ -109,17 +109,17 @@ Then you have to set this game data to game database to make it available in you
 
 ##### How weapon's damage effectiveness attribute work example - 1
 
-For example **OneHandSword** has **Str** as its effectiveness attribute with effectiveness = 0.1
+For example **OneHandSword** has **Str** as its effectiveness attribute with effectiveness = **0.1**
 
-Then the character who has **Str** = 30, attacking with **Sword** which its damage amount is 3 to 6
+Then the character who has **Str** = **30**, attacking with **Sword** which its damage amount is **3 to 6**
 
 Applying damage will calculated to (3 to 6) + (0.1 * 30) = (3 to 6) + (3 to 3) = (6 to 9)
 
 ##### How weapon's damage effectiveness attribute work example - 2
 
-For example **Spear** have **Str** as its effectiveness attribute with effectiveness = 0.1 and **Dex** as its effectiveness attribute with effectiveness = 0.05
+For example **Spear** have **Str** as its effectiveness attribute with effectiveness = **0.1** and **Dex** as its effectiveness attribute with effectiveness = **0.05**
 
-Then the character who has **Str** = 30 and **Dex** = 25, attacking with **Spear** which its damage amount is 3 to 6
+Then the character who has **Str** = **30** and **Dex** = **25**, attacking with **Spear** which its damage amount is **3 to 6**
 
 Applying damage will calculated to (3 to 6) + (0.1 * 30) + (0.05 * 25) = (3 to 6) + (3 to 3) + (1.25 to 1.25) = (7.25 to 10.25)
 
@@ -137,7 +137,7 @@ Then you have to set this game data to game database to make it available in you
 
 ##### Damage calculation example - 1
 
-For example of how applying damage ammount calculate, There is **Fire** damage element, if the first character has Fire damage amount = 10 attack to second character which has Fire resistance amount = 0.1
+For example of how applying damage ammount calculate, There is **Fire** damage element, if the first character has Fire damage amount = **10** attack to second character which has Fire resistance amount = **0.1**
 
 Applying fire damage amount = 10 - (10 * 0.1)
 
@@ -145,9 +145,9 @@ So second character will receives damage amount = 9
 
 ##### Damage calculation example - 2
 
-First character have **Fire** damage amount = 10, **Ice** damage amount = 5
+First character have **Fire** damage amount = **10**, **Ice** damage amount = **5**
 
-Second character has only **Fire** resistance amount = 0.1
+Second character has only **Fire** resistance amount = **0.1**
 
 Applying fire damage amount = 10 - (10 * 0.1)
 
