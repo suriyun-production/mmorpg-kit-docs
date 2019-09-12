@@ -107,6 +107,22 @@ You can create **Attribute** by right click in **Project** tab, choose **Create 
 
 Then you have to set this game data to game database to make it available in your game
 
+##### How weapon's damage effectiveness attribute work example - 1
+
+For example **OneHandSword** has **Str** as its effectiveness attribute with effectiveness = 0.1
+
+Then the character who has **Str** = 30, attacking with **Sword** which its damage amount is 3 to 6
+
+Applying damage will calculated to (3 to 6) + (0.1 * 30) = (3 to 6) + (3 to 3) = (6 to 9)
+
+##### How weapon's damage effectiveness attribute work example - 2
+
+For example **Spear** have **Str** as its effectiveness attribute with effectiveness = 0.1 and **Dex** as its effectiveness attribute with effectiveness = 0.05
+
+Then the character who has **Str** = 30 and **Dex** = 25, attacking with **Spear** which its damage amount is 3 to 6
+
+Applying damage will calculated to (3 to 6) + (0.1 * 30) + (0.05 * 25) = (3 to 6) + (3 to 3) + (1.25 to 1.25) = (7.25 to 10.25)
+
 * * *
 
 ## Damage Element
