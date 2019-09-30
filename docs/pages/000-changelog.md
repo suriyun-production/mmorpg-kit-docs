@@ -1,3 +1,14 @@
+## 1.49
+- Add skill aim controls for mobile and also can cancel aimming skill, try drag assigned skill icon to use
+- Fix quest `isComplete` state not saved issues
+- Fix item list / skill list entries are destroyed after open `UICharacterHotkeyAssigner` first time
+- Fix character move sound still playing after ride the mount entity while moving
+- Fix `CharacterItem` → `sockets` not saved issues
+- Fix saved `CharacterHotkey` lose issues
+- Fix can move character while casting skill which its `moveSpeedRateWhileUsingSkill` = 0
+- Fix monster character entities not respawn by avoid empty `receivedDamageRecords`
+- Fix invalid `criRate`, `criDmgRate`, `blockRate` and `blockDmgRate` calculation
+
 ## 1.48d
 - Add equip weapon set switch by key, for the demo it is key **`** (the key below **Esc** and above **Tab**)
 - Add character stats rate for item/skill buffs, it will be calculated by character's stats not including with stats from equipments and buffs. For example, if character have 100 Hp, and also equip armor which increase 20 Hp and 10% Hp rate, it will increase 30 Hp by the armor (20 + (100 * 10%)) so the character will have 130 Hp
