@@ -1,3 +1,12 @@
+## 1.49b
+- Add utility script named `ImageBasedOnPlayingCharacterClass`, to set image based on playing character, developer may attach it to mobile attack button to change image based on playing character
+- Add utility script named `ImageBasedOnEquippedWeaponType`, to set image based on equipped weapon type, developer may attach it to mobile attack button to change image based on equipped weapon type
+- Add `Destroy Delay` field to `MissileDamageEntity`, developer may set some delay to play some special effect before destroy
+- Fix item weight not multiplied with item amount
+- Fix invalid unequip weapon set
+- Fix character not rotate while aiming with sniper
+- Fix wrong shooter camera controls on mobile platforms
+
 ## 1.49
 - Add skill aim controls for mobile and also can cancel aimming skill, try drag assigned skill icon to use
 - Fix quest `isComplete` state not saved issues
