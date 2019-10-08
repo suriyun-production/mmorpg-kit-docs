@@ -1,3 +1,14 @@
+## 1.49c
+- Add area attack skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Attack Skill`. You also have to prepare `Area Damage Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
+- Add area buff skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Buff Skill`. You also have to prepare `Area Buff Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
+- Add `minGuildNameLength` and `maxGuildNameLength` configs to `SocialSystemSetting` use it to limit guild name length
+- Add `minGuildRoleNameLength` and `maxGuildRoleNameLength` configs to `SocialSystemSetting` use it to limit guild role name length
+- Add `maxGuildMessageLength` configs to `SocialSystemSetting` use it to limit guild message length
+- Fix guild with existed guild name can be created
+- Fix invalid attribute amounts equals to 0 and not able to level up, after reset an attributes with item
+- Fix invalid left-hand weapon aim position in shooter controller
+- Fix quest missing data bugs
+
 ## 1.49b
 - Add utility script named `ImageBasedOnPlayingCharacterClass`, to set image based on playing character, developer may attach it to mobile attack button to change image based on playing character
 - Add utility script named `ImageBasedOnEquippedWeaponType`, to set image based on equipped weapon type, developer may attach it to mobile attack button to change image based on equipped weapon type
