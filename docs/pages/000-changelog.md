@@ -7,7 +7,7 @@
 - Fix guild with existed guild name can be created
 - Fix invalid attribute amounts equals to 0 and not able to level up, after reset an attributes with item
 - Fix invalid left-hand weapon aim position in shooter controller
-- Fix quest missing data bugs
+- Fix quest missing data bugs when deserialize
 
 ## 1.49b
 - Add utility script named `ImageBasedOnPlayingCharacterClass`, to set image based on playing character, developer may attach it to mobile attack button to change image based on playing character
