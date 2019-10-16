@@ -1,3 +1,15 @@
+## 1.49d
+- 2D games can build an buildings
+- Add multilingual supports for NPC dialog menu
+- Add skill attack type option to `Simple Area Attack Skill`
+- Fix character stats not applies by weapons or shields
+- Fix invalid character attack duration
+- Fix invalid skill level calculation
+- Fix invalid skill damage amounts calculation
+- Fix shield unequip when equipping one-hand weapon
+- Fix shooter controller cannot attack while playing on mobile platforms
+- Fix passive skill not working
+
 ## 1.49c
 - Add area attack skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Attack Skill`. You also have to prepare `Area Damage Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
 - Add area buff skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Buff Skill`. You also have to prepare `Area Buff Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
