@@ -1,3 +1,17 @@
+## 1.50
+- Add `Awake` and `OnDestroy` dev extension functions to `BasePlayerCharacterController`
+- Implement In-App Purchasing for Singleplayer game
+- Add `UICharacterItemDropHandler` class, developer can add it to character item icon as drop handler to handles inventory slots swap, storage slots swap, equip item functions
+- Fix armor stats not work
+- Fix invalid rarity title languae settings
+- Fix item is able to unequip while inventory is full
+- Fix quest rewards are able to receives while inventory is full
+- Fix IAP items are able to receives while inventory is full
+- Fix items are able to deals while inventory is full
+- Fix items are able to crafts while inventory is full
+- Fix invalid `IBuildingSaveData` → `CloneTo` dev extension implementation
+- Fix skills not update when equip items that increase skill levels
+
 ## 1.49d
 - 2D games can build an buildings
 - Add multilingual supports for NPC dialog menu
