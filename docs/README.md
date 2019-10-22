@@ -11,7 +11,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 ### Table of content
 
 *   [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
-*   [Game Element](pages/102-game-element)
+*   [Game Instance and relates data](pages/102-game-instance-and-relates-data)
 *   [Game Database](pages/103-game-database)
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
 *   [Items (Item Refine Info / Equipment / Equipment Set / Armor / Weapon / Potion / Ammo / Building / Pet)](pages/006-items-equipment-armor-weapon-potion-ammo)
@@ -39,6 +39,13 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [FPS gameplay](pages/051-fps-gameplay)
 *   [Mobile platform](pages/052-mobile-platform)
 *   [Localization](pages/053-localization)
+*   [Character Model preparation](pages/105-character-model)
+*   [Animator Character Model](pages/108-animator-character-model)
+*   [Animation Character Model](pages/107-animation-character-model)
+*   [Character Model](pages/106-legacy-character-model)
+*   [Action Animation](pages/110-action-animation)
+*   [Character Model 2D](pages/109-character-model-2d)
+*   [Animation Clip 2D and Action Animation 2D](pages/111-animation-clip-2d)
 
 #### MMO Content
 
