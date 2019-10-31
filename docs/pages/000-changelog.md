@@ -1,3 +1,31 @@
+## 1.50b
+- Improve game data list view, if entry is not empty it will show index with name and text color will be blue, if it is empty text color will be red.
+![](../images/changelog/1.png)
+- Improve `AnimationClip2D` inspector, now it will show animated sprites in preview section.
+![](../images/changelog/2.png)
+- Add npc graph.
+![](../images/changelog/3.png)
+- Add server scene loaded validatation, developer can add code to validate before allow server to instantiates objects and spawn players.
+```
+// Example codes
+namespace MultiplayerARPG {
+    public abstract partial class BaseGameNetworkManager {
+        [DevExtMethods("UpdateReadyToInstantiateObjectsStates")]
+        protected void ValidateSceneLoaded()
+        {
+            // Set custom states, it will check later, if all states are `TRUE`
+            // It will be ready to instantiates objects and spawn players.
+            readyToInstantiateObjectsStates["MapLoaded"] = mapManager.IsLoaded();
+        }
+    }
+}
+```
+- Add game messages to inform players when they can't increase attribute amount.
+- Add game messages to inform players when they can't increase skill level.
+- Add game messages to inform players when they can't use skill.
+- Improve bonus stats display, now it will show as "Hp: +1", "Mp: +1".
+- Fix skill level bonus from equipment set bonus not applies to UIs.
+
 ## 1.50
 - Add `Awake` and `OnDestroy` dev extension functions to `BasePlayerCharacterController`
 - Implement In-App Purchasing for Singleplayer game
