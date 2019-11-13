@@ -4,7 +4,7 @@
 - Add `isHide` status to `Buff`, developer can use with `Toggle Skill` to create hide skill
 - Add `muteFootstepSound` status to `Buff`, developer can use with `Toggle Skill` to create hide+stalk skill
 - Add multi hit **Trigger Duration Rate** to character model → action animation
-- Add `currentPositionSaveMode` config to `GameInstance`, developer can set it to `UseRespawnPosition` to make character start at respawn position. Not last position in map when enter game
+- Add `currentPositionSaveMode` config to `GameInstance`, developer can set it to `UseRespawnPosition` to make it save character current position as respawn position, not current position. So when enter game it will load respawn position, not last character position.
 - Fix item skills not available to assign to hotkey
 - Fix item skills not available to use
 - Fix character level not increased after exp increased by harvestable entity
