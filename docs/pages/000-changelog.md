@@ -1,3 +1,14 @@
+## 1.50c
+- Add `BuffToTarget` to `Skill` → `SkillBuffType`, if skill isn't attack skill, will buff to selected target
+- Add `Toggle` to `Skill` → `SkillBuffType`, skill's buff will be remove if already applied to skill user
+- Add `isHide` status to `Buff`, developer can use with `Toggle Skill` to create hide skill
+- Add `muteFootstepSound` status to `Buff`, developer can use with `Toggle Skill` to create hide+stalk skill
+- Add multi hit **Trigger Duration Rate** to character model → action animation
+- Add `currentPositionSaveMode` config to `GameInstance`, developer can set it to `UseRespawnPosition` to make character start at respawn position. Not last position in map when enter game
+- Fix item skills not available to assign to hotkey
+- Fix item skills not available to use
+- Fix character level not increased after exp increased by harvestable entity
+
 ## 1.50b
 - Improve game data list view, if entry is not empty it will show index with name and text color will be blue, if it is empty text color will be red.
 ![](../images/changelog/1.png)
