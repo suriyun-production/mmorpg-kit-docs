@@ -2,7 +2,7 @@
 - Implement root motion support to `RigidBodyEntityMovement`, see `useRootMotionForMovement`, `useRootMotionForAirMovement`, `useRootMotionForJump` and `useRootMotionForFall`.
 - Implement stamina to demo, press `Left Shift` to toggle sprint. For shooter controller hold `Left Shift` to sprint.
 - Add `FactionIs` condition to check character faction to show NPC dialog menu.
-- Fix reset item not consumed.
+- Fix reset skill item not consumed.
 - Fix invalid warp position while `GameInstance` → `currentPositionSaveMode` is `UseRespawnPosition`.
 - Fix multi hit animation works incorrectly.
 
