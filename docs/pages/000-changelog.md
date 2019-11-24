@@ -1,3 +1,11 @@
+## 1.50d
+- Implement root motion support to `RigidBodyEntityMovement`, see `useRootMotionForMovement`, `useRootMotionForAirMovement`, `useRootMotionForJump` and `useRootMotionForFall`.
+- Implement stamina to demo, press `Left Shift` to toggle sprint. For shooter controller hold `Left Shift` to sprint.
+- Add `FactionIs` condition to check character faction to show NPC dialog menu.
+- Fix reset item not consumed.
+- Fix invalid warp position while `GameInstance` → `currentPositionSaveMode` is `UseRespawnPosition`.
+- Fix multi hit animation works incorrectly.
+
 ## 1.50c
 - Add `BuffToTarget` to `Skill` → `SkillBuffType`, if skill isn't attack skill, will buff to selected target
 - Add `Toggle` to `Skill` → `SkillBuffType`, skill's buff will be remove if already applied to skill user
