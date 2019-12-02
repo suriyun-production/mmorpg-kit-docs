@@ -9,31 +9,9 @@
   - [Game Instance and relates data](pages/102-game-instance-and-relates-data)
   - [Game Database](pages/103-game-database)
   - [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
-  - [Items](pages/006-items-equipment-armor-weapon-potion-ammo)
-  - [Item Drop](pages/007-item-drops-item-drop-entity)
-  - [Buildings](pages/008-building-building-item-building-entity-building-material-building-area)
-  - [Skills](pages/009-skills)
-  - [Quests](pages/010-quests)
-  - [Warp Portals](pages/011-warp-portals)
-  - [Harvestables](pages/012-harvestable-harvestable-data-harvestable-entity-harvestable-spawn-area)
-  - [How to prepare Character Model + Entity](pages/013-character-model-entity-player-character-entity-monster-character-entity-npc-entity)
-  - [Character Animation](pages/014-character-animation)
-  - [How to add NPCs](pages/015-npcs-npc-dialog-npc-entity-npc-database)
-  - [NPC Workflows](pages/049-npc-workflows)
-  - [How to add Monster Characters](pages/016-monsters-monster-character-monster-spawn-area)
-  - [How to add Player Characters](pages/017-player-characters)
-  - [Damage Info](pages/018-damage-info-melee-damage-missile-damage-missile-damage-entit)
-  - [How to add Map](pages/019-map-info)
-  - [Party / Guild Settings](pages/020-party-guild-settings-socialsystemsetting)
-  - [In-App Purchasing](pages/021-in-app-purchasing)
-  - [Customize UIs](pages/022-customize-uis)
-  - [Customize Gameplay rules / Another settings](pages/023-customize-uis-gameplay-rules-another-settings)
-  - [Chat Configs](pages/024-chat-configs)
-  - [How to change controller](pages/046-how-to-change-controller)
-  - [How to change input](pages/047-how-to-change-input)
-  - [FPS gameplay](pages/051-fps-gameplay)
-  - [Mobile platform](pages/052-mobile-platform)
-  - [Localization](pages/053-localization)
+
+- Player Character and Monster
+
   - [Character Model preparation](pages/105-character-model)
   - [Animator Character Model](pages/108-animator-character-model)
   - [Animation Character Model](pages/107-animation-character-model)
@@ -41,6 +19,62 @@
   - [Action Animation](pages/110-action-animation)
   - [Character Model 2D](pages/109-character-model-2d)
   - [Animation Clip 2D and Action Animation 2D](pages/111-animation-clip-2d)
+  - [How to prepare Character Model + Entity (Character Model / Player Character Entity / Monster Character Entity / Npc Entity)](pages/013-character-model-entity-player-character-entity-monster-character-entity-npc-entity)
+  - [Character Animation](pages/014-character-animation)
+  - [How to add Monster Characters (Monster Character Entity / Monster Character / Monster Spawn Area)](pages/016-monsters-monster-character-monster-spawn-area)
+  - [How to add Player Characters (Player Character Entity / Player Character)](pages/017-player-characters)
+
+- NPC
+  - [How to add NPCs (Npc Dialog / Npc Entity / Npc Database)](pages/015-npcs-npc-dialog-npc-entity-npc-database)
+  - [NPC Workflows](pages/049-npc-workflows)
+
+- Quest
+  - [Quests](pages/010-quests)
+
+- Skill
+  - [Skills](pages/009-skills)
+
+- Item
+
+  - [Item Drop (Item Drop Entity)](pages/007-item-drops-item-drop-entity)
+  - [How to create Junk Item](pages/112-create-junk-item.md)
+  - [How to create Armor Item](pages/113-create-armor-item.md)
+  - [How to create Weapon Item](pages/114-create-weapon-item.md)
+  - [How to create Shield Item](pages/115-create-shield-item.md)
+  - [How to create Potion Item](pages/116-create-potion-item.md)
+  - [How to create Ammo Item](pages/117-create-ammo-item.md)
+  - [How to create Building Item](pages/118-create-building-item.md)
+  - [How to create Pet Item](pages/119-create-pet-item.md)
+  - [How to create Socket Enhancer Item](pages/120-create-socket-enhancer-item.md)
+  - [How to create Mount Item](pages/121-create-mount-item.md)
+  - [How to create Attribute Increase Item](pages/122-create-attribute-increase-item.md)
+  - [How to create Attribute Reset Item](pages/123-create-attribute-reset-item.md)
+  - [How to create Skill Item](pages/124-create-skill-item.md)
+  - [How to create Skill Learn Item](pages/125-create-skill-learn-item.md)
+  - [How to create Skill Reset Item](pages/126-create-skill-reset-item.md)
+  - [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info-melee-damage-missile-damage-missile-damage-entit)
+
+- Map
+
+  - [How to add Map (Map Info)](pages/019-map-info)
+  - [Warp Portals (Warp Portal Entity / Warp Portal Database)](pages/011-warp-portals)
+  - [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
+  - [Harvestables (Harvestable Data / Harvestable Entity / Harvestable Spawn Area)](pages/012-harvestable-harvestable-data-harvestable-entity-harvestable-spawn-area)
+
+- Gameplay
+
+  - [Customize Gameplay rules / Another settings](pages/023-customize-uis-gameplay-rules-another-settings)
+  - [Party / Guild Settings (SocialSystemSetting)](pages/020-party-guild-settings-socialsystemsetting)
+  - [How to change controller](pages/046-how-to-change-controller)
+  - [How to change input](pages/047-how-to-change-input)
+  - [FPS gameplay](pages/051-fps-gameplay)
+  - [Mobile platform](pages/052-mobile-platform)
+
+- Etc
+  - [In-App Purchasing](pages/021-in-app-purchasing)
+  - [Customize UIs](pages/022-customize-uis)
+  - [Chat Configs](pages/024-chat-configs)
+  - [Localization](pages/053-localization)
 
 - MMO Content
 
@@ -58,7 +92,6 @@
   - [How to integrate Google Play Login](pages/034-how-to-integrate-google-play-login)
 
 - Dedication Guide
-
   - [Digital Ocean](dedicates/digitalocean)
 
 - 2D Content
@@ -73,8 +106,4 @@
 - Troubleshooting
 
   - [Common troubleshooting steps](pages/054-troubleshooting-steps)
-
-- Version Changes/Migration
-
-  - [1.46 — Updates](pages/055-1-46-updates)
   

@@ -1,0 +1,1 @@
+- `Equipment Models` set mesh or skinned mesh prefab which you want it to be instantiated in gameplay scene to represend equipped item, you also able to `EquipmentEntity` to the prefab to changes mesh's materials based on item level (more item level may have brighter glow materials).
