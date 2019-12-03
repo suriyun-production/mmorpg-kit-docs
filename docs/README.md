@@ -38,7 +38,14 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Quests](pages/010-quests)
 
 #### Skill
-*   [Skills](pages/009-skills)
+*   [How to create Passive Skill](pages/127-create-passive-skill.md)
+*   [How to create Buff Skill](pages/128-create-buff-skill.md)
+*   [How to create Summon Skill](pages/129-create-summon-skill.md)
+*   [How to create Mount Skill](pages/130-create-mount-skill.md)
+*   [How to create Attack Skill](pages/131-create-attack-skill.md)
+*   [How to create Craft Skill](pages/132-create-craft-skill.md)
+*   [How to create Area Buff Skill](pages/133-create-area-buff-skill.md)
+*   [How to create Area Attack Skill](pages/134-create-area-attack-skill.md)
 
 #### Item
 
