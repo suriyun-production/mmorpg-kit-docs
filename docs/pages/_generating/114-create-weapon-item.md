@@ -22,7 +22,8 @@ There are following configs for `Weapon Item`
 
 - `Weapon Type` this is type of this weapon item, you may create sword, axe, bow and so on, up to you. Every item type contains 
     * `Equip Type` if `Equip Type` is `One Hand` it will be able to equip to main-hand only character will still able to equip shield, `One Hand Can Dual` will be able to equip to both main-hand and off-hand and also able to equip to both hands at same time, `Two Hand` will be able to equip to main-hand only character will not able to equip shield. 
-    * `Damage Info` contains info of how weapon applies damage to other characters. `Effectiveness Attributes` weapon can increase more damage based on these attributes for example if `STR` effectiveness is 0.1, the character has 50 `STR` then weapon damage will increase by 50 * 0.1 = 5. 
+    * `Damage Info` contains info of how weapon applies damage to other characters ([See more](pages/018-damage-info ':target=__blank')). 
+    * `Effectiveness Attributes` weapon can increase more damage based on these attributes ([See more](pages/104-character-stats-and-relates-data?id=attribute ':target=__blank')). 
     * `Ammo` is type of ammo which required to use to attack, leave this is be empty if weapon doesn't required ammo. 
     
     You can create weapon type by right click in `Project` tab then select `Create` → `Create GameData` → `Weapon Type`
