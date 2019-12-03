@@ -8,10 +8,11 @@
   - [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
   - [Game Instance and relates data](pages/102-game-instance-and-relates-data)
   - [Game Database](pages/103-game-database)
+
+- Character and Monster
+
   - [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
-
-- Player Character and Monster
-
+  - [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info)
   - [Character Model preparation](pages/105-character-model)
   - [Animator Character Model](pages/108-animator-character-model)
   - [Animation Character Model](pages/107-animation-character-model)
@@ -52,7 +53,6 @@
   - [How to create Skill Item](pages/124-create-skill-item.md)
   - [How to create Skill Learn Item](pages/125-create-skill-learn-item.md)
   - [How to create Skill Reset Item](pages/126-create-skill-reset-item.md)
-  - [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info-melee-damage-missile-damage-missile-damage-entit)
 
 - Map
 
