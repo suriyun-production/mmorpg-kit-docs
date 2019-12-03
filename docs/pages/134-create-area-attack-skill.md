@@ -14,7 +14,8 @@ There are following configs
 - `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
 - `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
-- `Icon` is icon which represent item appearance- `Max Level` max level that character can learn this skill
+- `Icon` is icon which represent item appearance
+- `Max Level` max level that character can learn this skill
 - `Move Speed Rate While Using Skill` this value will multiplies with character move speed stats while character is using this skill, set this to 0 if you want to make character don't move while using this skill. This will be in-use with active skills and craft s only.
 - `Skill Cast Effects` collection of effects while casting skill (before activate).
 - `Cast Duration` casting skill duration (before activate). This will be in-use with active skills and craft skills.

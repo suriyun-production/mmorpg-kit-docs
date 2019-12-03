@@ -11,6 +11,7 @@ After the skill created. Set its name, its name must be unique unlike other data
 There are following configs
 
 !INCLUDE "./game-data/_game-data-generic-config.md"
+
 !INCLUDE "./game-data/_skill-generic-config.md"
 
 - `Cast Distance` is distance from skill caster to aim position.
