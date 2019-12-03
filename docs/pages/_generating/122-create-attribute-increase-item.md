@@ -1,10 +1,10 @@
 # How to create Attribute Increase Item
 
-!INCLUDE "../game-data/_item-create-scriptable-object.md"
+!INCLUDE "./game-data/_item-create-scriptable-object.md"
 
 There are following configs
 
-!INCLUDE "../game-data/_game-data-generic-config.md"
+!INCLUDE "./game-data/_game-data-generic-config.md"
 
 Then we're going to create `Attribute Increase Item` so set `Item Type` to `Attribute Increase`
 
@@ -12,7 +12,7 @@ Then we're going to create `Attribute Increase Item` so set `Item Type` to `Attr
 
 There are following configs for `Attribute Increase Item`
 
-!INCLUDE "../game-data/_item-generic-config.md"
+!INCLUDE "./game-data/_item-generic-config.md"
 
 ## Attribute Configs
 
@@ -22,4 +22,4 @@ There are following configs for `Attribute Increase Item`
 
 That's an configs for `Attribute Increase Item`
 
-!INCLUDE "../game-data/_game-data-put-to-database.md"
+!INCLUDE "./game-data/_game-data-put-to-database.md"

@@ -1,10 +1,10 @@
 # How to create Weapon Item
 
-!INCLUDE "../game-data/_item-create-scriptable-object.md"
+!INCLUDE "./game-data/_item-create-scriptable-object.md"
 
 There are following configs
 
-!INCLUDE "../game-data/_game-data-generic-config.md"
+!INCLUDE "./game-data/_game-data-generic-config.md"
 
 Then we're going to create `Weapon Item` so set `Item Type` to `Weapon`
 
@@ -12,11 +12,11 @@ Then we're going to create `Weapon Item` so set `Item Type` to `Weapon`
 
 There are following configs for `Weapon Item`
 
-!INCLUDE "../game-data/_item-generic-config.md"
+!INCLUDE "./game-data/_item-generic-config.md"
 
 ## Equipment Configs
 
-!INCLUDE "../game-data/_item-equipment-config.md"
+!INCLUDE "./game-data/_item-equipment-config.md"
 
 ## Weapon Configs
 
@@ -38,7 +38,7 @@ There are following configs for `Weapon Item`
 
 ## Equipment Bonus Stats
 
-!INCLUDE "../game-data/_item-equipment-bonus-stats.md"
+!INCLUDE "./game-data/_item-equipment-bonus-stats.md"
 
 ## Fire Configs
 
@@ -48,11 +48,11 @@ There are following configs for `Weapon Item`
 
 ## Equipment Model
 
-!INCLUDE "../game-data/_item-equipment-model.md"
+!INCLUDE "./game-data/_item-equipment-model.md"
 - `Sub Equipment Models` this is like `Equipment Models` but for left-hand weapons (aka. off-hand :p).
 
 * * *
 
 That's an configs for `Weapon Item`
 
-!INCLUDE "../game-data/_game-data-put-to-database.md"
+!INCLUDE "./game-data/_game-data-put-to-database.md"

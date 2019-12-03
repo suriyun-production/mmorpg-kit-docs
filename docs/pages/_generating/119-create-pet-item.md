@@ -1,10 +1,10 @@
 # How to create Pet Item
 
-!INCLUDE "../game-data/_item-create-scriptable-object.md"
+!INCLUDE "./game-data/_item-create-scriptable-object.md"
 
 There are following configs
 
-!INCLUDE "../game-data/_game-data-generic-config.md"
+!INCLUDE "./game-data/_game-data-generic-config.md"
 
 Then we're going to create `Pet Item` so set `Item Type` to `Pet`
 
@@ -12,7 +12,7 @@ Then we're going to create `Pet Item` so set `Item Type` to `Pet`
 
 There are following configs for `Pet Item`
 
-!INCLUDE "../game-data/_item-generic-config.md"
+!INCLUDE "./game-data/_item-generic-config.md"
 
 ## Pet Configs
 
@@ -22,4 +22,4 @@ There are following configs for `Pet Item`
 
 That's an configs for `Pet Item`
 
-!INCLUDE "../game-data/_game-data-put-to-database.md"
+!INCLUDE "./game-data/_game-data-put-to-database.md"

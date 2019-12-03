@@ -1,10 +1,10 @@
 # How to create Potion Item
 
-!INCLUDE "../game-data/_item-create-scriptable-object.md"
+!INCLUDE "./game-data/_item-create-scriptable-object.md"
 
 There are following configs
 
-!INCLUDE "../game-data/_game-data-generic-config.md"
+!INCLUDE "./game-data/_game-data-generic-config.md"
 
 Then we're going to create `Potion Item` so set `Item Type` to `Potion`
 
@@ -12,7 +12,7 @@ Then we're going to create `Potion Item` so set `Item Type` to `Potion`
 
 There are following configs for `Potion Item`
 
-!INCLUDE "../game-data/_item-generic-config.md"
+!INCLUDE "./game-data/_item-generic-config.md"
 
 ## Buff Configs
 
@@ -22,4 +22,4 @@ There are following configs for `Potion Item`
 
 That's an configs for `Potion Item`
 
-!INCLUDE "../game-data/_game-data-put-to-database.md"
+!INCLUDE "./game-data/_game-data-put-to-database.md"

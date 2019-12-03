@@ -1,10 +1,10 @@
 # How to create Armor Item
 
-!INCLUDE "../game-data/_item-create-scriptable-object.md"
+!INCLUDE "./game-data/_item-create-scriptable-object.md"
 
 There are following configs
 
-!INCLUDE "../game-data/_game-data-generic-config.md"
+!INCLUDE "./game-data/_game-data-generic-config.md"
 
 Then we're going to create `Armor Item` so set `Item Type` to `Armor`
 
@@ -12,11 +12,11 @@ Then we're going to create `Armor Item` so set `Item Type` to `Armor`
 
 There are following configs for `Armor Item`
 
-!INCLUDE "../game-data/_item-generic-config.md"
+!INCLUDE "./game-data/_item-generic-config.md"
 
 ## Equipment Configs
 
-!INCLUDE "../game-data/_item-equipment-config.md"
+!INCLUDE "./game-data/_item-equipment-config.md"
 
 ## Armor Configs
 
@@ -31,14 +31,14 @@ There are following configs for `Armor Item`
 
 ## Equipment Bonus Stats
 
-!INCLUDE "../game-data/_item-equipment-bonus-stats.md"
+!INCLUDE "./game-data/_item-equipment-bonus-stats.md"
 
 ## Equipment Model
 
-!INCLUDE "../game-data/_item-equipment-model.md"
+!INCLUDE "./game-data/_item-equipment-model.md"
 
 * * *
 
 That's an configs for `Armor Item`
 
-!INCLUDE "../game-data/_game-data-put-to-database.md"
+!INCLUDE "./game-data/_game-data-put-to-database.md"
