@@ -16,7 +16,7 @@ There are following configs for `Building Item`
 
 ## Building Configs
 
-- `Building Entity` the building entity which character will construct when use this item.
+- `Building Entity` the [building entity](pages/008-building-building-item-building-entity-building-material-building-area ':target=__blank') which character will construct when use this item.
 
 * * *
 
