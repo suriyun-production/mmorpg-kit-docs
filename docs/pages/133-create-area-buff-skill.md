@@ -22,7 +22,8 @@ There are following configs
 - `Available Weapons` if character equipped weapons that set in this list, character will be able to use this skill. Set this list to be empty, to make character able to use this skill while equip or not equip any weapons. This will be in-use with active skills and craft skills.
 - `Consume Mp` amount of Mp which required to use this skill. its `Base Amount` is amount of required Mp when skill level is 1. Its `Amount Increase Each Level` is increasing amount of required Mp when skill level > 0. This will be in-use with active skills and craft skills.
 - `Cooldown Duration` cooldown before allow to use skill next time. its `Base Amount` is duration when skill level is 1. Its `Amount Increase Each Level` is increasing duration when skill level > 0. This will be in-use with active skills and craft skills.
-- `Requirement` is requirement for level up this skill. if character hasn't pass this requirement. it will not able to level up this skill.- `Cast Distance` is distance from skill caster to aim position.
+- `Requirement` is requirement for level up this skill. if character hasn't pass this requirement. it will not able to level up this skill.
+- `Cast Distance` is distance from skill caster to aim position.
 - `Area Duration` is duration that the area will be appears.
 - `Apply Duration` is duration that the area will apply buff to characters.
 - `Target Object Prefab` is the prefab which will be instantiated at aim position while aiming before cast the skill.

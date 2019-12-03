@@ -12,6 +12,7 @@ There are following configs
 
 !INCLUDE "./game-data/_game-data-generic-config.md"
 !INCLUDE "./game-data/_skill-generic-config.md"
+
 - `Cast Distance` is distance from skill caster to aim position.
 - `Area Duration` is duration that the area will be appears.
 - `Apply Duration` is duration that the area will apply buff to characters.
