@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)
-================================================================================
+# Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)
 
 Damage Info is part of Weapon Type / Skill, use it to set how weapon / skill apply damage.
 
