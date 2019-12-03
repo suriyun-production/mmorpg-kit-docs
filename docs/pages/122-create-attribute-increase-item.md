@@ -32,7 +32,7 @@ You can create item refine by right click in `Project` tab then select `Create` 
 ![](../images/items/004.png)
 ## Attribute Configs
 
-- `Attribute Amount` the attribute with amount which will be increased to character when use this item.
+- `Attribute Amount` the [attribute](pages/104-character-stats-and-relates-data?id=attribute ':target=__blank') with amount which will be increased to character when use this item.
 
 * * *
 

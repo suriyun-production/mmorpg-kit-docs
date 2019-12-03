@@ -13,3 +13,11 @@ markdown-pp 123-create-attribute-reset-item.md -o ../123-create-attribute-reset-
 markdown-pp 124-create-skill-item.md -o ../124-create-skill-item.md
 markdown-pp 125-create-skill-learn-item.md -o ../125-create-skill-learn-item.md
 markdown-pp 126-create-skill-reset-item.md -o ../126-create-skill-reset-item.md
+markdown-pp 127-create-passive-skill.md -o ../127-create-passive-skill.md
+markdown-pp 128-create-buff-skill.md -o ../128-create-buff-skill.md
+markdown-pp 129-create-summon-skill.md -o ../129-create-summon-skill.md
+markdown-pp 130-create-mount-skill.md -o ../130-create-mount-skill.md
+markdown-pp 131-create-attack-skill.md -o ../131-create-attack-skill.md
+markdown-pp 132-create-craft-skill.md -o ../132-create-craft-skill.md
+markdown-pp 133-create-area-buff-skill.md -o ../133-create-area-buff-skill.md
+markdown-pp 134-create-area-attack-skill.md -o ../134-create-area-attack-skill.md

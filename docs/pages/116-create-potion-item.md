@@ -32,7 +32,8 @@ You can create item refine by right click in `Project` tab then select `Create` 
 ![](../images/items/004.png)
 ## Buff Configs
 
-- `Buff` buff with an stats and recovery stats. For example you can create HP recovery potion by set `Recovery Hp` or create temporary increase `STR` potion by set `Increase Attributes`.
+- `Buff` applying buff when character use this item.
+
 
 * * *
 

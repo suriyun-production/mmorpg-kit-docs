@@ -16,7 +16,9 @@ There are following configs for `Potion Item`
 
 ## Buff Configs
 
-- `Buff` buff with an stats and recovery stats. For example you can create HP recovery potion by set `Recovery Hp` or create temporary increase `STR` potion by set `Increase Attributes`.
+- `Buff` applying buff when character use this item.
+
+!INCLUDE "./game-data/_buff.md"
 
 * * *
 
