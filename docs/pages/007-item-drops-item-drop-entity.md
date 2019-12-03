@@ -1,7 +1,4 @@
-* * *
-
-Item Drops (Item Drop Entity)
-=============================
+# Item Drops (Item Drop Entity)
 
 Every item drop objects will be spawned as **Item Drop Entity** around the character, we have to prepare just one **Item Drop Entity** for all item drop objects but we will have to prepare model objects that will be spawned as **Item Drop Entity** child
 

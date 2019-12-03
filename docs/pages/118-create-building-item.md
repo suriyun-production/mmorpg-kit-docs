@@ -32,7 +32,7 @@ You can create item refine by right click in `Project` tab then select `Create` 
 ![](../images/items/004.png)
 ## Building Configs
 
-- `Building Entity` the building entity which character will construct when use this item.
+- `Building Entity` the [building entity](pages/008-building-building-item-building-entity-building-material-building-area ':target=__blank') which character will construct when use this item.
 
 * * *
 
