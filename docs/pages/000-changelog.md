@@ -1,3 +1,12 @@
+## 1.51
+- Implement character entity's `Pitch`, it will be updated by controller while aiming up or down.
+- Add `CharacterPitchIK` component, attach it to character entity to update character's aim pitch by any bones.
+- Fix player's character stop attacking enemy when it moved.
+- Fix invalid character summon serialize and deserialize.
+- Fix invalid `UICharacterQuests` component → `HideCompleteQuest ` conditions
+- Fix when summoned monsters kills quest monsters, quest's task won't counting up.
+- Fix when damge debuffs kills quest monsters, quest's task won't counting up.
+
 ## 1.50d
 - Implement root motion support to `RigidBodyEntityMovement`, see `useRootMotionForMovement`, `useRootMotionForAirMovement`, `useRootMotionForJump` and `useRootMotionForFall`.
 - Implement stamina to demo, press `Left Shift` to toggle sprint. For shooter controller hold `Left Shift` to sprint.
