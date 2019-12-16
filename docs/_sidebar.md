@@ -13,17 +13,12 @@
 
   - [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
   - [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info)
-  - [Character Model preparation](pages/105-character-model)
-  - [Animator Character Model](pages/108-animator-character-model)
-  - [Animation Character Model](pages/107-animation-character-model)
-  - [Character Model](pages/106-legacy-character-model)
-  - [Action Animation](pages/110-action-animation)
-  - [Character Model 2D](pages/109-character-model-2d)
-  - [Animation Clip 2D and Action Animation 2D](pages/111-animation-clip-2d)
-  - [How to prepare Character Model + Entity (Character Model / Player Character Entity / Monster Character Entity / Npc Entity)](pages/013-character-model-entity-player-character-entity-monster-character-entity-npc-entity)
-  - [Character Animation](pages/014-character-animation)
-  - [How to add Monster Characters (Monster Character Entity / Monster Character / Monster Spawn Area)](pages/016-monsters-monster-character-monster-spawn-area)
-  - [How to add Player Characters (Player Character Entity / Player Character)](pages/017-player-characters)
+  - [How to create Player Character](pages/135-player-character-entity.md)
+  - [How to create Monster Character](pages/136-monster-character-entity.md)
+  - [About Character Model](pages/106-character-model)
+  - [About Animator Character Model](pages/108-animator-character-model)
+  - [About Animation Character Model](pages/107-animation-character-model)
+  - [About Character Model 2D](pages/109-character-model-2d)
 
 - NPC
   - [How to add NPCs (Npc Dialog / Npc Entity / Npc Database)](pages/015-npcs-npc-dialog-npc-entity-npc-database)

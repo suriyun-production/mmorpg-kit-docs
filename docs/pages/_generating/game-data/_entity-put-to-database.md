@@ -1,0 +1,1 @@
+After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.

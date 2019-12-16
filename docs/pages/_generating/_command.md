@@ -1,3 +1,7 @@
+markdown-pp 106-character-model.md -o ../106-character-model.md
+markdown-pp 107-animation-character-model.md -o ../107-animation-character-model.md
+markdown-pp 108-animator-character-model.md -o ../108-animator-character-model.md
+markdown-pp 109-character-model-2d.md -o ../109-character-model-2d.md
 markdown-pp 112-create-junk-item.md -o ../112-create-junk-item.md
 markdown-pp 113-create-armor-item.md -o ../113-create-armor-item.md
 markdown-pp 114-create-weapon-item.md -o ../114-create-weapon-item.md
@@ -21,3 +25,5 @@ markdown-pp 131-create-attack-skill.md -o ../131-create-attack-skill.md
 markdown-pp 132-create-craft-skill.md -o ../132-create-craft-skill.md
 markdown-pp 133-create-area-buff-skill.md -o ../133-create-area-buff-skill.md
 markdown-pp 134-create-area-attack-skill.md -o ../134-create-area-attack-skill.md
+markdown-pp 135-player-character-entity.md -o ../135-player-character-entity.md
+markdown-pp 136-monster-character-entity.md -o ../136-monster-character-entity.md
