@@ -62,6 +62,7 @@
   - [Warp Portals (Warp Portal Entity / Warp Portal Database)](pages/011-warp-portals)
   - [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
   - [Harvestables (Harvestable Data / Harvestable Entity / Harvestable Spawn Area)](pages/012-harvestable-harvestable-data-harvestable-entity-harvestable-spawn-area)
+  - [Monster Spawn Area](pages/137-monster-spawn-area.md)
 
 - Gameplay
 
