@@ -1,21 +1,6 @@
 # How to create Player Character Entity
 
-If your project is 3D game, you have to drag skinned mesh to empty scene then add `Player Character Entity` component. If your project is 2D, you can create empty game object then add `Player Character Entity` component.
-
-![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
-
-Then set an transforms / containers
-
-![](https://cdn-images-1.medium.com/max/1600/0*sN-YHUYMDuz1099a)
-
-*   `Combat Text Transform` this is transform where it will instantiates an damage texts, HP recovery texts and so on, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
-*   `Opponent Aim Transform` this is transform where other characters will aim to while attacking, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use `Combat Text Transform`.
-*   `Melee Damage Transform` this is transform where it will applying melee damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
-*   `Missile Damage Transform` this is transform where it will applying missile damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use `Melee Damage Transform`. This can be overrided by `Equipment Entity` → `Missile Damage Transform`.
-*   `Character UI Transform` this is transform where it will instantiates an UIs which relates to character such as character name, guild name, HP gage, MP gage and so on, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
-*   `Mini Map UI Transform` this is transform where it will instantiates mini-map UIs and also set its layer to MiniMap, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
-*   `Character Title` is title which showing in character create scene.
-*   `Player Characters` list of `Player Character` data which showing in character create scene which allow players to select. You can assume that this is character classes. **This is important you must have at least 1 `Player Character` in this list**. You can see more about `Player Character` in next section.
+Before create new player character entity, you should know about `Player Character` game data first.
 
 ### Player Character
 
@@ -44,7 +29,24 @@ There are following configs
 *   `Armor Items` item which character will equipped when create new character.
 *   `Start Map` map which character will spawn when create new character. If this is empty, it will use first map in database.
 
-After finished setup, then set it to `Player Characters` list.
+* * *
+
+If your project is 3D game, you have to drag skinned mesh to empty scene then add `Player Character Entity` component. If your project is 2D, you can create empty game object then add `Player Character Entity` component.
+
+![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
+
+Then set an transforms / containers
+
+![](https://cdn-images-1.medium.com/max/1600/0*sN-YHUYMDuz1099a)
+
+*   `Combat Text Transform` this is transform where it will instantiates an damage texts, HP recovery texts and so on, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
+*   `Opponent Aim Transform` this is transform where other characters will aim to while attacking, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use `Combat Text Transform`.
+*   `Melee Damage Transform` this is transform where it will applying melee damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
+*   `Missile Damage Transform` this is transform where it will applying missile damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use `Melee Damage Transform`. This can be overrided by `Equipment Entity` → `Missile Damage Transform`.
+*   `Character UI Transform` this is transform where it will instantiates an UIs which relates to character such as character name, guild name, HP gage, MP gage and so on, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
+*   `Mini Map UI Transform` this is transform where it will instantiates mini-map UIs and also set its layer to MiniMap, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
+*   `Character Title` is title which showing in character create scene.
+*   `Player Characters` list of `Player Character` data which showing in character create scene which allow players to select. You can assume that this is character classes. **This is important you must have at least 1 `Player Character` in this list**.
 
 ![](../images/new_player_character_entity_setting.png)
 
@@ -61,6 +63,18 @@ Then setup character model component based on dimension (2D or 3D) and animation
 ## 2D Character Model
 
 *   **[Character Model 2D](pages/109-character-model-2d ':target=__blank')**, This is character model for 2D game, it's use `Animation Clip 2D` to manage animation's frames
+### Animation while mount
+
+When add `Player Character Entity` to game object you will see `Character Model Manager`, which will manage animation specific by `Vehicle Type` and `Seat`.
+
+If you want to make them play animation while mount horse correctly, you have to add new character model component for handle that animations. I recommend to create new child transform then add that component for ease of management.
+
+![](../images/1-46-3.png)
+
+ Then back to character entity. In `Character Model Manager` there is `Vehicle Models` add new entry for specific `Vehicle Type` and set `Models For Each Seats` by the new character model that mentioned above.
+
+![](../images/1-46-4.png)
+
 * * *
 
 Then setup entity movement component based on dimension (2D or 3D) and animation type.

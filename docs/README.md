@@ -29,7 +29,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Mount Entity](pages/138-mount-entity)
 
 #### NPC
-*   [How to add NPCs (Npc Dialog / Npc Entity / Npc Database)](pages/015-npcs-npc-dialog-npc-entity-npc-database)
+*   [How to create Npc](pages/139-npc-entity)
 *   [NPC Workflows](pages/049-npc-workflows)
 
 #### Quest

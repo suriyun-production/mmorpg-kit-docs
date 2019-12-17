@@ -1,13 +1,6 @@
 # How to create Player Character Entity
 
-If your project is 3D game, you have to drag skinned mesh to empty scene then add `Player Character Entity` component. If your project is 2D, you can create empty game object then add `Player Character Entity` component.
-
-![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
-
-!INCLUDE "./game-data/_character-entity-generic-config.md"
-
-*   `Character Title` is title which showing in character create scene.
-*   `Player Characters` list of `Player Character` data which showing in character create scene which allow players to select. You can assume that this is character classes. **This is important you must have at least 1 `Player Character` in this list**. You can see more about `Player Character` in next section.
+Before create new player character entity, you should know about `Player Character` game data first.
 
 ### Player Character
 
@@ -33,7 +26,16 @@ There are following configs
 *   `Armor Items` item which character will equipped when create new character.
 *   `Start Map` map which character will spawn when create new character. If this is empty, it will use first map in database.
 
-After finished setup, then set it to `Player Characters` list.
+* * *
+
+If your project is 3D game, you have to drag skinned mesh to empty scene then add `Player Character Entity` component. If your project is 2D, you can create empty game object then add `Player Character Entity` component.
+
+![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
+
+!INCLUDE "./game-data/_character-entity-generic-config.md"
+
+*   `Character Title` is title which showing in character create scene.
+*   `Player Characters` list of `Player Character` data which showing in character create scene which allow players to select. You can assume that this is character classes. **This is important you must have at least 1 `Player Character` in this list**.
 
 ![](../images/new_player_character_entity_setting.png)
 

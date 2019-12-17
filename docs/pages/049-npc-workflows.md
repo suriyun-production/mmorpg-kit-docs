@@ -1,11 +1,8 @@
-* * *
+# NPC Workflows
 
-NPC Workflows
-==============
+When player interactห an NPC entities, the client will send activate message to server.
 
-When player interact an NPC entities, the client will send activate message to server.
-
-Then, server will validate `NPC Entity` → `Start Dialog`, if it is existed server will send show dialog message with dialog id to the client.
+Then, server will validate `NPC Entity` → `Start Dialog`. If it is existed, server will send show dialog message with dialog id to the client.
 
 After that, if client have the dialog (client have same data with server) the dialog will be shown.
 

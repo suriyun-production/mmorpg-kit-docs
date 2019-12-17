@@ -1,14 +1,6 @@
 # How to create Monster Character Entity
 
-If your project is 3D game, you have to drag skinned mesh to empty scene then add `Monster Character Entity` component. If your project is 2D, you can create empty game object then add `Monster Character Entity` component.
-
-![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
-
-!INCLUDE "./game-data/_character-entity-generic-config.md"
-
-*   `Monster Character` this is game data which contains monster stats, skills, drop info. You can see more about `Monster Character` in next section.
-*   `Destroy Delay` this is delay before the entity will be destroyed after dead, can use it as to play dead animation before destroy the entity.
-*   `Destroy Respawn Delay` this is delay before the entity will be respawned after dead.
+Before create new monster character entity, you should know about `Player Character` game data first.
 
 ### Monster Character
 
@@ -43,7 +35,17 @@ There are following configs
 *   `Random Items` items that character will gain when kill the monster.
 *   `Item Drop Table` this is like `Random Items` can create by right click in `Project` tab → `Create` → `Create GameData` → `Item Drop Table`.
 
-After finished setup, then set it to `Monster Character`.
+* * *
+
+If your project is 3D game, you have to drag skinned mesh to empty scene then add `Monster Character Entity` component. If your project is 2D, you can create empty game object then add `Monster Character Entity` component.
+
+![](https://cdn-images-1.medium.com/max/1600/0*0X6gBEW0c7ZbmSOw)
+
+!INCLUDE "./game-data/_character-entity-generic-config.md"
+
+*   `Monster Character` this is game data which contains monster stats, skills, drop info.
+*   `Destroy Delay` this is delay before the entity will be destroyed after dead, can use it as to play dead animation before destroy the entity.
+*   `Destroy Respawn Delay` this is delay before the entity will be respawned after dead.
 
 ![](../images/new_monster_character_entity_setting.png)
 
