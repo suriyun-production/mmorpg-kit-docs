@@ -27,10 +27,32 @@ Okay, you known about `Npc Dialog Graph` and `Npc Dialog` then next section is a
 
 If your project is 3D game, you have to drag skinned mesh to empty scene then add `Npc Entity` component. If your project is 2D, you can create empty game object then add `Npc Entity` component.
 
-Then set created `Npc Dialog Graph` to `Graph` field.
+* * *
+
+!INCLUDE "./game-data/_entity-put-to-database.md"
+
+* * *
+
+### How to add Npcs directly to the scene
+
+You can add Npcs directly in game scene to make it appear in map scene, to do it you have to prepare `Npc Entity` then drag prepared `Npc Entity` to the map scene.
+
+Then set created npc dialog graph to `Graph`.
 
 ![](../images/npcs/005.png)
 
 * * *
 
-!INCLUDE "./game-data/_entity-put-to-database.md"
+### How to add Npcs to Npc Database to spawn to the scene later
+
+To add Npcs via Npc Database you have to prepare `Npc Entity` prefab and `Npc Dialog Graph`.
+
+About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create → Create GameDatabase → Npc Database`.
+
+![](../images/npcs/006.png)
+
+Then in `Npc Database` you can set map which you wish to spawn an Npcs then each map you can set Npc's position, rotation, `Npc Entity` and `Graph`.
+
+![](../images/npcs/007.png)
+
+Then set `Npc Database` to `Game Instance → Npc Database` in init scene.
