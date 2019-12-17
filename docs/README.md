@@ -127,7 +127,3 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [2D AI](https://github.com/insthync/UnityMultiplayerARPG_2DAI)
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
-
-#### Version Changes/Migration
-
-*   [1.46 — Updates](pages/055-1-46-updates)
