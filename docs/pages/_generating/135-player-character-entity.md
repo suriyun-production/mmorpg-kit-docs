@@ -41,6 +41,18 @@ After finished setup, then set it to `Player Characters` list.
 
 !INCLUDE "./game-data/_character-model-selection.md"
 
+### Animation while mount
+
+When add `Player Character Entity` to game object you will see `Character Model Manager`, which will manage animation specific by `Vehicle Type` and `Seat`.
+
+If you want to make them play animation while mount horse correctly, you have to add new character model component for handle that animations. I recommend to create new child transform then add that component for ease of management.
+
+![](../images/1-46-3.png)
+
+ Then back to character entity. In `Character Model Manager` there is `Vehicle Models` add new entry for specific `Vehicle Type` and set `Models For Each Seats` by the new character model that mentioned above.
+
+![](../images/1-46-4.png)
+
 * * *
 
 !INCLUDE "./game-data/_entity-movement-selection.md"

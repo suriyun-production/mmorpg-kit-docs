@@ -25,6 +25,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [About Animation Character Model](pages/107-animation-character-model)
 *   [About Character Model 2D](pages/109-character-model-2d)
 
+#### Vehicle and Mount
+*   [Mount Entity](pages/138-mount-entity)
+
 #### NPC
 *   [How to add NPCs (Npc Dialog / Npc Entity / Npc Database)](pages/015-npcs-npc-dialog-npc-entity-npc-database)
 *   [NPC Workflows](pages/049-npc-workflows)
