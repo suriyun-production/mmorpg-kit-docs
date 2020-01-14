@@ -1,3 +1,22 @@
+## 1.52
+- Implement character crouch movement (Can test by press `Left Control`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crouching`.
+- Implement character crawl movement (Can test by press `Z`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crawling`.
+- Implement character swimming movement to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crouching`. You can create water area by set layer to `Water` and set collider → `isTrigger` to `true`.
+- Add `Under Water Threshold` config to `Rigidbody Entity Movement`. Example of how it working: If character height is `1`, `Under Water Threshold` set to `0.5` and water height is `0.55`. Character will start swimming
+- Move `Movement Secure` config from entity movement components to game entity components.
+- Add `Auto Swim To Surface`, set this to `true` if you want character swim up to surface automatically, set this to `false` if you want character able to diving.
+- Add `Fps Hidding Objects` and `Fps Hidding Renderers` to game entity model, set game objects and renderers which you want to hide while view mode is FPS here.
+- Add clips configs to `Animator Character Model` and `Animation Character Model` for sprint, crouch, crawl and swimming state. So now you can set different clips for move and sprint state. And also add move animation speed rate configs for the cases that you still want to use same clips for move and sprint you can set `Sprint Anim Speed Rate` to make it play sprint animations more quickly.
+- Add `Fps Model Prefab` config to `Character Model Manager` set Fps hands character model prefab which will instantiate as child of gameplay camera.
+- Add `Fps Model Offsets` config to `Character Model Manager`. This is offsets between Fps hands character model and gameplay camera.
+- Add `Fps Camera Target Transform` config to game entity set transform where camera will following while view mode is FPS.
+- Add `Movement Collider Adjustment` component. Attach it to character entity to adjust capsule collider based on movement states.
+- Add `Movement Transform Adjustment` component. Attach it to character entity to adjust transform position based on movement states. I use this component to adjust game entity's `Fps Camera Target Transform`.
+- Add `Combat Text Distance` config to `Game Instance`, use it to limit distance to instantiates combat texts.
+- Fix invalid character direction in 2D mode.
+- Fix invalid missile trigger objects in 2D mode.
+- Fix invalid buffs duration count at clients.
+
 ## 1.51
 - Implement character entity's `Pitch`, it will be updated by controller while aiming up or down.
 - Add `CharacterPitchIK` component, attach it to character entity to update character's aim pitch by any bones.
