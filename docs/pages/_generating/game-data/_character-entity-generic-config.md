@@ -2,7 +2,9 @@ Then set an transforms / containers
 
 ![](https://cdn-images-1.medium.com/max/1600/0*sN-YHUYMDuz1099a)
 
-*   `Combat Text Transform` this is transform where it will instantiates an damage texts, HP recovery texts and so on, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
+*   `Camera Target Transform` this is transform for position which camera will look at and follow while playing in TPS view mode. You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
+*   `Fps Camera Target Transform` this is transform for position which camera will look at and follow while playing in FPS view mode. You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
+*   `Combat Text Transform` this is transform where it will instantiates an damage texts, HP recovery texts and so on, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
 *   `Opponent Aim Transform` this is transform where other characters will aim to while attacking, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use `Combat Text Transform`.
 *   `Melee Damage Transform` this is transform where it will applying melee damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
 *   `Missile Damage Transform` this is transform where it will applying missile damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use `Melee Damage Transform`. This can be overrided by `Equipment Entity` → `Missile Damage Transform`.
