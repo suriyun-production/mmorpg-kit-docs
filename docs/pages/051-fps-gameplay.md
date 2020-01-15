@@ -8,6 +8,10 @@ Set `ShooterCharacterController` prefab to `GameInstance` → `Default Controlle
 
 Done, that's it.
 
+* * *
+
+## Shooter Player Character Controller
+
 The `Shooter Player Character Controller` component contains following configs:
 
 *   `Mode` if this is `Adventure` character will always turn following to move input direction and move forward except when attack or use skill it will turn to camera forward, if this is `Combat` character will always turn following to camera forward and move forward or backward or strafe left or right following input direction.
