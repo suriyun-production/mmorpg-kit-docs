@@ -19,3 +19,9 @@ Then you have to set FPS hands model prefab to character entity, The character e
 ![](../images/fps-hands-model/4.png)
 
 Then set the `FPS Model Offsets` (in `Character Model Manager` component) it's offsets between instantiating Fps hands model and gameplay camera.
+
+* * *
+
+## FPS Hands Model Position
+
+While playing in FPS view mode, gameplay camera look at and follow the character entity → `Fps Camera Target Transform`. If character entity world position is `0, 1, 0` and fps gameplay camera's offsets (Set at `Shooter Player Character Controller` → `Fps Target Offset`) is `0, 0, 0`. Camera world position will be `0, 1, 0`. And if `Fps Model Offsets` is `0, 0, 0.25`, Instantiated FPS model's world position will be `0, 1, 0.25`.
