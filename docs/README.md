@@ -77,7 +77,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 #### Gameplay
 
 *   [Gameplay Rule](pages/023-gameplay-rule)
-*   [Party / Guild Settings (SocialSystemSetting)](pages/020-party-guild-settings-socialsystemsetting)
+*   [Party / Guild Settings (Social System Setting)](pages/020-social-system-setting)
 *   [How to change controller](pages/046-how-to-change-controller)
 *   [How to change input](pages/047-how-to-change-input)
 *   [FPS gameplay](pages/051-fps-gameplay)
