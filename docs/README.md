@@ -73,6 +73,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
 *   [Harvestables (Harvestable Data / Harvestable Entity / Harvestable Spawn Area)](pages/012-harvestable-harvestable-data-harvestable-entity-harvestable-spawn-area)
 *   [Monster Spawn Area](pages/137-monster-spawn-area.md)
+*   [Water Area](pages/140-water-area)
 
 #### Gameplay
 
