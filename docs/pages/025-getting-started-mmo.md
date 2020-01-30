@@ -1,9 +1,6 @@
-* * *
+# Getting Started (MMO)
 
-MMORPG KIT — Getting Started (MMO)
-==================================
-
-** **Before reading this you should read [Getting Started](https://medium.com/suriyun-production/mmorpg-kit-getting-started-singleplayer-lan-47f7ce16a0b1) first from step 1–2** **
+** **Before reading this you should read [Getting Started](pages/101-getting-started-singleplayer-lan) first from step 1–2** **
 
 * * *
 
