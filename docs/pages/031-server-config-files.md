@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Server Config Files
-================================
+# Server Config Files
 
 From version 1.26 you will able to set configs via config files there are following config files:
 
