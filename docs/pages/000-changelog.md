@@ -1,3 +1,14 @@
+## 1.53
+- Add item dismantle system, can dismantle an items to get items in sockets back and also can set `Item`'s dismantle config for returning items and gold when dismantle.
+- Add campfire entity, it's extended from storage entity with convert items configs. And also set convert items as fuel, if there is any convert item is fuel, campfire entity must have convert item in storage to turn on.
+- Fix character model changes equipment models too frequent.
+- Fix language selection set to default language when open language setting dialog.
+- Fix extra movement state not changes while game entity's movement secure is server authoritative.
+- Fix stamia decreasing while idle.
+- Fix character not harvesting an harvestable entities at first harvest animation.
+- Fix item losts after move item from storage.
+- Fix duplicating local-chat.
+
 ## 1.52c
 - Add new input to `ShooterPlayerCharacterController` to make it able to hold `E` while pointing on building entity to show building menu.
 - Rename `BaseVehicleEntity` class to `VehicleEntity` class, changed it from abstract class to non-abstract class and implements all functionality. Now developer can use `VehicleEntity` class instead of `MountEntity` class, `MountEntity` still derived from `VehicleEntity` class without non of any functionality changes for backward compatible.
