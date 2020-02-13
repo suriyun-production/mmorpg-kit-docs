@@ -65,6 +65,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to create Skill Item](pages/124-create-skill-item.md)
 *   [How to create Skill Learn Item](pages/125-create-skill-learn-item.md)
 *   [How to create Skill Reset Item](pages/126-create-skill-reset-item.md)
+*   [Checklist for equipment items](pages/141-checklist-for-equipment-items.md)
 
 #### Map
 
