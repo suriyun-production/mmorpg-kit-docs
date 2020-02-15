@@ -108,7 +108,15 @@ Choose **OAuth Client** then paste copied **SHA-1** and **Save**
 
 You will have to setup OAuth2 callback page, if you use PHP to serve your web you can use this [client](https://github.com/googleapis/google-api-php-client). You can find all client libraries from this [link](https://developers.google.com/identity/protocols/OAuth2WebServer)
 
-I also prepare codes which I've used for my game:
+I also prepare codes which I've used for my game
+
+If you're going to use my codes, you must setup PHP web-server 
+
+Then create web folder which you're going to use as OAuth callback page, for this example I'm going to create `oauth2callback` foloder.
+
+Then setup client library follow installation instruction from this [link](https://github.com/googleapis/google-api-php-client)
+
+After than create `index.php` inside created web folder and paste following codes:
 
 ```
 <?php
@@ -145,8 +153,6 @@ if (!isset($_GET['code'])) {
 ?>
 ```
 
-Then create folder in your web folder to place callback page. For this example I will create folder name `oauth2callback` then create `index.php` file and copy codes above.
-
 Then set URI in Console
 
 Go to API Console ([https://console.cloud.google.com/apis/](https://console.cloud.google.com/apis/)) choose your App project then go to **Credentials**
@@ -158,6 +164,10 @@ Then set **Authorised redirect URIs** in Web App platform and **Save**
 ![](../images/034/22.png)
 
 ![](../images/034/23.png)
+
+After than go back to previous page agian to download JSON, rename it to `client_secrets.json` (because I use this name in my codes above) and upload to the same place with `index.php`
+
+![](../images/034/24.png)
 
 * * *
 
