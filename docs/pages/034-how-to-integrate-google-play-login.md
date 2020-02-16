@@ -66,7 +66,7 @@ Then press **Setup**
 
 * * *
 
-## Setup Resource Defination
+## Setup Resource Definition
 
 Create **Events** or **Achievements** or **Leaderboards** then press Get resources button to copy export resources data
 
@@ -112,7 +112,7 @@ I also prepare codes which I've used for my game
 
 If you're going to use my codes, you must setup PHP web-server 
 
-Then create web folder which you're going to use as OAuth callback page, for this example I'm going to create `oauth2callback` foloder.
+Then create a web folder which you're going to use as OAuth callback page, for this example I'm going to create `oauth2callback` folder.
 
 Then setup client library follow installation instruction from this [link](https://github.com/googleapis/google-api-php-client)
 
@@ -165,7 +165,7 @@ Then set **Authorised redirect URIs** in Web App platform and **Save**
 
 ![](../images/034/23.png)
 
-After than go back to previous page agian to download JSON, rename it to `client_secrets.json` (because I use this name in my codes above) and upload to the same place with `index.php`
+After that go back to the previous page again to download JSON, rename it to `client_secrets.json` (because I use this name in my codes above) and upload to the same place with `index.php`
 
 ![](../images/034/24.png)
 
@@ -177,7 +177,7 @@ Then open your login scene (for the demo it is Home scene), add **Google Play Lo
 
 ![](../images/034/14.png)
 
-Then set an events when Login success / fail, the Demo I make it show character list after success
+Then set an event when Login success / fail, the Demo I make it show character list after the success
 
 Then in your Login with Google Play button set **Google Play Login** component → **On Click Google Play Login** at **On Click** event
 
