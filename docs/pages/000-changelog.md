@@ -1,4 +1,4 @@
-## 1.53b
+## 1.53b  (2020-02-25)
 - Add `dismantleFilter` setting to `GameInstance`.
 - Add `maxCharacterSaves` setting to `GameInstance` but does not validating with server when creating character yet. Just count characters after loaded and trigger `UICharacterList`'s events.
 - Add `eventOnAbleToCreateCharacter` event to `UICharacterList` which will be triggered when character count not reached `maxCharacterSaves` setting yet.
