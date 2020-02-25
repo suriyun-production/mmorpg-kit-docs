@@ -1,3 +1,24 @@
+## 1.53b
+- Add `dismantleFilter` setting to `GameInstance`.
+- Add `maxCharacterSaves` setting to `GameInstance` but does not validating with server when creating character yet. Just count characters after loaded and trigger `UICharacterList`'s events.
+- Add `eventOnAbleToCreateCharacter` event to `UICharacterList` which will be triggered when character count not reached `maxCharacterSaves` setting yet.
+- Add `eventOnNotAbleToCreateCharacter` event to `UICharacterList` which will be triggered when character count reached `maxCharacterSaves` setting.
+- Add `applyBuffToEveryone` config to `AreaBuffEntity`. If this is `TRUE`, buffs will apply to everyone including with an enemies.
+- Fix skills can not be used while controlling character with `PlayerCharacterController`.
+- Fix character move to center of enemy position while controlling character with `PlayerCharacterController`.
+- Fix `fpsHiddingObjects` and `fpsHiddingRenderers` not activated when switch back from `FPS` to `TPS`.
+- Fix movement problem while character's base move speed is 0.
+- Fix empty item slots were removed when equip item, drop item from inventory, use the item until it empty, refine item until it destroyed, sell an item, dismantle item, use ammo until it empty and so on.
+- WIP extendable item classes.
+### Removed files
+- GameEffectCollection.cs
+- Item_Dismantle.cs (Rename to BaseItem_Dismantle.cs)
+- Item_Refine.cs (Rename to BaseItem_Refine.cs)
+- Item_Repair.cs (Rename to BaseItem_Repair.cs)
+- Item_SocketEnhance.cs (Rename to BaseItem_SocketEnhance.cs)
+- SkillUtils.cs
+
+
 ## 1.53
 - Add item dismantle system, can dismantle an items to get items in sockets back and also can set `Item`'s dismantle config for returning items and gold when dismantle.
 - Add campfire entity, it's extended from storage entity with convert items configs. And also set convert items as fuel, if there is any convert item is fuel, campfire entity must have convert item in storage to turn on.
