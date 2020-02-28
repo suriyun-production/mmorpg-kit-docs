@@ -1,4 +1,30 @@
-## 1.53b  (2020-02-25)
+## 1.53c (2020-02-28)
+- Add `canRefineItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to refine item by does not have to talk to NPCs.
+- Add `canDismantleItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to dismantle item by does not have to talk to NPCs.
+- Add `pierceThroughEntities` setting to `DamageInfo`, set it more than 0 to allow raycast hit more than 1 character.
+- Add `startItems` setting to `PlayerCharacter`, it's like `GameInstance` → `startItems` but for specific character.
+- Make `UISceneGameplay` extendable (Add new base class: `BaseUISceneGameplay`).
+- Move UI events setup from `BasePlayerCharacterController` to `UISceneGameplay`.
+- Implement `ArmorItem` class (Implement `IArmorItem` interface).
+- Implement `ShieldItem` class (Implement `IShieldItem` interface).
+- Implement `WeaponItem` class (Implement `IWeaponItem` interface).
+- Implement `PotionItem` class (Implement `IPotionItem` interface).
+- Implement `BuildingItem` class (Implement `IBuildingItem` interface).
+- Implement `PetItem` class (Implement `IPetItem` interface).
+- Implement `MountItem` class (Implement `IMountItem` interface).
+- Implement `SkillItem` class (Implement `ISkillItem` interface).
+- Implement `JunkItem` class (Implement `IJunkItem` interface).
+- Implement `SocketEnhancerItem` class (Implement `ISocketEnhancerItem` interface).
+- Add `GameEntityModel` → `SetEffectContainersBySetters` dev extension invoker.
+- Add `BaseCharacterModel` → `SetEquipmentContainersBySetters` dev extension invoker.
+- Add `CharacterModel` → `SetAnimatorClipsForTest` dev extension invoker.
+- Add `AnimatorCharacterModel` → `SetAnimatorClipsForTest` dev extension invoker.
+- Add `AnimatorCharacterModel2D` → `SetAnimatorClipsForTest` dev extension invoker.
+- Fix storage items not updates while playing 2D.
+- Fix dismantle returning item amount not multiplies with dismantle item amount.
+
+
+## 1.53b (2020-02-25)
 - Add `dismantleFilter` setting to `GameInstance`.
 - Add `maxCharacterSaves` setting to `GameInstance` but does not validating with server when creating character yet. Just count characters after loaded and trigger `UICharacterList`'s events.
 - Add `eventOnAbleToCreateCharacter` event to `UICharacterList` which will be triggered when character count not reached `maxCharacterSaves` setting yet.
@@ -17,7 +43,6 @@
 - Item_Repair.cs (Rename to BaseItem_Repair.cs)
 - Item_SocketEnhance.cs (Rename to BaseItem_SocketEnhance.cs)
 - SkillUtils.cs
-
 
 ## 1.53
 - Add item dismantle system, can dismantle an items to get items in sockets back and also can set `Item`'s dismantle config for returning items and gold when dismantle.
