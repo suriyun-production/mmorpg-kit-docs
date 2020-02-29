@@ -78,6 +78,7 @@
   - [How to change input](pages/047-how-to-change-input)
   - [FPS gameplay](pages/051-fps-gameplay)
   - [Mobile platform](pages/052-mobile-platform)
+  - [How Attack Function Work?](pages/142-how-attack-function-work)
 
 - Etc
   - [In-App Purchasing](pages/021-in-app-purchasing)
