@@ -1,3 +1,10 @@
+## 1.53d (2020-03-02)
+- Add codes to avoid hotkeys spamming.
+- Fix camera zooming while scrolling scrollview with middle mouse key.
+- Fix invalid character createable state.
+- Fix gold not multiplies with item's amount when dismantle item.
+- Fix dismantle button not appearing while `canDismantleItemByPlayer` setting is turn-on.
+
 ## 1.53c (2020-02-28)
 - Add `canRefineItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to refine item by does not have to talk to NPCs.
 - Add `canDismantleItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to dismantle item by does not have to talk to NPCs.
