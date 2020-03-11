@@ -5,6 +5,8 @@
 - Implement custom damage info type, developer can create class which inherit `BaseCustomDamageInfo` class and implements function. Then use it by create its instance and set to damage info.
 - Implement spawn entities progress events to `BaseGameNetworkManager`. So developer can set events callback to show spawn entities progress. And also change game save system function `OnServerOnlineSceneLoaded` to `PreSpawnEntities` to load and spawn building entities before spawn other entities.
 - Implement custom map info, developer can create class which inherit `BaseMapInfo` to set character ally and enemy rules.
+- Separate Google Play login codes from MMO repository, so developer must re-import `MMO_GooglePlayLogin` package.
+- Separate Facebook login codes from MMO repository, so developer must re-import `MMO_FacebookLogin` package.
 - Fix all language text not change immediately after chagne language.
 - Fix fall damage applying at clients.
 - Fix party/guild data losing when change scene (teleport to other maps) while playing Singleplayer/LAN mode.
