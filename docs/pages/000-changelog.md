@@ -1,3 +1,17 @@
+## 1.54 (2020-03-12)
+- Add and implement extra data to building save. For use case example, `CampFireEntity` will have an turn on state save as extra data.
+- Add context menu "Convert To Newer Character Model" to convert `CharacterModel` to `AnimatorCharacterModel` or `AnimationCharacterModel`.
+- Implement custom show condition to Npc's menu, developer can create custom show condition by scriptable object class with function which have a `IPlayerCharacterData` argument and return `bool` and can use it by create scriptable object instance and set to show condition.
+- Implement custom damage info type, developer can create class which inherit `BaseCustomDamageInfo` class and implements function. Then use it by create its instance and set to damage info.
+- Implement spawn entities progress events to `BaseGameNetworkManager`. So developer can set events callback to show spawn entities progress. And also change game save system function `OnServerOnlineSceneLoaded` to `PreSpawnEntities` to load and spawn building entities before spawn other entities.
+- Implement custom map info, developer can create class which inherit `BaseMapInfo` to set character ally and enemy rules.
+- Fix all language text not change immediately after chagne language.
+- Fix fall damage applying at clients.
+- Fix party/guild data losing when change scene (teleport to other maps) while playing Singleplayer/LAN mode.
+- Fix calling invalid function in `BasePlayerCharacterController.cs` → `ShowCurrentBuildingDialog`.
+- Fix camera zooming while scrolling scrollview with middle mouse key while playing with `ShooterPlayerCharacterController`.
+- Fix equipments and buffs re-apply when mount and unmount.
+
 ## 1.53d (2020-03-02)
 - Add codes to avoid hotkeys spamming.
 - Fix camera zooming while scrolling scrollview with middle mouse key.
