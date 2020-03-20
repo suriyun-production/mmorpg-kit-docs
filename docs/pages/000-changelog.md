@@ -1,3 +1,10 @@
+## 1.54b (2020-03-21)
+- Change aim controller while constructing the building, now the constructing buiding will place on ground follow mouse position while moving mouse cursor while playing on standalone platforms. If playing on mobile platforms, it will place by character position with mobile controller axes magnitude.
+- Add constructing building rotation by keys, for the demo it uses keys `J` and `K`.
+- Move `Build Distance` settings from `Game Instance` to `Building Entity` so each entities can have difference `Build Distance`.
+- Fix invalid area skill position while controlling with Mobile controller (On screen controller).
+- Fix invalid ally and enemy check logics.
+
 ## 1.54 (2020-03-12)
 - Add and implement extra data to building save. For use case example, `CampFireEntity` will have an turn on state save as extra data.
 - Add context menu "Convert To Newer Character Model" to convert `CharacterModel` to `AnimatorCharacterModel` or `AnimationCharacterModel`.
