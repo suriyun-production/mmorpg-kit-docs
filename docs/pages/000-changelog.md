@@ -1,3 +1,14 @@
+## 1.54c (2020-04-10)
+- Add slot limit to `UICharacter`.
+- Fix invalid party and guild ally or enemy checking logics.
+- Change logging system, it will do `Debug.Log` in editor only. For the build, you have to use `LiteNetLibManager.Logging.onLog` to write log to screen or files.
+- Add pooling system for game effects, damageable entities and buff entities.
+- Add `canUseByEveryone` to `StorageEntity` and `CampFireEntity` to allow other players to use storage buildings.
+- Fix weird summoned monster entity's behaviors.
+- Make character entity turn to target while controlling with `ShooterPlayerCharacterController`.
+- Add `moveSpeedRateWhileAttacking` to `MonsterCharacter` game data.
+- Add configs to make cast skill animations and action animations can be played all layers.
+
 ## 1.54b (2020-03-21)
 - Change aim controller while constructing the building, now the constructing buiding will place on ground follow mouse position while moving mouse cursor while playing on standalone platforms. If playing on mobile platforms, it will place by character position with mobile controller axes magnitude.
 - Add constructing building rotation by keys, for the demo it uses keys `J` and `K`.
