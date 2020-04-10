@@ -8,6 +8,7 @@
 - Make character entity turn to target while controlling with `ShooterPlayerCharacterController`.
 - Add `moveSpeedRateWhileAttacking` to `MonsterCharacter` game data.
 - Add configs to make cast skill animations and action animations can be played all layers.
+- Add `BaseNpcDialog` class it is `NpcDialog`'s base class, you can create custom NPC dialog by inherit `BaseNpcDialog` class, then implements abstract functions (You may see `NpcDialog` as example). Then developer may add codes to `UINpcDialog` by creates new partial class files which have an custom UI element and implement `RenderUI` to render an custom UI elements.
 
 ## 1.54b (2020-03-21)
 - Change aim controller while constructing the building, now the constructing buiding will place on ground follow mouse position while moving mouse cursor while playing on standalone platforms. If playing on mobile platforms, it will place by character position with mobile controller axes magnitude.
