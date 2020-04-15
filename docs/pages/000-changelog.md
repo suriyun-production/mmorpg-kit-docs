@@ -1,3 +1,12 @@
+## 1.54e (2020-04-16)
+- Add `isAttackBuilding` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks buildings.
+- Add `isAggressiveWhileSummonerIdle` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks targets while its summoner still idle.
+- Add `turnForwardWhileDoingAction` option to `ShooterPlayerCharacterController`, If this is `TRUE`, it will control character to turn forward while doing an action (attack, use skills, activate and so on). And target also have to be on front of the character.
+
+## 1.54d (2020-04-15)
+- Fix invalid NPC Dialog UI while its type is `Shop`.
+- Improve `PlayerCharacterController` to don't turn to move direction while playing action animation.
+
 ## 1.54c (2020-04-10)
 - Add slot limit to `UICharacter`.
 - Fix invalid party and guild ally or enemy checking logics.
