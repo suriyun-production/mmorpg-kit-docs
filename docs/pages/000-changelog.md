@@ -1,3 +1,12 @@
+## 1.54f (2020-04-28)
+- Improve mobile controllers.
+- Make `GM Commands` class to be scriptable object to make it switchable, other developers may crate class which extends from `BaseGMCommands` class and implement an functions (Can see `DefaultGMCommands` as example). Then can set created data to `Game Instance` → `Gm Commands`.
+- Fix wrong ally/enemy detection logics, which make it find ally/enemy incorrectly.
+- Implement system chat channel, GM players can enter chat by command: `/s {message}`. Other player will see message without sender name.
+- Add "use button" events to `UICharacterItem` class.
+- Improve `PlayerCharacterController`. Now, while `wasdLockAttackTarget` is `FALSE` it will turn to enemy when press attack or use skill. And it won't clear selected target when press movement keys (WASD), it will deselect target when distance to target more than `wasdClearTargetDistance` value.
+- Move an events variables to (`BaseCharacterEntity_Events.cs`, `BasePlayerCharacterEntity_Events.cs`) to make it easier to find an events to implement with dev extensions or other classes.
+
 ## 1.54e (2020-04-16)
 - Add `isAttackBuilding` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks buildings.
 - Add `isAggressiveWhileSummonerIdle` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks targets while its summoner still idle.
