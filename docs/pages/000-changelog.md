@@ -1,3 +1,20 @@
+## 1.55 (2020-05-05)
+- Fix character not turn to target when use skill while controlling with `PlayerCharacterController` and `wasdLockAttackTarget` is `FALSE`.
+- Make `BaseDamageEntity` and `MissileDamageEntity` variables, functions more accessible by extending classes.
+- Add `recoverHpWhenLevelUp` to `DefaultGameplayRule`. If it's `TRUE` it will recover character's HP when level up.
+- Add `recoverMpWhenLevelUp` to `DefaultGameplayRule`. If it's `TRUE` it will recover character's MP when level up.
+- Add `recoverFoodWhenLevelUp` to `DefaultGameplayRule`. If it's `TRUE` it will recover character's Food when level up.
+- Add `recoverWaterWhenLevelUp` to `DefaultGameplayRule`. If it's `TRUE` it will recover character's Water when level up.
+- Add `recoverStaminaWhenLevelUp` to `DefaultGameplayRule`. If it's `TRUE` it will recover character's Stamina when level up.
+- Fix `CharacterPitchIK` updating while character dead.
+- Add notify rewarded EXP.
+- Add notify rewarded Gold.
+- Add notify rewarded Items.
+- Hide `uiBuildingCampfireItems` when character move.
+- Improve `ShooterPlayerCharacterController` to be able to activate NPC, Building Entity easier while `turnForwardWhileDoingAction` is `FALSE`.
+- Implement impact effect to damage info.
+- Don't prepare `GameEffect` and `ProjectileEffect` pooling objects, if the running application is not a client.
+
 ## 1.54f (2020-04-28)
 - Improve mobile controllers.
 - Make `GM Commands` class to be scriptable object to make it switchable, other developers may crate class which extends from `BaseGMCommands` class and implement an functions (Can see `DefaultGMCommands` as example). Then can set created data to `Game Instance` → `Gm Commands`.
