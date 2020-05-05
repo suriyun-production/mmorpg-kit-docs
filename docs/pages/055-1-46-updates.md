@@ -27,7 +27,7 @@ In this version, I've implement mount system which can use by items / skills and
 To create new mount, you have to prepare vehicle type, I make it for character animtion specification while passenging vehicle, you can prepare vehicle type by:
 
 - Right click on `Project` panel
-- Choose `Create` → `Create Game Data` → `Vehicle Type`
+- Choose `Create` -> `Create Game Data` -> `Vehicle Type`
 
 ![](../images/1-46-1.png)
 
@@ -35,7 +35,7 @@ Then prepare mount entity, it's like when you prepare character entity, you have
 
 - Prepare model
 - Add `Mount Entity` component
-- Set created `Vehicle Type` to `Mount Entity` → `Vehicle Type` field
+- Set created `Vehicle Type` to `Mount Entity` -> `Vehicle Type` field
 - Set other options as you wish
 
 ![](../images/1-46-2.png)

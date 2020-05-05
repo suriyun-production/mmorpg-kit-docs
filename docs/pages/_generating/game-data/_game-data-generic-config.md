@@ -1,5 +1,5 @@
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Icon` is icon which represent item appearance

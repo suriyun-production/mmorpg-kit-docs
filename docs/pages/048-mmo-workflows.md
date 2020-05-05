@@ -22,7 +22,7 @@ When **Map Server** connected to **Central Server**. Then **Map Server** will se
 
 When **Map Server** receives **Chat Server** connection information and other **Map Server**s connection information, **Map Server** will make connection to **Chat Server** to handle chat messages which will be sent from client like this:
 ```
-Client → Map Server → Chat Server → Other Map Servers → Other Clients
+Client -> Map Server -> Chat Server -> Other Map Servers -> Other Clients
 ```
 And collects other **Map Server** connection information. So **Map Server** will have other **Map Server** connection information to tell clients when warp to other maps.
 

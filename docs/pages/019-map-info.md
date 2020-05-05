@@ -16,7 +16,7 @@ Then you have to create Map Info, we will use Map Info to set map scene and mana
 After you have created your map scene you have to create **Map Info** and set map scene to **Map Info**
 
 You can create new map info by right click in **Project** tab select   
-**Create → Create GameData → MapInfo**
+**Create -> Create GameData -> MapInfo**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*7_a38hcHWo38MNM0)
 

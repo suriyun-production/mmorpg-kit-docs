@@ -2,7 +2,7 @@
 
 You can change controller to FPS controller by:
 
-Set `ShooterCharacterController` prefab to `GameInstance` → `Default Controller Prefab`
+Set `ShooterCharacterController` prefab to `GameInstance` -> `Default Controller Prefab`
 
 ![](../images/fps-setup/1.png)
 
@@ -26,12 +26,12 @@ The `Shooter Player Character Controller` component contains following configs:
 *   `Tps Zoom Distance` default zoom distance when switch view mode to `Tps`.
 *   `Tps Min Zoom Distance` min zoom distance while view mode is `Tps`.
 *   `Tps Max Zoom Distance` max zoom distance while view mode is `Tps`.
-*   `Tps Target Offsets` offsets between gameplay camera and character entity → `Camera Target Transform` while view mode is `Tps`.
+*   `Tps Target Offsets` offsets between gameplay camera and character entity -> `Camera Target Transform` while view mode is `Tps`.
 *   `Tps Fov` camera's field of view while view mode is `Tps`.
 *   `Tps Near Clip Plane` camera's near clip plane while view mode is `Tps`.
 *   `Tps Far Clip Plane` camera's far clip plane while view mode is `Tps`.
 *   `Fps Zoom Distance` default zoom distance when switch view mode to `Fps`.
-*   `Fps Target Offsets` offsets between gameplay camera and character entity → `Camera Target Transform` while view mode is `Fps`.
+*   `Fps Target Offsets` offsets between gameplay camera and character entity -> `Camera Target Transform` while view mode is `Fps`.
 *   `Fps Fov` camera's field of view while view mode is `Fps`.
 *   `Fps Near Clip Plane` camera's near clip plane while view mode is `Fps`.
 *   `Fps Far Clip Plane` camera's far clip plane while view mode is `Fps`.
@@ -40,6 +40,6 @@ The `Shooter Player Character Controller` component contains following configs:
 
 There are extra configs in `Item` that made for FPS gameplay are:
 
-*   `Weapon Ability` For now you can set only zoom ability to weapon, players can activate ability by right-click, you can create weapon ability from create menu (Right click in `Project` select `Create` → `Create Game Data` → `Weapon Ability`)
+*   `Weapon Ability` For now you can set only zoom ability to weapon, players can activate ability by right-click, you can create weapon ability from create menu (Right click in `Project` select `Create` -> `Create Game Data` -> `Weapon Ability`)
 *   `Crosshair Setting` 
 *   `Fire Type` if this is `Single Fire` player have to release button for next fire, if this is `Automatic` player can hold to fire without button release for next fire

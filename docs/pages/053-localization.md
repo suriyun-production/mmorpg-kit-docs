@@ -16,7 +16,7 @@ Now new language will be added, Then expand data to change text for each key as 
 
 **TODO: Add key table here**
 
-There are some keys that uses for UIs formats for example `UI_FORMAT_STAT_POINTS` which normally uses with `UI Character` → `Format Key Stat Point` as a format key for character's stat points.
+There are some keys that uses for UIs formats for example `UI_FORMAT_STAT_POINTS` which normally uses with `UI Character` -> `Format Key Stat Point` as a format key for character's stat points.
 
 ![](../images/localization/1.png)
 

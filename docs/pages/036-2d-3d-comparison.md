@@ -1,6 +1,6 @@
 * * *
 
-MMORPG KIT — 3D → 2D Components / Settings changes
+MMORPG KIT — 3D -> 2D Components / Settings changes
 ==================================================
 
 For 2D Mode, there are some components / settings that difference from 3D mode but its usage still same, when you’re going to make 2D game you have to change to use following components / settings

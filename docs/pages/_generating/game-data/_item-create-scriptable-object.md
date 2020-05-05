@@ -1,4 +1,4 @@
-You can create item by right click in `Project` tab then select `Create` → `Create GameData` → `Item`
+You can create item by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item`
 
 ![](../images/items/001.png)
 

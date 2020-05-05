@@ -4,7 +4,7 @@ Before create new player character entity, you should know about `Player Charact
 
 ### Player Character
 
-You can create player character by right click in `Project` tab then select `Create` → `Create GameData` → `Item`
+You can create player character by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item`
 
 ![](../images/characters/001.png)
 

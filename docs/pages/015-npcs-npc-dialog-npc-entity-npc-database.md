@@ -5,7 +5,7 @@ MMORPG KIT —How to add NPCs (Npc Dialog / Npc Entity / Npc Database)
 
 ### Prepare Npc Entity
 
-To prepare Npc Entity you should prepare it in empty scene you can create empty scene via menu File → New Scene
+To prepare Npc Entity you should prepare it in empty scene you can create empty scene via menu File -> New Scene
 
 Then drag your model which you want to use as Npc model into the scene
 
@@ -38,7 +38,7 @@ You have to create Npc dialogs to make Npc able to talk to player, each Npc dial
 *   **Menus**, choices to next dialog, you also can set conditions to show the menu
 
 You can create new npc dialog by right click in **Project** tab select   
-**Create → Create GameData → NpcDialog**
+**Create -> Create GameData -> NpcDialog**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*yY9qqcEleu0bZBTx)
 
@@ -67,7 +67,7 @@ Then set created npc dialog to **Start Dialog**, this dialog will be first dialo
 
 To add NPCs via Npc Database you have to prepare Npc Entity prefab / Npc Dialogs
 
-About Npc Database, you can create new Npc Database by right click in **Project** tab select **Create → Create GameDatabase → Npc Database**
+About Npc Database, you can create new Npc Database by right click in **Project** tab select **Create -> Create GameDatabase -> Npc Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*yc8ktAVxDGN34X9V)
 

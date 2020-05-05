@@ -18,7 +18,7 @@ You have to create Player character data to define its data such as stats and at
 *   **Start Map**, which map scene you want this character to be spawned at first time after created
 
 You can create new player character by right click in **Project** tab select   
-**Create → Create GameData → PlayerCharacter**
+**Create -> Create GameData -> PlayerCharacter**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*6e1EvN_jBzOeYGep)
 

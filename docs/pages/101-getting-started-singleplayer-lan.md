@@ -17,7 +17,7 @@ After that, The Import dialog will be shown, Press `Import` to import the packag
 
 ![](../images/101/003.png)
 
-Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File → Build Settings...` 
+Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
 
 * * *
 

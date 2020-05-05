@@ -16,7 +16,7 @@ It is database for game data, it can store following data:
 *   Map Infos
 
 You can create new Game Database by right click in **Project** tab then select  
-**Create → Create GameDatabase → GameDatabase**
+**Create -> Create GameDatabase -> GameDatabase**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*BpIQ-B1sC0b3A8dEVDyC3g.png)
 

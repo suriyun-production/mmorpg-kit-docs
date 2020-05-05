@@ -23,7 +23,7 @@ There are following configs for `Armor Item`
 - `Armor Type` this is type of this armor item, you may create body armor item type, shoes, gloves and so on, up to you. Every item type contains 
     * `Equippable Slots` you can set it more than 1 if character can equip same item type more than 1 slot, for example ring item can be equipped to 2 equip slot. 
     
-    You can create armor type by right click in `Project` tab then select `Create` → `Create GameData` → `Armor Type`
+    You can create armor type by right click in `Project` tab then select `Create` -> `Create GameData` -> `Armor Type`
 
 ![](../images/items/006.png)
 

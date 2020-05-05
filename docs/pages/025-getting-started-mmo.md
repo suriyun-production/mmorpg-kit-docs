@@ -53,7 +53,7 @@ For `Mac OSX`, use `Terminal` go to path where you build the game such as `/Game
 $ ./Game.app/Contents/MacOS/<productName> -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app/Contents/MacOS/<productName>" -startCentralServer -startChatServer -machineAddress "192.168.1.102"
 ```
 
-** **<productName> is `Product Name` settings which can find in `Unity Editor → Player Settings`** **
+** **<productName> is `Product Name` settings which can find in `Unity Editor -> Player Settings`** **
 
 * * *
 

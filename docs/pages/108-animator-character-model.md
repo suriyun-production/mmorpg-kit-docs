@@ -131,8 +131,8 @@ And also add parameters:
 *   `IsCastingSkill`(boolean) this will be `TRUE` while character is casting skill
 *   `Hurt`(trigger) this will trigger when character receive damage
 *   `Jump`(trigger) this will trigger when character jump
-*   `MoveSpeedMultiplier`(float) this should set to action state → multiplier parameter
-*   `ActionSpeedMultiplier`(float) this should set to move states → multiplier parameter
+*   `MoveSpeedMultiplier`(float) this should set to action state -> multiplier parameter
+*   `ActionSpeedMultiplier`(float) this should set to move states -> multiplier parameter
 
 * * *
 

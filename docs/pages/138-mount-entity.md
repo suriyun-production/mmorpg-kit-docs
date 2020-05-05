@@ -3,7 +3,7 @@
 To create new mount, you have to prepare vehicle type, which made for character animtion specification while passenging vehicle, you can create new vehicle type by:
 
 - Right click on `Project` panel
-- Choose `Create` → `Create Game Data` → `Vehicle Type`
+- Choose `Create` -> `Create Game Data` -> `Vehicle Type`
 
 ![](../images/1-46-1.png)
 
@@ -11,7 +11,7 @@ To create new mount, you have to prepare vehicle type, which made for character 
 
 Then prepare mount entity, it's like when you prepare character entity, you have to drag skinned mesh to empty scene then add `Mount Entity` component. If your project is 2D, you can create empty game object then add `Mount Entity` component.
 
-Then set created `Vehicle Type` to `Mount Entity` → `Vehicle Type` field.
+Then set created `Vehicle Type` to `Mount Entity` -> `Vehicle Type` field.
 
 Then setup `Seats`, it must have at least 1 seat. Each seat you can set following options:
 
@@ -56,4 +56,4 @@ After setup entity movement, then adjust colliders fit to character
 ![](https://cdn-images-1.medium.com/max/1600/0*kILIMeK-SrC2rsoa)
 * * *
 
-After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.

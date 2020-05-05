@@ -1,6 +1,6 @@
 # How to create Area Attack Skill
 
-You can create area buff skill by right click in `Project` tab then select `Create` → `Create GameData` → `Skill` → `Simple Area Attack Skill`
+You can create area buff skill by right click in `Project` tab then select `Create` -> `Create GameData` -> `Skill` -> `Simple Area Attack Skill`
 
 ![](../images/skills/005.png)
 
@@ -11,9 +11,9 @@ After the skill created. Set its name, its name must be unique unlike other data
 There are following configs
 
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Icon` is icon which represent item appearance
 - `Max Level` max level that character can learn this skill
 - `Move Speed Rate While Using Skill` this value will multiplies with character move speed stats while character is using this skill, set this to 0 if you want to make character don't move while using this skill. This will be in-use with active skills and craft s only.
@@ -44,4 +44,4 @@ There are following configs
 
 That's an configs for `Area Attack Skill`
 
-After finish the setup, add it to your [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, add it to your [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.

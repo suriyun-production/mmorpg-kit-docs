@@ -16,7 +16,7 @@ There are following configs for `Ammo Item`
 
 ## Ammo Configs
 
-- `Ammo Type` this is type of ammo (the same which set to `Weapon Type` → `Ammo`). You can create ammo type by right click in `Project` tab then select `Create` → `Create GameData` → `Ammo Type`
+- `Ammo Type` this is type of ammo (the same which set to `Weapon Type` -> `Ammo`). You can create ammo type by right click in `Project` tab then select `Create` -> `Create GameData` -> `Ammo Type`
 
 ![](../images/items/008.png)
 

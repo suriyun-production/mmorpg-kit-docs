@@ -13,7 +13,7 @@ It attaches the following components:
 *   **Animator**, I’ve used it to play drop animation, by move / rotate **Model Container**.
 *   **Lite Net Lib Visible Checker**, I’ve used it to not send networking message when your character is far from it.
 
-So you can change drop animation as you wish, then after you prepared your **Item Drop Entity** and made it as a prefab. You have to set it to **Game Instance → Item Drop Entity Prefab**
+So you can change drop animation as you wish, then after you prepared your **Item Drop Entity** and made it as a prefab. You have to set it to **Game Instance -> Item Drop Entity Prefab**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*tCJkCdrsuXgNR5d-8mVdlw.png)
 
@@ -21,8 +21,8 @@ So you can change drop animation as you wish, then after you prepared your **Ite
 
 Then each item will have a different drop model right?
 
-You can prepare drop model by creating a static model prefab for the item and set it to **Item → Drop Model**
+You can prepare drop model by creating a static model prefab for the item and set it to **Item -> Drop Model**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*52DW9YncPRHeBelA0zbmhw.png)
 
-But you should adjust its position, rotation and scale by drag the static model prefab to **Item Drop Entity → Model Container** then adjust transform then make it as prefab.
+But you should adjust its position, rotation and scale by drag the static model prefab to **Item Drop Entity -> Model Container** then adjust transform then make it as prefab.

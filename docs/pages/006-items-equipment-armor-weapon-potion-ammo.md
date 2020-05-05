@@ -21,11 +21,11 @@ For generic item data you can set following data:
 *   **Sell Price**, price when sell to Npc
 *   **Weight**, weight
 *   **Item Refine Info**, other item info such as rarity (with rarity title color), refine level/price and repair price. You can create this data by right click in **Project** tab select   
-**Create → Create GameData → Item Refine Info**
+**Create -> Create GameData -> Item Refine Info**
 *   **Max Stack**, max amount that can stack
 
 You can create new attribute by right click in **Project** tab select   
-**Create → Create GameData → Item**
+**Create -> Create GameData -> Item**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*6PVE9xFgxZAXcRGR)
 
@@ -45,7 +45,7 @@ Armor, weapon and shield are equipment item, equipment item can set following da
 *   **Increase Damages**, increasing damages when equip this item
 *   **Increase Stats**, increasing character stats when equip this item
 *   **Equipment Set**, characters can gain more extra stats when equipped same set equipments. You can create this data by right click in **Project** tab select   
-**Create → Create GameData → Equipment Set**
+**Create -> Create GameData -> Equipment Set**
 *   **Max Durability**, equipment durability, If this set to 0 it will not broken
 *   **Destroy If Broken**, If this is **TRUE**, your equipment will be destroyed when durability = 0
 *   **Max Socket**, this is nax amount of sockets that allow to enhance by **Socket Enhancer** items
@@ -57,7 +57,7 @@ Armor, weapon and shield are equipment item, equipment item can set following da
 For armor item it is required armor type data
 
 You can create new armor type by right click in **Project** tab select   
-**Create → Create GameData → ArmorType**
+**Create -> Create GameData -> ArmorType**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*8U1SxLXvCBLm40q2)
 
@@ -83,7 +83,7 @@ For weapon item you can set following data:
 Weapon item is required weapon type data
 
 You can create new weapon type by right click in **Project** tab select   
-**Create → Create GameData → WeaponType**
+**Create -> Create GameData -> WeaponType**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*9bZLVRqeUj3uyqpX)
 
@@ -125,7 +125,7 @@ Some weapon such as Gun, Bow might require ammo, you can create ammo item for th
 Ammo item is required ammo type data you also have to set ammo type to weapon type which required the ammo
 
 You can create new ammo type by right click in **Project** tab select   
-**Create → Create GameData → Ammo Type**
+**Create -> Create GameData -> Ammo Type**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*A8_7zsQX79qSfjRr)
 

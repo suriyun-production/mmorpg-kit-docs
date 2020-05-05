@@ -14,13 +14,13 @@ Visit `NPC` in `Map001` scene to try these features from menu `Player Storage` a
 
 ## MMO - Can test map-server in Unity Editor
 
-You can test map-server in Unity Editor by just set `MMOServerInstance` → `Start Map On Awake` to `TRUE` and set map that you want to test to `MMOServerInstance` → `Starting Map`
+You can test map-server in Unity Editor by just set `MMOServerInstance` -> `Start Map On Awake` to `TRUE` and set map that you want to test to `MMOServerInstance` -> `Starting Map`
 
 ![](../images/testing_mapserver.png)
 
 ## MMO - Can switch database with config files/command line arguments
 
-Now you can switch database with config files/command line arguments but you have to prepare list of database that can be switched at `MMOServerInstance` → `Database Options`
+Now you can switch database with config files/command line arguments but you have to prepare list of database that can be switched at `MMOServerInstance` -> `Database Options`
 
 ![](../images/set_database_options.png)
 
@@ -28,6 +28,6 @@ Then you set swith database in config file with config key "databaseOptionIndex"
 
 Or may swith database with command line. Example command: `-databaseOptionIndex 1`.
 
-In Unity Editor, you can switch database option via `MMOServerInstance` → `Database Option Index` config
+In Unity Editor, you can switch database option via `MMOServerInstance` -> `Database Option Index` config
 
 ![](../images/switch_database.png)

@@ -4,7 +4,7 @@ Before create new monster character entity, you should know about `Player Charac
 
 ### Monster Character
 
-You can create monster character by right click in `Project` tab then select `Create` → `Create GameData` → `Item`
+You can create monster character by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item`
 
 ![](../images/characters/003.png)
 
@@ -33,7 +33,7 @@ There are following configs
 *   `Random Gold Max` gold that character will gain when kill the monster.
 *   `Max Drop Items` max difference of items that monster can drops after killed.
 *   `Random Items` items that character will gain when kill the monster.
-*   `Item Drop Table` this is like `Random Items` can create by right click in `Project` tab → `Create` → `Create GameData` → `Item Drop Table`.
+*   `Item Drop Table` this is like `Random Items` can create by right click in `Project` tab -> `Create` -> `Create GameData` -> `Item Drop Table`.
 
 * * *
 

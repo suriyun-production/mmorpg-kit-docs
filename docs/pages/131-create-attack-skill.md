@@ -1,6 +1,6 @@
 # How to create Attack Skill
 
-You can create skill by right click in `Project` tab then select `Create` → `Create GameData` → `Skill` → `Skill`
+You can create skill by right click in `Project` tab then select `Create` -> `Create GameData` -> `Skill` -> `Skill`
 
 ![](../images/skills/001.png)
 
@@ -11,9 +11,9 @@ After the skill created. Set its name, its name must be unique unlike other data
 There are following configs
 
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Icon` is icon which represent item appearance
 Then we're going to create `Buff Skill` so set `Skill Type` to `Active` and also set `Skill Attack Type` to `Normal` or `Based On Weapon` because it will attack other characters when use this skill.
 
@@ -46,4 +46,4 @@ There are following configs for `Attack Skill`
 
 That's an configs for `Attack Skill`
 
-After finish the setup, add it to your [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, add it to your [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.

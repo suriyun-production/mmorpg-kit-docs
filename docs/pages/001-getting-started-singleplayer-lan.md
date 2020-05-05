@@ -11,7 +11,7 @@ MMORPG KIT — Getting Started (Singleplayer/LAN)
 
 1.  Before import the package, you should to set **Scripting Runtime Version** to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
 
-Click menu Edit → Project Settings → Player
+Click menu Edit -> Project Settings -> Player
 
 ![](https://cdn-images-1.medium.com/max/1600/0*1taaUXKewT6ZOVMc)
 
@@ -27,7 +27,7 @@ If there is no **.NET 4.x** choice in **Api Compatibility Level**, you should t
 
 3\. Then we’re going to build the test demo
 
-Click menu **File → Build Settings**
+Click menu **File -> Build Settings**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*i6_ocWDmzchYMHvv)
 

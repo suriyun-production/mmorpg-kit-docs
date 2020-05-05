@@ -33,7 +33,7 @@ To add warp portals via warp portal database you have to prepare warp portal ent
 ![](https://cdn-images-1.medium.com/max/1600/0*HMqCgnzcZw6HF7s1)
 
 Then create warp portal database, You can create new warp portal database by right click in **Project** tab select   
-**Create → Create GameDatabase → Warp Portal Database**
+**Create -> Create GameDatabase -> Warp Portal Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*XeFabQaQX17uzR2f)
 

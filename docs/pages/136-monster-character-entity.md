@@ -4,7 +4,7 @@ Before create new monster character entity, you should know about `Player Charac
 
 ### Monster Character
 
-You can create monster character by right click in `Project` tab then select `Create` → `Create GameData` → `Item`
+You can create monster character by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item`
 
 ![](../images/characters/003.png)
 
@@ -15,9 +15,9 @@ After the monster character created. Set its name, its name must be unique unlik
 There are following configs
 
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Icon` is icon which represent item appearance
 *   `Stats` this is character stats. Its `Base Stats` is amount of stats when character level is 1. Its `Stats Increase Each Level` is amount of stats that will be increased when character level > 0.
 *   `Attributes` this is character attributes. You have to set [attribute](pages/104-character-stats-and-relates-data?id=attribute ':target=__blank') which you want to increase then its `Base Amount` is amount of attributes when character level is 1. Its `Amount Increase Each Level` is amount of attributes that will be increased when character level > 0.
@@ -36,7 +36,7 @@ There are following configs
 *   `Random Gold Max` gold that character will gain when kill the monster.
 *   `Max Drop Items` max difference of items that monster can drops after killed.
 *   `Random Items` items that character will gain when kill the monster.
-*   `Item Drop Table` this is like `Random Items` can create by right click in `Project` tab → `Create` → `Create GameData` → `Item Drop Table`.
+*   `Item Drop Table` this is like `Random Items` can create by right click in `Project` tab -> `Create` -> `Create GameData` -> `Item Drop Table`.
 
 * * *
 
@@ -53,7 +53,7 @@ Then set an transforms / containers
 *   `Combat Text Transform` this is transform where it will instantiates an damage texts, HP recovery texts and so on, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
 *   `Opponent Aim Transform` this is transform where other characters will aim to while attacking, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use `Combat Text Transform`.
 *   `Melee Damage Transform` this is transform where it will applying melee damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
-*   `Missile Damage Transform` this is transform where it will applying missile damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use `Melee Damage Transform`. This can be overrided by `Equipment Entity` → `Missile Damage Transform`.
+*   `Missile Damage Transform` this is transform where it will applying missile damage and find hitting character to apply damages later, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use `Melee Damage Transform`. This can be overrided by `Equipment Entity` -> `Missile Damage Transform`.
 *   `Character UI Transform` this is transform where it will instantiates an UIs which relates to character such as character name, guild name, HP gage, MP gage and so on, You may use added child transform and adjust its position to center of the character. If this is empty (None) it will use entity's transform.
 *   `Mini Map UI Transform` this is transform where it will instantiates mini-map UIs and also set its layer to MiniMap, You may use added child transform and adjust its positionto  center of the character. If this is empty (None) it will use entity's transform.
 *   `Monster Character` this is game data which contains monster stats, skills, drop info.
@@ -93,4 +93,4 @@ After setup entity movement, then adjust colliders fit to character
 ![](https://cdn-images-1.medium.com/max/1600/0*kILIMeK-SrC2rsoa)
 * * *
 
-After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.

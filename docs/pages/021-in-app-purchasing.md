@@ -19,7 +19,7 @@ Then you have to add ENABLE\_PURCHASE to Scripting Define Symbols
 
 #### How to disable In-App Purchasing
 
-If you don’t want to use In-App Purchasing for your game, you can turn off Purchasing in Services tab (for Services tab you can open it from menu Window → General → Services)
+If you don’t want to use In-App Purchasing for your game, you can turn off Purchasing in Services tab (for Services tab you can open it from menu Window -> General -> Services)
 
 ![](https://cdn-images-1.medium.com/max/1600/1*TXIj6Wdhvp3Wa2gaLQP4iA.png)
 
@@ -45,7 +45,7 @@ All products above have to place in Cash Shop Database to make it available to s
 #### **How to create Cash Shop Database**
 
 You can create new cash package by right click in **Project** tab select   
-**Create → Create CashShop → CashPackageDatabase** (The menu name should be CashShopDatabase I will change it later)
+**Create -> Create CashShop -> CashPackageDatabase** (The menu name should be CashShopDatabase I will change it later)
 
 ![](https://cdn-images-1.medium.com/max/1600/1*6PF7I3f4uSmmfrjXIAQyWA.png)
 
@@ -60,7 +60,7 @@ Then you will add an cash packages / cash shop items that you want to this datab
 #### **How to create Cash package**
 
 You can create new cash package by right click in **Project** tab select   
-**Create → Create CashShop → CashPackage**
+**Create -> Create CashShop -> CashPackage**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*6LVDQ5OpHHsyXRmD4eqqTA.png)
 
@@ -79,7 +79,7 @@ Then add it to **Cash Shop Database**
 #### How to create Cash Shop Item
 
 You can create new cash shop item by right click in **Project** tab select   
-**Create → Create CashShop → CashShopItem**
+**Create -> Create CashShop -> CashShopItem**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*RvGtZZgMcWtuBVwiFwi00g.png)
 

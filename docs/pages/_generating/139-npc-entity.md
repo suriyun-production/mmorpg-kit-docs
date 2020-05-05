@@ -4,7 +4,7 @@ Before create new npc entity, you should know about `Npc Dialog Graph`, you can 
 
 ![](../images/npcs/001.png)
 
-You can create new dialog by right click in graph then select `Multiplayer ARPG` → `Npc Dialog`.
+You can create new dialog by right click in graph then select `Multiplayer ARPG` -> `Npc Dialog`.
 
 ![](../images/npcs/002.png)
 
@@ -47,7 +47,7 @@ Then set created npc dialog graph to `Graph`.
 
 To add Npcs via Npc Database you have to prepare `Npc Entity` prefab and `Npc Dialog Graph`.
 
-About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create → Create GameDatabase → Npc Database`.
+About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create -> Create GameDatabase -> Npc Database`.
 
 ![](../images/npcs/006.png)
 
@@ -55,4 +55,4 @@ Then in `Npc Database` you can set map which you wish to spawn an Npcs then each
 
 ![](../images/npcs/007.png)
 
-Then set `Npc Database` to `Game Instance → Npc Database` in init scene.
+Then set `Npc Database` to `Game Instance -> Npc Database` in init scene.

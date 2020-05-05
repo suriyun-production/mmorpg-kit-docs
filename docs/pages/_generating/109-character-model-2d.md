@@ -21,7 +21,7 @@ This is contains following settings:
 *   `Flip X` if this is `TRUE` it will flip sprites on X-axis.
 *   `Flip Y` if this is `TRUE` it will flip sprites on Y-axis.
 
-You can create `Animation Clip 2D` by right click in any folder in `Project` tab, then select `Create` → `Animation 2D`
+You can create `Animation Clip 2D` by right click in any folder in `Project` tab, then select `Create` -> `Animation 2D`
 
 ### Character Animation 2D
 

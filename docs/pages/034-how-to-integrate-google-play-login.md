@@ -2,7 +2,7 @@
 
 To integrate Google Play login you have to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
 
-Set all `Store listing` / `Pricing & distribution` / `Content rating` and make it available for internal test (manage at `Release management` → `App releases`) by upload signed APK file, then Save and Review to make it available for internal test
+Set all `Store listing` / `Pricing & distribution` / `Content rating` and make it available for internal test (manage at `Release management` -> `App releases`) by upload signed APK file, then Save and Review to make it available for internal test
 
 Then go to **Game Services** from main publisher console page then press on **ADD NEW GAME**
 
@@ -56,7 +56,7 @@ Scroll down to `Authorisation` section then copy `OAuth2 Client ID`
 
 ![](../images/034/20.png)
 
-Then paste copied data to **Unity → Google play games — Android Configuration → Resources Definition**
+Then paste copied data to **Unity -> Google play games — Android Configuration -> Resources Definition**
 
 Then press **Setup**
 
@@ -74,7 +74,7 @@ Create **Events** or **Achievements** or **Leaderboards** then press Get resourc
 
 ![](../images/034/7.png)
 
-Then paste copied data to **Unity → Google play games — Android Configuration → Resources Definition**
+Then paste copied data to **Unity -> Google play games — Android Configuration -> Resources Definition**
 
 Then press **Setup**
 
@@ -173,12 +173,12 @@ After that go back to the previous page again to download JSON, rename it to `cl
 
 ## Setup UIs
 
-Then open your login scene (for the demo it is Home scene), add **Google Play Login** component to any game object (for the demo, I’ve added it at CanvasHome → UILogin)
+Then open your login scene (for the demo it is Home scene), add **Google Play Login** component to any game object (for the demo, I’ve added it at CanvasHome -> UILogin)
 
 ![](../images/034/14.png)
 
 Then set an event when Login success / fail, the Demo I make it show character list after the success
 
-Then in your Login with Google Play button set **Google Play Login** component → **On Click Google Play Login** at **On Click** event
+Then in your Login with Google Play button set **Google Play Login** component -> **On Click Google Play Login** at **On Click** event
 
 ![](../images/034/15.png)

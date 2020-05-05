@@ -8,7 +8,7 @@ When you created the equipment item and want to make the character attach or cha
 - Prepare item's equipment model for specific equipment model location. The item game data will have a `Equipment Models` setting, which you can set `Equip Socket` for specific equipment model location. When character equip the item, it will instantiate `Model` to character model's equipment transform.
 ![](../images/141/2.png)
 
-So the key which makes it can instantiate model to transform correctly is `Equip Socket`. It must be the same key in character model → `Equipment Containers` setting and item → `Equipment Models` setting.
+So the key which makes it can instantiate model to transform correctly is `Equip Socket`. It must be the same key in character model -> `Equipment Containers` setting and item -> `Equipment Models` setting.
 
 * * *
 

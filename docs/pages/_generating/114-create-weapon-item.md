@@ -26,7 +26,7 @@ There are following configs for `Weapon Item`
     * `Effectiveness Attributes` weapon can increase more damage based on these attributes ([See more](pages/104-character-stats-and-relates-data?id=attribute ':target=__blank')). 
     * `Ammo` is type of ammo which required to use to attack, leave this is be empty if weapon doesn't required ammo. 
     
-    You can create weapon type by right click in `Project` tab then select `Create` → `Create GameData` → `Weapon Type`
+    You can create weapon type by right click in `Project` tab then select `Create` -> `Create GameData` -> `Weapon Type`
 
 ![](../images/items/007.png)
 

@@ -31,6 +31,6 @@ Developer might have to add **IsCastingSkill(Bool)** to character's **Animator C
 Add transition to *Skill Casting state* in **Animator Controller**.
 ![](../images/1-43b-2.png)
 
-And have to set default cast skill clip to `Character Model` → `Default Animator Data` → `Cast Skill Clip`.
+And have to set default cast skill clip to `Character Model` -> `Default Animator Data` -> `Cast Skill Clip`.
 ![](../images/1-43b-3.png)
 ![](../images/1-43b-3_2.png)

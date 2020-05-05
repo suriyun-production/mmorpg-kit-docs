@@ -17,7 +17,7 @@
 
 ## 1.54f (2020-04-28)
 - Improve mobile controllers.
-- Make `GM Commands` class to be scriptable object to make it switchable, other developers may crate class which extends from `BaseGMCommands` class and implement an functions (Can see `DefaultGMCommands` as example). Then can set created data to `Game Instance` → `Gm Commands`.
+- Make `GM Commands` class to be scriptable object to make it switchable, other developers may crate class which extends from `BaseGMCommands` class and implement an functions (Can see `DefaultGMCommands` as example). Then can set created data to `Game Instance` -> `Gm Commands`.
 - Fix wrong ally/enemy detection logics, which make it find ally/enemy incorrectly.
 - Implement system chat channel, GM players can enter chat by command: `/s {message}`. Other player will see message without sender name.
 - Add "use button" events to `UICharacterItem` class.
@@ -64,7 +64,7 @@
 - Fix all language text not change immediately after chagne language.
 - Fix fall damage applying at clients.
 - Fix party/guild data losing when change scene (teleport to other maps) while playing Singleplayer/LAN mode.
-- Fix calling invalid function in `BasePlayerCharacterController.cs` → `ShowCurrentBuildingDialog`.
+- Fix calling invalid function in `BasePlayerCharacterController.cs` -> `ShowCurrentBuildingDialog`.
 - Fix camera zooming while scrolling scrollview with middle mouse key while playing with `ShooterPlayerCharacterController`.
 - Fix equipments and buffs re-apply when mount and unmount.
 
@@ -79,7 +79,7 @@
 - Add `canRefineItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to refine item by does not have to talk to NPCs.
 - Add `canDismantleItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to dismantle item by does not have to talk to NPCs.
 - Add `pierceThroughEntities` setting to `DamageInfo`, set it more than 0 to allow raycast hit more than 1 character.
-- Add `startItems` setting to `PlayerCharacter`, it's like `GameInstance` → `startItems` but for specific character.
+- Add `startItems` setting to `PlayerCharacter`, it's like `GameInstance` -> `startItems` but for specific character.
 - Make `UISceneGameplay` extendable (Add new base class: `BaseUISceneGameplay`).
 - Move UI events setup from `BasePlayerCharacterController` to `UISceneGameplay`.
 - Implement `ArmorItem` class (Implement `IArmorItem` interface).
@@ -92,11 +92,11 @@
 - Implement `SkillItem` class (Implement `ISkillItem` interface).
 - Implement `JunkItem` class (Implement `IJunkItem` interface).
 - Implement `SocketEnhancerItem` class (Implement `ISocketEnhancerItem` interface).
-- Add `GameEntityModel` → `SetEffectContainersBySetters` dev extension invoker.
-- Add `BaseCharacterModel` → `SetEquipmentContainersBySetters` dev extension invoker.
-- Add `CharacterModel` → `SetAnimatorClipsForTest` dev extension invoker.
-- Add `AnimatorCharacterModel` → `SetAnimatorClipsForTest` dev extension invoker.
-- Add `AnimatorCharacterModel2D` → `SetAnimatorClipsForTest` dev extension invoker.
+- Add `GameEntityModel` -> `SetEffectContainersBySetters` dev extension invoker.
+- Add `BaseCharacterModel` -> `SetEquipmentContainersBySetters` dev extension invoker.
+- Add `CharacterModel` -> `SetAnimatorClipsForTest` dev extension invoker.
+- Add `AnimatorCharacterModel` -> `SetAnimatorClipsForTest` dev extension invoker.
+- Add `AnimatorCharacterModel2D` -> `SetAnimatorClipsForTest` dev extension invoker.
 - Fix storage items not updates while playing 2D.
 - Fix dismantle returning item amount not multiplies with dismantle item amount.
 
@@ -144,15 +144,15 @@
 - Implement fall damage and also add config to `DefaultGameplayRule` there are `fallDamageMinDistance` and `fallDamageMaxDistance`. Character will receive damage 1% of Max Hp, when fall distance = min distance and receive damage 100% of Max Hp, when fall distance >= max distance.
 - Implement `DoorEntity` and `StorageEntity` lock system, character who create it can set password to lock it and also can set it lock or unlock. For developer, there is new config: `lockable` tick it on to make it lockable. And also add following language keys: UI_ENTER_BUILDING_PASSWORD, UI_ENTER_BUILDING_PASSWORD_DESCRIPTION, UI_SET_BUILDING_PASSWORD, UI_SET_BUILDING_PASSWORD_DESCRIPTION.
 - Improve In-App purchasing messages and also made it supports multiple language settings by add following keys: UI_ERROR_IAP_NOT_INITIALIZED, UI_ERROR_IAP_PURCHASING_UNAVAILABLE, UI_ERROR_IAP_EXISTING_PURCHASE_PENDING, UI_ERROR_IAP_PRODUCT_UNAVAILABLE, UI_ERROR_IAP_SIGNATURE_INVALID, UI_ERROR_IAP_USER_CANCELLED, UI_ERROR_IAP_PAYMENT_DECLINED, UI_ERROR_IAP_DUPLICATE_TRANSACTION, UI_ERROR_IAP_UNKNOW.
-- Game save system (for singleplayer / LAN games) is now able to customize and switchable at `GameInstance` → `saveSystem`. Developer can create customize save system by create class which derived from `BaseGameSaveSystem`, can see `DefaultGameSaveSystem` as example.
+- Game save system (for singleplayer / LAN games) is now able to customize and switchable at `GameInstance` -> `saveSystem`. Developer can create customize save system by create class which derived from `BaseGameSaveSystem`, can see `DefaultGameSaveSystem` as example.
 - Fix `AnimatorCharacterModel2D` playing wrong animations. And also add `OrcsWarrior2D` to 2d demo content to show how to setup character with `AnimatorCharacterModel2D`.
 - Fix character's EXP still collecting after reached max level.
 - Fix mobile hotkey joystick inputs, it used to have to double tap to use hotkey.
 
 ## 1.52
-- Implement character crouch movement (Can test by press `Left Control`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crouching`.
-- Implement character crawl movement (Can test by press `Z`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crawling`.
-- Implement character swimming movement to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` → `Move Speed Rate While Crouching`. You can create water area by set layer to `Water` and set collider → `isTrigger` to `true`.
+- Implement character crouch movement (Can test by press `Left Control`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` -> `Move Speed Rate While Crouching`.
+- Implement character crawl movement (Can test by press `Z`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` -> `Move Speed Rate While Crawling`.
+- Implement character swimming movement to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` -> `Move Speed Rate While Crouching`. You can create water area by set layer to `Water` and set collider -> `isTrigger` to `true`.
 - Add `Under Water Threshold` config to `Rigidbody Entity Movement`. Example of how it working: If character height is `1`, `Under Water Threshold` set to `0.5` and water height is `0.55`. Character will start swimming
 - Move `Movement Secure` config from entity movement components to game entity components.
 - Add `Auto Swim To Surface`, set this to `true` if you want character swim up to surface automatically, set this to `false` if you want character able to diving.
@@ -173,7 +173,7 @@
 - Add `CharacterPitchIK` component, attach it to character entity to update character's aim pitch by any bones.
 - Fix player's character stop attacking enemy when it moved.
 - Fix invalid character summon serialize and deserialize.
-- Fix invalid `UICharacterQuests` component → `HideCompleteQuest ` conditions
+- Fix invalid `UICharacterQuests` component -> `HideCompleteQuest ` conditions
 - Fix when summoned monsters kills quest monsters, quest's task won't counting up.
 - Fix when damge debuffs kills quest monsters, quest's task won't counting up.
 
@@ -182,15 +182,15 @@
 - Implement stamina to demo, press `Left Shift` to toggle sprint. For shooter controller hold `Left Shift` to sprint.
 - Add `FactionIs` condition to check character faction to show NPC dialog menu.
 - Fix reset skill item not consumed.
-- Fix invalid warp position while `GameInstance` → `currentPositionSaveMode` is `UseRespawnPosition`.
+- Fix invalid warp position while `GameInstance` -> `currentPositionSaveMode` is `UseRespawnPosition`.
 - Fix multi hit animation works incorrectly.
 
 ## 1.50c
-- Add `BuffToTarget` to `Skill` → `SkillBuffType`, if skill isn't attack skill, will buff to selected target
-- Add `Toggle` to `Skill` → `SkillBuffType`, skill's buff will be remove if already applied to skill user
+- Add `BuffToTarget` to `Skill` -> `SkillBuffType`, if skill isn't attack skill, will buff to selected target
+- Add `Toggle` to `Skill` -> `SkillBuffType`, skill's buff will be remove if already applied to skill user
 - Add `isHide` status to `Buff`, developer can use with `Toggle Skill` to create hide skill
 - Add `muteFootstepSound` status to `Buff`, developer can use with `Toggle Skill` to create hide+stalk skill
-- Add multi hit **Trigger Duration Rate** to character model → action animation
+- Add multi hit **Trigger Duration Rate** to character model -> action animation
 - Add `currentPositionSaveMode` config to `GameInstance`, developer can set it to `UseRespawnPosition` to make it save character current position as respawn position, not current position. So when enter game it will load respawn position, not last character position.
 - Fix item skills not available to assign to hotkey
 - Fix item skills not available to use
@@ -235,7 +235,7 @@ namespace MultiplayerARPG {
 - Fix IAP items are able to receives while inventory is full
 - Fix items are able to deals while inventory is full
 - Fix items are able to crafts while inventory is full
-- Fix invalid `IBuildingSaveData` → `CloneTo` dev extension implementation
+- Fix invalid `IBuildingSaveData` -> `CloneTo` dev extension implementation
 - Fix skills not update when equip items that increase skill levels
 
 ## 1.49d
@@ -251,8 +251,8 @@ namespace MultiplayerARPG {
 - Fix passive skill not working
 
 ## 1.49c
-- Add area attack skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Attack Skill`. You also have to prepare `Area Damage Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
-- Add area buff skill, can create by right click in `Project` then choose `Create → Create GameData → Skill → Simple Area Buff Skill`. You also have to prepare `Area Buff Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
+- Add area attack skill, can create by right click in `Project` then choose `Create -> Create GameData -> Skill -> Simple Area Attack Skill`. You also have to prepare `Area Damage Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
+- Add area buff skill, can create by right click in `Project` then choose `Create -> Create GameData -> Skill -> Simple Area Buff Skill`. You also have to prepare `Area Buff Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
 - Add `minGuildNameLength` and `maxGuildNameLength` configs to `SocialSystemSetting` use it to limit guild name length
 - Add `minGuildRoleNameLength` and `maxGuildRoleNameLength` configs to `SocialSystemSetting` use it to limit guild role name length
 - Add `maxGuildMessageLength` configs to `SocialSystemSetting` use it to limit guild message length
@@ -275,7 +275,7 @@ namespace MultiplayerARPG {
 - Fix quest `isComplete` state not saved issues
 - Fix item list / skill list entries are destroyed after open `UICharacterHotkeyAssigner` first time
 - Fix character move sound still playing after ride the mount entity while moving
-- Fix `CharacterItem` → `sockets` not saved issues
+- Fix `CharacterItem` -> `sockets` not saved issues
 - Fix saved `CharacterHotkey` lose issues
 - Fix can move character while casting skill which its `moveSpeedRateWhileUsingSkill` = 0
 - Fix monster character entities not respawn by avoid empty `receivedDamageRecords`
@@ -289,8 +289,8 @@ namespace MultiplayerARPG {
 - Fix character movement state not changes while controller mode is `Point Click`
 
 ## 1.48c
-- Add equip weapon set system, player can switch equip weapon set. developer can set maximum amount of equip weapon set in `Game Instance` → `Max Equip Weapon Set`. For UIs, if you want to add new equip weapon set #2, you have to set `Equip Weapon Slots`'s entry → `Equip Weapon Set Index` to 1.
-- Make defend equipments (an armors) can be equipped to many equipment slot, for example "Ring" can equip to "Ring-1" or "Ring-2" slot. developer can set maximum amount of slots than can be equipped in `Armor Type` → `Equippable Slots`. For UIs, if you want to add "Ring-2" slot to `UI Equip Items`, you have to set `Other Equip Slots`'s entry → `Equip Slot Index` to 1.
+- Add equip weapon set system, player can switch equip weapon set. developer can set maximum amount of equip weapon set in `Game Instance` -> `Max Equip Weapon Set`. For UIs, if you want to add new equip weapon set #2, you have to set `Equip Weapon Slots`'s entry -> `Equip Weapon Set Index` to 1.
+- Make defend equipments (an armors) can be equipped to many equipment slot, for example "Ring" can equip to "Ring-1" or "Ring-2" slot. developer can set maximum amount of slots than can be equipped in `Armor Type` -> `Equippable Slots`. For UIs, if you want to add "Ring-2" slot to `UI Equip Items`, you have to set `Other Equip Slots`'s entry -> `Equip Slot Index` to 1.
 - Fix equipment models not instantiates correctly in character models
 
 ## 1.48b
@@ -305,13 +305,13 @@ namespace MultiplayerARPG {
 - Reduce networking packet size by remove all play effect request network messages
 
 ## 1.48
-- Change settings in `Map Info` → `Can Pvp` to `Pvp Mode`
-- Change settings in `Map Info` → `Override Respawn Point` to `Override Respawn Point Mode`
-- Change settings in `Map Info` → `Override Respawn Point Map` and `Override Respawn Point Position` to `Override Respawn Points`
+- Change settings in `Map Info` -> `Can Pvp` to `Pvp Mode`
+- Change settings in `Map Info` -> `Override Respawn Point` to `Override Respawn Point Mode`
+- Change settings in `Map Info` -> `Override Respawn Point Map` and `Override Respawn Point Position` to `Override Respawn Points`
 - Add simple faction system, now player can select faction in character creation scene
 - Reduce settings in `Game Database`. Remove `Skills` because it can bring from character data, item data. Remove `Player Characters` because it can bring from `Player Character Entities` and Remove `Monster Characters` because it can bring from `Monster Character Entities`
 - Add context menu to `Character Model`, `AnimationCharacterModel` and `AnimatorCharacterModel` to copy / patse `Weapon Animations` and `Skill Animations`
-- Fix empty item slots not filled when `Game Instance` → `Inventory System` is `Limit Slots`
+- Fix empty item slots not filled when `Game Instance` -> `Inventory System` is `Limit Slots`
 - Fix chat input field focusing when spamming keys
 - Fix cannot learn skill with item while skill point == 0
 - Fix flying when spamming mount
@@ -320,8 +320,8 @@ namespace MultiplayerARPG {
 
 ## 1.47d
 - Fix invalid item remove index, that cause other bugs, such as represent invalid items when equip / unequip items
-- Fix infinite loop when fill empty slots, while `Game Instance` → `Inventory System` set to `Limit Slots`, this is cause of Unity freezing when equip / unequip items
-- Fix receiving items filling after empty slots, while `Game Instance` → `Inventory System` set to `Limit Slots
+- Fix infinite loop when fill empty slots, while `Game Instance` -> `Inventory System` set to `Limit Slots`, this is cause of Unity freezing when equip / unequip items
+- Fix receiving items filling after empty slots, while `Game Instance` -> `Inventory System` set to `Limit Slots
 
 ## 1.47c
 - Monster can use skill
@@ -332,7 +332,7 @@ namespace MultiplayerARPG {
 - Fix equipment sockets not saves issues
 - Fix invalid character item title with refine level format
 - Fix invalid building entity location when building with shooter controller
-- Fix bugs when set `Game Instance` → `Inventory System` to `Limit Slots` that it fill empty slot incorrectly, also add `Game Instance` → `Base Slot Limit` can use it as base slot limit for all character while set `Game Instance` → `Inventory System` to `Limit Slots`
+- Fix bugs when set `Game Instance` -> `Inventory System` to `Limit Slots` that it fill empty slot incorrectly, also add `Game Instance` -> `Base Slot Limit` can use it as base slot limit for all character while set `Game Instance` -> `Inventory System` to `Limit Slots`
 - Add not enough MP message
 - Don't send request attack / use skill message to server if no enough ammo or MP
 
@@ -360,7 +360,7 @@ namespace MultiplayerARPG {
 - Fix invalid index of data in `UI Non Equip Items`, this is cause of un-able to equip items or use items issues
 - Add `Item Drop Table` game data, you can use it to create item drop table and set to `Monster Character` game data as more convenience way when you want to have same item drop table for difference monsters
 - Add `Exp Per Damage` to `Harvestable` game data, you can make character receive exp while harvesting with this value, if this is 10 when damage to harvestable entity = 2, character will receives 20 exp
-- Add network discovery component and also implemented it in Lan mode, see example in `01Home` scene → `CanvasHome` → `UILanConnection`
+- Add network discovery component and also implemented it in Lan mode, see example in `01Home` scene -> `CanvasHome` -> `UILanConnection`
 
 ## 1.46
 
@@ -405,7 +405,7 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 - Add gunfire system, can store ammo in magazine, can set dynamic crosshair, can set ability to zoom (more abilities can be added later)
 - Add reload animation settings to `Character Model` component
-- Add `Activate Animation Type` option to `Character Model` → skill animations, developer can use this option to set which animation will play when activate the skill, if this value is `Use Attack Animation` it will play attack animation randomly
+- Add `Activate Animation Type` option to `Character Model` -> skill animations, developer can use this option to set which animation will play when activate the skill, if this value is `Use Attack Animation` it will play attack animation randomly
 - Add `EquipmentEntity` component, developer can attach this component to weapon model to set particle/sound effects when firing (See the demo from Weapon059, Weapon065, Weapon067). May use this for refined equipments particle/mesh effects (refined equipments are an equipment with +1/+2/+3 and so on)
 - Add cancel buttons to invitation dialogs
 - Fix SQLite cannot save character data
@@ -507,12 +507,12 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Add warp dialog for NPC
 - Add private/instance map system for MMO mode, for the demo, you can try enter it by NPC. Instance maps will be spawned as new map server instance to serve players
 - Players can enter instance map alone when no party
-- Players will enter instance map follow party leader if player's character stands nearby party leader (`Game Instance` → `Join Instance Map Distance`)
+- Players will enter instance map follow party leader if player's character stands nearby party leader (`Game Instance` -> `Join Instance Map Distance`)
 - Add `Enable Gm Commands` option to `Lan Rpg Network Manager`, developer can enable it to allow player to use GM Commands in Singleplayer/LAN mode
 - Add warp portal type setting to `Warp Portal Entity`, `Warp Portal Database`. you can set type of portal for default warp or instance map
-- `Warp Portal Entity` → `Map Scene` is deprecated use `Map Info` instead
-- `Warp Portal Database` → `Map` is deprecated use `Map Info` instead
-- `Npc Database` → `Map` is deprecated use `Map Info` instead
+- `Warp Portal Entity` -> `Map Scene` is deprecated use `Map Info` instead
+- `Warp Portal Database` -> `Map` is deprecated use `Map Info` instead
+- `Npc Database` -> `Map` is deprecated use `Map Info` instead
 - Add show guild name above character name
 - Fix monster attack other monsters
 - Save camera zoom and rotation when exit game
@@ -542,8 +542,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Add disallow use skill to buff, if this is true character will not able to use skill while the buff applied
 - Add disallow use item to buff, if this is true character will not able to use item while the buff applied
 - Add `destroyDelay` to `MissileDamageEntity`, use this to add some delay to play effect before it destroyed
-- Move `deadHideDelay` to `BaseMonsterCharacterEntity` → `destroyDelay`, To developers, I've prepared migration codes so you don't worry about data changes
-- Move `deadRespawnDelay` to `BaseMonsterCharacterEntity` → `destroyRespawnDelay`, To developers, I've prepared migration codes so you don't worry about data changes
+- Move `deadHideDelay` to `BaseMonsterCharacterEntity` -> `destroyDelay`, To developers, I've prepared migration codes so you don't worry about data changes
+- Move `deadRespawnDelay` to `BaseMonsterCharacterEntity` -> `destroyRespawnDelay`, To developers, I've prepared migration codes so you don't worry about data changes
 - Add `Movement State` to `Character Entity` which sync from server instead of calculate at client side with `CharacterAnimationComponent` component so `CharacterAnimationComponent` component is not being used anymore with v1.40 or above
 - Remove `ySpeed` from `Character Model`, will use just `IsGrounded` in animtor controller to detect fall state
 - Remove `magnitudeToPlayMoveClip`, `ySpeedToPlayJumpClip`, `ySpeedToPlayFallClip` from `Character Model` will use `Movement State` from `Character Entity` to change legacy animation movement
@@ -572,7 +572,7 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 ## 1.38b
 
 - Add more functionality for dev extensions
-- Fix character model → legacy animation bugs, it didn't playing well and dead animation play looply
+- Fix character model -> legacy animation bugs, it didn't playing well and dead animation play looply
 - Reduce EditorUtility.SetDirty() function calls in OnValidate() function to avoid Unity 2018.3 bug (information about the bug: https://github.com/insthync/test-missing-prefabs)
 - Make it able to select character class when create character (Try single player demo)
 

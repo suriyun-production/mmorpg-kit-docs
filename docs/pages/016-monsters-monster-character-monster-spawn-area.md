@@ -25,7 +25,7 @@ You have to create Monster character to define its data such as stats and attrib
 *   **Random Gold Items**, items that character will gain when kill the monster
 
 You can create new monster character by right click in **Project** tab select   
-**Create → Create GameData → MonsterCharacter**
+**Create -> Create GameData -> MonsterCharacter**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*pGNyaTj56uFQCZvv)
 

@@ -1,6 +1,6 @@
 # Water Area
 
-Water area can be any type of game object which attached collider components. You will have to set game object's layer to `Water` and turn on collider → `isTrigger` to make it works.
+Water area can be any type of game object which attached collider components. You will have to set game object's layer to `Water` and turn on collider -> `isTrigger` to make it works.
 
 ![](../images/npcs/140-01.png)
 

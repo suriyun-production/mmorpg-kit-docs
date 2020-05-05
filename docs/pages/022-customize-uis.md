@@ -191,7 +191,7 @@ I just make an equip item slot to show just icon
 
 *   **Other Equip Slots**, this is list of **UI Character Item Pair** which use to show other equip items (not for right hand / left hand), This is key-value setting which use **Armor Type** as key and **UI Character Item** as value, you should see **Key-Value UI Setting** section for more information
 
-You have to set **UI Character Item → On Click Select** function to **Button → On Click** event for every slots to make it able to select and show **Ui Item Dialog** to let player decide what player want to do with selected item
+You have to set **UI Character Item -> On Click Select** function to **Button -> On Click** event for every slots to make it able to select and show **Ui Item Dialog** to let player decide what player want to do with selected item
 
 ![](https://cdn-images-1.medium.com/max/1600/1*7_hId_p-8SkynhHzS59W0Q.png)
 
@@ -405,8 +405,8 @@ This is UI which showing when character receive dealing request from other chara
 
 * * *
 
-After made modification, save the prefab then set it to **GameInstance → Ui Scene Gameplay Prefab** and **Ui Scene Gameplay Mobile Prefab** for mobile mode UI
+After made modification, save the prefab then set it to **GameInstance -> Ui Scene Gameplay Prefab** and **Ui Scene Gameplay Mobile Prefab** for mobile mode UI
 
-You can test mobile UIs in the editor by set **GameInstance → Use Mobile In Editor** to **TRUE**
+You can test mobile UIs in the editor by set **GameInstance -> Use Mobile In Editor** to **TRUE**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*W9AuXXyn_f9thiwZBDpLzg.png)

@@ -20,14 +20,14 @@ This is database which store an game data, now there are following things that r
 
 There are 2 types of game database that can be created:
 
-*   `Game Database`, with this game database you can set an game data to game database by drag created game data into its fields. You can create this kind of game database by right click in `Project` tab, choose `Create → GameDatabase → Game Database`
-*   `Resources Folder Game Database`, with this game database you can set an game data to game database by create an game data in `Resources` folder (the folder with name `Resources` which can be created anywhere in Assets). You can create this kind of game database by right click in `Project` tab, choose `Create → GameDatabase → Resources Folder Game Database`
+*   `Game Database`, with this game database you can set an game data to game database by drag created game data into its fields. You can create this kind of game database by right click in `Project` tab, choose `Create -> GameDatabase -> Game Database`
+*   `Resources Folder Game Database`, with this game database you can set an game data to game database by create an game data in `Resources` folder (the folder with name `Resources` which can be created anywhere in Assets). You can create this kind of game database by right click in `Project` tab, choose `Create -> GameDatabase -> Resources Folder Game Database`
 
 * * *
 
 ## Switch Game Database
 
-You can change game database by drag created game database to `Game Instance → Game Database` field
+You can change game database by drag created game database to `Game Instance -> Game Database` field
 
 ![](../images/103/001.png)
 

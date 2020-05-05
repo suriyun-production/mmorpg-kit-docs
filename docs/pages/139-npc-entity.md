@@ -4,7 +4,7 @@ Before create new npc entity, you should know about `Npc Dialog Graph`, you can 
 
 ![](../images/npcs/001.png)
 
-You can create new dialog by right click in graph then select `Multiplayer ARPG` → `Npc Dialog`.
+You can create new dialog by right click in graph then select `Multiplayer ARPG` -> `Npc Dialog`.
 
 ![](../images/npcs/002.png)
 
@@ -13,9 +13,9 @@ You can create new dialog by right click in graph then select `Multiplayer ARPG`
 `Npc Dialog` have following configs:
 
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` → `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
 - `Icon` is icon which represent item appearance
 *   `Type` type of this dialog.
 *   `Menus` choices to next dialog, you also can set conditions to show the menu.
@@ -32,7 +32,7 @@ If your project is 3D game, you have to drag skinned mesh to empty scene then ad
 
 * * *
 
-After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.
 * * *
 
 ### How to add Npcs directly to the scene
@@ -49,7 +49,7 @@ Then set created npc dialog graph to `Graph`.
 
 To add Npcs via Npc Database you have to prepare `Npc Entity` prefab and `Npc Dialog Graph`.
 
-About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create → Create GameDatabase → Npc Database`.
+About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create -> Create GameDatabase -> Npc Database`.
 
 ![](../images/npcs/006.png)
 
@@ -57,4 +57,4 @@ Then in `Npc Database` you can set map which you wish to spawn an Npcs then each
 
 ![](../images/npcs/007.png)
 
-Then set `Npc Database` to `Game Instance → Npc Database` in init scene.
+Then set `Npc Database` to `Game Instance -> Npc Database` in init scene.

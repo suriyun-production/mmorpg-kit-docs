@@ -6,7 +6,7 @@ This is the way for developers to add more functionality to the project without 
 
 About to developing an extensions, you may find where the function `InvokeInstanceDevExtMethods` will be called.
 
-For example: in `BaseCharacterEntity` → `Awake` there is `this.InvokeInstanceDevExtMethods("Awake");` so you can extend this function by add codes in partial class file, as this example:
+For example: in `BaseCharacterEntity` -> `Awake` there is `this.InvokeInstanceDevExtMethods("Awake");` so you can extend this function by add codes in partial class file, as this example:
 
 ```
 // PlayerCharacterEntity_Extension001.cs

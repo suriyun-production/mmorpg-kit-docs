@@ -1,6 +1,6 @@
 # How to create Area Attack Skill
 
-You can create area buff skill by right click in `Project` tab then select `Create` → `Create GameData` → `Skill` → `Simple Area Attack Skill`
+You can create area buff skill by right click in `Project` tab then select `Create` -> `Create GameData` -> `Skill` -> `Simple Area Attack Skill`
 
 ![](../images/skills/005.png)
 

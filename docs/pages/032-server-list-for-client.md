@@ -4,7 +4,7 @@ MMORPG KIT — **Server list for client / Client Production Build**
 =================================================================
 
 If you planned to run multiple servers you can add network settings to connect to each server at client side by right click at Project tab select   
-**Create → Create NetworkSetting → MmoNetworkSetting**
+**Create -> Create NetworkSetting -> MmoNetworkSetting**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*98043rQP_fuq-nXw)
 
