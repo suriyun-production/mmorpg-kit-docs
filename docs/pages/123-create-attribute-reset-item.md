@@ -34,4 +34,4 @@ You can create item refine by right click in `Project` tab then select `Create` 
 
 That's an configs for `Attribute Reset Item`
 
-After finish the setup, add it to your [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.

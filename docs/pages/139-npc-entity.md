@@ -32,7 +32,7 @@ If your project is 3D game, you have to drag skinned mesh to empty scene then ad
 
 * * *
 
-After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, drag it to `Project` tab to make prefab then add it to [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 * * *
 
 ### How to add Npcs directly to the scene

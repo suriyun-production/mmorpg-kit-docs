@@ -38,4 +38,4 @@ There are following configs for `Mount Skill`
 
 That's an configs for `Mount Skill`
 
-After finish the setup, add it to your [game database](./pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](./pages/103-game-database.md), you must put it in `Resources` folder.
+After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
