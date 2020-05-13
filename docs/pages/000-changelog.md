@@ -1,3 +1,17 @@
+## 1.55b (2020-05-14)
+- Update LiteNetLib to version 0.9.2.1.
+- Don't notify reward gold and exp if the value <= 0.
+- Fix 2D action animation stopping after played a few times.
+- Fix passive skill's buffs not applies if the skill's start level is > 0.
+- Fix wrong move speed rate while using skill, while activate animation type is attack animation.
+- Fix monster attacking hidden characters.
+- Fix skill casting not stop after interrupted.
+- Fix cannot hold on building to see building options (`PlayerCharacterController`).
+- Fix area skills won't cast to aim position while controller type is `WASD` (`PlayerCharacterController`).
+- Improve chat box, don't highlight all text when press to enter messages.
+- Implement [open character controller](https://github.com/Unity-Technologies/Standard-Assets-Characters) to `RigidbodyEntityMovement`, now slope limit is working, I also add context menu to set radius, height and center based on capsule collider settings.
+![](../images/changelog/4.png)
+
 ## 1.55 (2020-05-05)
 - Fix character not turn to target when use skill while controlling with `PlayerCharacterController` and `wasdLockAttackTarget` is `FALSE`.
 - Make `BaseDamageEntity` and `MissileDamageEntity` variables, functions more accessible by extending classes.
