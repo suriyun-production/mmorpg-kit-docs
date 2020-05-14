@@ -1,3 +1,7 @@
+## 1.55b3 (2020-05-15)
+- Update LiteNetLib to version 0.9.2.2.
+- Fix invalid character is ground state.
+
 ## 1.55b2 (2020-05-15)
 - Fix character fall underground after teleported.
 
