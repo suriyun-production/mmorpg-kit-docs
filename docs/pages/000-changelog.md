@@ -1,3 +1,6 @@
+## 1.55b2 (2020-05-15)
+- Fix character fall underground after teleported.
+
 ## 1.55b (2020-05-14)
 - Update LiteNetLib to version 0.9.2.1.
 - Don't notify reward gold and exp if the value <= 0.
