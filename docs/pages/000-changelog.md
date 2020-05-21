@@ -1,3 +1,12 @@
+## 1.55c (2020-05-22)
+- Add `buildGridOffsets` to `PlayerCharacterController`, will be used while `buildGridSnap` is `TRUE` to set constructing building by grid offsets and grid size.
+- Bring back old rigid body entity movement, it's `LegacyRigibodyEntityMovement` class. Can use `LegacyRigidBodyEntityMovementConversion` with its context menu `Convert From New Rigid Body Entity Movement` to convert new rigid body entity movement to old rigid body entity movement.
+- Add bounds to every game entity, just use it to detect entity within range for now.
+- Make `HarvestableEntity` overrideable.
+- Fix virtual axes inputs not reset when disable the joystick.
+- Move physics functions which has an similar functionality to physic function classes (PhysicFunctionsm PhysicFunctions2D).
+- Make character model able to set equipment model by instantiated objects (children objects). Can see how it work [here](https://www.youtube.com/watch?v=K1x7ZhGFhqw).
+
 ## 1.55b3 (2020-05-15)
 - Update LiteNetLib to version 0.9.2.2.
 - Fix invalid character is ground state.
