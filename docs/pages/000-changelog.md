@@ -1,3 +1,25 @@
+## 1.55d (2020-05-30)
+- Fix `UICharacterBuff` buff remains duration updates incorrectly.
+- Fix `UICharacterSummon` summon remains duration updates incorrectly.
+- Fix `UICharacterSkill` cooldown remains duration updates incorrectly.
+- Fix `UIArmorAmounts` updates incorrectly when value equals to 0.
+- Fix `UIAttributeAmounts` updates incorrectly when value equals to 0.
+- Fix `UIDamageElementAmounts` updates incorrectly when min and max values equals to 0.
+- Fix `UIDamageElementInflictions` updates incorrectly when value equals to 0.
+- Fix `UIResistanceAmounts` updates incorrectly when value equals to 0.
+- Fix `UISkillLevels` updates incorrectly when value equals to 0.
+- Fix vehicle's passenger characters freeze when the driver exit the summoned vehicle.
+- Fix non-host character can't move the vehicle while driving.
+- Fix `RigidbodyEntityMovement` can move through walls while idle.
+- Fix `ShooterPlayerCharacterController` wrong aim position while character casting skill.
+- Change `BasePlayerCharacterEntity` → `storageItems` from sync list to sync field, to update just once when value changed to reduce callback hooks.
+- Fix summoned monster which summon by monster not help summoner to attack enemies.
+- Add `RandomAttackHitOccurs` abstract function to `BaseGameplayRule`, it will be used to random attack hit when character receive damage from another character.
+- Add `pointClickInterruptCastingSkill` setting to `PlayerCharacterController`, if this is `TRUE` it will interrupt casting skill when click on ground to move.
+- Add `INIT_POOL_TO_TRANSFORM` preprocessor directives to make the pooling system instantiates pooling objects as `_poolingTransform` children while playing in editor.
+- Add walk animations to `AnimatorCharacterModel` and `AnimationCharacterModel` (And also add new states to `__AdvanceCharacter` and `__SimpleCharacter` animator controller), For now it will be used for monster wander movement animations.
+- Fills empty movement animation clips when `AnimatorCharacterModel` or `AnimationCharacterModel` awakening.
+
 ## 1.55c (2020-05-22)
 - Add `buildGridOffsets` to `PlayerCharacterController`, will be used while `buildGridSnap` is `TRUE` to set constructing building by grid offsets and grid size.
 - Bring back old rigid body entity movement, it's `LegacyRigibodyEntityMovement` class. Can use `LegacyRigidBodyEntityMovementConversion` with its context menu `Convert From New Rigid Body Entity Movement` to convert new rigid body entity movement to old rigid body entity movement.
