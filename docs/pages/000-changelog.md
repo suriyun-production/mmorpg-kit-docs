@@ -1,3 +1,16 @@
+## 1.56 (2020-06-23)
+- Fix character bouncing on water surface while `LegacyRigidBodyEntityMovement` → `autoSwimToSurface` set to `TRUE`.
+- Fix character bouncing on water surface while `RigidBodyEntityMovement` → `autoSwimToSurface` set to `TRUE`.
+- Fix building entities that were built inside safe-area won't receive damages.
+- Move `gameplayCameraPrefab` and `minimapCameraPrefab` from `BasePlayerCharacterController` to implemented classes (`PlayerCharacterController`/`ShooterPlayerCharacterController`).
+- Make only placeholder building owner character can build other building on the placeholder.
+- Make `ItemDropEntity` can be placed in the scene and also able to respawn after picked up by characters.
+- Add `useOverrideStartPosition` and `overrideStartPosition` to `PlayerCharacter`, uses them to change override start position when create new character.
+- Add pickup animation settings to an character model classes.
+- Add run animation settings to `CharacterModel2D` and `AnimatorCharacterModel2D`.
+- Add item repair dialog (`UIRepairItem`).
+- Remove `dataId` from building entity and save classes, will use identity's `hashAssetId` instead. For MMO developers who use MySQL, please import migration script: `mysql_update_1.55d-1.56.sql`.
+
 ## 1.55d (2020-05-30)
 - Fix `UICharacterBuff` buff remains duration updates incorrectly.
 - Fix `UICharacterSummon` summon remains duration updates incorrectly.
