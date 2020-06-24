@@ -1,3 +1,10 @@
+## 1.56b (2020-06-24)
+- Fix `ItemDropEntity` dropping item not initialized.
+- Fix `ItemDropSpawnArea` not spawn item drop entities.
+- Fix wrong pick up animation key.
+- Improve default animator controller.
+- Remove Mixamo animation clips.
+
 ## 1.56 (2020-06-23)
 - Fix character bouncing on water surface while `LegacyRigidBodyEntityMovement` → `autoSwimToSurface` set to `TRUE`.
 - Fix character bouncing on water surface while `RigidBodyEntityMovement` → `autoSwimToSurface` set to `TRUE`.
