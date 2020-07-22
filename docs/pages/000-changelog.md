@@ -1,9 +1,60 @@
+## 1.57 (2020-07-22)
+### New UI Components
+- Add `UIOwningAmmoAmount` component, which will set an event to update `UIAmmoAmount` when owning character's data which relates to weapon ammo amount changes. So we could attach this component to the same game object with `UIAmmoAmount` which intended to show ammo amount of character which player controls, and we also won't have to set the `UIAmmoAmount` to `UISceneGameplay` -> `uiAmmoAmount` field to set an event.
+- Add `UIOwningCharacter` component, which will set an event to update `UICharacter` when owning character's data which relates to character changes. So we could attach this component to the same game object with `UICharacter` which intended to show information of character which player controls, and we also won't have to set the `UIOwningCharacter` to `UISceneGameplay` -> `uiCharacters` field to set an event.
+- Add `UIOwningEquipItems` component, which will set an event to update `UIEquipItems` when owning character's data which relates to character's equip items changes. So we could attach this component to the same game object with `UIEquipItems` which intended to show equip items of character which player controls, and we also won't have to set the `UIOwningEquipItems` to `UISceneGameplay` -> `uiCharacterEquipItems` field to set an event.
+- Add `UIOwningHotkeys` component, which will set an event to update `UICharacterHotkeys` when owning character's data which relates to character's hotkeys changes. So we could attach this component to the same game object with `UICharacterHotkeys` which intended to show hotkeys of character which player controls, and we also won't have to set the `UIOwningHotkeys` to `UISceneGameplay` -> `uiCharacterHotkeys` field to set an event.
+- Add `UIOwningNonEquipItems` component, which will set an event to update `UINonEquipItems` when owning character's data which relates to character's non-equip items changes. So we could attach this component to the same game object with `UINonEquipItems` which intended to show non-equip items (inventory items) of character which player controls, and we also won't have to set the `UIOwningNonEquipItems` to `UISceneGameplay` -> `uiCharacterNonEquipItems` field to set an event.
+- Add `UIOwningQuests` component, which will set an event to update `UICharacterQuests` when owning character's data which relates to character's quests changes. So we could attach this component to the same game object with `UICharacterQuests` which intended to show quests of character which player controls, and we also won't have to set the `UIOwningQuests` to `UISceneGameplay` -> `uiCharacterQuests` field to set an event.
+- Add `UIOwningSkills` component, which will set an event to update `UICharacterSkills` when owning character's data which relates to character's skills changes. So we could attach this component to the same game object with `UICharacterSkills` which intended to show skills of character which player controls, and we also won't have to set the `UIOwningSkills` to `UISceneGameplay` -> `uiCharacterSkills` field to set an event.
+- Add `UIOwningStorageItems` component, which will set an event to update `UICharacterStorageItems` when owning character's data which relates to character's storage items changes. So we could attach this component to the same game object with `UICharacterStorageItems` which intended to show storage items of character which player controls, and we also won't have to set the `UIOwningStorageItems` to `UISceneGameplay` -> `uiCharacterStorageItems` field to set an event.
+- Add `UIOwningSummons` component, which will set an event to update `UICharacterSummons` when owning character's data which relates to character's summons changes. So we could attach this component to the same game object with `UICharacterSummons` which intended to show summoned monsters of character which player controls, and we also won't have to set the `UIOwningSummons` to `UISceneGameplay` -> `uiCharacterSummons` field to set an event.
+- Add `UIToggler` component, can attach to any game object which always active to toggle the UI by defined key. It's alternative of `UISceneGameplay` -> `toggleUis`.
+- Add `UIBlockController` component, can attach to UIs which will block controls while one of them is showing. So while one of block controller UI is showing, player won't be able to control character (made to work with `ShooterPlayerCharacterController` only for now). It's alternative of `UISceneGameplay` -> `blockControllerUis`.
+- Add `ReloadButtonActivator` component, set reload virtual joystick to `activateObjects` to make it activate while character equip weapon which can reload and dectivate while character equip weapon which cannot reload.
+
+### New Components
+- Add `CharacterAlignOnGround` component which will align character animation on ground slope, attach it to your horse entity then set skinned mesh's root bone's transform to `rootBoneTransform` field.
+
+### Bugs Fixes
+- Fix missing `using TMPro;` in `GenericUtils`.
+- Fix `NpcDialogConditionData` not being saved.
+- Fix `WeaponItem` -> `EquipType` its value is invalid.
+- Fix `UIArmorAmounts` not update correctly when un-equip an items.
+- Fix `UIAttributeAmounts` not update correctly when un-equip an items.
+- Fix `UIDamageElementAmounts` not update correctly when un-equip an items.
+- Fix `UIResistanceAmounts` not update correctly when un-equip an items.
+- Fix `ShooterPlayerCharacterController` find entities in front of owning character incorrectly.
+- Fix `HarvestableEntity` multiple respawning when it destroy.
+- Fix `HarvestableEntity` multiple trigger `OnHarvestableDestroy` event when it destroy.
+- Fix `BuildingEntity` multiple trigger `OnBuildingDestroy` event when it destroy.
+- Fix `PlayerCharacterController` do action on target (activate building, NPC and so on) repeatly.
+- Fix `AnimatorCharacterModel` playing action/cast skill incorrectly by add `actionStateNames` and `castSkillStateNames` settings to force it play action animation and cast skill animation by state name. For developer who made custom animator controller for `AnimatorCharacterModel`, please read **Note** section.
+
+### Improvements
+- Add `onActivateBuilding` event to `BasePlayerCharacterController`, developer may add event to the action with dev extension to do something when activate custom buildings.
+- Add `onBuildingConstruct` event to `BuildingEntity`, which will trigger when building just constructed.
+- Add `applyJumpForceMode` and `applyJumpForceFixedDuration` settings to `LegacyRigidBodyEntityMovement` and `RigidBodyEntityMovement`. `applyJumpForceFixedDuration` will be used while `applyJumpForceMode` is `ApplyAfterFixedDuration` to apply jump force after define duration. While `applyJumpForceMode` is `ApplyAfterJumpDuration` it will apply jump force after played jump animation.
+- Add play clip speed rate settings to `AnimatorCharacterModel` and `AnimationCharacterModel`. For developer who made custom animator controller for `AnimatorCharacterModel`, please read **Note** section.
+- Add amount to `CraftItem`, min value is 1, so when it was <= 0 it will set to 1.
+- Add function to get value of cached attribute, skill, resistance, armor, increase damage and equipment set easier to `CharacterDataCache`.
+- Draw entity bounds when select the entity only.
+- Move avatar mask named `TopMask` from Demo folder to CORE's resource.
+- Improve find ground function for drop item and spawn entities.
+
+### Note
+- For developer who made custom animator controller for `AnimatorCharacterModel`, you have to add `HurtSpeedMultiplier`(float, default = 1.0) and set it to hurt state -> speed multiplier. Add `DeadSpeedMultiplier`(float, default = 1.0) and set it to dead state -> speed multiplier. Add `JumpSpeedMultiplier`(float, default = 1.0) and set it to jump state -> speed multiplier. Add `FallSpeedMultiplier`(float, default = 1.0) and set it to fall state -> speed multiplier. Add `PickupSpeedMultiplier`(float, default = 1.0) and set it to pickup state -> speed multiplier. Other than this, you have to set action and cast skill state names for each layers to `actionStateNames` and `castSkillStateNames` settings.
+
+* * *
+
 ## 1.56b (2020-06-24)
 - Fix `ItemDropEntity` dropping item not initialized.
 - Fix `ItemDropSpawnArea` not spawn item drop entities.
 - Fix wrong pick up animation key.
 - Improve default animator controller.
 - Remove Mixamo animation clips.
+
+* * *
 
 ## 1.56 (2020-06-23)
 - Fix character bouncing on water surface while `LegacyRigidBodyEntityMovement` → `autoSwimToSurface` set to `TRUE`.
@@ -17,6 +68,8 @@
 - Add run animation settings to `CharacterModel2D` and `AnimatorCharacterModel2D`.
 - Add item repair dialog (`UIRepairItem`).
 - Remove `dataId` from building entity and save classes, will use identity's `hashAssetId` instead. For MMO developers who use MySQL, please import migration script: `mysql_update_1.55d-1.56.sql`.
+
+* * *
 
 ## 1.55d (2020-05-30)
 - Fix `UICharacterBuff` buff remains duration updates incorrectly.
@@ -40,6 +93,8 @@
 - Add walk animations to `AnimatorCharacterModel` and `AnimationCharacterModel` (And also add new states to `__AdvanceCharacter` and `__SimpleCharacter` animator controller), For now it will be used for monster wander movement animations.
 - Fills empty movement animation clips when `AnimatorCharacterModel` or `AnimationCharacterModel` awakening.
 
+* * *
+
 ## 1.55c (2020-05-22)
 - Add `buildGridOffsets` to `PlayerCharacterController`, will be used while `buildGridSnap` is `TRUE` to set constructing building by grid offsets and grid size.
 - Bring back old rigid body entity movement, it's `LegacyRigibodyEntityMovement` class. Can use `LegacyRigidBodyEntityMovementConversion` with its context menu `Convert From New Rigid Body Entity Movement` to convert new rigid body entity movement to old rigid body entity movement.
@@ -49,12 +104,18 @@
 - Move physics functions which has an similar functionality to physic function classes (PhysicFunctionsm PhysicFunctions2D).
 - Make character model able to set equipment model by instantiated objects (children objects). Can see how it work [here](https://www.youtube.com/watch?v=K1x7ZhGFhqw).
 
+* * *
+
 ## 1.55b3 (2020-05-15)
 - Update LiteNetLib to version 0.9.2.2.
 - Fix invalid character is ground state.
 
+* * *
+
 ## 1.55b2 (2020-05-15)
 - Fix character fall underground after teleported.
+
+* * *
 
 ## 1.55b (2020-05-14)
 - Update LiteNetLib to version 0.9.2.1.
@@ -69,6 +130,8 @@
 - Improve chat box, don't highlight all text when press to enter messages.
 - Implement [open character controller](https://github.com/Unity-Technologies/Standard-Assets-Characters) to `RigidbodyEntityMovement`, now slope limit is working, I also add context menu to set radius, height and center based on capsule collider settings.
 ![](../images/changelog/4.png)
+
+* * *
 
 ## 1.55 (2020-05-05)
 - Fix character not turn to target when use skill while controlling with `PlayerCharacterController` and `wasdLockAttackTarget` is `FALSE`.
@@ -87,6 +150,8 @@
 - Implement impact effect to damage info.
 - Don't prepare `GameEffect` and `ProjectileEffect` pooling objects, if the running application is not a client.
 
+* * *
+
 ## 1.54f (2020-04-28)
 - Improve mobile controllers.
 - Make `GM Commands` class to be scriptable object to make it switchable, other developers may crate class which extends from `BaseGMCommands` class and implement an functions (Can see `DefaultGMCommands` as example). Then can set created data to `Game Instance` -> `Gm Commands`.
@@ -96,14 +161,20 @@
 - Improve `PlayerCharacterController`. Now, while `wasdLockAttackTarget` is `FALSE` it will turn to enemy when press attack or use skill. And it won't clear selected target when press movement keys (WASD), it will deselect target when distance to target more than `wasdClearTargetDistance` value.
 - Move an events variables to (`BaseCharacterEntity_Events.cs`, `BasePlayerCharacterEntity_Events.cs`) to make it easier to find an events to implement with dev extensions or other classes.
 
+* * *
+
 ## 1.54e (2020-04-16)
 - Add `isAttackBuilding` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks buildings.
 - Add `isAggressiveWhileSummonerIdle` option to `MonsterActivityComponent`, If this is `TRUE`, monster will attacks targets while its summoner still idle.
 - Add `turnForwardWhileDoingAction` option to `ShooterPlayerCharacterController`, If this is `TRUE`, it will control character to turn forward while doing an action (attack, use skills, activate and so on). And target also have to be on front of the character.
 
+* * *
+
 ## 1.54d (2020-04-15)
 - Fix invalid NPC Dialog UI while its type is `Shop`.
 - Improve `PlayerCharacterController` to don't turn to move direction while playing action animation.
+
+* * *
 
 ## 1.54c (2020-04-10)
 - Add slot limit to `UICharacter`.
@@ -117,12 +188,16 @@
 - Add configs to make cast skill animations and action animations can be played all layers.
 - Add `BaseNpcDialog` class it is `NpcDialog`'s base class, you can create custom NPC dialog by inherit `BaseNpcDialog` class, then implements abstract functions (You may see `NpcDialog` as example). Then you may add codes to `UINpcDialog` by creates new partial class files which have an custom UI elements and implement `RenderUI` to render an custom UI elements.
 
+* * *
+
 ## 1.54b (2020-03-21)
 - Change aim controller while constructing the building, now the constructing buiding will place on ground follow mouse position while moving mouse cursor while playing on standalone platforms. If playing on mobile platforms, it will place by character position with mobile controller axes magnitude.
 - Add constructing building rotation by keys, for the demo it uses keys `J` and `K`.
 - Move `Build Distance` settings from `Game Instance` to `Building Entity` so each entities can have difference `Build Distance`.
 - Fix invalid area skill position while controlling with Mobile controller (On screen controller).
 - Fix invalid ally and enemy check logics.
+
+* * *
 
 ## 1.54 (2020-03-12)
 - Add and implement extra data to building save. For use case example, `CampFireEntity` will have an turn on state save as extra data.
@@ -140,12 +215,16 @@
 - Fix camera zooming while scrolling scrollview with middle mouse key while playing with `ShooterPlayerCharacterController`.
 - Fix equipments and buffs re-apply when mount and unmount.
 
+* * *
+
 ## 1.53d (2020-03-02)
 - Add codes to avoid hotkeys spamming.
 - Fix camera zooming while scrolling scrollview with middle mouse key.
 - Fix invalid character createable state.
 - Fix gold not multiplies with item's amount when dismantle item.
 - Fix dismantle button not appearing while `canDismantleItemByPlayer` setting is turn-on.
+
+* * *
 
 ## 1.53c (2020-02-28)
 - Add `canRefineItemByPlayer` setting to `GameInstance`, developer can turn it on to allow player to refine item by does not have to talk to NPCs.
@@ -173,6 +252,8 @@
 - Fix dismantle returning item amount not multiplies with dismantle item amount.
 
 
+* * *
+
 ## 1.53b (2020-02-25)
 - Add `dismantleFilter` setting to `GameInstance`.
 - Add `maxCharacterSaves` setting to `GameInstance` but does not validating with server when creating character yet. Just count characters after loaded and trigger `UICharacterList`'s events.
@@ -193,6 +274,8 @@
 - Item_SocketEnhance.cs (Rename to BaseItem_SocketEnhance.cs)
 - SkillUtils.cs
 
+* * *
+
 ## 1.53
 - Add item dismantle system, can dismantle an items to get items in sockets back and also can set `Item`'s dismantle config for returning items and gold when dismantle.
 - Add campfire entity, it's extended from storage entity with convert items configs. And also set convert items as fuel, if there is any convert item is fuel, campfire entity must have convert item in storage to turn on.
@@ -204,12 +287,16 @@
 - Fix item losts after move item from storage.
 - Fix duplicating local-chat.
 
+* * *
+
 ## 1.52c
 - Add new input to `ShooterPlayerCharacterController` to make it able to hold `E` while pointing on building entity to show building menu.
 - Rename `BaseVehicleEntity` class to `VehicleEntity` class, changed it from abstract class to non-abstract class and implements all functionality. Now developer can use `VehicleEntity` class instead of `MountEntity` class, `MountEntity` still derived from `VehicleEntity` class without non of any functionality changes for backward compatible.
 - Fix default 2D movement will move to latest point click position after controlled by WASD keys.
 - Implement multiple seats supports to vehicle entities.
 - Vehicle/Mount entity which summon by skills or items will be saved and loaded when enter the game, enter the warp portals.
+
+* * *
 
 ## 1.52b
 - Rename `SimpleGameplayRule` class to `DefaultGameplayRule` but still keep `SimpleGameplayRule` class for backward compatible.
@@ -220,6 +307,8 @@
 - Fix `AnimatorCharacterModel2D` playing wrong animations. And also add `OrcsWarrior2D` to 2d demo content to show how to setup character with `AnimatorCharacterModel2D`.
 - Fix character's EXP still collecting after reached max level.
 - Fix mobile hotkey joystick inputs, it used to have to double tap to use hotkey.
+
+* * *
 
 ## 1.52
 - Implement character crouch movement (Can test by press `Left Control`) to `Animator Character Model`, `Animation Character Model` and `Rigidbody Entity Movement`. You can set move speed rate while crouching at `Simple Gameplay Rule` -> `Move Speed Rate While Crouching`.
@@ -240,6 +329,8 @@
 - Fix invalid missile trigger objects in 2D mode.
 - Fix invalid buffs duration count at clients.
 
+* * *
+
 ## 1.51
 - Implement character entity's `Pitch`, it will be updated by controller while aiming up or down.
 - Add `CharacterPitchIK` component, attach it to character entity to update character's aim pitch by any bones.
@@ -249,6 +340,8 @@
 - Fix when summoned monsters kills quest monsters, quest's task won't counting up.
 - Fix when damge debuffs kills quest monsters, quest's task won't counting up.
 
+* * *
+
 ## 1.50d
 - Implement root motion support to `RigidBodyEntityMovement`, see `useRootMotionForMovement`, `useRootMotionForAirMovement`, `useRootMotionForJump` and `useRootMotionForFall`.
 - Implement stamina to demo, press `Left Shift` to toggle sprint. For shooter controller hold `Left Shift` to sprint.
@@ -256,6 +349,8 @@
 - Fix reset skill item not consumed.
 - Fix invalid warp position while `GameInstance` -> `currentPositionSaveMode` is `UseRespawnPosition`.
 - Fix multi hit animation works incorrectly.
+
+* * *
 
 ## 1.50c
 - Add `BuffToTarget` to `Skill` -> `SkillBuffType`, if skill isn't attack skill, will buff to selected target
@@ -267,6 +362,8 @@
 - Fix item skills not available to assign to hotkey
 - Fix item skills not available to use
 - Fix character level not increased after exp increased by harvestable entity
+
+* * *
 
 ## 1.50b
 - Improve game data list view, if entry is not empty it will show index with name and text color will be blue, if it is empty text color will be red.
@@ -296,6 +393,8 @@ namespace MultiplayerARPG {
 - Improve bonus stats display, now it will show as "Hp: +1", "Mp: +1".
 - Fix skill level bonus from equipment set bonus not applies to UIs.
 
+* * *
+
 ## 1.50
 - Add `Awake` and `OnDestroy` dev extension functions to `BasePlayerCharacterController`
 - Implement In-App Purchasing for Singleplayer game
@@ -310,6 +409,8 @@ namespace MultiplayerARPG {
 - Fix invalid `IBuildingSaveData` -> `CloneTo` dev extension implementation
 - Fix skills not update when equip items that increase skill levels
 
+* * *
+
 ## 1.49d
 - 2D games can build an buildings
 - Add multilingual supports for NPC dialog menu
@@ -322,6 +423,8 @@ namespace MultiplayerARPG {
 - Fix shooter controller cannot attack while playing on mobile platforms
 - Fix passive skill not working
 
+* * *
+
 ## 1.49c
 - Add area attack skill, can create by right click in `Project` then choose `Create -> Create GameData -> Skill -> Simple Area Attack Skill`. You also have to prepare `Area Damage Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
 - Add area buff skill, can create by right click in `Project` then choose `Create -> Create GameData -> Skill -> Simple Area Buff Skill`. You also have to prepare `Area Buff Entity`, which require collider and rigidbody to make physic trigger event works. (See it: https://www.youtube.com/watch?v=PErdX5rfvGk)
@@ -333,6 +436,8 @@ namespace MultiplayerARPG {
 - Fix invalid left-hand weapon aim position in shooter controller
 - Fix quest missing data bugs when deserialize
 
+* * *
+
 ## 1.49b
 - Add utility script named `ImageBasedOnPlayingCharacterClass`, to set image based on playing character, developer may attach it to mobile attack button to change image based on playing character
 - Add utility script named `ImageBasedOnEquippedWeaponType`, to set image based on equipped weapon type, developer may attach it to mobile attack button to change image based on equipped weapon type
@@ -341,6 +446,8 @@ namespace MultiplayerARPG {
 - Fix invalid unequip weapon set
 - Fix character not rotate while aiming with sniper
 - Fix wrong shooter camera controls on mobile platforms
+
+* * *
 
 ## 1.49
 - Add skill aim controls for mobile and also can cancel aimming skill, try drag assigned skill icon to use
@@ -353,6 +460,8 @@ namespace MultiplayerARPG {
 - Fix monster character entities not respawn by avoid empty `receivedDamageRecords`
 - Fix invalid `criRate`, `criDmgRate`, `blockRate` and `blockDmgRate` calculation
 
+* * *
+
 ## 1.48d
 - Add equip weapon set switch by key, for the demo it is key **`** (the key below **Esc** and above **Tab**)
 - Add character stats rate for item/skill buffs, it will be calculated by character's stats not including with stats from equipments and buffs. For example, if character have 100 Hp, and also equip armor which increase 20 Hp and 10% Hp rate, it will increase 30 Hp by the armor (20 + (100 * 10%)) so the character will have 130 Hp
@@ -360,10 +469,14 @@ namespace MultiplayerARPG {
 - Armor stats (in `CharacterStats` struct) is deprecated, now there is new armor system, you can set armor to reduce damage for each damage elementals
 - Fix character movement state not changes while controller mode is `Point Click`
 
+* * *
+
 ## 1.48c
 - Add equip weapon set system, player can switch equip weapon set. developer can set maximum amount of equip weapon set in `Game Instance` -> `Max Equip Weapon Set`. For UIs, if you want to add new equip weapon set #2, you have to set `Equip Weapon Slots`'s entry -> `Equip Weapon Set Index` to 1.
 - Make defend equipments (an armors) can be equipped to many equipment slot, for example "Ring" can equip to "Ring-1" or "Ring-2" slot. developer can set maximum amount of slots than can be equipped in `Armor Type` -> `Equippable Slots`. For UIs, if you want to add "Ring-2" slot to `UI Equip Items`, you have to set `Other Equip Slots`'s entry -> `Equip Slot Index` to 1.
 - Fix equipment models not instantiates correctly in character models
+
+* * *
 
 ## 1.48b
 - Add friend system (Press Z to toggle the dialog)
@@ -375,6 +488,8 @@ namespace MultiplayerARPG {
 - Fix `UIAmmoAmounts` not updates when ammo reduce
 - Changes damage entities to non-networking object, so networking packet to spawn it will be removed
 - Reduce networking packet size by remove all play effect request network messages
+
+* * *
 
 ## 1.48
 - Change settings in `Map Info` -> `Can Pvp` to `Pvp Mode`
@@ -390,10 +505,14 @@ namespace MultiplayerARPG {
 - Fix character UIs still remains in list after deleted all characters
 - Update demo to show how to setup factions, genders and character class selections
 
+* * *
+
 ## 1.47d
 - Fix invalid item remove index, that cause other bugs, such as represent invalid items when equip / unequip items
 - Fix infinite loop when fill empty slots, while `Game Instance` -> `Inventory System` set to `Limit Slots`, this is cause of Unity freezing when equip / unequip items
 - Fix receiving items filling after empty slots, while `Game Instance` -> `Inventory System` set to `Limit Slots
+
+* * *
 
 ## 1.47c
 - Monster can use skill
@@ -408,12 +527,16 @@ namespace MultiplayerARPG {
 - Add not enough MP message
 - Don't send request attack / use skill message to server if no enough ammo or MP
 
+* * *
+
 ## 1.47b
 - Fix invalid missile rotation in 2d mode
 - Fix cannot attack issues
 - Fix missile can hit other missile
 - Fix missile can hit non-ally character (it will explode but not apply damage)
 - Fix missile can hit dropped items
+
+* * *
 
 ## 1.47
 - Add attribute increase item, can use it to increase amount of attribute.
@@ -427,6 +550,8 @@ namespace MultiplayerARPG {
 - Reduce packet size when update summon cooldown, now it will send only cooldown (float). Type (byte), Data Id (int), and Object Id (uint) will not being sent.
 - Reduce packet for non-owner character item, now it will send only Data Id (int), Level (short) to non-owner client because non-owner client requires only Data Id and Level to update character equipments. Owner client still receive full data (Id (string), Data Id (int), Level (short), Amount (short), Durability (float), Exp (int), Lock Remains Duration (float), Ammo (short), and Sockets (int[])).
 
+* * *
+
 ## 1.46b
 
 - Fix invalid index of data in `UI Non Equip Items`, this is cause of un-able to equip items or use items issues
@@ -434,9 +559,13 @@ namespace MultiplayerARPG {
 - Add `Exp Per Damage` to `Harvestable` game data, you can make character receive exp while harvesting with this value, if this is 10 when damage to harvestable entity = 2, character will receives 20 exp
 - Add network discovery component and also implemented it in Lan mode, see example in `01Home` scene -> `CanvasHome` -> `UILanConnection`
 
+* * *
+
 ## 1.46
 
 See it in [1.46 Updates](pages/055-1-46-updates.md)
+
+* * *
 
 ## 1.45c
 
@@ -459,6 +588,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.45b
 
 - Fix armor can equip at weapon slot
@@ -472,6 +603,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Sort game data create menu
 
 
+
+* * *
 
 ## 1.45
 
@@ -487,12 +620,16 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.44c
 
 - Fix cannot assign and use skills bugs
 - Fix item dialog showing up when receiving damage while enhance socket item UI is visible
 
 
+
+* * *
 
 ## 1.44b
 
@@ -502,6 +639,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Fix cannot use GM commands in MMO mode
 
 
+
+* * *
 
 ## 1.44
 
@@ -516,6 +655,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Fix invalid stats value in item UI
 
 
+
+* * *
 
 ## 1.43b
 
@@ -534,6 +675,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.43
 
 - Update LiteNetLib to version 0.8.3
@@ -551,6 +694,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.42b
 
 - Fix gold not save in Singleplayer / LAN Modes
@@ -560,6 +705,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Fix invalid melee hit overlap functions
 
 
+
+* * *
 
 ## 1.42
 
@@ -573,6 +720,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Can switch database with config files/command line arguments, also add `Database Options`, `Database Option Index` to `MMOServerInstance`
 
 
+
+* * *
 
 ## 1.41
 
@@ -591,6 +740,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.40b
 
 - Fix missile damage entity still move after exploded
@@ -601,6 +752,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Fix annoying camera's target null error when warp :P
 
 
+
+* * *
 
 ## 1.40
 
@@ -622,6 +775,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.39b
 
 - Fix invalid range skill aim position
@@ -629,6 +784,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Fix invalid ground detection on non-owning clients
 
 
+
+* * *
 
 ## 1.39
 
@@ -641,6 +798,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 
 
 
+* * *
+
 ## 1.38b
 
 - Add more functionality for dev extensions
@@ -649,6 +808,8 @@ See it in [1.46 Updates](pages/055-1-46-updates.md)
 - Make it able to select character class when create character (Try single player demo)
 
 
+
+* * *
 
 ## 1.38
 
@@ -662,6 +823,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.37b
 
 - Refactor C# var to explicit type
@@ -671,6 +834,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Fix footstep sound playing while jump
 
 
+
+* * *
 
 ## 1.37
 
@@ -685,6 +850,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.36
 
 - Add group buff / party buff skills
@@ -693,6 +860,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add GM commands
 
 
+
+* * *
 
 ## 1.35
 
@@ -704,6 +873,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.34b
 
 - Fix empty guild data for UI Guild
@@ -711,6 +882,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add `hitOnlySelectedTarget` to `DamageInfo` class to make sword swing / arrow hitting only the selected target, instead of hitting any characters by hit FOV
 
 
+
+* * *
 
 ## 1.34
 
@@ -720,6 +893,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.33
 
 - Fix leave party messages not sent to clients
@@ -728,6 +903,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Showing game messages such as "Cannot carry anymore", "Not enough gold", "Not enough items"
 
 
+
+* * *
 
 ## 1.32
 
@@ -739,6 +916,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.31
 
 - Fix cannot create guild with SQLite database
@@ -747,12 +926,16 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.30b
 
 - Add default value to characters.partyId, characters.guildId, characters.guildRole, characters.sharedGuildExp for SQLite to fix it is not able to create new character
 - Change how to get free ports to fix it is not able to create offline game on Mac OSX
 
 
+
+* * *
 
 ## 1.30
 
@@ -765,6 +948,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.29
 
 - Add party system (Can create / invite member / kick member / leave / terminate / set exp share / set item share)
@@ -772,12 +957,16 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.28
 
 - Add choices for Player Character Movement to secure or not
 - Reduce network transform packet size
 
 
+
+* * *
 
 ## 1.27
 
@@ -790,6 +979,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.26
 
 - Add cash shop demo
@@ -799,11 +990,15 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.25b
 
 - Fix invalid map server scene loads
 
 
+
+* * *
 
 ## 1.25
 
@@ -815,6 +1010,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.24
 
 - Fix duplicating listing data bugs
@@ -824,6 +1021,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.23
 
 - Add Dev extension demo
@@ -832,6 +1031,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add safe zone, Player cannot attack other players in safe zone, Monster cannot move into safe zone
 
 
+
+* * *
 
 ## 1.22
 
@@ -847,11 +1048,15 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.21
 
 - Equipment Refining
 
 
+
+* * *
 
 ## 1.20
 
@@ -864,6 +1069,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.19
 
 - Start scene / other scenes are deprecated, use Map Info instead
@@ -871,6 +1078,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add new solution to add NPCs, by using Npc Database
 
 
+
+* * *
 
 ## 1.18
 
@@ -882,6 +1091,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.17
 
 - Separate (BaseCharacterEntity, PlayerCharacterEntity) to multiple files for more easier to read
@@ -890,6 +1101,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.16
 
 - NPC can sell items
@@ -897,6 +1110,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Move and changes condition codes: Current <= 0 to IsDead()
 
 
+
+* * *
 
 ## 1.15
 
@@ -908,6 +1123,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.14
 
 - Building system
@@ -917,6 +1134,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.12
 
 - Fix mobile demo UI issues
@@ -924,6 +1143,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Able to override action animation clips. So if you have difference animations for difference character model, you can override it.
 
 
+
+* * *
 
 ## 1.11
 
@@ -934,6 +1155,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add equipment durability
 
 
+
+* * *
 
 ## 1.10
 
@@ -947,11 +1170,15 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.04
 
 - Hungry, Thirsty, Food and Water system
 
 
+
+* * *
 
 ## 1.03
 
@@ -963,6 +1190,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 
 
 
+* * *
+
 ## 1.02
 
 - Add `controllerMode` to `PlayerCharacterController`, developer can set it to PointClick or WASD or Both
@@ -973,6 +1202,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Fix collect item quest tasks not consume items
 
 
+
+* * *
 
 ## 1.01
 
