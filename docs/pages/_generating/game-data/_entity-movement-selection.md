@@ -2,7 +2,8 @@ Then setup entity movement component based on dimension (2D or 3D) and animation
 
 ## 3D Entity Movement
 
-*   **Rigid Body Entity Movement** If you planned to make your character to move by rigidbody system, which your character will be able to jump, use this entity movement.
+*   **Rigid Body Entity Movement** If you planned to make your character to move by rigidbody system which your character will be able to jump, use this entity movement. This is the newer version which implement [Open Character Controller](https://github.com/Unity-Technologies/Standard-Assets-Characters) for movement which limit slope is working.
+*   **Legacy Rigid Body Entity Movement** If you planned to make your character to move by rigidbody system which your character will be able to jump, use this entity movement. This is the old version of rigid body entity movement which limit slope not working yet.
 *   **Nav Mesh Entity Movement** If you planned to make your character to move by nav mesh system, use this entity movement.
 
 ## 2D Entity Movement
