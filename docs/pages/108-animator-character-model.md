@@ -82,7 +82,10 @@ Before looking into animation clip settings list, I want you to know about `Acti
 ### Action Animation
 
 *   `Clip` set `Animation Clip` as you wish to play specific action animation.
+*   `Play Clip All Layers`,  if this is `TRUE` it will player action clip all layers.
+*   `Anim Speed Rate`, this will be multiplied while playing action animation. If this <= 0, it will not be used to calculates with animation speed multiplier.
 *   `Trigger Duration Rate` this value will multiplies with animation clip's length to trigger an action events to do actions such as hit an enemies or spawn magical projectiles. For example, if attack animation length is 2 seconds, and this value is 0.5, then 1 second after start play this animation clip, an enemies will receives damages.
+*   `Multi Hit Trigger Duration Rates`, if this length more than 1, will use each entry as trigger duration rate.
 *   `Duration Type` there are 2 types: `By Clip Length` and `By Fix Value`. for the first one, next action will be able to play after animation clip length duration. for the second one, next action will be able to play after `Fix Duration Value` duration.
 *   `Extra Duration` some duration which will sum with animation clip length or `Fix Duration Value`, may use it to play idle animation before next attack animation.
 *   `Audio Clips` an audio clips which will play randomly when trigger an action events.
@@ -93,7 +96,7 @@ All animation clip settings contains:
 *   `Default Animations` this is contains default animation clips and action animations
 *   `Weapon Animations` each of this is contains animation clips and action animations for specific `Weapon Type`.
 *   `Skill Animations` each of this is contains skill cast clip and activate skill action animation for specific `Skill`.
-*   `Controller Type` there are 3 choices: `Simple` it will use pre-made `Animator Controller` which has 1 layer and made for **non shooter-games**, `Advance` it will use pre-made `Animator Controller` which have 2 layers and made for **shooter-games** which can attack while moving and `Custom` which use custom `Animator Controller`, developer should see `Custom Controller Type` section.
+*   `Controller Type` there are 3 choices: `Simple` it will use pre-made `Animator Controller` which has 1 layer and made for **non shooter-games**, `Advance` it will use pre-made `Animator Controller` which have 2 layers and made for **shooter-games** which can attack while moving and `Custom` which use custom `Animator Controller`, an developer should see `Custom Controller Type` section.
 *   `Animator` set `Animator` which will be used to handle `Animation Controller` here.
 *   `Animator Controller` set `Animator Controller` which will be overrided to change animation set
 *   `Action State Layer` this is animator controller layer for action state (state for attack and activate skill animations), set layer to layer which has the action state, if you have only 1 layer set it to 0, for **shooter-games** it may have 2 layers for generic movement and actions because most **shooter-games** can attack while moving, you may set it to 1.
@@ -120,19 +123,25 @@ You can create your own `Animation Controller` to use with this character model 
 *   `__Dead` for clip which will set to **dead** state.
 *   `__Action` for clip which will set to **action** state.
 *   `__CastSkill` for clip which will set to **cast skill** state.
+*   `__Pickup` for clip which will set to **pick up** state.
 
 And also add parameters:
 
 *   `IsDead`(boolean) this will be `TRUE` while character is dead.
 *   `IsGrounded`(boolean) this will be `TRUE` while character is stand on the ground.
 *   `MoveSpeed`(float) this will be > 0 while character move forward and < 0 while character move backward.
-*   `SideMoveSpeed`(float) this will be > 0 while character move right and < 0 while character move left
-*   `DoAction`(boolean) this will be `TRUE` while character is attacking or activate skill
-*   `IsCastingSkill`(boolean) this will be `TRUE` while character is casting skill
-*   `Hurt`(trigger) this will trigger when character receive damage
-*   `Jump`(trigger) this will trigger when character jump
-*   `MoveSpeedMultiplier`(float) this should set to action state -> multiplier parameter
-*   `ActionSpeedMultiplier`(float) this should set to move states -> multiplier parameter
+*   `SideMoveSpeed`(float) this will be > 0 while character move right and < 0 while character move left.
+*   `DoAction`(boolean) this will be `TRUE` while character is attacking or activate skill.
+*   `IsCastingSkill`(boolean) this will be `TRUE` while character is casting skill.
+*   `Hurt`(trigger) this will trigger when character receive damage.
+*   `Jump`(trigger) this will trigger when character jump.
+*   `MoveSpeedMultiplier`(float) set this to move state -> speed -> multiplier parameter.
+*   `ActionSpeedMultiplier`(float) set this to action state -> speed -> multiplier parameter.
+*   `HurtSpeedMultiplier`(float) set this to hurt state -> speed -> multiplier parameter.
+*   `DeadSpeedMultiplier`(float) set this to dead state -> speed -> multiplier parameter.
+*   `JumpSpeedMultiplier`(float) set this to jump state -> speed -> multiplier parameter.
+*   `FallSpeedMultiplier`(float) set this to fall state -> speed -> multiplier parameter.
+*   `PickupSpeedMultiplier`(float) set this to pickup state -> speed -> multiplier parameter.
 
 * * *
 
@@ -143,4 +152,4 @@ Context menu is menu which will appear when click on gear icon on top-left of co
 ![](../images/105/11.png)
 * * *
 
-After done you can save it as prefab (drag to any folder in `Project` tab).
+After done you can save it as a prefab (drag to any folder in `Project` tab).

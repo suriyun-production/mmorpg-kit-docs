@@ -51,4 +51,4 @@ All animation clip settings contains:
 
 * * *
 
-After done you can save it as prefab (drag to any folder in `Project` tab).
+After done you can save it as a prefab (drag to any folder in `Project` tab).
