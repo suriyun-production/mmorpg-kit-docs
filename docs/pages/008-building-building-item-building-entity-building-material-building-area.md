@@ -14,6 +14,7 @@ Building entity is root object for building model which will represent while pla
 *   `Building Type`, this is value which use to match with building area to find where to place this building
 *   `Character Forward Distance`, forwarding distance from character to place pre-building entity
 *   `Max Hp`, Maximum Hp, if this value equals to 0 the building will be destroyed
+*   `Life Time`, Building will be destroyed automatically by its life time. If life time is <= 0, it's unlimit lifetime
 *   `Combat Text Transform`, we will use this transform's position to show damage amount when attacked
 
 As it is just root object for building model so we usually add building models as its children then attach `Building Material` component to handle building model's material and collider/collision events
