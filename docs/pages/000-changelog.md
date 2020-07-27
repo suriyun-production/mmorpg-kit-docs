@@ -1,3 +1,37 @@
+## 1.57b (2020-07-28)
+### New UI Components
+- Add `UIPickupItemList` and `UIPickupItemManager` to show dropped items nearby character and show as list and allow player to select item to pick it up.
+
+### Bugs Fixes
+- Fix duplicating item when enhance socket items.
+- Fix `UIStorageItems`'s generated item UIs not deselected when `uiItemDialog` hidden.
+- Fix `CharacterAlignOnGround` not working correctly.
+- Fix invalid `AmmoItem` create menu and its item type.
+- Fix `UIOwningAmmoAmount` not register events correctly.
+
+### Improvements
+- Update `MySqlConnector` to version `1.0`, it have an breaking changes and have to changes namespace to `MySqlConnector`. So developer have to update `FacebookAuth` or `GooglePlayAuth` packages.
+- Make it don't change item's title text color if `ItemRefine` -> `titleColor` 's alpha is 0.
+- Use `GetOrAddComponent` (from `GenericUtils` class) to codes like:
+```
+var comp = GetComponent<Comp>();
+if (!comp)
+    comp = gameObject.AddComponent<Comp>();
+```
+- Improve find ground function for drop item and spawn entities.
+- Remove events registration from `UISceneGameplay`, it will add an `UIOwning...` to UI component to register events.
+- Move events registration codes from `UIOwningStorageItems` to `UIStorageItems` class and also remove `UIOwningStorageItems`.
+- Move dealing events registration codes from `UISceneGameplay` to `UIDealing` class.
+- Move item update events registration codes from `UISceneGameplay` to `UIDismantleItem`, `UIEnhanceSocketItem`, `UIRefineItem` and `UIRepairItem` class.
+- Move events registration codes from `UISceneGameplay` to `UIDealing` class.
+- Move events registration codes from `UISceneGameplay` to `UIDealing` class.
+- Add `LifeTime` settings to `BuildingEntity`, building will be destroyed automatically by its life time. If it's <= 0, it's no limit life time.
+
+### Note
+- Next version I will use Unity version 2019.4.5f1. I want to use its new prefab features to remake demo UIs. And also want to remake input system by using new Unity's input system.
+
+* * *
+
 ## 1.57 (2020-07-22)
 ### New UI Components
 - Add `UIOwningAmmoAmount` component, which will set an event to update `UIAmmoAmount` when owning character's data which relates to weapon ammo amount changes. So we could attach this component to the same game object with `UIAmmoAmount` which intended to show ammo amount of character which player controls, and we also won't have to set the `UIAmmoAmount` to `UISceneGameplay` -> `uiAmmoAmount` field to set an event.
