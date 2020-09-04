@@ -21,7 +21,10 @@ From version 1.26 you will able to set configs via config files there are follow
   "spawnMaps" : ["Map001","Map002"],
   
   "chatPort" : 6002,
-  "chatMaxConnections" : 1100
+  "chatMaxConnections" : 1100,
+
+  "databaseManagerAddress" : "localhost",
+  "databaseManagerPort" : 6003
 }
 ```
 

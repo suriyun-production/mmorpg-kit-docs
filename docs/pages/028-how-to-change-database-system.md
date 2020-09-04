@@ -2,11 +2,11 @@
 
 For this project now there 2 available types of database system there are SQLite and MySql database system
 
-You can change database system at `MMOServerInstance` by drag database system you wish to use into `Database` field
+You can change database system at `DatabaseNetworkManager` by drag database system you wish to use into `Database` field, and you can set options for the config file (./config/serverConfig.json -> databaseOptionIndex)
 
-![](https://cdn-images-1.medium.com/max/1600/1*hejKpeGcNeSuR0dHsw68dA.png)
+![](../images/change_database_system.png)
 
-If you use MySQL database you have to import SQL file from Assets\\UnityMultiplayerARPG\\MMO\\SQLs
+If you use MySQL database you have to import SQL file from {Project Folder}/Assets/UnityMultiplayerARPG/MMO/SQLs
 
 If your project is a fresh project, just import `mysql_main.sql`
 

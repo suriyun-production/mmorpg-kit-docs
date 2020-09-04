@@ -1,3 +1,57 @@
+## 1.58 (2020-09-04)
+
+### Removed components
+- Move events registration codes from `UIOwningCharacter` to `UICharacter` class, remove `UIOwningCharacter` component and also add `notForOwningCharacter` setting which if it is `TRUE` it won't update data when controlling character's data changes.
+- Move events registration codes from `UIOwningEquipItems` to `UIEquipItems` class, remove `UIOwningEquipItems` component and also add `notForOwningCharacter` setting which if it is `TRUE` it won't update data when controlling character's data changes.
+- Move events registration codes from `UIOwningNonEquipItems` to `UINonEquipItems` class, and also remove `UIOwningNonEquipItems` component.
+- Move events registration codes from `UIOwningSkills` to `UICharacterSkills` class, remove `UIOwningSkills` component and also add `notForOwningCharacter` setting which if it is `TRUE` it won't update data when controlling character's data changes.
+- Move events registration codes from `UIOwningAmmoAmount` to `UIAmmoAmount` class, and also remove `UIOwningAmmoAmount` component.
+- Move events registration codes from `UIOwningHotkeys` to `UICharacterHotkeys` class, and also remove `UIOwningHotkeys` component.
+- Move events registration codes from `UIOwningQuests` to `UICharacterQuests` class, and also remove `UIOwningQuests` component.
+- Move events registration codes from `UIOwningSummons` to `UICharacterSummons` class, and also remove `UIOwningSummons` component.
+
+### New Systems
+- Add aim assist to `FollowCameraControls` with settings which will be handled by `ShooterPlayerCharacterController` component.
+- Add aim assist system settings to `ShooterPlayerCharacterController` (See `Aim Assist Settings` section).
+
+### Bugs Fixes
+- Fix missing update events for controlling character and its relates data UIs.
+- Fix action animation -> anim speed rate not being calcualted when attack or reload or use skill.
+
+### Improvements
+- [MMO] Change architecture, add database manager server, central server and map server will connect to this server to manage data. So database operation will not block gameplay.
+
+![](../images/mmo_arch.png)
+
+- Add `toggleRememberUsername` to `UIMmoLogin`, use it to remember username to login later.
+- Add `toggleAutoLogin` to `UIMmoLogin`, use it to remember username and password to login automatically later.
+- Add [`UniTask`](https://github.com/Cysharp/UniTask) and implement it to async functions.
+- Update [`NevMeshComponents`](https://github.com/Unity-Technologies/NavMeshComponents) for Unity 2019.4.
+- Add visible checker which implemented by [`SuperGrid2D`](https://github.com/bartofzo/SuperGrid2D) developer can use it instead of `LiteNetLibVisibleChecker` to improve performance.
+- Add `squareGizmosHeight` to `GameArea` (Base class for spawn area classes) to allow developer to change gizmos height while game area's type is `Square`.
+- Improve spawn area, pending spawning entity will be spawned later by `respawnPendingEntitiesDelay` settings.
+- Improve `IDamageableEntity` -> `ReceiveDamage` function. Add `fromPosition(Vector3)` parameter it is attacker's position developer may use it to make hit indicator. And swap weapon and damage amounts parameters, damage amounts will come before weapon then skill and skill level.
+- Improve `ShooterPlayerCharacterController`: zoom in / zoom out smoothness.
+- Improve `ShooterPlayerCharacterController`: show crosshair while construct building.
+- Improve `ShooterPlayerCharacterController`: add smooth turn settings `turnSpeed`, `turnSpeedWhileSprinting`, `turnSpeedWhileCrouching`, `turnSpeedWileCrawling`, `turnSpeedWileSwimming` and `turnSpeedWileDoingAction`.
+- Remove `MemberReflectionUtils` class and use [`nameof()`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/nameof) to get variable name.
+- Add `GetItemMaxSocket` function to `BaseGameplayRule` developer can override it to change item's max socket while playing game.
+- Add `OnCharacterRespawn` function to `BaseGameplayRule` developer can override it to change rule when respawn character.
+- Change `CharacterHitBox` compoennt to inherit from `DamageableHitBox<BaseCharacterEntity>`.
+- Add `rotationSpeedScaleWhileZooming` to `ZoomWeaponAbility` it will multiplies with camera's rotation speed while zooming.
+- Add `CurrentRotation` to `IPlayerCharacterData` interface and implement it to `PlayerCharacterData` and `BasePlayerCharacterEntity` to save rotation when exit game.
+- Add `GameEffectPoolContainer` and use it in `BaseEquipmentEntity` -> `PlayWeaponLaunchEffect` function to play pooling game effects when attack (Can use it as muzzle effect).
+- Add cancellation token source for attack and reload async function and use it to cancel actions when character dying.
+- Make `MovementColliderAdjustment` adjust `OpenCharacterController`'s capsule but it can't change direction.
+- Make `ArrayElementTitle` attribute support Unity editor's professional mode (dark mode).
+
+### Note
+- Because of architecture changes, you will have to update facebook login and google play login if you use it.
+- I may change how to connect between servers (such as `map server to central server`, `chat server to central server`) to use Grpc to make connections. It's currently use `LiteNetLib`.
+- I will remove security options for all entity movement and make all of them to be server authoritative.
+
+* * *
+
 ## 1.57b (2020-07-28)
 ### New UI Components
 - Add `UIPickupItemList` and `UIPickupItemManager` to show dropped items nearby character and show as list and allow player to select item to pick it up.
