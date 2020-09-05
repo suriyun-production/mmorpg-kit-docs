@@ -17,6 +17,7 @@
 ### Bugs Fixes
 - Fix missing update events for controlling character and its relates data UIs.
 - Fix action animation -> anim speed rate not being calcualted when attack or reload or use skill.
+- Fix cannot press activate key to enter warp portal. 
 
 ### Improvements
 - [MMO] Change architecture, add database manager server, central server and map server will connect to this server to manage data. So database operation will not block gameplay.
@@ -43,6 +44,7 @@
 - Add `GameEffectPoolContainer` and use it in `BaseEquipmentEntity` -> `PlayWeaponLaunchEffect` function to play pooling game effects when attack (Can use it as muzzle effect).
 - Add cancellation token source for attack and reload async function and use it to cancel actions when character dying.
 - Make `MovementColliderAdjustment` adjust `OpenCharacterController`'s capsule but it can't change direction.
+- Add rotation options to `WarpPortalEntity` (and in warp portal database too) to force set rotation after character warped.
 - Make `ArrayElementTitle` attribute support Unity editor's professional mode (dark mode).
 
 ### Note
