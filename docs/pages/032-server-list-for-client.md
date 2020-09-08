@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — **Server list for client / Client Production Build**
-=================================================================
+# Server list for client / Client Production Build
 
 If you planned to run multiple servers you can add network settings to connect to each server at client side by right click at Project tab select   
 **Create -> Create NetworkSetting -> MmoNetworkSetting**
