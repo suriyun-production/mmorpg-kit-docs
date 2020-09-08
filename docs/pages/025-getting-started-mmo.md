@@ -1,16 +1,18 @@
 # Getting Started (MMO)
 
-` `Before reading this you should read [Getting Started](pages/101-getting-started-singleplayer-lan) first from step 1–2` `
+**Before reading this you should read [Getting Started](pages/101-getting-started-singleplayer-lan) first from step 1–2**
 
 * * *
 
-MMO mode demo is located at `/UnityMultiplayerARPG/MMO/Demo/Scenes/`, add MMO demo scenes to Build Settings dialog and move `00Init_MMO` to top of list
+* MMO mode demo is located at `/UnityMultiplayerARPG/MMO/Demo/Scenes/`, add MMO demo scenes to Build Settings dialog and move `00Init_MMO` to top of list.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*lb-iDEAcoCRQ5lXeD5P02w.png)
 
-Then build it
+* Then choose platforms, Windows or Linux or Mac as you wish but its architecture must be `x86_64`.
 
-Then we're going to setup to run the game as game server
+* Then build it.
+
+* Then we're going to setup to run the game as game server.
 
 For `Windows`, go to folder that you build the game create shortcut of execution file (.exe), then right click the shortcut select `Properties` then add following arguments at `Target` field
 
