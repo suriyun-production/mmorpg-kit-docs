@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — How to integrate Facebook Login
-============================================
+# How to integrate Facebook Login
 
 To integrate Facebook login you have to create your Facebook app from [https://developers.facebook.com/](https://developers.facebook.com/docs/unity/downloads/)
 
