@@ -1,3 +1,14 @@
+## 1.58c (2020-09-10)
+### Bugs Fixes
+- Fix `ShooterPlayerCharacterController` cannot construct building entity.
+- Fix `AnimatorCharacterModel` not play action animation when attacks or uses skill repeatedly.
+
+## 1.58b (2020-09-08)
+- Fix database's caching data race condition issues.
+- Fix MMO's map spawn server not spawns map server while `notSpawnInBatchMode` setting is `false`.
+- Fix hosting player character entity's `IsInSafeArea` always `true` while controlling with `ShooterPlayerCharacterController`.
+- Fix wrong weapon's fire stagger direction calculation.
+
 ## 1.58 (2020-09-04)
 
 ### Removed components
