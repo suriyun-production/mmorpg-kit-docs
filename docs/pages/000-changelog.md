@@ -13,6 +13,7 @@
 
 - Fix: Can not set `Damage Type` to `Custom` (By change `Custom` value to `254`).
 - Fix: Can not set `Npc Dialog Condition Type` to `Custom` (By change `Custom` value to `254`).
+- Fix: `Game Instance Tools` incorrect exp tree calculation.
 - Improve `Grid Visible Checker` performance by update in-grid position for identities which has controlling player only.
 - Stop updating `Base Monster Character Entity` while there is no subscriber.
 
