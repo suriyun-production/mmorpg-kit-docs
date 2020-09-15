@@ -1,13 +1,37 @@
+## 1.58d (2020-09-15)
+- Fix `ShooterPlayerCharacterController` placing constructing building incorrectly.
+- Fix `AnimatorCharacterModel` not stop playing cast skill animation.
+- Add mobile item drop list demo.
+
+![](../images/changelog/5.png)
+
+- Add mobile controller config demo.
+
+![](../images/changelog/6.png)
+
+![](../images/changelog/7.png)
+
+- Fix: Can not set `Damage Type` to `Custom` (By change `Custom` value to `254`).
+- Fix: Can not set `Npc Dialog Condition Type` to `Custom` (By change `Custom` value to `254`).
+- Improve `Grid Visible Checker` performance by update in-grid position for identities which has controlling player only.
+- Stop updating `Base Monster Character Entity` while there is no subscriber.
+
+* * *
+
 ## 1.58c (2020-09-10)
 ### Bugs Fixes
 - Fix `ShooterPlayerCharacterController` cannot construct building entity.
 - Fix `AnimatorCharacterModel` not play action animation when attacks or uses skill repeatedly.
+
+* * *
 
 ## 1.58b (2020-09-08)
 - Fix database's caching data race condition issues.
 - Fix MMO's map spawn server not spawns map server while `notSpawnInBatchMode` setting is `false`.
 - Fix hosting player character entity's `IsInSafeArea` always `true` while controlling with `ShooterPlayerCharacterController`.
 - Fix wrong weapon's fire stagger direction calculation.
+
+* * *
 
 ## 1.58 (2020-09-04)
 
