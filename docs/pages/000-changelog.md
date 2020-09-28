@@ -1,3 +1,43 @@
+## 1.59 (2020-09-28)
+### Change how to setup and use an RPC
+- Change how to register RPC functions to use attributes ([ServerRpc], [AllRpc], [TargetRpc]). So register with function codes (`RegisterNetFunction()`) will be removed. This was applied to an entities classes.
+- Change how to call RPC functions to use `RPC()` function (Changes `CallNetFunction()` to use `RPC()` function).
+
+**I hope these changes, will makes it easier to understand codes for former UNET users.**
+
+### Bugs Fixes
+- Fix `ShooterPlayerCharacterController` to avoid aimming to corpse to attack.
+- Fix `PlayerCharacterController` and `ShooterPlayerCharacterController` to be able to select corpse to use resurrect skill.
+- Fix `ShooterPlayerCharacterController` not update FOV when switch weapon while zooming.
+- Fix wrong distance detection while entity attaches `DamageableHitBox` by attach `UnHittable` component to entity to make attack functions not include entity's colliders as hit target, will use hit boxes as hit target instead.
+- Fix wrong distance between entities detection when use skills by uses physics overlapping.
+- Fix wrong distance between entities detection when pickup items by uses physics overlapping.
+- Fix wrong skill type filter condition when assign hotkey.
+- Fix wrong functions name that were set in `[InspectorButton]` attributes.
+- Fix ground detection not detect nearest ground position by change how to find ground position by set ray origin to above finding position, it was find ground position by set ray origin to finding position which sometime it won't work if ground is above finding position.
+
+### Improvements
+- Rename `CharacterModelManager` -> `fpsModelOffsets` to `fpsModelPositionOffsets`, use it to set FPS hand model position offsets to camera's transform.
+- Add `fpsModelRotationOffsets` to `CharacterModelManager` component, use it to set FPS hand model rotation offsets to camera's transform.
+- Add function to pickup nearby items. Now there is a function: `OnClickPickupNearbyItems()` in `UIPickupItemList` component which showing how to use it.
+- Improve dismantle item function to be able to set amount of item.
+- Add function to bulk dismantle items to `BasePlayerCharacterEntity`, add `UIBulkDismantleItems` for UI part. I also update demo UIs.
+
+![](../images/changelog/10.png)
+
+- Add function to bulk sell items to `BasePlayerCharacterEntity`, add `UIBulkSellItems` for UI part. I also update demo UIs.
+
+![](../images/changelog/9.png)
+
+- Add `uiComparingEquipments` to `UICharacterItem`, they will be shown when set UI's data while item data is equipment item.
+
+![](../images/changelog/8.png)
+
+- Add `buttonName` setting to `UIToggler` component to make it able to use button keys which set to `Project Settings` -> `Input` or `InputSettingManager` component to toggle UI.
+- Can add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols` to strips clients codes when compile.
+
+* * *
+
 ## 1.58d (2020-09-15)
 - Fix `ShooterPlayerCharacterController` placing constructing building incorrectly.
 - Fix `AnimatorCharacterModel` not stop playing cast skill animation.
