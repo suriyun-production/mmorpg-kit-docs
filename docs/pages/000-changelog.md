@@ -1,3 +1,10 @@
+## 1.59b (2020-09-29)
+### Bugs Fixes
+- Fix `MissileDamageEntity` and raycast damage not hitting `DamageableHitBox` (Then character won't receives damage).
+- Fix wrong condition when using skills which required target.
+
+* * *
+
 ## 1.59 (2020-09-28)
 ### Change how to setup and use an RPC
 - Change how to register RPC functions to use attributes ([ServerRpc], [AllRpc], [TargetRpc]). So register with function codes (`RegisterNetFunction()`) will be removed. This was applied to an entities classes.
