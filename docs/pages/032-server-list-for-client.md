@@ -13,6 +13,6 @@ Then add it into **MMOClientInstance** game object (In 00Init\_MMO scene)
 
 ![](https://cdn-images-1.medium.com/max/1600/0*q9oRrBn8gICMuCGm)
 
-#### **Client Production Build**
+## Client Production Build
 
-Before you build the game for players you should remove **MMOServerInstance** game object to avoid players use the game to create private server
+Before you build your game for players, you should add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols`, then players won't be able to use your game to create private server.
