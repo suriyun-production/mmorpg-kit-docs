@@ -1,3 +1,13 @@
+## 1.59c (2020-10-12)
+- Changes how `DamageableEntity` works, it will required `DamageableHitBox`, if there is no `DamageableHitBox` attached (on the same game object and childrend game objects), it will automatically attach `DamageableHitBox` on the same game object on awake.
+- Changes how `BuildingArea` works, it will not implements `IGameEntity` and `IUnHittable` anymore, but it still will attach `UnHittable` component on start if building area is part of `BuildingEntity` to avoid aimming and hitting by damage entities.
+- Fix `ServerPickupNearbyItems` not working and also add button to demo.
+- Add `ServerRepairEquipItems` function to `BasePlayerCharacterEntity` and also add button to demo.
+- Add shooting recoil, its settings is in item data's `CrosshairSetting` struct (Thanks moepi2k).
+- MMO server codes will not be included in non-standalone builds (iOS, Android and so on), for standalone (PC/Mac/Linux) which you want to not includes server codes by add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols`.
+
+* * *
+
 ## 1.59b (2020-09-29)
 ### Bugs Fixes
 - Fix `MissileDamageEntity` and raycast damage not hitting `DamageableHitBox` (Then character won't receives damage).
@@ -41,7 +51,7 @@
 ![](../images/changelog/8.png)
 
 - Add `buttonName` setting to `UIToggler` component to make it able to use button keys which set to `Project Settings` -> `Input` or `InputSettingManager` component to toggle UI.
-- Can add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols` to strips clients codes when compile.
+- Can add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols` to strips server codes when compile.
 
 * * *
 
