@@ -5,6 +5,7 @@
 - Add `ServerRepairEquipItems` function to `BasePlayerCharacterEntity` and also add button to demo.
 - Add shooting recoil, its settings is in item data's `CrosshairSetting` struct (Thanks moepi2k).
 - MMO server codes will not be included in non-standalone builds (iOS, Android and so on), for standalone (PC/Mac/Linux) which you want to not includes server codes by add `CLIENT_BUILD` to `Project Settings` -> `Scripting Define Symbols`.
+- Fix error when saving character data with MySQL while equipping two-hand equipments.
 
 * * *
 
