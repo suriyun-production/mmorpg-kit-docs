@@ -1,3 +1,12 @@
+## 1.59d (2020-10-21)
+- Generate attack stagger random seed at server then use it at client to make stagger random result at client same as server.
+- Improve recoil by apply recoil force when playing attack animation enter apply damage part.
+- Set character animations by left-hand (off-hand) weapon when right-hand weapon is not equipped.
+- Fix MMO database management server not saving buildings.
+- Fix MMO database management server not saving storage items sometime.
+
+* * *
+
 ## 1.59c (2020-10-12)
 - Changes how `DamageableEntity` works, it will required `DamageableHitBox`, if there is no `DamageableHitBox` attached (on the same game object and childrend game objects), it will automatically attach `DamageableHitBox` on the same game object on awake.
 - Changes how `BuildingArea` works, it will not implements `IGameEntity` and `IUnHittable` anymore, but it still will attach `UnHittable` component on start if building area is part of `BuildingEntity` to avoid aimming and hitting by damage entities.
