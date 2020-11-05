@@ -1,3 +1,37 @@
+## 1.60 (2020-11-05)
+### New Systems
+- Add day-night time system, developer can create class which inherit from `BaseDayNightTimeUpdater` to implement how to update time of day (can see `DefaultDayNightTimeUpdater` class as example). To apply updated time of day in a scene (to update light color, light direction and so on), developer have to create new component to do it, can see `SampleDayNightTimeApplyer` class as example.
+- Add guild war system, its rules is if any guild can occupy guild castle by destroy guild castle's heart other guilds characters will be expelled to respawn point then occupier guild have to defend the castle if occupier can defend the castle witnin a battle time (can changes in `GuildWarMapInfo`) they will win. Winner guilds (guild which can occupy or guild which can defend) will receives rewards, but it does not implements guild war rewards yet (Please wait next version).
+
+### Bugs Fixes
+- Fix wrong item was dismantled by bulk dismantle.
+
+### Improvements
+- Change `BaseCharacterEntity`'s `onDead` to be `UnityEvent`.
+- Change `BaseCharacterEntity`'s `onRespawn` to be `UnityEvent`.
+- Change `BaseCharacterEntity`'s `onLevelUp` to be `UnityEvent`.
+- Add `DamageableEntity`'s `onNormalDamageHit` event.
+- Add `DamageableEntity`'s `onCriticalDamageHit` event.
+- Add `DamageableEntity`'s `onBlockedDamageHit` event.
+- Add `DamageableEntity`'s `onDamageMissed` event.
+- `VehicleEntity` can receives damage, have to set `canBeAttacked` to `TRUE` then set its stats.
+- Add `BaseGameEntity`'s `UpdateEntityComponents(bool)` property which can be overrided to change condition to update entity components. And also use overrided it in `BaseMonsterCharacterEntity` to update entity components while it has subscribers only (try to improve performance).
+- Allow to use same keys for entity activating, item picking up and vehicle exiting.
+- Add `MapNetworkManager`'s `mapSpawnDuration` it's map spawn request timeout duration, set it to 0 to unlimit. This is for requset from map server to central server.
+- Add `CentralNetworkManager`'s `mapSpawnDuration` it's map spawn request timeout duration, set it to 0 to unlimit. This is for requset from central server to map-spawn server.
+**Map-spawm workflow: Client talks to NPC -> Map-Server send map-spawn request to Central-Server -> Central-Server send map-spawn request to Map-spawn Server -> Map-spawn server start new map instance -> Map-spawn response to Central-server -> Central-server response to Map-server -> Character warp to the map.**
+
+### Deleted
+- Delete deprecated codes: `CharacterStats` -> `armor` and relates codes in other classes.
+
+### LiteNetLibManager API Changes
+- Move `GameMsgTypes` class out from class `LiteNetLibGameManager`, so codes like `LiteNetLibGameManager.GameMsgTypes.Ping` will be changed to `GameMsgTypes.Ping`.
+- Move `DestroyObjectReasons` class out from class `LiteNetLibGameManager`, so codes like `LiteNetLibGameManager.DestroyObjectReasons.RequestedToDestroy` will be changed to `DestroyObjectReasons.RequestedToDestroy`.
+- Change request/response API, now it's required to enable request/response by `EnableServerRequestResponse`, `EnableClientRequestResponse` functions. And also have to register request/response by `RegisterServerRequest`, `RegisterServerResponse`, `RegisterClientRequest`, `RegisterClientResponse` functions. If developers going to create request from client to server and do response at client, they have to register server request to read client's request then write response to send to client, and register client response to read server's response.
+- Change `LiteNetLibMessageHandler` class name to `MessageHandlerData`. 
+
+* * *
+
 ## 1.59d (2020-10-21)
 - Generate attack stagger random seed at server then use it at client to make stagger random result at client same as server.
 - Improve recoil by apply recoil force when playing attack animation enter apply damage part.
