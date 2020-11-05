@@ -70,11 +70,13 @@
   - [Monster Spawn Area](pages/137-monster-spawn-area.md)
   - [Item Drop Entity](pages/143-item-drop-entity.md)
   - [Water Area](pages/140-water-area)
+  - [Day-Night Time](pages/145-day-night-time.md)
 
 - Gameplay
 
   - [Gameplay Rule](pages/023-gameplay-rule)
   - [Party / Guild Settings (Social System Setting)](pages/020-social-system-setting)
+  - [Guild War](pages/144-guildwar.md)
   - [How to change controller](pages/046-how-to-change-controller)
   - [How to change input](pages/047-how-to-change-input)
   - [FPS gameplay](pages/051-fps-gameplay)
