@@ -1,3 +1,11 @@
+## 1.60b (2020-11-08)
+- Update LiteNetLib version to 0.9.3.2.
+- Fix wrong connection state detection.
+- Fix LiteNetLibTransform calling teleport RPC while it was not already setup.
+- Fix 8-Direction 2D not working.
+
+* * *
+
 ## 1.60 (2020-11-05)
 ### New Systems
 - Add day-night time system, developer can create class which inherit from `BaseDayNightTimeUpdater` to implement how to update time of day (can see `DefaultDayNightTimeUpdater` class as example). To apply updated time of day in a scene (to update light color, light direction and so on), developer have to create new component to do it, can see `SampleDayNightTimeApplyer` class as example.
