@@ -1,3 +1,13 @@
+## 1.60c (2020-11-12)
+- Add socketed item removal.
+- Add `Player Character Is` to `Npc Dialog Condition Type` can use it with defined character class (`Player Character` game data) as condition to show Npc dialog menu.
+- Add `Talk To Npc` quest task type.
+- Add quest requirement (required level, character class (`Player Character`) and completed quests).
+- Fix duplicating items when pick it up.
+- Fix errors while using this asset with Odin inspector.
+
+* * *
+
 ## 1.60b (2020-11-08)
 - Update LiteNetLib version to 0.9.3.2.
 - Fix wrong connection state detection.
