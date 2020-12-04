@@ -94,6 +94,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Customize UIs](pages/022-customize-uis)
 *   [Chat Configs](pages/024-chat-configs)
 *   [Localization](pages/053-localization)
+*   [Currency](pages/146-currency)
 
 #### MMO Content
 
