@@ -7,6 +7,8 @@
 - Fix: cannot request to bulk sell items from client.
 - Fix: guild skill level not updated to clients after incresed.
 - Fix: guild skill bonus not calculated.
+- Fix: players can attack each other while map PVP mode is none.
+- Fix: cannot consturct building by playing 2D game.
 
 ### Improvements
 - Add options `recoverMonstersWhenRoundEnd` to `BaseGameNetworkManager`, if this is `TRUE` monsters will be recovered
