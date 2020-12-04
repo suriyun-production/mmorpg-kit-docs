@@ -1,3 +1,23 @@
+## 1.61 (2020-12-04)
+### New Systems
+- Add custom currency system, which can be received by quest completion and can be used to by items from NPC.
+
+### Bugs Fixes
+- Fix: cannot request to bulk dismantle items from client.
+- Fix: cannot request to bulk sell items from client.
+- Fix: guild skill level not updated to clients after incresed.
+- Fix: guild skill bonus not calculated.
+
+### Improvements
+- Add options `recoverMonstersWhenRoundEnd` to `BaseGameNetworkManager`, if this is `TRUE` monsters will be recovered
+- Add `localPosition`, `localEulerAngles` and `localScale` settings to `EquipmentModel`, so developer can model transform when equip equipment item.
+- Add `completeAfterTalked` to `QuestTask` it will being used if `taskType` is `TalkToNpc`, if this is `TRUE` it will complete quest immediately when talk to Npc (and all tasks have to be done).
+- Add `MultiplayerARPG` namespace to character save and relates data classes, also added type binder class (`PlayerCharacterDataTypeBinder`) to make it able to deserialize old saves correctly.
+- Add `imageRarity` to `UICharacterItem`, use it to set `Image` component which you want to show rarity icon (`Icon` in `ItemRefine` game data).
+- Make an UI drag and drop handler classes to be partial and overrideable.
+
+* * *
+
 ## 1.60c (2020-11-12)
 - Add socketed item removal.
 - Add `Player Character Is` to `Npc Dialog Condition Type` can use it with defined character class (`Player Character` game data) as condition to show Npc dialog menu.
