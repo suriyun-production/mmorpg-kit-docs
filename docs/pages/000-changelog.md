@@ -1,3 +1,18 @@
+## 1.61b (2020-12-07)
+### New Systems
+- Add mail system, player can use it to send mail to other players, it can be used at server-side to send rewards to players too (but didn't implement as a sample yet).
+- Moved character race from extension project to core project, so the extension doesn't required in case you want to set character race to characters anymore.
+
+### Bugs Fixes
+- Fix: shooter player character controller error when reload.
+
+### Improvement
+- Add `ConsumeHp` and `ConsumeStamina` to `BaseSkill` it is required Hp and Stamina to use skill.
+- Add `EnhancerRemoval` setting to `GameInstance`, if `returnEnhancerItem` is `TRUE` it will return enhancer item from equipment (not destroy socketed gem in equipment), `requireGold` is gold amount which required to remove enhancer item.
+- Can assign more than one kind of entity to one spawn area.
+
+* * *
+
 ## 1.61 (2020-12-04)
 ### New Systems
 - Add custom currency system, which can be received by quest completion and can be used to by items from NPC.
