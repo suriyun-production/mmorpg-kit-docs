@@ -1,3 +1,45 @@
+## 1.61c (2021-01-08)
+This version gradually changes some codes structure, some RPC functions were moved to lower level request-response network function, and also divided into interfaces to implement different functions and each interface is switchable, there are following interfaces:
+- `IClientBankHandlers` contains functions to request server to withdraw and deposit user gold, withdraw and deposit guild gold. Implemented to `DefaultClientBankHandlers`.
+- `IClientCashShopHandlers` contains functions to request server to get shop/package info, buy IAP products. Implemented to `DefaultClientCashShopHandlers`.
+- `IClientFriendHandlers` contains functions to request server to find characters by name, get friends, add friends ad remove friends. Implemented to `DefaultClientFriendHandlers`.
+- `IClientGameMessageHandlers` contains functions to handle game messages, updating social members and social data, notify rewards, notify storage's state and social group invitation from server. Implemented to `DefaultClientGameMessageHandlers`.
+- `IClientGuildHandlers` contains functions to request server to manage guild and a `ClientGuild` property which is playing character's guild. Implemented to `DefaultClientGuildHandlers`.
+- `IClientInventoryHandlers` contains functions to request server to manage inventory: swap or merge item, equip and unequip equipments. Implemented to `DefaultClientInventoryHandlers`.
+- `IClientMailHandlers` contains functions to request server to get mail list, read mail, claim mail items, delete mail and send mail. Implemented to `DefaultClientMailHandlers`.
+- `IClientOnlineCharacterHandlers` contains functions to request server to get online characters, handle notify online character from server. Implemented to `DefaultClientOnlineCharacterHandlers`.
+- `IClientPartyHandlers` contains functions to request server to manage party and a `ClientParty` property which is playing character's party. Implemented to `DefaultClientPartyHandlers`.
+- `IClientStorageHandlers` contains functions to request server to move item from storage, move item to storage, swap or merge storage item. Implemented to `DefaultClientStorageHandlers`.
+- `IServerBankMessageHandlers` contains functions to handle request from clients to withdraw and deposit user gold, withdraw and deposit guild gold. Implemented to `LanRpgServerBankMessageHandlers` and `MMOServerBankMessageHandlers`.
+- `IServerBuildingHandlers` contains functions to store buildings at server for saving to save file or database. Implemented to `DefaultServerBuildingHandlers`.
+- `IServerCashShopMessageHandlers` contains functions to handle request from clients to get shop/package info, buy IAP products. Implemented to `LanRpgServerCashShopMessageHandlers` and `MMOServerCashShopMessageHandlers`.
+- `IServerFriendMessageHandlers` contains functions to handle request from clients to find characters by name, get friends, add friends ad remove friends. Implemented to `MMOServerFriendMessageHandlers` (not available for singleplayer/LAN games).
+- `IServerGameMessageHandlers` contains functions to send game messages, updating social members and social data, notify rewards, notify storage's state and social group invitation to clients. Implemented to `DefaultServerGameMessageHandlers`.
+- `IServerGuildHandlers` contains functions to contains functions store and manage guild at server. Implemented to `DefaultServerGuildHandlers`.
+- `IServerGuildMessageHandlers` contains functions to handle request from clients to manage guild. Implemented to `LanRpgServerGuildMessageHandlers` and `MMOServerGuildMessageHandlers`.
+- `IServerInventoryMessageHandlers` contains functions to handle request from server to manage inventory: swap or merge item, equip and unequip equipments. Implemented to `DefaultClientInventoryHandlers`.
+- `IServerMailMessageHandlers` contains functions to handle request from clients to get mail list, read mail, claim mail items, delete mail and send mail. Implemented to `MMOServerMailMessageHandlers` (not available for singleplayer/LAN games).
+- `IServerOnlineCharacterHandlers` contains functions to store online characters and handle request online characters from clients. Implemented to `DefaultServerOnlineCharacterHandlers`.
+- `IServerPartyHandlers` contains functions to contains functions store and manage party at server. Implemented to `DefaultServerPartyHandlers`.
+- `IServerPartyMessageHandlers` contains functions to handle request from clients to manage party. Implemented to `LanRpgServerPartyMessageHandlers` and `MMOServerPartyMessageHandlers`.
+- `IServerStorageHandlers` contains functions to store storage and storage items at server. Implemented to `LanRpgServerStorageHandlers` and `MMOServerStorageHandlers`.
+- `IServerStorageMessageHandlers` contains functions to handle request from clients to move item from storage, move item to storage, swap or merge storage item. Implemented to `LanRpgServerStorageMessageHandlers` and `MMOServerStorageMessageHandlers`.
+- `IServerUserHandlers` contains functions to manage users and user's characters at server. Implemented to `DefaultServerUserHandlers`.
+
+*I've changes the structure because my game has a separated lobby scene that can manage character, guild, party, and so on. So made an interface to make it can be re-used by other classes that extending the `LiteNetLibManager` class.*
+
+### Bugs Fixes
+- Skill's cast effects not playing if calculated `castDuration` is `0`.
+- Fix gold not decreased when remove gem (enhancer item) from item's socket.
+
+### Improvement
+- Add `availableArmors` setting to `BaseSkill`, it's working like `availableWeapons` but it's condition for equipped armor, so you can made skill can be used by condition like: "character have to equip shield to use skill".
+- Add `availableVehicles` setting to `BaseSkill`, it's working like `availableWeapons` but it's condition for riding/driving vehicle, so you can made skill can be used by condition like: "character have to ride a horse to use skill".
+- Rename `GameSpawnArea` -> `level` to `minLevel` and add `maxLevel` to `GameSpawnArea`, to make it able set randoming level by `minLevel` and `maxLevel` in spawn area.
+- Add `Unknow` to `InventoryType` will be used in an UIs for unknow source item such as gem in item's socket to don't show buttons.
+
+* * *
+
 ## 1.61b (2020-12-07)
 ### New Systems
 - Add mail system, player can use it to send mail to other players, it can be used at server-side to send rewards to players too (but didn't implement as a sample yet).
