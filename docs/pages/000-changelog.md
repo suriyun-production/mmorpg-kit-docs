@@ -1,3 +1,13 @@
+## 1.61d (2021-01-14)
+### Bugs Fixes
+- Fix unimplemented `IClientUserHandlers`. Which break client UIs controls.
+- Fix wrong available NPC quest lists. Which is cause of wrong indicator activation.
+
+### Improvement
+- Add `haveTasksDoneQuestsIndicator` to `NpcQuestIndicator`, it will be activated while playing character has a quest which done all tasks. Indicator activation prority: `haveTasksDoneQuests` > `haveInProgressQuests` > `haveNewQuests`.
+
+* * *
+
 ## 1.61c (2021-01-08)
 This version gradually changes some codes structure, some RPC functions were moved to lower level request-response network function, and also divided into interfaces to implement different functions and each interface is switchable, there are following interfaces:
 - `IClientBankHandlers` contains functions to request server to withdraw and deposit user gold, withdraw and deposit guild gold. Implemented to `DefaultClientBankHandlers`.
