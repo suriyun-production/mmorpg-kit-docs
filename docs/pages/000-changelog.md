@@ -37,6 +37,9 @@ This version gradually changes some codes structure, some RPC functions were mov
 - Add `availableVehicles` setting to `BaseSkill`, it's working like `availableWeapons` but it's condition for riding/driving vehicle, so you can made skill can be used by condition like: "character have to ride a horse to use skill".
 - Rename `GameSpawnArea` -> `level` to `minLevel` and add `maxLevel` to `GameSpawnArea`, to make it able set randoming level by `minLevel` and `maxLevel` in spawn area.
 - Add `Unknow` to `InventoryType` will be used in an UIs for unknow source item such as gem in item's socket to don't show buttons.
+- Add `CanInteractEntity` function to `BaseGameplayRule`, this function will be used to check if character can interact selected entity or not. And also implemented in `DefaultGameplayRule` to don't allow to interact selected entity behind the walls.
+- Moved `GetSummonPosition` function from `BaseCharacterEntity` which is function to get summoning character position to `BaseGameplayRule` to makes it able to modify.
+- Moved `GetSummonRotation` function from `BaseCharacterEntity` which is function to get summoning character rotation to `BaseGameplayRule` to makes it able to modify.
 
 * * *
 
