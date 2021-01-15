@@ -1,4 +1,8 @@
 ## 1.61d (2021-01-14)
+### LiteNetLibManager Updates
+- Update `LiteNetLib` to version `0.9.4`.
+- Change some transport codes structure. To whom update from older version, you have to delete `MixTransportEventListener` and `LiteNetLibTransportEventListener`.
+
 ### Bugs Fixes
 - Fix unimplemented `IClientUserHandlers`. Which break client UIs controls.
 - Fix wrong available NPC quest lists. Which is cause of wrong indicator activation.
