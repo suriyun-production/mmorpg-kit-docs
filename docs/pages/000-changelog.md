@@ -1,3 +1,44 @@
+## 1.62 (2021-01-27)
+### Code structure changes
+This version continues changes code structure which mentioned in 1.61c, there are following changes:
+- Change `UIInventoryResponses` class name to `ClientInventoryActions` and move it to `Assets/UnityMultiplayerARPG/Core/Scripts/Networking/Actions` folder.
+- Add `RequestOpenStorage` and `RequestCloseStorage` functions to `IClientStorageHandlers` and also implements them.
+- Add `HandleRequestOpenStorage` and `HandleRequestCloseStorage` functions to `IServerStorageMessageHandlers` and also implements them.
+- Remove open storage and close storage RPC functions from `BasePlayerCharacterEntity` class. Uses open storage and close storage functions from classes that implements `IClientStorageHandlers`.
+- Add `RequestSwitchEquipWeaponSet`, `RequestDismantleItem`, `RequestDismantleItems`, `RequestEnhanceSocketItem`, `RequestRefineItem`, `RequestRemoveEnhancerFromItem`, `RequestRepairItem`, `RequestRepairEquipItems`, `RequestSellItem` and `RequestSellItems` functions to `IClientInventoryHandlers` and also implements it.
+- Add `HandleRequestSwitchEquipWeaponSet`, `HandleRequestDismantleItem`, `HandleRequestDismantleItems`, `HandleRequestEnhanceSocketItem`, `HandleRequestRefineItem`, `HandleRequestRemoveEnhancerFromItem`, `HandleRequestRepairItem`, `HandleRequestRepairEquipItems`, `HandleRequestSellItem` and `HandleRequestSellItems` functions to `IServerInventoryMessageHandlers` and also implements it.
+- Remove some inventory management RPC functions which mentioned above from `BaseCharacterEntity` and `BasePlayerCharacterEntity` classes. Uses those functions from classes that implements `IClientInventoryHandlers`.
+- Add `IClientCharacterHandlers` class, contains functions to request server to increase character's attribute and skill. Implemented to `DefaultClientCharacterHandlers`.
+- Add `IServerCharacterMessageHandlers` class, contains functions to handle request from clients to increase character's attribute and skill. Implemented to `DefaultServerCharacterMessageHandlers`.
+- Move `IClientPartyHandlers` -> `ClientParty`'s to `GameInstance` -> `JoinedParty`.
+- Move `IClientGuildHandlers` -> `ClientGuild`'s to `GameInstance` -> `JoinedGuild`.
+- Delete `IClientUserHandlers` and moves properties to `GameInstance`, so in `GameInstance` will contains `UserId` (*string*), `UserToken` (*string*), `SelectedCharacterId` (*string*), `PlayingCharacter` (*IPlayerCharcterData*), `PlayingCharacterEntity` (*PlayerCharacterEntity*), `OpenedStorageType` (*StorageType*) and `OpenedStorageOwnerId` (*string*).
+
+### Game error message code structure changes
+- Move `GameMessage` -> `Type` enum item to `UITextKeys`, remove `Type` from `GameMessage`.
+- Remove `Error` enums from all response messages, changes mentioned error variable to message (`UITextKeys`). So it will be able to send any messages instead of and errors.
+- Add button in `LanguageManager` to changes old `GameMessage` -> `Type` keys to new `UITextKeys` keys
+
+![](../images/1-62-1.png)
+
+### LiteNetLibManager code structure changes
+- Combine `RegisterClientMessages` and `RegisterServerMessages` to `RegisterMessages`, so developer can add new networking messages handlers in the `RegisterMessages` functions.
+- Deletes `EnableClientRequestResponse` and `EnableServerRequestResponse`. Can use `EnableRequestResponse` functions to enable request/response feature, when use it, it will enable request/response for both client and server handlers.
+- Deletes `DisableClientRequestResponse` and `DisableServerRequestResponse`. Can use `DisableRequestResponse` functions to disable request/response feature, when use it, it will disable request/response for both client and server handlers.
+- Deletes `RegisterClientRequest` and `RegisterServerResponse` functions. Can use `RegisterRequestToServer` to register server's request handler and client's response handler.
+- Deletes `RegisterServerRequest` and `RegisterClientResponse` functions. Can use `RegisterRequestToClient` to register client's request handler and server's response handler.
+- Deletes `UnregisterClientRequest` and `UnregisterServerResponse` functions. Can use `UnregisterRequestToServer` to unregister server's request handler and client's response handler.
+- Deletes `UnregisterServerRequest` and `UnregisterClientResponse` functions. Can use `UnregisterRequestToClient` to unregister client's request handler and server's response handler.
+- Changes how visible checker component works, only player's networked objects will find nearby objects to subscribes. An older version, other objects will decides which player's networked objects to subscribes.
+
+### Bugs Fixes
+- Fix requests will be timed out while time out setting set to `0`, if it is <= `0` it should not be timed out. (LiteNetLibManager)
+- Fix it's not switch to offline transport when start server / client in offline mode.
+- Fix missing info for area damage entity when skill caster leaves the game.
+- Fix wrong available NPC quest lists. Which is cause of wrong indicator activation.
+
+* * *
+
 ## 1.61d (2021-01-14)
 ### LiteNetLibManager Updates
 - Update `LiteNetLib` to version `0.9.4`.
@@ -13,6 +54,7 @@
 * * *
 
 ## 1.61c (2021-01-08)
+### Code structure changes
 This version gradually changes some codes structure, some RPC functions were moved to lower level request-response network function, and also divided into interfaces to implement different functions and each interface is switchable, there are following interfaces:
 - `IClientBankHandlers` contains functions to request server to withdraw and deposit user gold, withdraw and deposit guild gold. Implemented to `DefaultClientBankHandlers`.
 - `IClientCashShopHandlers` contains functions to request server to get shop/package info, buy IAP products. Implemented to `DefaultClientCashShopHandlers`.
