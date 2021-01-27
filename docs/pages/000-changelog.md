@@ -1,3 +1,22 @@
+## 1.62b (2021-01-27)
+### Message Key changes
+- Change `UI_SUCCESS_CASH_SHOP_BUY` to `UI_CASH_SHOP_ITEM_BOUGHT`.
+- Change `UI_MAIL_SEND_SUCCESS` to `UI_MAIL_SENT`.
+- Change `UI_MAIL_CLAIM_SUCCESS` to `UI_MAIL_CLAIMED`.
+- Change `UI_MAIL_DELETE_SUCCESS` to `UI_MAIL_DELETED`.
+- Add `UI_FRIEND_ADDED`.
+- Add `UI_FRIEND_REMOVED`.
+*Can use migration tool in `LanguageManager` component to update keys*
+
+### Bugs Fixes
+- Fix character finding not working.
+- Fix invalid friend list caching.
+
+### Improvement
+- Add `errorMessageColor` setting to `UIGameMessageHandler`, now can change text color for mesages which its key start with `UI_ERROR`.
+
+* * *
+
 ## 1.62 (2021-01-27)
 ### Code structure changes
 This version continues changes code structure which mentioned in 1.61c, there are following changes:
