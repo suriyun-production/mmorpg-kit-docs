@@ -1,3 +1,15 @@
+## 1.62c (2021-01-29)
+### Bug Fixes
+- Scene networked object not unsubscribed after destroyed.
+- Networked object not subscribed immediately when spawn.
+- Fix transform not updated correct when teleport, exit vehicle.
+
+### Improvement
+- Change how to find focusing `InputField` when press hotkey.
+- Add `SetVisible(bool isVisible)` funciton to `UIBase`, useful for `Toggle` events.
+
+* * *
+
 ## 1.62b (2021-01-27)
 ### Message Key changes
 - Change `UI_SUCCESS_CASH_SHOP_BUY` to `UI_CASH_SHOP_ITEM_BOUGHT`.
