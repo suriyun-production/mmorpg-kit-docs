@@ -1,3 +1,15 @@
+## 1.62d (2021-01-31)
+### Bug Fixes
+- Fix null data when applies fall damage.
+- Fix weapon set not reset to first set when press switch key.
+
+### Improvement
+- Add follow smoothness options to `FollowCamera` component.
+- Add platform motion supports to `RigidBodyEntityMovement`.
+- Add `CharacterControllerEntityMovement` it is like `RigidBodyEntityMovement` but uses `CharacterController` component, if you want to changes from `RigidBodyEntityMovement` to this, Save collider info from `CapsuleCollider` (May capture screen shot of copy to text file :P) then remove `OpenCharacterController`, `CapsuleCollider`, `Rigidbody` and `RigidBodyEntityMovement` before add `CharacterControllerEntityMovement` component. after that, copy saved collider info to `CharacterController`.
+
+* * *
+
 ## 1.62c (2021-01-29)
 ### Bug Fixes
 - Scene networked object not unsubscribed after destroyed.
