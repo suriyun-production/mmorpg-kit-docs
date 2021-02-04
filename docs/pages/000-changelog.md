@@ -1,3 +1,15 @@
+## 1.62e (2021-02-05)
+### Improvement
+- Don't use `FindObjectsOfType` to find `UIBlockController`.
+- Add `movementTheshold` to `GridVisibleChecker` to reduce position in grid update rate, it will update when distance of current position and previous updated position is more than this value.
+- Changes how to interpolate `LiteNetLibTransform`, now it will interpolate by calculated move speed between 2 received positions. And also add extrapolate option which will extrapolate by alculated move speed between 2 received positions too.
+- Improve `ShooterPlayerCharacterController` to turn forward while doing action by turn speed correctly.
+- Add `stoppedPlayingAttackOrUseSkillAnimationDelay` to `ShooterPlayerCharacterController`, it is delay before turning character to move direction after played attack or using skill animation.
+- Make `BuffToTarget` skills, applying to skill user if no selected character.
+- Add indexes to tables to improve database query performance.
+
+* * *
+
 ## 1.62d (2021-01-31)
 ### Bug Fixes
 - Fix null data when applies fall damage.
