@@ -1,3 +1,24 @@
+## 1.62f (2021-02-18)
+### Improvement
+- Allow to set `impactEffects` while `damageType` is `Melee`.
+- Add `buildRotateSpeed` to `PlayerCharacterController` and `ShooterPlayerCharacterController`. It will be used while `buildRotationSnap` is `FALSE` to rotate building while player pressed rotate keys.
+- Change `LiteNetLibManager`'s response handler delegate to be non-async function because it's not neccessary.
+- Set `generateGridMode` to `Collider3D` when `GridManager` was added at run-time and `CurrentGameInstance.DimensionType` is `Dimension3D` (Older version will be `Renderer`).
+- Set `generateGridMode` to `Collider2D` when `GridManager` was added at run-time and `CurrentGameInstance.DimensionType` is `Dimension2D` (Older version will be `Renderer`).
+- Add `maxPathsForKeyMovement` to `NavMeshEntityMovement`. Use this in-case you don't want character to keep moving to position behind the wall. If calculated paths +1 higher than this value, it will stop moving. If this is 0 it will not applies.
+- Add `requireShield` to `BaseSkill`. If this is `TRUE`, character have to equip shield to use skill.
+
+### Bug Fixes
+- Fix duplicating craft items at clients.
+- Fix issue when summoned monster kills monster but it's not increase summonter character quest progress.
+- Fix issue when summoned monster kills monster and drop items but it's not allow summoner character to pick up.
+- Fix building freeze after destroyed by characters.
+- Fix HP/MP/Stamina and so on debuff not being drained.
+- Fix storage closed not being notified at clients.
+- Fix building not rotating while `PlayerCharacterController`/`ShooterPlayerCharacterController` -> `buildRotationSnap` is `TRUE`.
+
+* * *
+
 ## 1.62e (2021-02-05)
 ### Improvement
 - Don't use `FindObjectsOfType` to find `UIBlockController`.
