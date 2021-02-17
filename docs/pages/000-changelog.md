@@ -7,6 +7,9 @@
 - Set `generateGridMode` to `Collider2D` when `GridManager` was added at run-time and `CurrentGameInstance.DimensionType` is `Dimension2D` (Older version will be `Renderer`).
 - Add `maxPathsForKeyMovement` to `NavMeshEntityMovement`. Use this in-case you don't want character to keep moving to position behind the wall. If calculated paths +1 higher than this value, it will stop moving. If this is 0 it will not applies.
 - Add `requireShield` to `BaseSkill`. If this is `TRUE`, character have to equip shield to use skill.
+- Rename `UICraftItem` to `UIItemCraft` to makes its name same with game data.
+- Rename `UICraftItems` to `UIItemCrafts` to makes its name same with game data.
+- Rename `UICraftItemSelectionManager` to `UIItemCraftItemSelectionManager` to makes its name same with game data.
 
 ### Bug Fixes
 - Fix duplicating craft items at clients.
