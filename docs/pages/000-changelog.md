@@ -1,3 +1,11 @@
+## 1.62g (2021-02-18)
+- Fix wrong constructing building rotation while controlling with `ShooterPlayerCharacterController`.
+- Improve entity movement -> find grounded position function to find nearest position to `fromPosition` (finding ground origin).
+
+*Yes, it's like it has no new update, I actually made this just because I want to update Facebook and Google login packages because I was forgot it in previous update*
+
+* * *
+
 ## 1.62f (2021-02-18)
 ### Improvement
 - Allow to set `impactEffects` while `damageType` is `Melee`.
