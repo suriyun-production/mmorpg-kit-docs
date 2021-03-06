@@ -1,3 +1,24 @@
+## 1.63 (2021-03-06)
+### New Systems
+- Add new damage type: `Throwable` with new damage entity: `ThrowableDamageEntity`. Can use it to make grenade weapons. *`ThrowableDamageEntity` physics simulating won't synced from server yet, so players can see difference entity's position but damage still applies at server.*
+- Add new fire type: `FireOnRelease` to weapon item data which will be used by `ShooterPlayerCharacterController`, it will start firing when release *attack* button.
+- Add weapon charge animation which will plays while holding *attack* button (while weapon's fire type is `FireOnRelease`). *To whom who made custom animator controller, you have to add new state which its clip name must be `__WeaponCharge` and must have `IsWeaponCharge` boolean parameter and use it and transition to weapon charge state*. *In the future I might make damage varying by charge duration :P*.
+- Add queueable crafting system, when you want new item craft formula you can create new `ItemCraftFormula` scriptable objects and put it to your game database.
+
+![](../images/queueable-crafting.png)
+
+### Improvement
+- Add `UIGageDurability` and `UIGageExp` (for pet item) to `UICharacterItem`.
+- Add `DestroyImmediatelyAfterFired` to weapon item data, can use it with grenade items to destroy it after throw.
+
+### Entity Movement Changes
+- If `MovementSecure` is `ServerAuthoritative` it will simulate movement immediately at owner-client. Owner-client will send inputs to server (not position/rotation) then the server will simulate movement and sync transform to all clients, including owner-client in-case owner-client is lag it can cause rubber banding effect to make its transform not too difference with the server. It will set owner-client's character's transform to the one which received from server when distance is > `SnapThreshold`.
+- If `MovementSecure` is `NotSecure` it will send transform to server then server pass transform to all clients like mentioned above. It can reduce work at server. But it is able to hack, I will implement speed hack detection at server later.
+- It uses character's movespeed for interpolation, not estimating speed.
+- It won't uses `LiteNetLibIdentity` anymore, you can remove that component from your character entity. *`LiteNetLibIdentity` will be disabled on awake if it can find that it has that component attached*.
+
+* * *
+
 ## 1.62g (2021-02-18)
 - Fix wrong constructing building rotation while controlling with `ShooterPlayerCharacterController`.
 - Improve entity movement -> find grounded position function to find nearest position to `fromPosition` (finding ground origin).
