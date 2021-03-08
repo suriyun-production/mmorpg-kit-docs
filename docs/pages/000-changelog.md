@@ -10,12 +10,14 @@
 ### Improvement
 - Add `UIGageDurability` and `UIGageExp` (for pet item) to `UICharacterItem`.
 - Add `DestroyImmediatelyAfterFired` to weapon item data, can use it with grenade items to destroy it after throw.
+- Add `RandomCurrencies` to `MonsterCharacter` game data and `ItemDropTable` game data for rewarding players with currencies when kills monsters.
+- When character hiding, other clients will unsubscribe that character.
 
 ### Entity Movement Changes
 - If `MovementSecure` is `ServerAuthoritative` it will simulate movement immediately at owner-client. Owner-client will send inputs to server (not position/rotation) then the server will simulate movement and sync transform to all clients, including owner-client in-case owner-client is lag it can cause rubber banding effect to make its transform not too difference with the server. It will set owner-client's character's transform to the one which received from server when distance is > `SnapThreshold`.
 - If `MovementSecure` is `NotSecure` it will send transform to server then server pass transform to all clients like mentioned above. It can reduce work at server. But it is able to hack, I will implement speed hack detection at server later.
 - It uses character's movespeed for interpolation, not estimating speed.
-- It won't uses `LiteNetLibIdentity` anymore, you can remove that component from your character entity. *`LiteNetLibIdentity` will be disabled on awake if it can find that it has that component attached*.
+- It won't uses `LiteNetLibTransform` anymore, you can remove that component from your character entity. *`LiteNetLibTransform` will be disabled on awake if it can find that it has that component attached*.
 
 * * *
 
