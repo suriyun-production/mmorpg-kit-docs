@@ -1,3 +1,15 @@
+## 1.63b (2021-03-09)
+### Bug Fixes
+- Fix error which occurring after monster killed.
+- Fix wrong cash package validation response function's return type.
+- Fix crafting queue item UI not updated correctly.
+
+### Improvement
+- Add `listEmptyObject` to `UICashPackages`, `UICashShop`, `UICharacterItems`, `UICharacterQuests`, `UICharacterSkills`, `UIFindCharacters`, `UIFriend`, `UIItemCraftFormulas`, `UIItemCrafts`, `UIItemsContainer`, `UILanConnection`, `UIMailList`, `UIMailListEntry` and `UIStorageItems`, set game object which will show while there is no entry in the list to that `listEmptyObject`.
+- Add `filterCategories` to `UICashShop`.
+
+* * *
+
 ## 1.63 (2021-03-06)
 ### New Systems
 - Add new damage type: `Throwable` with new damage entity: `ThrowableDamageEntity`. Can use it to make grenade weapons. *`ThrowableDamageEntity` physics simulating won't synced from server yet, so players can see difference entity's position but damage still applies at server.*
