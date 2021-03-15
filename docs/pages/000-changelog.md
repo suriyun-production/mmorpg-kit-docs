@@ -1,3 +1,20 @@
+## 1.63c (2021-03-16)
+### Bug Fixes
+- Fix wrong server authoritative move destination. I've changed how it works, now it will send position, rotation, movement state when there are changes that occur only. It won't send point-click position or move input state separately, it will calculate movement destination at client send the destination to server then server move character.
+- Fix storage empty slots not filled before move item to the storage.
+
+### Improvement
+- Change respawn APIs to make it able to change how to respawn character.
+- Add `receiveCurrencies` to `CashShopItem` game data.
+- Add `textRecieveGold` to `UICashShopItem`, set text which you want to show receiving gold when buy cash shop item here.
+- Add `uiReceiveCurrencies` to `UICashShopItem` set UI which you want to show receiving custom currencies buy cash shop item here.
+- Add `uiReceiveItems` to `UICashShopItem` set UI which you want to show receiving items buy cash shop item here.
+- Add `UIUserCurrencies` component, use it to show user's currencies (gold in bank, user's cash).
+- Change building entity materials setter to use shared materials.
+- Improve `AudioSourceSetter` to set audio source's volume only when value changed.
+
+* * *
+
 ## 1.63b (2021-03-09)
 ### Bug Fixes
 - Fix error which occurring after monster killed.
