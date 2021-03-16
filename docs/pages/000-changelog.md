@@ -1,3 +1,13 @@
+## 1.63d (2021-03-16)
+### Bug Fixes
+- Fix client not send rotation while not moving.
+- Fix monster character entity's on respawn not being called.
+
+### Improvement
+- Rotate character smoothly after received inputs from other clients or when received sync transform from server.
+
+* * *
+
 ## 1.63c (2021-03-16)
 ### Bug Fixes
 - Fix wrong server authoritative move destination. I've changed how it works, now it will send position, rotation, movement state when there are changes that occur only. It won't send point-click position or move input state separately, it will calculate movement destination at client send the destination to server then server move character.
