@@ -1,4 +1,15 @@
-## 1.63d (2021-03-16)
+## 1.63e (2021-03-18)
+### Bug Fixes
+- Fix non-owner character not turn smoothly on clients.
+
+### Improvement
+- Send only changes inputs to server.
+- Set time zone to local time when send mail while using SQLite as database.
+- Move aim position sync field to send it at same time with attack/use skill RPC.
+
+* * *
+
+## 1.63d (2021-03-17)
 ### Bug Fixes
 - Fix client not send rotation while not moving.
 - Fix monster character entity's on respawn not being called.
