@@ -1,3 +1,17 @@
+## 1.63f (2021-03-19)
+### Bug Fixes
+- Fix camp fire entity still turned on and not converting materials while materials amount less than the one which set in conversion settings.
+- Avoid null data when finding overriding attack function from skills.
+- Always send aim position to server to make projectile direction same as the owner-client.
+
+
+### Improvement
+- Add `Id` field to game data, you can set fixed ID to each game data, or leave it empty to use filename as ID.
+- Add options to set update Pitch IK by movement state to `CharacterPitchIK` component.
+- All UI components -> icon's `preserveAspect` setting will be turned on.
+
+* * *
+
 ## 1.63e (2021-03-18)
 ### Bug Fixes
 - Fix non-owner character not turn smoothly on clients.
