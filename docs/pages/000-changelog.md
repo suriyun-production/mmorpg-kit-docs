@@ -1,9 +1,21 @@
+## 1.63g (2021-03-21)
+### Bug Fixes
+- Fix wrong weapon charge animation clip.
+- Fix `Missile Damage Entity` -> `previousPosition` not reset, which is cause of disappears issues.
+
+### Improvements
+- Reduce client inputs packet size by not send object ID, connection ID was bound to character entity so it not have to send object ID.
+- Add `Move Speed Rate While Reloading` and `Move Speed Rate While Charging` to weapon items. And also implemented to character entity to change move speed while reloading or charging.
+- Change how to calculate `multiHitTriggerDurationRates`. The old was like this example: if `multiHitTriggerDurationRates` set to `[0.2, 0.4, 0.8]` calculated trigger durations will be `[0.2, 0.4, 0.8]`. The new one is like this: if `multiHitTriggerDurationRates` set to `[0.2, 0.4, 0.8]` calculated trigger durations will be `[0.2, 0.2, 0.4]`.
+- Add guild rewarding. There are new settings in `GuildWarMapInfo`: `participantMailTitle` - Title for mail which send to participants (not winner), `participantMailContent` - Content for mail which send to participants (not winner), `participantRewardGold` - Gold which will be send with the mail which send to participants (not winner), `participantRewardCurrencies` - Currencies which will be send with the mail which send to participants (not winner), `participantRewardItems` - Items which will be send with the mail which send to participants (not winner), `winMailTitle`- Title for mail which send to winner participants, `winMailContent` - Content for mail which send to winner participants, `winRewardGold` - Gold which will be send with the mail which send to winner participants, `winRewardCurrencies` - Currencies which will be send with the mail which send to winner participants, `winRewardItems` - Items which will be send with the mail which send to winner participants.
+
+* * *
+
 ## 1.63f (2021-03-19)
 ### Bug Fixes
 - Fix camp fire entity still turned on and not converting materials while materials amount less than the one which set in conversion settings.
 - Avoid null data when finding overriding attack function from skills.
 - Always send aim position to server to make projectile direction same as the owner-client.
-
 
 ### Improvement
 - Add `Id` field to game data, you can set fixed ID to each game data, or leave it empty to use filename as ID.
