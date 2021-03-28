@@ -1,3 +1,25 @@
+## 1.63h (2021-03-24)
+### Bug Fixes
+- Fix character won't attack after weapon chanrged.
+- Fix monster move stuttering when follow enemy.
+
+### Improvements
+- Improve character model's effect containers and equipment containers gizmos to make it easier to see in editor.
+- Add equipment entity's missile damage transform and pivot gizmos to make it easier to see in editor.
+- Add hit box's pivot gizmos to make it easier to see in editor.
+- Add `onStart` which will be called in `Start` function, `onBeginDrag` which being called in `OnBeginDrag` and `onEndDrag` which being called in `OnEndDrag` events to `UIDragHandler`.
+- Add `uiTextRightHandSumAmmo` which will shows sum of current ammo and reserve ammo to `UIAmmoAmount`.
+- Add `rightHandNoRequireAmmoSymbol` which will be shown while sum ammo amount is `0` to `UIAmmoAmount`.
+- Add `uiTextLeftHandSumAmmo` which will shows sum of current ammo and reserve ammo to `UIAmmoAmount`.
+- Add `leftHandNoRequireAmmoSymbol` which will be shown while sum ammo amount is `0` to `UIAmmoAmount`.
+- Add UI component fields which relates to weapon's ammo to `UICharacterItem` (like as `UIAmmoAmount`).
+- Add `doNotShowEmptySlots` to `UICharacterItems` to filter and hide empty slots when showing items.
+- Add landed state which will plays when just landed after falling to `AnimatorCharacterModel` and `AnimationCharacterModel`.
+- Add `doNotChangeVelocityWhileAirborne` which while it's turned on it will uses move velocity before air borne to move entity not movement inputs to `CharacterControllerEntityMovement` and `RigidBodyEntityMovement`.
+- Add `landedPauseMovementDuration` to pause movement when just landed after falling to `CharacterControllerEntityMovement` and `RigidBodyEntityMovement`.
+
+* * *
+
 ## 1.63g (2021-03-21)
 ### Bug Fixes
 - Fix wrong weapon charge animation clip.
