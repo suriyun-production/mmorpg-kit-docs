@@ -1,3 +1,40 @@
+## 1.64 (2021-04-12)
+### Database server changes
+- Now it won't uses GRPC anymore, it use `LiteNetLibManager` for inter-server communication. Project size will be smaller. Hope this change make it able build as IL2CPP for standalone platforms.
+
+### Bug Fixes
+- Fix entity movements not moves character follow transform which synced from server.
+- Fix items that drops from harvestable entities not able to pickup immediately (it had to wait sometime to pickup).
+- Fix found ground position not applied when spawn entities.
+- Fix `landedPauseMovementDuration` setting in `CharacterControllerEntityMovement` and `RigidbodyEntityMovement` not work as intended.
+- Fix `EquipmentEntity` not update material/activating objects follow `effects` settings.
+
+### Improvements
+- Improve gun fire recoiling, now it is smoother and also makes separated recoil by axes (`CrosshairSetting` -> `recoilX`, `recoilY`).
+- In `UICashShopItem` it will hide sell price if sell price <= `0`.
+- `BuildingMaterial` changes `meshRenderer`, `spriteRenderer` and `tilemap` to be public fields.
+- Improve `NavMeshEntityMovement` to turn character smoothly.
+
+### New Components
+- Add `NonEquipDropHandler` this is drop area for inventory, when drop item which dragged from equipment slot it will un-equip, when drop item which dragged from storage it will move item from storage.
+- Add `ClientCashShopActions`, for cash shop services response setting at client.
+- Add `ClientMailActions`, for mail services response setting at client.
+
+### New Tools
+- Add `Game Database` editor which you can open from menu `MMORPG KIT` -> `Game Database`, hope it helps customer to manage game data easier.
+
+![](../images/changelog/11.png)
+
+- Add `Character Entity Creator (3D)` which you can open from menu `MMORPG KIT` -> `Character Entity Creator (3D)`, which helps customer to create new character entity easier.
+
+![](../images/changelog/12.png)
+
+- Add `Character Model Cloner (3D)` which you can open from menu `MMORPG KIT` -> `Character Model Cloner (3D)`, which helps customer to clone settings to another character model.
+
+![](../images/changelog/13.png)
+
+* * *
+
 ## 1.63h (2021-03-24)
 ### Bug Fixes
 - Fix character won't attack after weapon chanrged.
