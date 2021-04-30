@@ -1,3 +1,31 @@
+## 1.65 (2021-05-01)
+### Character actions structure changes
+Now actions codes were moved to separated classes which implement following interfaces `ICharacterAttackComponent`, `ICharacterUseSkillComponent`, `ICharacterReloadComponent`, `ICharacterChargeComponent`. To make it able to change functionality by change attached component.
+- If there is no class which implements `ICharacterAttackComponent` attached to the same game object with character entity, it will attach `DefaultCharacterAttackComponent` on awake.
+- If there is no class which implements `ICharacterUseSkillComponent` attached to the same game object with character entity, it will attach `DefaultCharacterUseSkillComponent` on awake.
+- If there is no class which implements `ICharacterReloadComponent` attached to the same game object with character entity, it will attach `DefaultCharacterReloadComponent` on awake.
+- If there is no class which implements `ICharacterChargeComponent` attached to the same game object with character entity, it will attach `DefaultCharacterChargeComponent` on awake.
+Change how to send attack packet, now owner client won't send aim position to server, it will send launch position, direction and time to server, only when attack action triggered.
+Change how to send skill packet, now it will send it will send launch position, direction and time to server.
+
+### New Features
+- Hit box lag compensation. If you want to changes settings, you have to attach `DefaultLagCompensationManager` to the same game object with `LanRpgNetworkManager` to `MapNetworkManager`.
+
+### Bug Fixes
+- Fix stuttering `RigidBodyEntityMovement2D`.
+- Fix slow `AudioSourceSetter`, now it will store settings in variables, it was get settings directly from `PlayerPrefs`.
+
+### Improvements
+- Add `countDownObjects` to `UICharacterSkill` component, game objects which set into this field will be activated when the skill is cooling down.
+- Add `noCountDownObjects` to `UICharacterSkill` component, game objects which set into this field will be activated when the skill is not cooling down.
+- Add `countDownObjects` to `UIGuildSkill` component, game objects which set into this field will be activated when the skill is cooling down.
+- Add `noCountDownObjects` to `UIGuildSkill` component, game objects which set into this field will be activated when the skill is not cooling down.
+- Add `canBuildOnAnySurface` field to `BuildingEntity`. If this is `TRUE` this building entity will be able to build on any surface. But when constructing, if player aimming on building area it will place on building area.
+- Add `allowRotateInSocket` field to `BuildingArea`. If this is `TRUE`, players will able to rotate constructing building entity while placing on the building area.
+- Add `NoConstructionArea` component, add this component and adjust trigger collider where you want to prevent players to construct buildings.
+
+* * *
+
 ## 1.64 (2021-04-12)
 ### Database server changes
 - Now it won't uses GRPC anymore, it use `LiteNetLibManager` for inter-server communication. Project size will be smaller. Hope this change make it able build as IL2CPP for standalone platforms.
