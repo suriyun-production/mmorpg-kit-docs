@@ -1,3 +1,15 @@
+## 1.65b (2021-05-11)
+### Bug Fixes
+- Fix moving animations not play at server, It's a cause of root motion entity not moving issues.
+- Fix wrong weapon animations while riding vehicle.
+- Fix `RigidBodyEntityMovement` component not being added when create character entity with `Character Entity Creator (3D)` dialog.
+
+### Improvements
+- Add `harvestType` and `harvestDamageAmount` settings to skill. If `harvestType` is `BasedOnWeapon`, harvest damage amount will be calculated by weapon type's `harvestDamageAmount` settings. If `harvestType` is `BasedOnSkill`, harvest damage amount will be calculated by skill's `harvestDamageAmount` settings.
+- Add `skillHarvestEffectivenesses` to `Harvestable`, it will be used when skill's `harvestType` is `BasedOnSkill` to random dropping items when harvestable entity attacked.
+
+* * *
+
 ## 1.65 (2021-05-01)
 ### Character actions structure changes
 Now actions codes were moved to separated classes which implement following interfaces `ICharacterAttackComponent`, `ICharacterUseSkillComponent`, `ICharacterReloadComponent`, `ICharacterChargeComponent`. To make it able to change functionality by change attached component.
