@@ -1,3 +1,16 @@
+## 1.65c (2021-05-12)
+### Bug Fixes
+- Fix `NoConstructionArea` not working.
+- Fix to not applies move speed while use root motion for movement.
+
+### Improvements
+- Add `increaseStatPointsUntilReachedLevel` to `DefaultGameplayRule`, If this > `0`, it will increase stat point until character reached max level. If it's `20`, it will increase stat point until character reached level `20`.
+- Add `increaseSkillPointsUntilReachedLevel` to `DefaultGameplayRule`, If this > `0`, it will increase skill point until character reached max level. If it's `20`, it will increase skill point until character reached level `20`.
+- Add `activateObjectsWhenSwitchModel` to `BaseCharacterModel`, these game objects will be activated when switch from other model (switching when riding vehicles).
+- Add `deactivateObjectsWhenSwitchModel` to `BaseCharacterModel`, these game objects will be deactivated when switch from other model (switching when riding vehicles).
+
+* * *
+
 ## 1.65b (2021-05-11)
 ### Bug Fixes
 - Fix moving animations not play at server, It's a cause of root motion entity not moving issues.
