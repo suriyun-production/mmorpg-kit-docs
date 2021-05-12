@@ -1,3 +1,14 @@
+## 1.65d (2021-05-13)
+### Bug Fixes
+- Fix `increaseStatPointsUntilReachedLevel` and `increaseSkillPointsUntilReachedLevel` setting not working as intended.
+- Fix wrong attribute amounts and skill levels in item equipment requirement and skill level up requirement UIs.
+
+### Improvements
+- Add `QueuedWorkbenchEntity` it is workbench with queueable crafting system.
+- Change stat point and skill point to be fractional.
+
+* * *
+
 ## 1.65c (2021-05-12)
 ### Bug Fixes
 - Fix `NoConstructionArea` not working.
