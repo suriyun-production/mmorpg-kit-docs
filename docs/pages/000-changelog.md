@@ -1,3 +1,37 @@
+## 1.65e (2021-05-21)
+### Chat structure changes
+Chat codes were moved from game network manager to following implemented interfaces:
+- `IClientChatHandlers` contains functions to request server to send chat messages. Implemented to `ClientChatHandlers`.
+- `IServerChatHandlers` contains functions to handle request from clients to send chat messages. Implemented to `DefaultServerChatHandlers`.
+
+### BaseSkill structure changes
+- Abstract `ApplySkill` function was changed to `ApplySkillImplement` and also change its accessibility level to `protected`.
+
+### Bug Fixes
+- Fix missing place building entity on ground codes for 2D games in `PlayerCharacterController`.
+- Fix skill level up button disabled while equip item which increase skill level to max level. It should be enabled while learnt level is < max level.
+- Avoid null data error in `DismantleItemUIActivator` update function when change scene or stop game.
+- Avoid null data error in `EnhanceSocketItemUIActivator` update function when change scene or stop game.
+- Avoid null data error in `RefineItemUIActivator` update function when change scene or stop game.
+- Avoid null data error in `RepairItemUIActivator` update function when change scene or stop game.
+- Avoid null data error in `ShopUIActivator` update function when change scene or stop game.
+- Avoid null data error in `StorageUIActivator` update function when change scene or stop game.
+- Fix offline game save race condition when change scene which is cause of storage's items losing.
+- Fix wrong move direction while FPS is very low.
+
+### Improvements
+- Make `CharacterRace` to be partial class.
+- Make rewarding EXP in `MonsterCharacter` data can be increased by monster level. By add `randomExp` variable, the old `randomExpMin` and `randomExpMax` variables will be set to `randomExp` -> `baseAmount` if any of them != 0 and values in `randomExp` are 0.
+- Make rewarding gold in `MonsterCharacter` data can be increased by monster level. By add `randomGold` variable, the old `randomGoldMin` and `randomGoldMax` variables will be set to `randomGold` -> `baseAmount` if any of them != 0 and values in `randomGold` are 0.
+- Add `requireItems` settings to skill classes. If this list is empty it won't decrease items from inventory. It will decrease one kind of item in this list when using skill, not all items in this list.
+- Add `requireAmmoType` settings to skill classes. If `Require Ammo Type` is `Based On Weapon` it will decrease ammo based on ammo type which set to the weapon, amount to decrease ammo can be set to `Require Ammo Amount`. If weapon has no require ammo, it will not able to use skill. If `Require Ammo Type` is `Based On Skill`, it will decrease ammo based on `Require Ammos` setting.
+- Add `requireAmmoAmount` settings to skill classes. It will be used while `Require Ammo Type` is `Based On Weapon` to decrease ammo.
+- Add `requireAmmos` settings to skill classes. If this list is empty it won't decrease ammo items from inventory. It will decrease one kind of item in this list when using skill, not all items in this list.
+- Add `craftingDistance` to `QueuedWorkbenchEntity`, if this is > 0 it will limit distance to craft an items with this workbench entity by its value.
+- Add `boundsSizeRateWhilePlacing` to `BuildingMaterial`, it will be used to reduce collider's bounds when find other intersecting building materials.
+
+* * *
+
 ## 1.65d (2021-05-13)
 ### Bug Fixes
 - Fix `increaseStatPointsUntilReachedLevel` and `increaseSkillPointsUntilReachedLevel` setting not working as intended.
