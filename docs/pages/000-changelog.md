@@ -1,3 +1,24 @@
+## 1.65f (2021-05-31)
+### Skill structure changes
+Now it will pass target entity object ID to use skill function, `targetObjectId` parameter was added to `BaseSkill` -> `ApplySkillImplement`, `CanUse` functions.
+
+### Bug Fixes
+- Avoid null data in `BuildingMaterial`'s trigger events.
+- Fix null instigator data when apply or receive damage.
+- Fix `Killed` function being called double when character dead by debuffs.
+- Fix default move state for `NPC Entity` is falling.
+
+### Improvements
+- Add `hpRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's HP in `DefaultGameplayRule` -> `GetRecoveryHpPerSeconds` function.
+- Add `mpRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's MP in `DefaultGameplayRule` -> `GetRecoveryMpPerSeconds` function.
+- Add `staminaRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's stamina in `DefaultGameplayRule` -> `GetRecoveryStaminaPerSeconds` function.
+- Add `hpLeechRate` to `CharacterStats`, see how it was implemented in `DefaultGameplayRule` -> `OnCharacterReceivedDamage` function.
+- Add `mpLeechRate` to `CharacterStats`, see how it was implemented in `DefaultGameplayRule` -> `OnCharacterReceivedDamage` function.
+- Add `staminaLeechRate` to `CharacterStats`, see how it was implemented in `DefaultGameplayRule` -> `OnCharacterReceivedDamage` function.
+- Add overlapping checking to `HarvestableSpawnArea` for 2D games.
+
+* * *
+
 ## 1.65e (2021-05-21)
 ### Chat structure changes
 Chat codes were moved from game network manager to following implemented interfaces:
@@ -1699,7 +1720,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Add 2D games features
 - Move weapon attack animations, skill cast animations to Character Model (Migration guide: https://medium.com/suriyun-production/mmorpg-kit-1-27-move-weapon-attack-animations-skill-cast-animations-to-character-model-f9016bd5a0ba)
 - Make another entity (Harvestable / Building) able to play effects (Hit effects)
-- Add destroyHideDelay to the harvestable entity, this is a delay before it's going to be hidden from clients after harvestable's hp reached zero (destroyed)
+- Add destroyHideDelay to the harvestable entity, this is a delay before it's going to be hidden from clients after harvestable's m reached zero (destroyed)
 - Add onHarvestableDestroy event to the harvestable entity, developers may use this event to play destroy animations 
 - Remove SecurePlayerCharacterEntity, make PlayerCharacterEntity secured
 
