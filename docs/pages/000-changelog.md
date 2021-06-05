@@ -1,3 +1,22 @@
+## 1.66 (2021-06-05)
+### Bug Fixes
+- Fix missing parameters in `UICharacterStats` -> `CharacterStats.GetText` which is cause of wrong stats listing.
+- Fix empty text when text wrapper/input field wrapper awake.
+- Fix wrong item index in `UINpcDialog` -> `uiSellItemDialog`.
+- Fix wrong aim direction when select itselft and attack.
+- Validate hit index when simulate attack to avoid hacking.
+
+### Improvements
+- Summoned monsters can buffs summoner, there is new `summonerBuff` settings in `MonsterCharacter` game data.
+- Add `IsImmune` state to `DamageableEntity`, while this is `TRUE` it won't receives damage.
+- Change entity title setting, all kinds of entity will have `entityTitle` and `entityTitles` settings, if value in `syncTitle` is null or empty it will use those settings.
+- Add `availableClasses` setting to `EquipmentRequirement`, now developer can set more than one kind of character class which will able to equip item.
+- Add `isOverrideCharacteristic` and `overrideCharacteristic` to `BaseMonsterCharacterEntity` use them to override `MonsterCharacter`'s `Characteristic` setting.
+- Change how LAN player's storage items saving, it will be saved locally, not on host.
+- Delete `GetDamageEffectTransform` function from `IDamageInfo`, it's not necessary because all character animations will be played both on server and client. The older version won't play any animation but it has to change because character's hitbox has to update as same as clients.
+
+* * *
+
 ## 1.65f (2021-05-31)
 ### Skill structure changes
 Now it will pass target entity object ID to use skill function, `targetObjectId` parameter was added to `BaseSkill` -> `ApplySkillImplement`, `CanUse` functions.
