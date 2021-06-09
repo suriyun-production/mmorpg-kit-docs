@@ -1,3 +1,22 @@
+## 1.66b (2021-06-10)
+### Logging System
+Logging system changed, now it uses [ZLogger](https://github.com/Cysharp/ZLogger) for the logging system. There are some plugins folder strucure changes when adding plugins, so you should delete `Assets/UnityMultiplayerARPG/Core/LiteNetLibManager` and `Assets/UnityMultiplayerARPG/MMO/Plugins` folder before import the new version.
+
+### Status Effect
+Add `StatusEffect` game data which can create from menu `Create -> Create GameData -> StatusEffect`, can set it to equipment item 
+- `selfStatusEffectsWhenAttacking` to apply status effects to the item-equipped character when attacking.
+- `enemyStatusEffectsWhenAttacking` to apply status effects to the enemy when the item-equipped character attacking.
+- `selfStatusEffectsWhenAttacked` to apply status effects to the item-equipped character when attacked.
+- `enemyStatusEffectsWhenAttacked` to apply status effects to the enemy when the item-equipped character attacked.
+
+### Bug Fixes
+- Fix server auth entity movement can jump repeatedly on the air.
+- Fix wrong swimming animation state when jump to the water.
+- Fix non-stop swimming up to the surface while `autoSwimToSurface` option is turned on.
+- Fix character casting skill while it has not enough items (but casted skill won't apply).
+
+* * *
+
 ## 1.66 (2021-06-05)
 ### Bug Fixes
 - Fix missing parameters in `UICharacterStats` -> `CharacterStats.GetText` which is cause of wrong stats listing.
