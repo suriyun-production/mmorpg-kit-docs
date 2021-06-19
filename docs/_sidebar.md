@@ -6,6 +6,7 @@
 - Guide
 
   - [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
+  - [How to update to new version](pages/147-how-to-update-to-new-version)
   - [Game Instance and relates data](pages/102-game-instance-and-relates-data)
   - [Game Database](pages/103-game-database)
 
