@@ -11,11 +11,13 @@
 - Change skill functions
 - Add `isExtendDuration` to `Buff` struct. If it is `TRUE` buff duration can be extended, when extending it will change buff level to the latest applying level.
 - Add `maxStack` to `Buff` struct. It will be used while `isExtendDuration` is `FALSE` to make buff stackable.
+- Add `doNotRemoveOnDead`. If it is `TRUE` buff won't be remove from character when character dead.
+- Socket enhancer items can apply status effects.
+- Buffs can apply status effects.
 - Add `goldRate` to `CharacterStats` struct.
 - Add `expRate` to `CharacterStats` struct.
 - Add `/gold_rate (float)` to default GM commands, use it to set gold rate.
 - Add `/exp_rate (float)` to default GM commands, use it to set exp rate.
-- Add `doNotRemoveOnDead`. If it is `TRUE` buff won't be remove from character when character dead.
 - Add `onEquipmentModelsInstantiated (equipPosition)` action to `BaseCharacterModel`, it will be called when instantiating equipment model when equipping equipment.
 - Add `onEquipmentModelsDestroyed (equipPosition)` action to `BaseCharacterModel`, it will be called when destroying equipment model when unequipping equipment.
 - Change `BaseEquipmentEntity` to be partial class.
@@ -23,8 +25,6 @@
 - Don't show consuming HP text component if consume amount = 0.
 - Don't show consuming MP text component if consume amount = 0.
 - Don't show consuming Stamina text component if consume amount = 0.
-- Socket enhancer items can apply status effects.
-- Buffs can apply status effects.
 - Change how to create animator override controllers for `AnimatorCharacterModel` by creating just once for each kind of entity, the older version was creating new animator override controllers for all entities so it was slow when spawning entities.
 
 ### Bug Fixes
