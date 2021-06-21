@@ -1,3 +1,40 @@
+## 1.66c (2021-06-21)
+### Improvements
+- Change listing UI components (such as `UICharacterBuffs`, `UICharacterCurrencies` and so on) to have the same variable/function names (with other classes), intend to make it easier to find things and also changes some functions to be overridable.
+  - Dialog reference (Example: `uiCurrencyDialog`) variable name will be changed to `uiDialog`.
+  - Prefab reference (Example: `uiCharacterCurrencyPrefab`) variable name will be changed to `uiPrefab`.
+  - Container reference (Example: `uiCharacterCurrencyContainer`) variable name will be changed to `uiContainer`.
+  - On dialog hide function (Example: `OnItemDialogHide`) name will be changed to `OnDialogHide` and also overrideable.
+  - On entry select function (Example: `OnSelectCharacterItem`) name will be changed to `OnSelect` and also overrideable.
+  - On entry deselect function (Example: `OnDeselectCharacterItem`) name will be changed to `OnDeselect` and also overrideable.
+  - `UpdateData` function will be overridable.
+- Change skill functions
+- Add `isExtendDuration` to `Buff` struct. If it is `TRUE` buff duration can be extended, when extending it will change buff level to the latest applying level.
+- Add `maxStack` to `Buff` struct. It will be used while `isExtendDuration` is `FALSE` to make buff stackable.
+- Add `goldRate` to `CharacterStats` struct.
+- Add `expRate` to `CharacterStats` struct.
+- Add `/gold_rate (float)` to default GM commands, use it to set gold rate.
+- Add `/exp_rate (float)` to default GM commands, use it to set exp rate.
+- Add `doNotRemoveOnDead`. If it is `TRUE` buff won't be remove from character when character dead.
+- Add `onEquipmentModelsInstantiated (equipPosition)` action to `BaseCharacterModel`, it will be called when instantiating equipment model when equipping equipment.
+- Add `onEquipmentModelsDestroyed (equipPosition)` action to `BaseCharacterModel`, it will be called when destroying equipment model when unequipping equipment.
+- Change `BaseEquipmentEntity` to be partial class.
+- Change `EquipmentEntity` to be partial class.
+- Don't show consuming HP text component if consume amount = 0.
+- Don't show consuming MP text component if consume amount = 0.
+- Don't show consuming Stamina text component if consume amount = 0.
+- Socket enhancer items can apply status effects.
+- Buffs can apply status effects.
+- Change how to create animator override controllers for `AnimatorCharacterModel` by creating just once for each kind of entity, the older version was creating new animator override controllers for all entities so it was slow when spawning entities.
+
+### Bug Fixes
+- Regenerate `DefaultInterestManager` meta file to avoid weird Unity's importing bug.
+- Fix username and password not stored properly while auto login is turn on.
+- Fix home scene will being loaded while starting map server.
+- Fix attacking not simulating correctly, which is the cause of user can see character attacks but damage won't be applied.
+
+* * *
+
 ## 1.66b (2021-06-10)
 ### Logging System
 Logging system changed, now it uses [ZLogger](https://github.com/Cysharp/ZLogger) for the logging system. There are some plugins folder strucure changes when adding plugins, so you should delete `Assets/UnityMultiplayerARPG/Core/LiteNetLibManager` and `Assets/UnityMultiplayerARPG/MMO/Plugins` folder before import the new version.
