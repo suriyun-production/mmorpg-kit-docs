@@ -11,7 +11,7 @@
 - Change skill functions
 - Add `isExtendDuration` to `Buff` struct. If it is `TRUE` buff duration can be extended, when extending it will change buff level to the latest applying level.
 - Add `maxStack` to `Buff` struct. It will be used while `isExtendDuration` is `FALSE` to make buff stackable.
-- Add `doNotRemoveOnDead`. If it is `TRUE` buff won't be remove from character when character dead.
+- Add `doNotRemoveOnDead`. If it is `TRUE` buff won't be removed from the character when the character dead.
 - Socket enhancer items can apply status effects.
 - Buffs can apply status effects.
 - Add `goldRate` to `CharacterStats` struct.
