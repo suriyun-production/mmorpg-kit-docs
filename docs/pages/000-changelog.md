@@ -1,3 +1,12 @@
+## 1.66d (2021-06-22)
+### Improvements
+- Add status effects section to game database dialog.
+
+### Bug Fixes
+- Fix status effects for attacked character not working properly.
+
+* * *
+
 ## 1.66c (2021-06-21)
 ### Improvements
 - Change listing UI components (such as `UICharacterBuffs`, `UICharacterCurrencies` and so on) to have the same variable/function names (with other classes), intend to make it easier to find things and also changes some functions to be overridable.
