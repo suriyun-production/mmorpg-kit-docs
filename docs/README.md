@@ -29,7 +29,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 
 #### Vehicle and Mount
-*   [Mount Entity](pages/138-mount-entity)
+*   [Vehicle Entity](pages/138-mount-entity)
 
 #### NPC
 *   [How to create Npc](pages/139-npc-entity)
@@ -88,7 +88,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to change input](pages/047-how-to-change-input)
 *   [FPS gameplay](pages/051-fps-gameplay)
 *   [Mobile platform](pages/052-mobile-platform)
-*   [How Attack Function Work?](pages/142-how-attack-function-work)
+<!--*   [How Attack Function Work?](pages/142-how-attack-function-work)-->
 
 #### Etc
 *   [In-App Purchasing](pages/021-in-app-purchasing)
