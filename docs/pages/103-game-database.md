@@ -35,7 +35,7 @@ There are 2 types of built-in game database that can be created:
 
 * * *
 
-### Game Database Management Editor
+## Game Database Management Editor
 
 The game database management editor was made for `Game Database` only, so if you uses `Resources Folder Game Database`, you won't be able to manage with game database management editor.
 
