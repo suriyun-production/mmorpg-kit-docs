@@ -130,10 +130,12 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 #### Extensions
 
-*   [Collection of dev extension for MMO](https://github.com/insthync/UnityMultiplayerARPG_MMO_Extension_Samples)
-*   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA)
-*   [Top-down controller](https://github.com/insthync/UnityMultiplayerARPG_TopDownController)
-*   [Race](https://github.com/insthync/UnityMultiplayerARPG_CharacterRace)
-*   [2D AI](https://github.com/insthync/UnityMultiplayerARPG_2DAI)
-*   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth)
-*   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth)
+*   [Some extensions](https://github.com/insthync/UnityMultiplayerARPG_ScriptsOnDemand ':target=__blank')
+*   [Some extensions for shooter games](https://github.com/insthync/UnityMultiplayerARPG_ShooterExtensions ':target=__blank')
+*   [Top-down controller](https://github.com/insthync/UnityMultiplayerARPG_TopDownController ':target=__blank')
+*   [Aim at cursor controller](https://github.com/insthync/UnityMultiplayerARPG_AimAtCursorController ':target=__blank')
+*   [2D AI](https://github.com/insthync/UnityMultiplayerARPG_2DAI ':target=__blank')
+*   [Hero Editor 4D integration](https://github.com/insthync/UnityMultiplayerARPG_HeroEditor4D ':target=__blank')
+*   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA ':target=__blank')
+*   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth ':target=__blank')
+*   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth ':target=__blank')
