@@ -2,7 +2,7 @@
 
 ## Game Instance
 
-This is component that collects data that needed in gameplay such as:
+This is component contains configuration for gameplay such as:
 *   Gameplay rule
 *   Gameplay UIs for PC and Mobile platforms
 *   An objects that will be instantiates in gameplay scenes for general purpose such as represent dropped items, position in mini-map, character name and HP/MP stats
@@ -13,7 +13,11 @@ This is component that collects data that needed in gameplay such as:
 *   Amount of gold, items that new character will own at start of the game
 *   Home scene which used to manage your character
 
-You can find `Game Instance` in `00Init` scene
+You can find `Game Instance` in `00Init` scene.
+
+**I will not write all description here because you can see it by hover the setting by mouse cursor to see the description.**
+
+![](../images/mouse-hover-tooltip.png)
 
 ##### Game Instance - Helpers / Utilities Components
 
@@ -40,17 +44,25 @@ To enable it in your game, you have to set it in `Game Instance -> Gameplay Rule
 
 This is database which store an game data, now there is following things that required to add into game database to make them able to work in your game:
 
-*   `Attribute`, an attributes that player character levelup to increase character stats
-*   `Damage Element`, an elements of damage, you can make fire, ice, poison damage elements for more variety of gameplay. You can leave it empty if you don't want to have other damage elements than default damage element (which set to `Game Instance`)
-*   `Item`, an items
+*   `Attribute`, an attributes that can be increase by stat point to increase character stats.
+*   `Currency`, an custom currencies. If you want to use other currencies other than gold and cash you can create custom currencies.
+*   `Damage Element`, an elements of damage, you can make fire, ice, poison damage elements for more variety of gameplay. You can leave it empty if you don't want to have other damage elements than default damage element (which set to `Game Instance`).
+*   `Item`, an items.
+*   `Item Craft Formula`, formula for item crafting.
+*   `Armor Types`, type for an armor items, you can define equipping slots by armor types.
+*   `Weapon Types`, type for an weapon items, you can define how weapon working by weapon types.
+*   `Ammo Types`, type for an ammo items, you can define which kind of ammo is required for weapon in weapon type game data.
+*   `Skill`, an character's skills.
+*   `Guild Skill`, skills that can be use when joined the guild.
+*   `Status Effects`, status effects which will apply to the character when attacking or being attacked.
+*   `Play Character Entity`, the character which will be represent in game scene and can controls by players.
+*   `Monster Character Entity`, the monster character which will be represent in game scene.
+*   `Vehicle Entity`, the mountable animal or vehicle which will be represent in game scene.
+*   `Harvestable`, type for harvestable entities, you can define items which will drops when harvestable entities destroyed.
+*   `Map Info`, map scenes that allowed player to accesses and settings for each maps.
 *   `Npc Dialog`, an NPC dialogs which will be shown when character talks to NPCs
-*   `Quest`
-*   `Guild Skill`, skills that can be use when joined the guild that already level up the skill
-*   `Play Character Entity`, the character which will be represent in game scene and can controls by players
-*   `Monster Character Entity`, the monster character which will be represent in game scene
-*   `Mount Entity`, the mountable animal or vehicle which will be represent in game scene
-*   `Map Info`, map scenes that allowed player to accesses and settings for each maps
-*   `Faction`, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game
+*   `Quest`, an character's quests.
+*   `Faction`, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game.
 
 More Info: [Click Here](pages/103-game-database)
 
