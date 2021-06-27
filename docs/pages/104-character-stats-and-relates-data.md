@@ -5,8 +5,16 @@
 This project have a `CharacterStats` struct which contains:
 
 *   `Hp` as all we know if this value = 0, character will die
+*   `Hp Recovery` recoverying amount of HP per seconds
+*   `Hp Leech Rate` amount of leeching HP when attacks enemy
 *   `Mp` required to use skills
-*   `Armor` reduce receiving damage from enemies
+*   `Mp Recovery` recoverying amount of MP per seconds
+*   `Mp Leech Rate` amount of leeching MP when attacks enemy
+*   `Stamina` increase stamina
+*   `Stamina Recovery` recoverying amount of stamina per seconds
+*   `Stamina Leech Rate` amount of leeching stamina when attacks enemy
+*   `Food` if this is low, the character will hungry and Hp will decreasing (It's up to how you setup gameplay rule)
+*   `Water` if this is low, the character will thirsty and Hp will decreasing (It's up to how you setup gameplay rule)
 *   `Accuracy` add chances to hit enemies
 *   `Evasion` add chances to evade enemies
 *   `Cri Rate` chances to occurs critical damage
@@ -17,9 +25,8 @@ This project have a `CharacterStats` struct which contains:
 *   `Atk Speed` increase character attack speed
 *   `Weight Limit` increase inventory weight limit
 *   `Slot Limit` increase inventory slot limit
-*   `Stamina` increase stamina
-*   `Food` if this is low, the character will hungry and Hp will decreasing (It's up to how you setup gameplay rule)
-*   `Water` if this is low, the character will thirsty and Hp will decreasing (It's up to how you setup gameplay rule)
+*   `Gold Rate` rate of increasing Gold when kills monsters
+*   `Exp Rate` rate of increasing Exp when kills monsters
 
 ##### How accuracy, evasion and hit chance calculated
 
