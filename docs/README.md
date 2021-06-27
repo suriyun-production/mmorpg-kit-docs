@@ -115,7 +115,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 #### Dedication Guide
 *   [Digital Ocean](dedicates/digitalocean)
 
-#### 2D Content
+#### 2D Games
 
 *   [Getting Started (2D Singleplayer/LAN)](pages/035-getting-started-2d-singleplayer-lan)
 *   [3D → 2D Components / Settings changes](pages/036-2d-3d-comparison)
