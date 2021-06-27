@@ -4,7 +4,7 @@ This is the way for developers to add more functionality to the project without 
 
 * * *
 
-About to developing an extensions, you may find where the function `InvokeInstanceDevExtMethods` will be called.
+About to developing an extensions, you may find where the function `InvokeInstanceDevExtMethods` will be called. (By searching in the IDE)
 
 For example: in `BaseCharacterEntity` -> `Awake` there is `this.InvokeInstanceDevExtMethods("Awake");` so you can extend this function by add codes in partial class file, as this example:
 
@@ -25,16 +25,16 @@ public partial class PlayerCharacterEntity
 
 * * *
 
-Here is the list of functions that support dev extension:
+Here is the list of implemented dev extension functions:
 
-### Support functions for an game entities  
+## Implemented dev extension functions and an events for game entities
 (PlayerCharacterEntity, MonsterCharacterEntity, NpcEntity, BuildingEntity, HarvestableEntity and so on)
 
+**Implemented dev extension functions**
 - void Awake()
 - void OnDestroy()
 
-And in these classes there are following events:
-
+**Events**
 - onStart()
 - onEnable()
 - onDisable()
@@ -46,75 +46,144 @@ And in these classes there are following events:
 - onSetOwnerClient()
 - onNetworkDestroy(byte reasons)
 
-So you can setup an events in `Awake` extend function.
+You can add an events in `Awake` and remove in `OnDestroy` by create extension like this:
+
+```
+// PlayerCharacterEntity_Extension001.cs
+public partial class PlayerCharacterEntity
+{
+    [DevExtMethods("Awake")]
+    protected void DevExtAwakeDemo()
+    {
+        onStart += OnStart_DevExt;
+    }
+    [DevExtMethods("OnDestroy")]
+    protected void DevExtOnDestroyDemo()
+    {
+        onStart -= OnStart_DevExt;
+    }
+    private void OnStart_DevExt()
+    {
+        // Do something
+    }
+}
+```
 
 * * *
 
-### Support functions for an damageable entities  
+## Support functions for an damageable entities
 (PlayerCharacterEntity, MonsterCharacterEntity, BuildingEntity, HarvestableEntity and so on)
 
+**Implemented dev extension functions**
 - void Awake()
 - void OnDestroy()
 
-And in these classes there are following events:
+**Events**
+- ReceiveDamage(Vector3 fromPosition, IGameEntity attacker, Dictionary<DamageElement, MinMaxFloat> damageAmounts, CharacterItem weapon, BaseSkill skill, short skillLevel)
+- ReceivedDamage(Vector3 fromPosition, IGameEntity attacker, CombatAmountType combatAmountType, int totalDamage, CharacterItem weapon, BaseSkill skill, short skillLevel)
 
-- ReceiveDamage(IGameEntity attacker, CharacterItem weapon, Dictionary<DamageElement, MinMaxFloat> damageAmounts, BaseSkill skill, short skillLevel)
-- ReceivedDamage(IGameEntity attacker, CombatAmountType combatAmountType, int damage)
-
-So you can setup an events in `Awake` extend function.
+*You can add an events in `Awake` and remove in `OnDestroy`*
 
 * * *
 
-### Support functions for an game network manager  
+## Support functions for game network manager components
 (LanRpgNetworkManager, MapNetworkManager)
 
-- void RegisterClientMessages()
-- void RegisterServerMessages()
-- void Init()
+**Implemented dev extension functions**
+- void RegisterMessages()
+- void Clean()
+- void OnStartServer()
+- void OnStartClient(LiteNetLibClient client)
+- void OnPeerConnected(long connectionId)
+- void InitPrefabs()
 - void OnClientOnlineSceneLoaded()
 - void OnServerOnlineSceneLoaded()
+- void UpdateReadyToInstantiateObjectsStates()
+
+**Implemented dev extension functions for MapNetworkManager**
+- void OnInitCentralAppServerRegister()
 
 * * *
 
-### Support functions for MMO database  
+## Support functions for MapSpawnNetworkManager component
+
+**Implemented dev extension functions**
+- void RegisterMessages()
+- void OnStartServer()
+- void OnStartClient(LiteNetLibClient client)
+- void OnInitCentralAppServerRegister()
+
+* * *
+
+## Support functions for ChatNetworkManager component
+
+**Implemented dev extension functions**
+- void RegisterMessages()
+- void Clean()
+- void OnStartServer()
+- void OnStartClient(LiteNetLibClient client)
+- void OnInitCentralAppServerRegister()
+
+* * *
+
+## Support functions for CentralNetworkManager component
+
+**Implemented dev extension functions**
+- void RegisterMessages()
+- void Clean()
+- void OnStartServer()
+- void OnStartClient(LiteNetLibClient client)
+- void SerializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataWriter writer)
+- void DeserializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataReader reader)
+
+* * *
+
+## Support functions for MMO database  
 (SQLiteDatabase, MySQLDatabase)
 
+**Implemented dev extension functions**
 - void CreateCharacter(string userId, IPlayerCharacterData characterData)
-- void ReadCharacter(IPlayerCharacterData characterData, bool withEquipWeapons, bool withAttributes, bool withSkills, bool withSkillUsages, bool withBuffs, bool withEquipItems, bool withNonEquipItems, bool withHotkeys, bool withQuests)
-- void UpdateCharacter(IPlayerCharacterData character)
-- void DeleteCharacter(string userId, string id)
+- void ReadCharacter(IPlayerCharacterData characterData, bool withEquipWeapons, bool withAttributes, bool withSkills, bool withSkillUsages, bool withBuffs, bool withEquipItems, bool withNonEquipItems, bool withSummons, bool withHotkeys, bool withQuests, bool withCurrencies)
+- void UpdateCharacter(IPlayerCharacterData characterData)
+- void DeleteCharacter(string userId, string characterId)
 
 * * *
 
-### Support functions for Character Stats class
+## Support functions for GameInstance component
 
+**Implemented dev extension functions**
+- void Awake()
+- void OnDestroy()
+- void LoadedGameData()
+
+* * *
+
+## Support functions for CharacterStats struct
+
+**Implemented dev extension functions**
 - CharacterStats Add(CharacterStats a, CharacterStats b)
 - CharacterStats Multiply(CharacterStats a, float multiplier)
 
 * * *
 
-### Support functions for PlayerCharacterSerializationSurrogate
+## Support functions for PlayerCharacterSerializationSurrogate
 
+**Implemented dev extension functions**
 - void GetObjectData(System.Object obj, SerializationInfo info, StreamingContext context)
 - void SetObjectData(System.Object obj, SerializationInfo info, StreamingContext context, ISurrogateSelector selector)
 
 * * *
 
-### Support functions for GameInstance
+## Support functions for BuildingSaveDataExtension
 
-- void Awake()
-- void LoadedGameData()
-
-* * *
-
-### Support functions for BuildingSaveDataExtension
-
+**Implemented dev extension functions**
 - static void CloneTo(IBuildingSaveData from, IBuildingSaveData to)
 
 * * *
 
-### Support functions for PlayerCharacterDataExtension
+## Support functions for PlayerCharacterDataExtension
 
+**Implemented dev extension functions**
 - static void CloneTo(IPlayerCharacterData from, IPlayerCharacterData to)
 - static void ValidateCharacterData(IPlayerCharacterData character)
 - static void SetNewPlayerCharacterData(IPlayerCharacterData character, string characterName, int dataId, int entityId)
@@ -122,7 +191,4 @@ So you can setup an events in `Awake` extend function.
 - static void SerializeCharacterData(IPlayerCharacterData characterData, NetDataWriter writer)
 - static void DeserializeCharacterData(IPlayerCharacterData characterData, NetDataReader reader)
 
-### Support functions for CentralNetworkManager
-
-- void SerializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataWriter writer)
-- void DeserializeCreateCharacterExtra(PlayerCharacterData characterData, NetDataReader reader)
+* * *
