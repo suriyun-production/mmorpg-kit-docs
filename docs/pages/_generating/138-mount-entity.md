@@ -1,4 +1,4 @@
-# How to create Mount Entity
+# How to create Vehicle Entity
 
 To create new mount, you have to prepare vehicle type, which made for character animtion specification while passenging vehicle, you can create new vehicle type by:
 
