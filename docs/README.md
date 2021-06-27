@@ -16,9 +16,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Game Database](pages/103-game-database)
 
 #### Character and Monster
-
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
 *   [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info)
+*   [How to create character entity with `Character Entity Creator`](pages/148-how-to-create-character-with-editor)
 *   [How to create Player Character](pages/135-player-character-entity.md)
 *   [How to create Monster Character](pages/136-monster-character-entity.md)
 *   [About Character Model](pages/106-character-model)
@@ -49,7 +49,6 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to create Area Attack Skill](pages/134-create-area-attack-skill.md)
 
 #### Item
-
 *   [Item Drop (Item Drop Entity)](pages/007-item-drops-item-drop-entity)
 *   [How to create Junk Item](pages/112-create-junk-item.md)
 *   [How to create Armor Item](pages/113-create-armor-item.md)
