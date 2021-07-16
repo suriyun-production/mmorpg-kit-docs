@@ -146,6 +146,6 @@ Set `centralAddress` and `machineAddress` to `128.199.78.31` because it is serve
 ![](./img-digitalocean/027-run_server.png)
 
 *   Then you can test connection by change `Network Address` to server address  
-![](./img-digitalocean/028-setup_client.png)
+![](./img-digitalocean/028-setup_client.PNG)
 
 *   If it can connect, go back to SSH client, close servers by press CRTL + C then run server with command `nohup /root/Build.x86_64 -startCentralServer -startChatServer -startMapSpawnServer -startDatabaseServer &` you can learn about nohup command from this [link](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.cmds4/nohup.htm)
