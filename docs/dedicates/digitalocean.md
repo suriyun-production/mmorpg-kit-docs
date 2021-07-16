@@ -77,10 +77,6 @@ First, Let's Create a droplet
 
 Then we're going to build the server and upload it
 
-*   Go to Unity Editor, change database to MySQL  
-![](./img-digitalocean/001-change_to_mysql.png)
-
-
 *   Build server files from menu **File → Build Settings...** then change target platfrom to Linux, set arhitecture to x86_64, turn on server mode (or headless mode for older Unity). Then build it  
 ![](./img-digitalocean/002-build_as_server.png)
 
@@ -88,12 +84,18 @@ Then we're going to build the server and upload it
 ![](./img-digitalocean/029-prepare_configs.png)
 
 *   `serverConfig.json` content:  
+*   
+The "databaseOptionIndex"  in the serverconfig file indicates which Database type we want to use,
+0 = Sqlite Database
+1 = Mysql Database
+![](./img-digitalocean/030-database_index.png)
+
 ```
 {
     "databaseOptionIndex" : 1,
   
     "centralAddress" : "128.199.78.31",
-    "centralPort" : 6000,
+    "centralPort" : 7000,
     "centralMaxConnections" : 600,
     "machineAddress" : "128.199.78.31",
 
@@ -139,8 +141,6 @@ Set `centralAddress` and `machineAddress` to `128.199.78.31` because it is serve
 
 *   Then allow ports to make clients able to connect to servers
 ![](./img-digitalocean/026-open_ports.png)
-- Extra: Also Allow Port 7000.
-The same way shown above
 
 *   Then run the server with command `/root/Build.x86_64 -startCentralServer -startChatServer -startMapSpawnServer -startDatabaseServer`
 ![](./img-digitalocean/027-run_server.png)
