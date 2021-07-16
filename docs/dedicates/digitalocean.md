@@ -44,10 +44,12 @@ First, Let's Create a droplet
 *   Login to the server by SSH client (For Windows you can use Putty, For Mac you can use Terminal) with copied password. Then it will request you to change password, change it as you wish  
 ![](./img-digitalocean/012-ssh_login.png)
 
-*   After logged in enter command `nano /root/.digitalocean_password` to read password.
+*   After logged in enter command `nano /root/.digitalocean_password` to read password
+
 ![](./img-digitalocean/014-get_password_001.png)
 
-*   Copy admin password, we will use it to login to **PhpMyAdmin** to manage database.
+*   Copy admin password, we will use it to login to **PhpMyAdmin** to manage database
+
 ![](./img-digitalocean/015-get_password_002.png)
 
 *   Go to **PhpMyAdmin** website: `{server address}/phpmyadmin`, for this server address is 128.199.78.31 so go to **PhpMyAdmin** website at `http://128.199.78.31/phpmyadmin`, then login with username `admin` and copied admin password  
