@@ -84,7 +84,7 @@ Then we're going to build the server and upload it
 ![](./img-digitalocean/029-prepare_configs.png)
 
 *   `serverConfig.json` content:  
-*   
+
 The "databaseOptionIndex"  in the serverconfig file indicates which Database type we want to use,
 0 = Sqlite Database
 1 = Mysql Database
