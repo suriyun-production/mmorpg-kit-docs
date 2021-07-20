@@ -1,3 +1,20 @@
+## 1.67 (2021-07-21)
+### Improvements
+- Status effects from passive skills can be applied to target.
+- Add mail notification.
+- Add claim all mails items function.
+- Add delete all mails function.
+
+### Bug Fixes
+- Fix pet item cooldown bug.
+- Fix monster which killed by buffs won't reward player's EXP.
+- Fix other entities invisible when the playing character is hiding.
+- Fix wrong missle entity position when spawn.
+- Fix duplicating storage item issues (MMO).
+- Fix monster's items were checking when use skills, now it won't do it.
+
+* * *
+
 ## 1.66d (2021-06-22)
 ### Improvements
 - Add status effects section to game database dialog.
