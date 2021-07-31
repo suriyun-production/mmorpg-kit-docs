@@ -1,3 +1,42 @@
+## 1.67b (2021-07-31)
+
+### Character Model Manager / Character Model based components
+- Store `assetId` to `BaseCharacterModel` prefab.
+- Move `vehicleModels` from `CharacterModelManager` to `BaseCharacterModel`, now it can set model for each vehicle types to FPS model.
+
+### Other Structure Changes
+- Change `BaseSkill` -> `GetSkillCastEffect()` function to `SkillCastEffect` getter property.
+- Change `BaseSkill` -> `GetDamageHitEffects()` function to `DamageHitEffects` getter property.
+- Change `DamageElement` -> `GetDamageHitEffects()` function to `DamageHitEffects` getter property.
+
+### Improvements
+- Improve game data, game entity inspector GUI by put properties into foldout group.
+
+![](../images/changelog/1.67b-1.png)
+
+![](../images/changelog/1.67b-2.png)
+
+- Add cash shop item generating to item game data, it will generate cash shop item data when initialize item game data and add it to the game instance's list.
+- Add `cash` field to `mail` data.
+- Remove guild's `OptionId1`, `OptionId2`, `OptionId3`, `OptionId4`, and `OptionId5`. Add `Options` which its type is `String` so it can set any guild options as JSON (or other format).
+- Add `onIsTypeWriter` and `onNotTypeWriter` to `UIChatMessage`. Usage example: I've use it to change layout alignment for messages which I typed to the right-side, other's messages to the left.
+- Add `SetLayoutChildElement` component, use it to change layout group's child alignment.
+- Add `UILatestChatMessage` component, use it to show just one latest chat message.
+- Reduce warning messages by set default value to private serialized properties.
+- Add `doNotIncludeItems` to `UICharacterHotkeys`, turn it on to don't include an items in `UICharacterHotkeyAssigner`.
+- Add `doNotIncludeSkills` to `UICharacterHotkeys`, turn it on to don't include an skills in `UICharacterHotkeyAssigner`.
+- Add `RandomAttackDamage` to `BaseGameplayRule`, you can implement your own functionality to change how to calculating each damage element (by extends `BaseGameplayRule` or `DefaultGameplayRule` class).
+- Add `GetTotalDamage` to `BaseGameplayRule`, you can implement your own functionality to change how to calculating total damage (by extends `BaseGameplayRule` or `DefaultGameplayRule` class).
+
+### Bug Fixes
+- Fix status effects from socket enhancer not applies.
+- Fix wrong attack and use skill distance calculation at client-side. It was not find distance between attack origin and hit box, it was find distance between attack origin and character's collider which will be used for mouse picking. It is cause of problem which character's attacking won't hit enemy.
+- Fix no combat text when damage over time applies to characters.
+- Fix missile/raycast(hitscan) can hit item drop entities.
+- Fix duplicating character entity when switch to FPS mode.
+
+* * *
+
 ## 1.67 (2021-07-21)
 ### Improvements
 - Status effects from passive skills can be applied to target.
