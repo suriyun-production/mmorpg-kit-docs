@@ -1,3 +1,19 @@
+## 1.67c (2021-08-05)
+
+### Bug Fixes
+- Fix wrong SQLite -> Mail columns reading.
+- Fix missing fields in character model component inspector.
+- Fix animator character models play the same action animation like the one which played action animation lastly. 
+
+### About Animator Character Model
+I've fixed its issues by bringing back old animator character model codes which won't cache animator controller by character prefab, so it will slow because it has to create a new animator controller for all characters, the cached version has an action animation problem because the cached animator controller will be shared for all character. I can keep using the cached version but I have to create new states in animator controllers, but I'm not sure about the number of states which included attacking, reloading, skill casting, charging animations yet. So I decide to use the old version, if Unity allows me to add new animator states dynamically at runtime or has a function which just play any animation it will be easier to solve these issues.
+
+Unity just has a [playable graph](https://docs.unity3d.com/Manual/Playables-Graph.html) in 2018.4, which I am going to use to create a new kind of character model component, maybe named "PlayableGraphCharacterModel", can handles all animation by codes, so you won't have a graph editor like animator controller editor if you want to change transitions you may have to changes codes.
+
+I've tried to mix animator and playable graph by uses a playable graph for action animation playing but the result was not looking good. It won't play masked avatar parts as intended.
+
+* * *
+
 ## 1.67b (2021-07-31)
 
 ### Character Model Manager / Character Model based components
