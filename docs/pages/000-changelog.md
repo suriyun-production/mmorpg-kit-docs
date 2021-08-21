@@ -1,3 +1,34 @@
+## 1.68 (2021-08-21)
+
+### Playable Character Model
+`Playable Character Model` is a character model which uses [playable graph](https://docs.unity3d.com/Manual/Playables-Graph.html) to play character animations, its performance is better than `Animator Character Model` and its settings is similar to `Animator Character Model` too. 
+
+With this character model you can set avatar mask to each action animation. 
+
+![](../images/changelog/1.68-1.png)
+
+You can convert `Animator Character Model` to `Playable Character Model` by context menu:
+
+![](../images/changelog/1.68-2.png)
+
+### Bug Fixes
+- Fix status effects from item's passive skills not being applied.
+- Fix wrong send friend request inform message.
+- Fix `Activate Button Activator` component is activating `Activate Objects` (Virtual Mobile Buttons) while point on building which is not activatable building.
+- Fix `UI Cash Shop Item` wrong calculation price when enter amount over `99`.
+
+### Improvements
+- Add `Warp To Map Item` which can be created from create menu -> `Create GameData/Item/Warp To Map Item`, use this item to warp character to the map which defined in item settings.
+- Add `Warp To Respawn Point Item` which can be created from create menu -> `Create GameData/Item/Warp To Respawn Point Item`, use this item to warp character to respawn point.
+- Add `Simple Warp To Target Skill` which can be created from create menu -> `Create GameData/Skill/Simple Warp To Target Skill` use this skill to warp character to aim position.
+- Add `Is Warp To Aim Position` setting to `Simple Area Attack Skill`, if this is turn on, it will warp character to aim position.
+- Add `Is Warp To Aim Position` setting to `Simple Area Buff Skill`, if this is turn on, it will warp character to aim position.
+- Add VSync settings for each platforms to `Game Instance`.
+- Add `Can Pickup Items Which Drops By Players Immediately` to `Game Instance`, if this is turn on, it will character will be able to pickup items which drop by other players immediately.
+- Delete `Text Title` and `Text Title B` from `Base Game Entity`.
+
+* * *
+
 ## 1.67c (2021-08-05)
 
 ### Bug Fixes
