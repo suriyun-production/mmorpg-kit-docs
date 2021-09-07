@@ -1,4 +1,4 @@
-You can create skill by right click in `Project` tab then select `Create` -> `Create GameData` -> `Skill` -> `Skill`
+You can create skill by right click in `Project` window then select `Create` -> `Create GameData` -> `Skill` -> `Skill`
 
 ![](../images/skills/001.png)
 

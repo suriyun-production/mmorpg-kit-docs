@@ -10,11 +10,13 @@ You can prepare it after prepared `Character Entity` then add `Animation Charact
 
 !INCLUDE "./game-data/_character-model-generic-config.md"
 
+*(Or use `Character Entity Creator` tool which can be accessed from menu `MMORPG KIT` -> `Character Entity Creator`)*
+
 * * *
 
 ## Animation Clip Settings
 
-Before looking into animation clip settings list, I want you to know about `Action Animation` settings
+Before looking into animation clip settings list, you should to know about `Action Animation` settings
 
 !INCLUDE "./game-data/_action-animation.md"
 
@@ -78,4 +80,4 @@ And also add parameters:
 
 * * *
 
-After done you can save it as a prefab (drag to any folder in `Project` tab).
+After done you can save it as a prefab (drag to any folder in `Project` window).

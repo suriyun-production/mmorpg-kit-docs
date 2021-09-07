@@ -1,6 +1,6 @@
 # How to create Npc Entity
 
-Before create new npc entity, you should know about `Npc Dialog Graph`, you can create new `Npc Dialog Graph` by right click in `Project` tab then select `Create GameData` and select `Npc Dialog Graph` then new graph will be created, double-click on it to see the graph and edit it any time.
+Before create new npc entity, you should know about `Npc Dialog Graph`, you can create new `Npc Dialog Graph` by right click in `Project` window then select `Create GameData` and select `Npc Dialog Graph` then new graph will be created, double-click on it to see the graph and edit it any time.
 
 ![](../images/npcs/001.png)
 
@@ -47,7 +47,7 @@ Then set created npc dialog graph to `Graph`.
 
 To add Npcs via Npc Database you have to prepare `Npc Entity` prefab and `Npc Dialog Graph`.
 
-About `Npc Database`, you can create new `Npc Database` by right click in `Project` tab select `Create -> Create GameDatabase -> Npc Database`.
+About `Npc Database`, you can create new `Npc Database` by right click in `Project` window select `Create -> Create GameDatabase -> Npc Database`.
 
 ![](../images/npcs/006.png)
 

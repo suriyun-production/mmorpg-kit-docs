@@ -62,4 +62,4 @@ Specific animation settings:
 
 * * *
 
-After done you can save it as prefab (drag to any folder in `Project` tab).
+After done you can save it as prefab (drag to any folder in `Project` window).
