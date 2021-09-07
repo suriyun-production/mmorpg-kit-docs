@@ -21,7 +21,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to create character entity with `Character Entity Creator`](pages/148-how-to-create-character-with-editor)
 *   [How to create Player Character](pages/135-player-character-entity.md)
 *   [How to create Monster Character](pages/136-monster-character-entity.md)
-*   [About Character Model](pages/106-character-model)
+*   [About Playable Character Model](pages/149-playable-character-model)
 *   [About Animator Character Model](pages/108-animator-character-model)
 *   [About Animation Character Model](pages/107-animation-character-model)
 *   [About Character Model 2D](pages/109-character-model-2d)
