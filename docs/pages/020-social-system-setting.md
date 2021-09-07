@@ -1,6 +1,6 @@
 # Party / Guild Settings (SocialSystemSetting)
 
-With this kit, you can change some party / guild system with `Social System Setting`, you can create it by right click in `Project` tab select   
+With this kit, you can change some party / guild system with `Social System Setting`, you can create it by right click in `Project` window select   
 `Create -> Create GameData -> Social System Setting`
 
 ![](https://cdn-images-1.medium.com/max/1600/1*axNt-3M0WaKKBBre3XSwFg.png)

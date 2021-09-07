@@ -24,15 +24,15 @@ Then add effects / models that you want them represent while playing a game as i
 
 ![](https://cdn-images-1.medium.com/max/1600/0*_Zcm7U1zx9jOvG2F)
 
-Then make it as prefab by drag it to anywhere in **Project** tab, and save scene
+Then make it as prefab by drag it to anywhere in `Project` window, and save scene
 
 ### Add Warp Portals via warp portal database
 
-To add warp portals via warp portal database you have to prepare warp portal entity prefab first how to do it is like as explained in add warp portals directly in the scene but we’ll not place warp portal in map scene, after created warp portal prefab place it in **GameInstance’s Warp Portal Entity Prefab** in init scene by drag prefab from **Project** tab into it
+To add warp portals via warp portal database you have to prepare warp portal entity prefab first how to do it is like as explained in add warp portals directly in the scene but we’ll not place warp portal in map scene, after created warp portal prefab place it in **GameInstance’s Warp Portal Entity Prefab** in init scene by drag prefab from `Project` window into it
 
 ![](https://cdn-images-1.medium.com/max/1600/0*HMqCgnzcZw6HF7s1)
 
-Then create warp portal database, You can create new warp portal database by right click in **Project** tab select   
+Then create warp portal database, You can create new warp portal database by right click in `Project` window select   
 **Create -> Create GameDatabase -> Warp Portal Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*XeFabQaQX17uzR2f)

@@ -7,7 +7,7 @@ MMORPG KIT — **Harvestable (Harvestable Data / Harvestable Entity / Harves
 
 This is game data which used by **Harvestable Entity** to define kind of harvestable, weapons can use to harvest and amount of items will be received when harvest
 
-You can create new harvestable by right click in **Project** tab select   
+You can create new harvestable by right click in `Project` window select   
 **Create -> Create GameData -> Harvestable**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*u9lwzwlIoFWyeXu5)

@@ -1,6 +1,6 @@
 # How to create Ammo Item
 
-You can create item by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item`
+You can create item by right click in `Project` window then select `Create` -> `Create GameData` -> `Item`
 
 ![](../images/items/001.png)
 
@@ -27,12 +27,12 @@ There are following configs for `Ammo Item`
 - `Max Stack` this is max item amount for each slot in inventory.
 - `Item Refine` item refine contains settings for refine settings for each level, repair price for each durability rates which available for an equipment items only and title color which available for all item types, you may assume that an item refine is an item rarity settings.
 
-You can create item refine by right click in `Project` tab then select `Create` -> `Create GameData` -> `Item Refine`
+You can create item refine by right click in `Project` window then select `Create` -> `Create GameData` -> `Item Refine`
 
 ![](../images/items/004.png)
 ## Ammo Configs
 
-- `Ammo Type` this is type of ammo (the same which set to `Weapon Type` -> `Ammo`). You can create ammo type by right click in `Project` tab then select `Create` -> `Create GameData` -> `Ammo Type`
+- `Ammo Type` this is type of ammo (the same which set to `Weapon Type` -> `Ammo`). You can create ammo type by right click in `Project` window then select `Create` -> `Create GameData` -> `Ammo Type`
 
 ![](../images/items/008.png)
 

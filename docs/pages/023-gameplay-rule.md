@@ -36,7 +36,7 @@ With this project you can set some setting via game play rule, developer may cre
 *   `Fall Damage Min Distance`, Character will receive damage 1% of Max Hp, when fall distance = min distance
 *   `Fall Damage Max Distance`, Character will receive damage 100% of Max Hp, when fall distance >= max distance
 
-You can create new default gameplay rule by right click in `Project` tab select `Create -> Create GameplayRule -> DefaultGameplayRule`
+You can create new default gameplay rule by right click in `Project` window select `Create -> Create GameplayRule -> DefaultGameplayRule`
 
 ![](https://cdn-images-1.medium.com/max/1600/0*9g8NAYs8XPKGryui)
 

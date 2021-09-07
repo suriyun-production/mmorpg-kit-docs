@@ -18,7 +18,7 @@ Then set items which characters can earn to `Item Drop Entity` as you wish.
 
 ## Make it can be spawned by `Item Drop Spawn Area`
 
-To make it can be spawned by `Item Drop Spawn Area` you have to make the `Item Drop Entity` to prefab, by drag it to anywhere inside `Project` tab.
+To make it can be spawned by `Item Drop Spawn Area` you have to make the `Item Drop Entity` to prefab, by drag it to anywhere inside `Project` window.
 
 ![](../images/143/4.png)
 

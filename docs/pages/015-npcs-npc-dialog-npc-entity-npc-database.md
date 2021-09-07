@@ -26,7 +26,7 @@ Then add collider and adjust it fit to character
 
 ![](https://cdn-images-1.medium.com/max/1600/0*HQ777cZH7Gzj3Ebo)
 
-Then after preparation drag it to **Project** tab to make prefab
+Then after preparation drag it to `Project` window to make prefab
 
 * * *
 
@@ -37,7 +37,7 @@ You have to create Npc dialogs to make Npc able to talk to player, each Npc dial
 *   **Type**, type of this dialog
 *   **Menus**, choices to next dialog, you also can set conditions to show the menu
 
-You can create new npc dialog by right click in **Project** tab select   
+You can create new npc dialog by right click in `Project` window select   
 **Create -> Create GameData -> NpcDialog**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*yY9qqcEleu0bZBTx)
@@ -67,7 +67,7 @@ Then set created npc dialog to **Start Dialog**, this dialog will be first dialo
 
 To add NPCs via Npc Database you have to prepare Npc Entity prefab / Npc Dialogs
 
-About Npc Database, you can create new Npc Database by right click in **Project** tab select **Create -> Create GameDatabase -> Npc Database**
+About Npc Database, you can create new Npc Database by right click in `Project` window select **Create -> Create GameDatabase -> Npc Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*yc8ktAVxDGN34X9V)
 

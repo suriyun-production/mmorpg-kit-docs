@@ -24,7 +24,7 @@ You have to create Monster character to define its data such as stats and attrib
 *   **Random Gold Max**, gold that character will gain when kill the monster
 *   **Random Gold Items**, items that character will gain when kill the monster
 
-You can create new monster character by right click in **Project** tab select   
+You can create new monster character by right click in `Project` window select   
 **Create -> Create GameData -> MonsterCharacter**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*pGNyaTj56uFQCZvv)
@@ -101,7 +101,7 @@ Then set created **Monster Character** data to **Monster Character**
 
 ![](../images/new_monster_character_entity_setting.png)
 
-Then after preparation drag it to **Project** tab to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other monster character entity)
+Then after preparation drag it to `Project` window to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other monster character entity)
 
 * * *
 

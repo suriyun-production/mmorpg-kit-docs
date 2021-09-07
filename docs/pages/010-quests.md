@@ -13,7 +13,7 @@ With this project you can define any quests as you wish, for each quest you can 
 
 You can set **Quest** in **Npc** dialog to make it available to receive and complete it
 
-You can create new quest by right click in **Project** tab select   
+You can create new quest by right click in `Project` window select   
 **Create -> Create GameData -> Quest**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*QAY5mNVzc5Wj6Bi2)

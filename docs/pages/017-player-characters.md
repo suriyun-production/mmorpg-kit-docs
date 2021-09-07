@@ -17,7 +17,7 @@ You have to create Player character data to define its data such as stats and at
 *   **Armor Items**, character will equip this item after created immediately
 *   **Start Map**, which map scene you want this character to be spawned at first time after created
 
-You can create new player character by right click in **Project** tab select   
+You can create new player character by right click in `Project` window select   
 **Create -> Create GameData -> PlayerCharacter**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*6e1EvN_jBzOeYGep)
@@ -100,4 +100,4 @@ Then set created **Player Character** data to **Player Characters**
 
 ![](../images/new_player_character_entity_setting.png)
 
-Then after preparation drag it to **Project** tab to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character entity)
+Then after preparation drag it to `Project` window to make prefab, You may place the prefab in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other player character entity)

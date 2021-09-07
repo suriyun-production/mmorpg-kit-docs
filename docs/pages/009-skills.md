@@ -47,7 +47,7 @@ For summoning skills you can set the following data:
 
 * * *
 
-You can create new skill by right click in **Project** tab select   
+You can create new skill by right click in `Project` window select   
 **Create -> Create GameData -> Skill**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*n882F_k1l2VRQeiM)

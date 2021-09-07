@@ -110,7 +110,7 @@ I have set following `Attribute` in the demo, you can find it and see how I set 
 *   `Vit` this is stands for vitality, this attribute can increase `Hp`
 *   `Int` this is stands for intelligence, this attribute can increase `Mp`
 
-You can create `Attribute` by right click in `Project` tab, choose `Create -> Create GameData -> Attribute`
+You can create `Attribute` by right click in `Project` window, choose `Create -> Create GameData -> Attribute`
 
 Then you have to set this game data to game database to make it available in your game
 
@@ -138,7 +138,7 @@ This is game data which is part of damage amount and resistance amount that affe
 
 I have set following `Damage Element` in the demo, you can find it and see how I set it, there is Fire, Ice, Lightning and Poison
 
-You can create `Damage Element` by right click in `Project` tab, choose `Create -> Create GameData -> Damage Element`
+You can create `Damage Element` by right click in `Project` window, choose `Create -> Create GameData -> Damage Element`
 
 Then you have to set this game data to game database to make it available in your game
 

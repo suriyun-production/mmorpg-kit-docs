@@ -1,6 +1,6 @@
 # How to create Area Buff Skill
 
-You can create area buff skill by right click in `Project` tab then select `Create` -> `Create GameData` -> `Skill` -> `Simple Area Buff Skill`
+You can create area buff skill by right click in `Project` window then select `Create` -> `Create GameData` -> `Skill` -> `Simple Area Buff Skill`
 
 ![](../images/skills/004.png)
 

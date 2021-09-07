@@ -6,7 +6,7 @@ This is model which will instantiates as gameplay camera's child, How to prepare
 
 Then add character model component ([Animator Character Model](pages/108-animator-character-model ':target=__blank') or [Animation Character Model](pages/107-animation-character-model ':target=__blank') or [Character Model](pages/106-character-model ':target=__blank')) to the FPS hands mesh.
 
-Then set character model component's configs and drag it to any folder in `Project` tab to create a prefab.
+Then set character model component's configs and drag it to any folder in `Project` window to create a prefab.
 
 ![](../images/fps-hands-model/2.png)
 

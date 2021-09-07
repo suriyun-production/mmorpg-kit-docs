@@ -73,11 +73,13 @@ Then go back to character model and press on `Set Equipment Containers by Setter
 Finally, the equipment container has been set
 
 ![](../images/105/10.png)
+*(Or use `Character Entity Creator` tool which can be accessed from menu `MMORPG KIT` -> `Character Entity Creator`)*
+
 * * *
 
 ## Animation Clip Settings
 
-Before looking into animation clip settings list, I want you to know about `Action Animation` settings
+Before looking into animation clip settings list, you should to know about `Action Animation` settings
 
 ### Action Animation
 
@@ -86,7 +88,7 @@ Before looking into animation clip settings list, I want you to know about `Acti
 *   `Anim Speed Rate`, this will be multiplied while playing action animation. If this <= 0, it will not be used to calculates with animation speed multiplier.
 *   `Trigger Duration Rate` this value will multiplies with animation clip's length to trigger an action events to do actions such as hit an enemies or spawn magical projectiles. For example, if attack animation length is 2 seconds, and this value is 0.5, then 1 second after start play this animation clip, an enemies will receives damages.
 *   `Multi Hit Trigger Duration Rates`, if this length more than 1, will use each entry as trigger duration rate.
-*   `Duration Type` there are 2 types: `By Clip Length` and `By Fix Value`. for the first one, next action will be able to play after animation clip length duration. for the second one, next action will be able to play after `Fix Duration Value` duration.
+*   `Duration Type` there are 2 types: `By Clip Length` and `By Fixed Duration`. for the first one, next action will be able to play after animation clip length duration. for the second one, next action will be able to play after `Fixed Duration` duration.
 *   `Extra Duration` some duration which will sum with animation clip length or `Fix Duration Value`, may use it to play idle animation before next attack animation.
 *   `Audio Clips` an audio clips which will play randomly when trigger an action events.
 * * *
@@ -152,4 +154,4 @@ Context menu is menu which will appear when click on gear icon on top-left of co
 ![](../images/105/11.png)
 * * *
 
-After done you can save it as a prefab (drag to any folder in `Project` tab).
+After done you can save it as a prefab (drag to any folder in `Project` window).

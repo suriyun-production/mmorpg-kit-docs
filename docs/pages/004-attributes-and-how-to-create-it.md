@@ -7,7 +7,7 @@ With this project you can define any attributes as you wish, attributes will aff
 
 About weapon damage effectiveness and skill damage effectiveness we can define which attribute can increase damage, so we may define Intelligence increase magic spell damage, Strength increase sword, axe, spear damage
 
-You can create new attribute by right click in **Project** tab select   
+You can create new attribute by right click in `Project` window select   
 **Create -> Create GameData -> Attribute**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*90PbAzEc4Qci5LeZ)

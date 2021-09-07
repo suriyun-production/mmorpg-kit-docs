@@ -1,6 +1,6 @@
 # Currency
 
-You can create new currency by right click in `Project` tab then select `Create` -> `Create GameData` -> `Currency`
+You can create new currency by right click in `Project` window then select `Create` -> `Create GameData` -> `Currency`
 
 Then after finish the setup (Set name, description, icon), add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 
