@@ -1,3 +1,27 @@
+## 1.69 (2021-09-07)
+### Bug Fixes
+- Fix `Playable Character Model` plays relax animation when changes movement state quickly.
+- Fix `Playable Character Model`'s swim animation not playing properly.
+- Fix building entity's extra data not being saved/loaded properly.
+- Fix resistances are shown more than max value.
+- Fix skill being casted repeatedly when spamming use skill buttons.
+- Fix wrong buff stacking amount calculation.
+- Fix character not stop moving when disallow move debuff applied.
+
+### Improvements
+- Add `Building Password Content Type` and `Building Password Length` settings to `Base Player Character Controller`.
+- Add `Start Rotation` setting to map info game data.
+- Add `Use Override Start Rotation` and `Override Start Rotation` to player character game data, use them to override map info's `Start Rotation`.
+- Add quest tracking.
+- Add `Is Additive` setting to playable character model's `Anim State` and `Action State` structs.
+- Change how to sync movement state and extra movement state, now they will be synced along with movement messages.
+- Include [SimpleAssetBundleClient](https://github.com/insthync/SimpleAssetBundleClient) to the project.
+- Update `UnityWebRequest` error handling APIs for Unity 2020_2 or above.
+
+*I will delete deprecated component: `Character Model` from the project in the next version*
+
+* * *
+
 ## 1.68 (2021-08-21)
 
 ### Playable Character Model
