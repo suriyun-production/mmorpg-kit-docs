@@ -1,3 +1,15 @@
+## 1.69b (2021-09-09)
+### Bug Fixes
+- Fix extra movement state will be disabled while idle, so you won't see your character crouch or crawl while idle.
+- Fix `/add_item` GM command keep adding items while character's inventory going to be overwhelmed. 
+- Fix `/give_item` GM command keep adding items while character's inventory going to be overwhelmed. 
+
+### Improvements
+- Add `Do Not Fill Empty Slots` setting to `Game Instance`, if this is `TRUE` it won't fill empty slots to character's inventory or storage while slots are limiting.
+- Add `/help` GM command, use it to see list of all commands.
+
+* * *
+
 ## 1.69 (2021-09-07)
 ### Bug Fixes
 - Fix `Playable Character Model` plays relax animation when changes movement state quickly.
