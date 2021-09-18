@@ -1,3 +1,17 @@
+## 1.69c (2021-09-19)
+### Bug Fixes
+- Fix `UI Chat Handler` cannot send chat messages after change map.
+- Fix `UI Chat Handler` cannot send whisper messages without prefix command (`/w`).
+- Fix `My SQL Database` cannot create new guild.
+
+### Improvements
+- Allow player to move item from storage slot to equipment slot directly.
+- Allow player to move item from equipment slot to storage slot directly.
+- Don't allow to use hotkey to use skills while it is cooling down.
+- Add `Player Character Despawn Milliseconds Delay` to `Map Network Manager`. If players quit the game, their characters won't be destroyed immediately, it will have some delay before it was destroyed.
+
+* * *
+
 ## 1.69b (2021-09-09)
 ### Bug Fixes
 - Fix extra movement state will be disabled while idle, so you won't see your character crouch or crawl while idle.
