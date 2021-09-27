@@ -1,3 +1,19 @@
+## 1.69d (2021-09-27)
+### Bug Fixes
+- Fix `Character Pitch IK` not updating character's transforms while character's model component is `Playable Character Model`.
+- Fix monster character entity moving with default move speed, not wander move speed while wandering.
+- Fix `Playable Character Model`'s landed animation not playing.
+
+### Improvements
+- Add `Monster Character Activity` when create monster character entity by character entity creator tool, so user won't have to add `Monster Character Activity` by themself.
+- Add `Capsule Collider` as trigger collder when create character entity with nav mesh entity movement by character entity creator tool, so user won't have to add trigger collider by themself.
+- Add `onPlayLaunch` event to `Equipment Entity` component, can use it to play gun firing animation.
+- Add `onPlayReload` event to `Equipment Entity` component, can use it to play gun reloading animation.
+- Add `onPlayCharge` event to `Equipment Entity` component, can use it to play bow's string holding animation.
+- Add `Platform Layer Mask` setting to `Rigidbody Entity Movement` and `Character Controller Entity Movement`, set layers of objects that you want it to be platform here.
+
+* * *
+
 ## 1.69c (2021-09-19)
 ### Bug Fixes
 - Fix `UI Chat Handler` cannot send chat messages after change map.
