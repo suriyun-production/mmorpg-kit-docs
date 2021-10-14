@@ -1,3 +1,13 @@
+## 1.70b (2021-10-14)
+### Bug Fixes
+- Fix `/warp_character {name} {map_id} {x} {y} {z}` GM command, it uses wrong data for map ID.
+
+### Improvements
+- Add randoming character stats and character stats rate settings to equipment's random bonus setting.
+- Add `Max Random Stats Amount` setting to equipment's random bonus setting, use it to set limit amount of randoming stats. If this <= `0` amount of randoming stats is unlimit.
+
+* * *
+
 ## 1.70 (2021-10-14)
 ### Bug Fixes
 - Fix vehicle entity not playing dead animation.
@@ -15,7 +25,7 @@
 - Add GM comand: `/summon {name}` = Summon character which its name is `{name}`. (Not working properly yet, players have to be in the same map to summon).
 - Add GM comand: `/monster {monster_id} {level} {amount}` = Summon monster which its ID is `{monster_id}`, lv. `{level}`, amount `{amount}`.
 - Add GM comand: `/kill {name}` = Kill character which its name is `{name}`.
-- Add GM comand: `/suicide = Kill` yourself.
+- Add GM comand: `/suicide` = Kill yourself.
 - Add GM comand: `/mute {name} {duration}` = Mute character which its name is `{name}` for `{duration}` minutes.
 - Add GM comand: `/unmute {name}` = Unmute character which its name is `{name}`.
 - Add GM comand: `/ban {name} {duration}` = Ban character's account which its name is `{name}` for `{duration}` days.
