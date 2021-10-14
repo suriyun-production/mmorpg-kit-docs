@@ -1,3 +1,36 @@
+## 1.70 (2021-10-14)
+### Bug Fixes
+- Fix vehicle entity not playing dead animation.
+- Fix wrong `Nav Mesh Entity Movement`'s movement state updating.
+- Fix `UI Item Craft Formulas` to show list of items properly.
+- Fix jump force not apply if `Apply Jump Force Mode` is `Apply After Fixed Duration`.
+- Fix cash shop item generator not working properly.
+
+### Improvements
+- Add warp rotation settings to NPC dialog.
+- Add min/max item amount settings to item drop data.
+- Add GM comand: `/warp {map_id}` = Warp to specific map.
+- Add GM comand: `/warp_character {name} {map_id} {x} {y} {z}` = Warp to specific character to specific map and position.
+- Add GM comand: `/warp_to_character {name}` = Warp to character which its name is `{name}`. (Not working properly yet, players have to be in the same map to warp).
+- Add GM comand: `/summon {name}` = Summon character which its name is `{name}`. (Not working properly yet, players have to be in the same map to summon).
+- Add GM comand: `/monster {monster_id} {level} {amount}` = Summon monster which its ID is `{monster_id}`, lv. `{level}`, amount `{amount}`.
+- Add GM comand: `/kill {name}` = Kill character which its name is `{name}`.
+- Add GM comand: `/suicide = Kill` yourself.
+- Add GM comand: `/mute {name} {duration}` = Mute character which its name is `{name}` for `{duration}` minutes.
+- Add GM comand: `/unmute {name}` = Unmute character which its name is `{name}`.
+- Add GM comand: `/ban {name} {duration}` = Ban character's account which its name is `{name}` for `{duration}` days.
+- Add GM comand: `/unban {name}` = Unban character's account which its name is `{name}`.
+- Add GM comand: `/kick {name}` = Kick character which its name is `{name}`.
+- Add mouse sensitivity settings to the Demo.
+- Add graphics settings to the Demo.
+- Add `Freeze Animation` ailment setting to buff data.
+- Add `Ailment Presets` and `Ailment` setting to buff data, `disallowMove`, `disallowAttack`, `disallowUseSkill`, `disallowUseItem` and `freezeAnimation` settings will be used if this is `None`. Otherwise, it will set those ailments at runtime. For example if this is `Stun` then `disallowMove`, `disallowAttack`, `disallowUseSkill` and `disallowUseItem` ailments will be `TRUE`.
+- Add `stunEffects`, `muteEffects` and `freezeEffects` settings to `Game Instance` it will be instantiated when buff with `Stun` or `Mute` or `Freeze` ailment were applied to characters, so you won't have to set game effects to every buffs data which has any of that ailment.
+- Add `RandomBonus` settings to equipment item data, use it to set randomizing equipment stats, but it will save only random seed number so if you change item's ranndom stats later, items stats that were added to players inventory would being changed.
+- Change camera control code structure, now it have `IGameplayCameraController` and `IMinimapCameraController` interfaces which I use them to implement my camera controller.
+
+* * *
+
 ## 1.69d (2021-09-27)
 ### Bug Fixes
 - Fix `Character Pitch IK` not updating character's transforms while character's model component is `Playable Character Model`.
