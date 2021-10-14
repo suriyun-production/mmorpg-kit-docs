@@ -27,6 +27,7 @@
 - Add `Ailment Presets` and `Ailment` setting to buff data, `disallowMove`, `disallowAttack`, `disallowUseSkill`, `disallowUseItem` and `freezeAnimation` settings will be used if this is `None`. Otherwise, it will set those ailments at runtime. For example if this is `Stun` then `disallowMove`, `disallowAttack`, `disallowUseSkill` and `disallowUseItem` ailments will be `TRUE`.
 - Add `stunEffects`, `muteEffects` and `freezeEffects` settings to `Game Instance` it will be instantiated when buff with `Stun` or `Mute` or `Freeze` ailment were applied to characters, so you won't have to set game effects to every buffs data which has any of that ailment.
 - Add `RandomBonus` settings to equipment item data, use it to set randomizing equipment stats, but it will save only random seed number so if you change item's ranndom stats later, items stats that were added to players inventory would being changed.
+- Vehicle entity can plays an action animtions such as play attack, use skill.
 - Change camera control code structure, now it have `IGameplayCameraController` and `IMinimapCameraController` interfaces which I use them to implement my camera controller.
 
 * * *
