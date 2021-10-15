@@ -1,3 +1,11 @@
+## 1.70d (2021-10-15)
+### Bug Fixes
+- Fix GM comand: `/warp_to_character {name}` not working properly if other character's user level = 0.
+- Fix `Character Pitch IK` consume a lot of memory.
+- Fix random character stats is not serializable.
+
+* * *
+
 ## 1.70c (2021-10-15)
 ### Bug Fixes
 - Fix player banning, muting not working properly when using SQLite as database.
