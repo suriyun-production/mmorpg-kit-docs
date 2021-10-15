@@ -1,3 +1,14 @@
+## 1.70c (2021-10-15)
+### Bug Fixes
+- Fix player banning, muting not working properly when using SQLite as database.
+
+### Improvements
+- GM comand: `/warp_to_character {name}`, Now it is working properly, players not have to be in the same map to warp.
+- GM comand: `/summon {name}`, Now it is working properly, players not have to be in the same map to summon.
+- Can use `_` as space (` `) for `Item ID`, `Map ID`, `Monster Character Entity Prefab Name` which will be entered in GM commands.
+
+* * *
+
 ## 1.70b (2021-10-14)
 ### Bug Fixes
 - Fix `/warp_character {name} {map_id} {x} {y} {z}` GM command, it uses wrong data for map ID.
