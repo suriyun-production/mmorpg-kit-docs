@@ -1,3 +1,18 @@
+## 1.70e (2021-10-17)
+### Bug Fixes
+- Fix missing vehicle reference when spawn and ride it from item or skill.
+- Fix queued crafting items updating at server.
+
+### Improvements
+- Add `Game Object/UI/Wrappers/Text Wrapper` menu, use it to create `Text` object with `Text Wrapper` attached.
+- Add `Game Object/UI/Wrappers/Text Wrapper - TextMeshPro` menu, use it to create `TextMeshProUGUI` object with `Text Wrapper` attached.
+- Add `Game Object/UI/Wrappers/Dropdown Wrapper` menu, use it to create `Dropdown` object with `Dropdown Wrapper` attached.
+- Add `Game Object/UI/Wrappers/Dropdown Wrapper - TextMeshPro` menu, use it to create `TMP_Dropdown` object with `Dropdown Wrapper` attached.
+- Add `Game Object/UI/Wrappers/InputField Wrapper` menu, use it to create `InputField` object with `InputField Wrapper` attached.
+- Add `Game Object/UI/Wrappers/InputField Wrapper - TextMeshPro` menu, use it to create `TMP_InputField` object with `InputField Wrapper` attached.
+
+* * *
+
 ## 1.70d (2021-10-15)
 ### Bug Fixes
 - Fix GM comand: `/warp_to_character {name}` not working properly if other character's user level = 0.
