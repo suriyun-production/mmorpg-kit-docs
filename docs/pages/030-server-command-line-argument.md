@@ -5,6 +5,10 @@ You can change server configs when starting servers by command line arguments, t
 #### All Server Configs
 
 *   `-machineAddress`, this will change chat, map spawner and map server's `Machine Address` config
+*   `-useWebSocket`, servers will start as websocket server if this is `true`
+*   `-webSocketSecure`, if servers start as websocket server, it will start in secure mode if this is `true`
+*   `-webSocketCertPath`, path to certification file which its extension is `.pfx`, it is required if `webSocketSecure` is `true`
+*   `-webSocketCertPassword`, password for the certification file (`.pfx`).
 
 #### Central Server Configs
 
@@ -17,7 +21,7 @@ You can change server configs when starting servers by command line arguments, t
 *   `-mapSpawnPort`, this will change map spawn server's `Network Port` config
 *   `-mapSpawnMaxConnections`, this will change map spawn server's `Max Connections` config
 *   `-spawnExePath`, this will change map spawn server's `Exe Path` config
-*   `-notSpawnInBatchMode`, this will change map spawn server's `Not Spawn In Batch Mode` config to `TRUE`
+*   `-notSpawnInBatchMode`, this will change map spawn server's `Not Spawn In Batch Mode` config to `true`
 *   `-spawnStartPort`, this will change map spawn server's `Start Port`
 *   `-spawnMaps`, this will change map spawn server's `Spawning Scenes`, its format is as "Map001|Map002|Map003" (It will spawns: `Map001`, `Map002` and `Map003`)
 

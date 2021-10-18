@@ -8,7 +8,7 @@
 - Implement Web Socket secure settings.
 - Add `webSocketSecure` config, if this is `true` it will start Web Socket server secure mode.
 - Add `webSocketCertPath` config, set path to `.pfx`.
-- Add `webSocketCertPassword` config, set password for the `.pft` file.
+- Add `webSocketCertPassword` config, set password for the `.pfx` file.
 
 * * *
 

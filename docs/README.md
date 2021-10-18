@@ -107,6 +107,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [GM Commands](pages/029-gm-commands)
 *   [Server Command Line Arguments](pages/030-server-command-line-argument)
 *   [Server Config Files](pages/031-server-config-files)
+*   [Web Socket Server](pages/150-websocket-server.md)
 *   [Server list for client / Client Production Build](pages/032-server-list-for-client)
 *   [How to integrate Facebook Login](pages/033-how-to-integrate-facebook-login)
 *   [How to integrate Google Play Login](pages/034-how-to-integrate-google-play-login)

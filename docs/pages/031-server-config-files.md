@@ -24,7 +24,12 @@ From version 1.26 you will able to set configs via config files there are follow
   "chatMaxConnections" : 1100,
 
   "databaseManagerAddress" : "localhost",
-  "databaseManagerPort" : 6003
+  "databaseManagerPort" : 6003,
+
+  "useWebSocket": true,
+  "webSocketSecure": true,
+  "webSocketCertPath": "./localhost.pfx",
+  "webSocketCertPassword": "123456"
 }
 ```
 
