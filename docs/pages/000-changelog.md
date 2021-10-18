@@ -1,3 +1,17 @@
+## 1.70f (2021-10-18)
+### Bug Fixes
+- Fix saved items not being loaded properly.
+- Fix raycasting not hit hitboxes (fix by add rigidbody to hitboxes if not exists).
+- Fix passive skills ailments not being applied.
+
+### Improvements
+- Implement Web Socket secure settings.
+- Add `webSocketSecure` config, if this is `true` it will start Web Socket server secure mode.
+- Add `webSocketCertPath` config, set path to `.pfx`.
+- Add `webSocketCertPassword` config, set password for the `.pft` file.
+
+* * *
+
 ## 1.70e (2021-10-17)
 ### Bug Fixes
 - Fix missing vehicle reference when spawn and ride it from item or skill.
