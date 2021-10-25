@@ -1,3 +1,14 @@
+## 1.70g (2021-10-25)
+### Bug Fixes
+- Fix duplicating item drop table list when make changes to `Monster Character` game data.
+- Fix character healing when damage < 0.
+- Fix root motion movemnet not working properly while using `Playable Character Model`.
+
+### Improvements
+- Change item drop algorithm according to [this request](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1213).
+
+* * *
+
 ## 1.70f (2021-10-18)
 ### Bug Fixes
 - Fix saved items not being loaded properly.
