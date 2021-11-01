@@ -1,3 +1,16 @@
+## 1.71 (2021-11-01)
+### Bug Fixes
+- Add rigidbody automatically to building area to avoid untriggered issues, just know that it needs to have rigidbody if another collider has rigidbody, I just add rigidbody to hitboxes in previous version to fix raycast not hitting trigger colliders (but sometime it hit).
+- Vehicle entity's shows damage combat text when receiving damage while it's not able to be attacked.
+
+### Improvements
+- Add unachieved level format for character level requirement UIs.
+- Implement summon buffs saving.
+- Implement building data's extra data saving for MMO games.
+- Add "Walk" key for toggle movement to walk.
+
+* * *
+
 ## 1.70g (2021-10-25)
 ### Bug Fixes
 - Fix duplicating item drop table list when make changes to `Monster Character` game data.
