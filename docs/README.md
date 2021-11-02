@@ -127,6 +127,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 #### Troubleshooting
 
 *   [Common troubleshooting steps](pages/054-troubleshooting-steps)
+*   [Working with Unity 2021](pages/151-working-with-2021.md)
 
 #### Extensions
 
