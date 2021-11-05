@@ -7,4 +7,4 @@ You have to delete following files:
 - Assets/UnityMultiplayerARPG/Core/LiteNetLibManager/System.Memory.dll
 - Assets/UnityMultiplayerARPG/Core/LiteNetLibManager/System.Threading.Tasks.Extensions.dll
 
-Then import [this package](https://suriyun-production.github.io/mmorpg-kit-docs/files/MMORPG_KIT2021.2_Microsoft.Bcl.AsyncInterfaces5.0.0.dll)
+Then import [this package](https://suriyun-production.github.io/mmorpg-kit-docs/files/MMORPG_KIT2021.2_Microsoft.Bcl.AsyncInterfaces5.0.0.dll.unitypackage)
