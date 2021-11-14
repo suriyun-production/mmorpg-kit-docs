@@ -1,3 +1,35 @@
+## 1.71b (2021-11-14)
+### Bug Fixes
+- Fix `AnimationPlayableBehaviour` still playing action states while character dead.
+- Fix `AnimationPlayableBehaviour` wrong transition duration calculation.
+- Fix `PlayableCharacterModel` wrong `isDoingAction` state setting.
+- Fix wrong number format in `UIBaseEquipmentBonus` component.
+- Fix `give_item` GM command not working properly.
+- Fix `AnimatorCharacterModel` changing animator controller property while its `runtimeAnimatorController` is empty.
+- Fix `WarpPortalEntity` can't find player character entity component while the entity riding vehicle.
+- Fix wrong text formatting in `UIDamageElementInfliction` and `UIDamageElementInflictions` components.
+
+### Improvements
+- Add `beforeCrawlingPauseMovementDuration` and `afterCrawlingPauseMovementDuration` settings to `CharacterControllerEntityMovement` and `RigidBodyEntityMovement`.
+- Delete `USE_TEXT_MESH_PRO` define directive, so you don't have to add `USE_TEXT_MESH_PRO` to scripting define symbols to use text wrapper with text mesh pro text component.
+- Add `sliderGage` to `UIGageValue` class.
+- Add `disableDefaultLogin` setting to `CentralNetworkManager` set it to `TRUE` if you want to make it don't allow to login with default username/password login system.
+- Add `requireEmail` setting to `CentralNetworkManager` set it to `TRUE` if you want to make it asks for email when registering new account.
+- Add `requireEmailVerification` setting to `CentralNetworkManager` set it to `TRUE` if you want to make it checks email verification state before allow to login.
+- Change `CharacterPitchIK` to update bone transform in `LateUpdate` function, was try to use animation job system but it have bugs that I don't know how it is happening.
+- Don't allow to switch weapon set while doing an action.
+- Add rule to reduce move speed while character carry too many items, you can change move speed rate in gameplay rule.
+- Add `playerDropItemMode` setting to `GameInstance`. If it is `Drop On Ground`, selected item will be dropped on ground. If it is `Destroy Item`, selected item will be destroyed.
+- Add `playerCorpsePrefab` setting to `GameInstance`, it is prefab for player corpse which will be instantiate when player character dying (corpses will instantiating while `playerDeadDropItemMode` set to `Corpse Looting`).
+- Add `playerDeadDropItemMode` setting to `GameInstance`. If it is `Drop On Ground`, it will drops items on ground. If it is `Corpse Looting`, it will instantiates corpse with dropping items inside.
+- Add `monsterCorpsePrefab` setting to `GameInstance`, it is prefab for monster corpse which will be instantiate when monster character dying (corpses will instantiating while `monsterDeadDropItemMode` set to `Corpse Looting`).
+- Add `monsterDeadDropItemMode` setting to `GameInstance`. If it is `Drop On Ground`, it will drops items on ground. If it is `Corpse Looting`, it will instantiates corpse with dropping items inside.
+- Add `playerDeadDropsEquipWeapons` setting to map info, it this is `TRUE`, player who dies while staying on the map will drops equipped weapons.
+- Add `playerDeadDropsEquipItems` setting to map info, it this is `TRUE`, player who dies while staying on the map will drops equipped items.
+- Add `playerDeadDropsNonEquipItems` setting to map info, it this is `TRUE`, player who dies while staying on the map will drops non-equipped items.
+
+* * *
+
 ## 1.71 (2021-11-01)
 ### Bug Fixes
 - Add rigidbody automatically to building area to avoid untriggered issues, just know that it needs to have rigidbody if another collider has rigidbody, I just add rigidbody to hitboxes in previous version to fix raycast not hitting trigger colliders (but sometime it hit).
