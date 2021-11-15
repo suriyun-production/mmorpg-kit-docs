@@ -1,3 +1,14 @@
+## 1.71c (2021-11-15)
+### Bug Fixes
+- Fix wrong dealing gold amount.
+
+### Improvements
+- If items container entity was spawned with dropper entity set, it will be determined that it is dropper entity's corpse, then it will set info to tell clients about corpse.
+- When set items container as a selected target, it will show entity title UI.
+- Add some delay before change movement speed while attacking or using skill to generic movement speed.
+
+* * *
+
 ## 1.71b (2021-11-14)
 ### Bug Fixes
 - Fix `AnimationPlayableBehaviour` still playing action states while character dead.
