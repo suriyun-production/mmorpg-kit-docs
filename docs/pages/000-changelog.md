@@ -1,3 +1,13 @@
+## 1.71d (2021-11-16)
+### Bug Fixes
+- Fix `NearbyEntityDetector` don't detect inactive objects.
+- Try to fix character keeps moving issues, when press move keys rapidly, by disable event system's `sendNavigationEvents` option.
+
+### Improvements
+- Change `BaseCharacterEntity` -> `RETURN_MOVEMENT_SPEED_DELAY` to `0.01f` following suggestion, if anyone having issues relates to this, you can tell me.
+
+* * *
+
 ## 1.71c (2021-11-15)
 ### Bug Fixes
 - Fix wrong dealing gold amount.
