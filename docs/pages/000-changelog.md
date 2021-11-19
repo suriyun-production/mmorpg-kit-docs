@@ -1,3 +1,14 @@
+## 1.71e (2021-11-18)
+### Bug Fixes
+- Fix wrong Z axis when instantiate new UI while canvas is screen space canvas by just set new UI's rotation to 0, 0, 0.
+- Fix null object when updating grid manager.
+
+### Improvements
+- Add random item reward to quest (try "Test Talk To NPC" quest).
+- Add selectable item reward to quest (try "Test Talk To NPC" quest).
+
+* * *
+
 ## 1.71d (2021-11-16)
 ### Bug Fixes
 - Fix `NearbyEntityDetector` don't detect inactive objects.
