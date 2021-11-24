@@ -1,3 +1,23 @@
+### Bug Fixes
+- Fix `UIPartyInvitation` not being hidden after declined.
+- Fix system chat not being received by other clients.
+
+### Improvements
+- Move `RETURN_MOVEMENT_SPEED_DELAY` from character entity to game instance `returnMoveSpeedDelayAfterAction` settings to allow developer to change delay before return move speed while attack or use skill to generic move speed.
+- Move `MOUNT_DELAY` from character entity to game instance `mountDelay` settings to allow developer to change delay before mount again.
+- Add `useItemDelay` to game instance, use it to change delay before use item again.
+- Add `UseItemCooldown` to usable item, it's cooldown after use the item.
+- Add `consumeHpRate`, `consumeMpRate` and `consumeStaminaRate` settings to skill, it will be used to calculate consuming Hp or Mp or Stamina amount by multiplies with character's max Hp or Mp or Stamina value, for example if `consumeHpRate` is `0.1` and character's max Hp is `100` consuming Hp will be `10`.
+- Add `applyFootIk` and `applyPlayableIk` to animation state settings for playable character model.
+- Add `changeCharacterQuest` setting to quest game data, set player character game data which you want your character to change when complete the quest.
+- Add `abandonQuests` setting to quest game data, these quests will be abandoned when accept the quest.
+- Change `WeaponItemEquipType` -> `OneHand` to `MainHandOnly`.
+- Change `WeaponItemEquipType` -> `OneHandCanDual` to `DualWieldable`.
+- Add `OffHandOnly` to `WeaponItemEquipType`.
+- Remove equip position setting from weapon item game data, use equip position setting from weapon type game data instead, if weapon type's equip position is empty, it will use game data ID as a equip position.
+
+* * *
+
 ## 1.71e (2021-11-18)
 ### Bug Fixes
 - Fix wrong Z axis when instantiate new UI while canvas is screen space canvas by just set new UI's rotation to 0, 0, 0.
