@@ -1,3 +1,36 @@
+## 1.72 (2021-11-29)
+### Bug Fixes
+- Fix LiteNetLibManager's batched sync list not working properly.
+- Fix hotkey to equip items not working.
+
+### Improvements
+- Gradually change structure: Move player character entity's building functions to `PlayerCharacterBuildingComponent` component.
+- Gradually change structure: Move player character entity's dealing functions to `PlayerCharacterDealingComponent` component.
+- Gradually change structure: Move player character entity's NPC interaction functions to `PlayerCharacterNpcActionComponent` component.
+- LiteNetLibManager improvement: Do not rewrite a new sync field packet for each connection, write once and use it to send to all connections.
+- LiteNetLibManager improvement: Do not rewrite a new sync list packet for each connection, write once and use it to send to all connections.
+- LiteNetLibManager improvement: Do not rewrite a new sync behaviour packet for each connection, write once and use it to send to all connections.
+- LiteNetLibManager improvement: Do not rewrite a new net function (RPC) packet for each connection, write once and use it to send to all connections.
+- Change websocket transport to https://github.com/chronoxor/NetCoreServer for better performance.
+- Add warp points by condition setting to warp portal, now you can set different warp points for different factions, it may have other conditions later.
+- Add start points by condition setting to player character data, now you can set different start maps for different factions, it may have other conditions later.
+- Add `canApplyDamageToUser` setting to `AreaDamageEntity`, if this is `TRUE` area damage entity's damage will be able to applying to skill user.
+- Don't show an indicator on NPC entity which its "talk to" task is done.
+- Don't show crafting queue items dialog when players interact with the entity behind the wall.
+- Add `visibleMaterials`, `invisibleMaterials` and `fpsMaterials` settings to `GameEntityModel`.
+
+### MMO Structure Changes
+- Add cluster-server which will be used for app-servers (map-server, map-spawn-server) connections handling and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
+- Move chat-server functionality to cluster-server, and also remove it, there is no chat-server anymore.
+- Move central-server's app-server connections handling and listing to cluster-server.
+- Now when it start central-server, cluster-server will be started automatically, it's part of central-server.
+- Client can connect to central-server to manage authentication and character only.
+- Only app-servers will connect to cluster-server.
+- Force use server-to-server connections such as map-server to database-server, map-spawn-server to central-server (and so on) to use TCP transport.
+
+* * *
+
+## 1.71f (2021-11-24)
 ### Bug Fixes
 - Fix `UIPartyInvitation` not being hidden after declined.
 - Fix system chat not being received by other clients.
