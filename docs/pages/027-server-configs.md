@@ -7,6 +7,7 @@ As mentioned architecture, there are different kind of servers and it's have dif
 #### Central Network Manager important configs
 
 *   `Network Port`, Central server's port. Clients, chat server, map spawn server and map server will connect to central server by this port.
+*   `Cluster Server Port`, Cluster server's port, cluster server is a server that will start along with central server to handle app-servers (map-server, map-spawn-server) connections and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
 *   `Max Connections`, maximum connections for clients including with other servers.
 *   `Min Username Length`, Minimum username length.
 *   `Max Username Length`, Maximum username length.
@@ -17,9 +18,8 @@ As mentioned architecture, there are different kind of servers and it's have dif
 #### Map Spawn Network Manager important configs
 
 *   `Network Port`, Map spawn server's port.
-*   `Max Connections`, maximum connections for clients including with other servers.
-*   `Central Network Address`, address where central server is running, it will be used by map spawn network manager to connect to server to tell what is machine address to this (map spawn server).
-*   `Central Network Port`, port where central server is running.
+*   `Cluster Network Address`, address where cluster server is running, it will be used by map spawn network manager to connect to server to tell what is machine address to this (map spawn server).
+*   `Cluster Network Port`, port where cluster server is running.
 *   `Machine Address`, public address to this server.
 *   `Exe Path`, path to execution file must set it correctly to start map servers.
 *   `Not Spawn In Batch Mode`, if this is `TRUE` it will run map server in non batch mode (have graphics and interactable).
@@ -30,18 +30,10 @@ As mentioned architecture, there are different kind of servers and it's have dif
 
 #### Map Network Manager important configs
 
-*   `Network Port`, Map server's port. It can be set when spawned by map spawn server.
+*   `Network Port`, Map server's port.
 *   `Max Connections`, maximum connections for clients including with other servers.
-*   `Central Network Address`, address where central server is running, it will be used by map network manager to connect to server to tell what is machine address to this (map server). It can be set when spawned by map spawn server.
-*   `Central Network Port`, port where map server is running. It can be set when spawned by map spawn server.
-
-#### Chat Network Manager important configs
-
-*   `Network Port`, Chat server's port.
-*   `Max Connections`, maximum connections for clients including with other servers.
-*   `Central Network Address`, address where central server is running, it will be used by chat network manager to connect to server to tell what is machine address to this (chat server).
-*   `Central Network Port`, port where central server is running.
-*   `Machine Address`, address to this server.
+*   `Cluster Network Address`, address where cluster server is running, it will be used by map network manager to connect to server to tell what is machine address to this (map server).
+*   `Cluster Network Port`, port where cluster server is running.
 
 #### Database Network Manager important configs
 

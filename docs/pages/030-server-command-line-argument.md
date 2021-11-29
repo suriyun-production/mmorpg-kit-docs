@@ -13,13 +13,13 @@ You can change server configs when starting servers by command line arguments, t
 #### Central Server Configs
 
 *   `-centralAddress`, this will change chat, map spawner and map server's `Central Network Address` config
-*   `-centralPort`, this will change central server's `Network Port` config and change chat, map spawner and map server's `Central Network Port` config
+*   `-centralPort`, this will change central server's `Network Port` config.
+*   `-clusterPort`, this will change cluster server's port and change map spawner and map server's `Cluster Server Port` config
 *   `-centralMaxConnections`, this will change central server's `Max Connections` config
 
 #### Map Spawn Server Configs
 
 *   `-mapSpawnPort`, this will change map spawn server's `Network Port` config
-*   `-mapSpawnMaxConnections`, this will change map spawn server's `Max Connections` config
 *   `-spawnExePath`, this will change map spawn server's `Exe Path` config
 *   `-notSpawnInBatchMode`, this will change map spawn server's `Not Spawn In Batch Mode` config to `true`
 *   `-spawnStartPort`, this will change map spawn server's `Start Port`
@@ -31,11 +31,6 @@ You can change server configs when starting servers by command line arguments, t
 *   `-mapMaxConnections`, this will change map server's `Max Connections` config
 *   `-sceneName`, this will change map server's online scene config
 
-#### Chat Server Configs
-
-*   `-chatPort`, this will change chat server's `Network Port` config
-*   `-chatMaxConnections`, this will change chat server's `Max Connections` config
-
 #### Database Server Configs
 
 *   `-databaseManagerAddress`, this will change database server's `Network Address` config
@@ -46,5 +41,4 @@ You can change server configs when starting servers by command line arguments, t
 *   `-startCentralServer`, add this command to run central server
 *   `-startMapSpawnServer`, add this command to run map spawn server
 *   `-startMapServer`, add this command to run map server
-*   `-startChatServer`, add this command to run chat server
 *   `-startDatabaseServer`, add this command to run database management sever

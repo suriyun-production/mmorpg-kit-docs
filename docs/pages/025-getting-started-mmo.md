@@ -20,7 +20,6 @@ For `Windows`, go to folder that you build the game create shortcut of execution
 -startMapSpawnServer
 -spawnExePath "Path of your execution file such as C:\Game\Game.exe"
 -startCentralServer
--startChatServer
 -startDatabaseServer
 ```
 
@@ -33,7 +32,7 @@ If you are going to test on LAN you should set machine address to your LAN addre
 So for example, If you build the game to `D:/MMO/MMO.exe` and my LAN address is `192.168.1.102` I will set value in shortcut's `Target` field to:
 
 ```
-D:\MMO\MMO.exe -startMapSpawnServer -spawnExePath "D:\MMO\MMO.exe" -startCentralServer -startChatServer -startDatabaseServer -machineAddress "192.168.1.102"
+D:\MMO\MMO.exe -startMapSpawnServer -spawnExePath "D:\MMO\MMO.exe" -startCentralServer -startDatabaseServer -machineAddress "192.168.1.102"
 ```
 
 May see this video for example of how to set shortcut's `Target` field (It's not set machine address so it can run locally only)
@@ -53,7 +52,7 @@ If it's running like image above it mean that it's running correctly
 For `Mac OSX`, use `Terminal` go to path where you build the game such as `/Game/` then enter command like this:
 
 ```
-$ ./Game.app/Contents/MacOS/<productName> -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app/Contents/MacOS/<productName>" -startCentralServer -startChatServer -startDatabaseServer -machineAddress "192.168.1.102"
+$ ./Game.app/Contents/MacOS/<productName> -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.app/Contents/MacOS/<productName>" -startCentralServer -startDatabaseServer -machineAddress "192.168.1.102"
 ```
 
 ** **<productName> is `Product Name` settings which can find in `Unity Editor -> Player Settings`** **
@@ -63,7 +62,7 @@ $ ./Game.app/Contents/MacOS/<productName> -startMapSpawnServer -spawnExePath "Pa
 For `Linux`, use `Terminal` go to path where you build the game such as `/Game/` then enter command like this:
 
 ```
-$ ./Game.x86_64 -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.x86_64" -startCentralServer -startChatServer -startDatabaseServer -machineAddress "192.168.1.102"
+$ ./Game.x86_64 -startMapSpawnServer -spawnExePath "Path of your execution file such as /Game/Game.x86_64" -startCentralServer -startDatabaseServer -machineAddress "192.168.1.102"
 ```
 
 * * *

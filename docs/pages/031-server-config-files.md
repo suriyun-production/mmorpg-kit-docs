@@ -10,6 +10,7 @@ From version 1.26 you will able to set configs via config files there are follow
 
   "centralAddress" : "localhost",
   "centralPort" : 7000,
+  "clusterPort" : 7010,
   "centralMaxConnections" : 1100,
   "machineAddress" : "yourdomain.com",
   
@@ -19,9 +20,6 @@ From version 1.26 you will able to set configs via config files there are follow
   "notSpawnInBatchMode" : false,
   "spawnStartPort" : 8000,
   "spawnMaps" : ["Map001","Map002"],
-  
-  "chatPort" : 6002,
-  "chatMaxConnections" : 1100,
 
   "databaseManagerAddress" : "localhost",
   "databaseManagerPort" : 6003,
