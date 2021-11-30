@@ -1,3 +1,14 @@
+## 1.72b (2021-11-30)
+### Bug Fixes
+- Fix WebSocket not working properly.
+- Fix central-client not reconnecting after disconnected from map-server, which it won't move to character management scene.
+- Fix map-users not being removed from cluster-server's collection after map-server disconnected.
+- Fix `AreaDamageEntity` -> `canApplyDamageToUser` not working.
+- Fix summoning monster character entity not teleporting to summoner character entity properly.
+- Fix pooling objects not being destroyed when object is out of pooling range.
+
+* * *
+
 ## 1.72 (2021-11-29)
 ### Bug Fixes
 - Fix LiteNetLibManager's batched sync list not working properly.
