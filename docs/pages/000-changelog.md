@@ -1,3 +1,9 @@
+## 1.72b2 (2021-11-30)
+### Bug Fixes
+- Fix `MobileSwipeArea` not working properly.
+
+* * *
+
 ## 1.72b (2021-11-30)
 ### Bug Fixes
 - Fix WebSocket not working properly.
