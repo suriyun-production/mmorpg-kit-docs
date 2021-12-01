@@ -166,7 +166,7 @@ Set `centralAddress` and `machineAddress` to `128.199.78.31` because it is serve
 
 ![](./img-digitalocean/026-open_ports.png)
 
-*   Then run the server with command `/root/Build.x86_64 -startCentralServer -startChatServer -startMapSpawnServer -startDatabaseServer`
+*   Then run the server with command `/root/Build.x86_64 -startCentralServer -startMapSpawnServer -startDatabaseServer`
 
 ![](./img-digitalocean/027-run_server.png)
 
@@ -174,6 +174,6 @@ Set `centralAddress` and `machineAddress` to `128.199.78.31` because it is serve
 
 ![](./img-digitalocean/028-setup_client.PNG)
 
-*   If it can connect, go back to SSH client, close servers by press CRTL + C then run server with command `nohup /root/Build.x86_64 -startCentralServer -startChatServer -startMapSpawnServer -startDatabaseServer &` you can learn about nohup command from this [link]
+*   If it can connect, go back to SSH client, close servers by press CRTL + C then run server with command `nohup /root/Build.x86_64 -startCentralServer -startMapSpawnServer -startDatabaseServer &` you can learn about nohup command from this [link]
 
 (https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.cmds4/nohup.htm)
