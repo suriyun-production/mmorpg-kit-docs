@@ -5,7 +5,7 @@ To run game as web socket server to serve HTML5 clients, you have to set `useWeb
 - Or enter it with the launch command line (`-useWebSocket`)
 - Or set it in `serverConfig.json file` (`"useWebSocket": true`)
 
-There are other settings relates to Web Socket Server settings, can read from [this link](../pages/030-server-command-line-argument.md)
+There are other settings relates to Web Socket Server settings, can read from [this link](pages/030-server-command-line-argument.md)
 
 ### Web Socket Client
 
