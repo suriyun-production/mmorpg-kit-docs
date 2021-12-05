@@ -1,3 +1,22 @@
+## 1.72c (2021-12-05)
+### Bug Fixes
+- Fix in-scene vehicle entity is being destroyed when player disconnect (it mustn't be able to be destroyed).
+- Fix exit vehicle not being called when player disconnect which is cause of freezing passenger players when driver player disconnect.
+- Fix `uiRewardCurrencies` in `UICharacterQuest` not being updated properly.
+- Fix character not unsummon when summoner dead.
+- Fix wrong equip position when order it to equip off-hand only weapon without specific position.
+- Fix find ground position for building construction function not working properly (`PlayerCharacterController`).
+- Fix doubling sync list data at clients.
+- Fix `UICharacterCurrencies` can freeze the game when open it.
+- Fix wrong mail data serializing.
+- Fix player can craft item with `QueuedWorkbenchEntity` while they're not in range.
+
+### Improvement
+- Add `doNotDecreaseItemsOnQuestComplete` option to quest task, if this is `TRUE` it will not decrease task's items when quest is complete.
+- Add quest task notification message (`UIQuestNotificationManager` component)
+
+* * *
+
 ## 1.72b2 (2021-11-30)
 ### Bug Fixes
 - Fix `MobileSwipeArea` not working properly.
@@ -21,7 +40,7 @@
 - Fix LiteNetLibManager's batched sync list not working properly.
 - Fix hotkey to equip items not working.
 
-### Improvements
+### Improvement
 - Gradually change structure: Move player character entity's building functions to `PlayerCharacterBuildingComponent` component.
 - Gradually change structure: Move player character entity's dealing functions to `PlayerCharacterDealingComponent` component.
 - Gradually change structure: Move player character entity's NPC interaction functions to `PlayerCharacterNpcActionComponent` component.
@@ -53,7 +72,7 @@
 - Fix `UIPartyInvitation` not being hidden after declined.
 - Fix system chat not being received by other clients.
 
-### Improvements
+### Improvement
 - Move `RETURN_MOVEMENT_SPEED_DELAY` from character entity to game instance `returnMoveSpeedDelayAfterAction` settings to allow developer to change delay before return move speed while attack or use skill to generic move speed.
 - Move `MOUNT_DELAY` from character entity to game instance `mountDelay` settings to allow developer to change delay before mount again.
 - Add `useItemDelay` to game instance, use it to change delay before use item again.
@@ -74,7 +93,7 @@
 - Fix wrong Z axis when instantiate new UI while canvas is screen space canvas by just set new UI's rotation to 0, 0, 0.
 - Fix null object when updating grid manager.
 
-### Improvements
+### Improvement
 - Add random item reward to quest (try "Test Talk To NPC" quest).
 - Add selectable item reward to quest (try "Test Talk To NPC" quest).
 
@@ -85,7 +104,7 @@
 - Fix `NearbyEntityDetector` don't detect inactive objects.
 - Try to fix character keeps moving issues, when press move keys rapidly, by disable event system's `sendNavigationEvents` option.
 
-### Improvements
+### Improvement
 - Change `BaseCharacterEntity` -> `RETURN_MOVEMENT_SPEED_DELAY` to `0.01f` following suggestion, if anyone having issues relates to this, you can tell me.
 
 * * *
@@ -94,7 +113,7 @@
 ### Bug Fixes
 - Fix wrong dealing gold amount.
 
-### Improvements
+### Improvement
 - If items container entity was spawned with dropper entity set, it will be determined that it is dropper entity's corpse, then it will set info to tell clients about corpse.
 - When set items container as a selected target, it will show entity title UI.
 - Add some delay before change movement speed while attacking or using skill to generic movement speed.
@@ -112,7 +131,7 @@
 - Fix `WarpPortalEntity` can't find player character entity component while the entity riding vehicle.
 - Fix wrong text formatting in `UIDamageElementInfliction` and `UIDamageElementInflictions` components.
 
-### Improvements
+### Improvement
 - Add `beforeCrawlingPauseMovementDuration` and `afterCrawlingPauseMovementDuration` settings to `CharacterControllerEntityMovement` and `RigidBodyEntityMovement`.
 - Delete `USE_TEXT_MESH_PRO` define directive, so you don't have to add `USE_TEXT_MESH_PRO` to scripting define symbols to use text wrapper with text mesh pro text component.
 - Add `sliderGage` to `UIGageValue` class.
@@ -138,7 +157,7 @@
 - Add rigidbody automatically to building area to avoid untriggered issues, just know that it needs to have rigidbody if another collider has rigidbody, I just add rigidbody to hitboxes in previous version to fix raycast not hitting trigger colliders (but sometime it hit).
 - Vehicle entity's shows damage combat text when receiving damage while it's not able to be attacked.
 
-### Improvements
+### Improvement
 - Add unachieved level format for character level requirement UIs.
 - Implement summon buffs saving.
 - Implement building data's extra data saving for MMO games.
@@ -152,7 +171,7 @@
 - Fix character healing when damage < 0.
 - Fix root motion movemnet not working properly while using `Playable Character Model`.
 
-### Improvements
+### Improvement
 - Change item drop algorithm according to [this request](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1213).
 
 * * *
@@ -163,7 +182,7 @@
 - Fix raycasting not hit hitboxes (fix by add rigidbody to hitboxes if not exists).
 - Fix passive skills ailments not being applied.
 
-### Improvements
+### Improvement
 - Implement Web Socket secure settings.
 - Add `webSocketSecure` config, if this is `true` it will start Web Socket server secure mode.
 - Add `webSocketCertPath` config, set path to `.pfx`.
@@ -176,7 +195,7 @@
 - Fix missing vehicle reference when spawn and ride it from item or skill.
 - Fix queued crafting items updating at server.
 
-### Improvements
+### Improvement
 - Add `Game Object/UI/Wrappers/Text Wrapper` menu, use it to create `Text` object with `Text Wrapper` attached.
 - Add `Game Object/UI/Wrappers/Text Wrapper - TextMeshPro` menu, use it to create `TextMeshProUGUI` object with `Text Wrapper` attached.
 - Add `Game Object/UI/Wrappers/Dropdown Wrapper` menu, use it to create `Dropdown` object with `Dropdown Wrapper` attached.
@@ -198,7 +217,7 @@
 ### Bug Fixes
 - Fix player banning, muting not working properly when using SQLite as database.
 
-### Improvements
+### Improvement
 - GM comand: `/warp_to_character {name}`, Now it is working properly, players not have to be in the same map to warp.
 - GM comand: `/summon {name}`, Now it is working properly, players not have to be in the same map to summon.
 - Can use `_` as space (` `) for `Item ID`, `Map ID`, `Monster Character Entity Prefab Name` which will be entered in GM commands.
@@ -209,7 +228,7 @@
 ### Bug Fixes
 - Fix `/warp_character {name} {map_id} {x} {y} {z}` GM command, it uses wrong data for map ID.
 
-### Improvements
+### Improvement
 - Add randoming character stats and character stats rate settings to equipment's random bonus setting.
 - Add `Max Random Stats Amount` setting to equipment's random bonus setting, use it to set limit amount of randoming stats. If this <= `0` amount of randoming stats is unlimit.
 
@@ -223,7 +242,7 @@
 - Fix jump force not apply if `Apply Jump Force Mode` is `Apply After Fixed Duration`.
 - Fix cash shop item generator not working properly.
 
-### Improvements
+### Improvement
 - Add warp rotation settings to NPC dialog.
 - Add min/max item amount settings to item drop data.
 - Add GM comand: `/warp {map_id}` = Warp to specific map.
@@ -255,7 +274,7 @@
 - Fix monster character entity moving with default move speed, not wander move speed while wandering.
 - Fix `Playable Character Model`'s landed animation not playing.
 
-### Improvements
+### Improvement
 - Add `Monster Character Activity` when create monster character entity by character entity creator tool, so user won't have to add `Monster Character Activity` by themself.
 - Add `Capsule Collider` as trigger collder when create character entity with nav mesh entity movement by character entity creator tool, so user won't have to add trigger collider by themself.
 - Add `onPlayLaunch` event to `Equipment Entity` component, can use it to play gun firing animation.
@@ -271,7 +290,7 @@
 - Fix `UI Chat Handler` cannot send whisper messages without prefix command (`/w`).
 - Fix `My SQL Database` cannot create new guild.
 
-### Improvements
+### Improvement
 - Allow player to move item from storage slot to equipment slot directly.
 - Allow player to move item from equipment slot to storage slot directly.
 - Don't allow to use hotkey to use skills while it is cooling down.
@@ -285,7 +304,7 @@
 - Fix `/add_item` GM command keep adding items while character's inventory going to be overwhelmed. 
 - Fix `/give_item` GM command keep adding items while character's inventory going to be overwhelmed. 
 
-### Improvements
+### Improvement
 - Add `Do Not Fill Empty Slots` setting to `Game Instance`, if this is `TRUE` it won't fill empty slots to character's inventory or storage while slots are limiting.
 - Add `/help` GM command, use it to see list of all commands.
 
@@ -301,7 +320,7 @@
 - Fix wrong buff stacking amount calculation.
 - Fix character not stop moving when disallow move debuff applied.
 
-### Improvements
+### Improvement
 - Add `Building Password Content Type` and `Building Password Length` settings to `Base Player Character Controller`.
 - Add `Start Rotation` setting to map info game data.
 - Add `Use Override Start Rotation` and `Override Start Rotation` to player character game data, use them to override map info's `Start Rotation`.
@@ -334,7 +353,7 @@ You can convert `Animator Character Model` to `Playable Character Model` by cont
 - Fix `Activate Button Activator` component is activating `Activate Objects` (Virtual Mobile Buttons) while point on building which is not activatable building.
 - Fix `UI Cash Shop Item` wrong calculation price when enter amount over `99`.
 
-### Improvements
+### Improvement
 - Add `Warp To Map Item` which can be created from create menu -> `Create GameData/Item/Warp To Map Item`, use this item to warp character to the map which defined in item settings.
 - Add `Warp To Respawn Point Item` which can be created from create menu -> `Create GameData/Item/Warp To Respawn Point Item`, use this item to warp character to respawn point.
 - Add `Simple Warp To Target Skill` which can be created from create menu -> `Create GameData/Skill/Simple Warp To Target Skill` use this skill to warp character to aim position.
@@ -373,7 +392,7 @@ I've tried to mix animator and playable graph by uses a playable graph for actio
 - Change `BaseSkill` -> `GetDamageHitEffects()` function to `DamageHitEffects` getter property.
 - Change `DamageElement` -> `GetDamageHitEffects()` function to `DamageHitEffects` getter property.
 
-### Improvements
+### Improvement
 - Improve game data, game entity inspector GUI by put properties into foldout group.
 
 ![](../images/changelog/1.67b-1.png)
@@ -402,7 +421,7 @@ I've tried to mix animator and playable graph by uses a playable graph for actio
 * * *
 
 ## 1.67 (2021-07-21)
-### Improvements
+### Improvement
 - Status effects from passive skills can be applied to target.
 - Add mail notification.
 - Add claim all mails items function.
@@ -419,7 +438,7 @@ I've tried to mix animator and playable graph by uses a playable graph for actio
 * * *
 
 ## 1.66d (2021-06-22)
-### Improvements
+### Improvement
 - Add status effects section to game database dialog.
 
 ### Bug Fixes
@@ -428,7 +447,7 @@ I've tried to mix animator and playable graph by uses a playable graph for actio
 * * *
 
 ## 1.66c (2021-06-21)
-### Improvements
+### Improvement
 - Change listing UI components (such as `UICharacterBuffs`, `UICharacterCurrencies` and so on) to have the same variable/function names (with other classes), intend to make it easier to find things and also changes some functions to be overridable.
   - Dialog reference (Example: `uiCurrencyDialog`) variable name will be changed to `uiDialog`.
   - Prefab reference (Example: `uiCharacterCurrencyPrefab`) variable name will be changed to `uiPrefab`.
@@ -491,7 +510,7 @@ Add `StatusEffect` game data which can create from menu `Create -> Create GameDa
 - Fix wrong aim direction when select itselft and attack.
 - Validate hit index when simulate attack to avoid hacking.
 
-### Improvements
+### Improvement
 - Summoned monsters can buffs summoner, there is new `summonerBuff` settings in `MonsterCharacter` game data.
 - Add `IsImmune` state to `DamageableEntity`, while this is `TRUE` it won't receives damage.
 - Change entity title setting, all kinds of entity will have `entityTitle` and `entityTitles` settings, if value in `syncTitle` is null or empty it will use those settings.
@@ -512,7 +531,7 @@ Now it will pass target entity object ID to use skill function, `targetObjectId`
 - Fix `Killed` function being called double when character dead by debuffs.
 - Fix default move state for `NPC Entity` is falling.
 
-### Improvements
+### Improvement
 - Add `hpRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's HP in `DefaultGameplayRule` -> `GetRecoveryHpPerSeconds` function.
 - Add `mpRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's MP in `DefaultGameplayRule` -> `GetRecoveryMpPerSeconds` function.
 - Add `staminaRecovery` to `CharacterStats`, see how it was implemented and calculated to recover character's stamina in `DefaultGameplayRule` -> `GetRecoveryStaminaPerSeconds` function.
@@ -544,7 +563,7 @@ Chat codes were moved from game network manager to following implemented interfa
 - Fix offline game save race condition when change scene which is cause of storage's items losing.
 - Fix wrong move direction while FPS is very low.
 
-### Improvements
+### Improvement
 - Make `CharacterRace` to be partial class.
 - Make rewarding EXP in `MonsterCharacter` data can be increased by monster level. By add `randomExp` variable, the old `randomExpMin` and `randomExpMax` variables will be set to `randomExp` -> `baseAmount` if any of them != 0 and values in `randomExp` are 0.
 - Make rewarding gold in `MonsterCharacter` data can be increased by monster level. By add `randomGold` variable, the old `randomGoldMin` and `randomGoldMax` variables will be set to `randomGold` -> `baseAmount` if any of them != 0 and values in `randomGold` are 0.
@@ -562,7 +581,7 @@ Chat codes were moved from game network manager to following implemented interfa
 - Fix `increaseStatPointsUntilReachedLevel` and `increaseSkillPointsUntilReachedLevel` setting not working as intended.
 - Fix wrong attribute amounts and skill levels in item equipment requirement and skill level up requirement UIs.
 
-### Improvements
+### Improvement
 - Add `QueuedWorkbenchEntity` it is workbench with queueable crafting system.
 - Change stat point and skill point to be fractional.
 
@@ -573,7 +592,7 @@ Chat codes were moved from game network manager to following implemented interfa
 - Fix `NoConstructionArea` not working.
 - Fix to not applies move speed while use root motion for movement.
 
-### Improvements
+### Improvement
 - Add `increaseStatPointsUntilReachedLevel` to `DefaultGameplayRule`, If this > `0`, it will increase stat point until character reached max level. If it's `20`, it will increase stat point until character reached level `20`.
 - Add `increaseSkillPointsUntilReachedLevel` to `DefaultGameplayRule`, If this > `0`, it will increase skill point until character reached max level. If it's `20`, it will increase skill point until character reached level `20`.
 - Add `activateObjectsWhenSwitchModel` to `BaseCharacterModel`, these game objects will be activated when switch from other model (switching when riding vehicles).
@@ -587,7 +606,7 @@ Chat codes were moved from game network manager to following implemented interfa
 - Fix wrong weapon animations while riding vehicle.
 - Fix `RigidBodyEntityMovement` component not being added when create character entity with `Character Entity Creator (3D)` dialog.
 
-### Improvements
+### Improvement
 - Add `harvestType` and `harvestDamageAmount` settings to skill. If `harvestType` is `BasedOnWeapon`, harvest damage amount will be calculated by weapon type's `harvestDamageAmount` settings. If `harvestType` is `BasedOnSkill`, harvest damage amount will be calculated by skill's `harvestDamageAmount` settings.
 - Add `skillHarvestEffectivenesses` to `Harvestable`, it will be used when skill's `harvestType` is `BasedOnSkill` to random dropping items when harvestable entity attacked.
 
@@ -610,7 +629,7 @@ Change how to send skill packet, now it will send it will send launch position, 
 - Fix stuttering `RigidBodyEntityMovement2D`.
 - Fix slow `AudioSourceSetter`, now it will store settings in variables, it was get settings directly from `PlayerPrefs`.
 
-### Improvements
+### Improvement
 - Add `countDownObjects` to `UICharacterSkill` component, game objects which set into this field will be activated when the skill is cooling down.
 - Add `noCountDownObjects` to `UICharacterSkill` component, game objects which set into this field will be activated when the skill is not cooling down.
 - Add `countDownObjects` to `UIGuildSkill` component, game objects which set into this field will be activated when the skill is cooling down.
@@ -632,7 +651,7 @@ Change how to send skill packet, now it will send it will send launch position, 
 - Fix `landedPauseMovementDuration` setting in `CharacterControllerEntityMovement` and `RigidbodyEntityMovement` not work as intended.
 - Fix `EquipmentEntity` not update material/activating objects follow `effects` settings.
 
-### Improvements
+### Improvement
 - Improve gun fire recoiling, now it is smoother and also makes separated recoil by axes (`CrosshairSetting` -> `recoilX`, `recoilY`).
 - In `UICashShopItem` it will hide sell price if sell price <= `0`.
 - `BuildingMaterial` changes `meshRenderer`, `spriteRenderer` and `tilemap` to be public fields.
@@ -663,7 +682,7 @@ Change how to send skill packet, now it will send it will send launch position, 
 - Fix character won't attack after weapon chanrged.
 - Fix monster move stuttering when follow enemy.
 
-### Improvements
+### Improvement
 - Improve character model's effect containers and equipment containers gizmos to make it easier to see in editor.
 - Add equipment entity's missile damage transform and pivot gizmos to make it easier to see in editor.
 - Add hit box's pivot gizmos to make it easier to see in editor.
@@ -685,7 +704,7 @@ Change how to send skill packet, now it will send it will send launch position, 
 - Fix wrong weapon charge animation clip.
 - Fix `Missile Damage Entity` -> `previousPosition` not reset, which is cause of disappears issues.
 
-### Improvements
+### Improvement
 - Reduce client inputs packet size by not send object ID, connection ID was bound to character entity so it not have to send object ID.
 - Add `Move Speed Rate While Reloading` and `Move Speed Rate While Charging` to weapon items. And also implemented to character entity to change move speed while reloading or charging.
 - Change how to calculate `multiHitTriggerDurationRates`. The old was like this example: if `multiHitTriggerDurationRates` set to `[0.2, 0.4, 0.8]` calculated trigger durations will be `[0.2, 0.4, 0.8]`. The new one is like this: if `multiHitTriggerDurationRates` set to `[0.2, 0.4, 0.8]` calculated trigger durations will be `[0.2, 0.2, 0.4]`.
@@ -994,7 +1013,7 @@ This version gradually changes some codes structure, some RPC functions were mov
 - Fix: players can attack each other while map PVP mode is none.
 - Fix: cannot consturct building by playing 2D game.
 
-### Improvements
+### Improvement
 - Add options `recoverMonstersWhenRoundEnd` to `BaseGameNetworkManager`, if this is `TRUE` monsters will be recovered
 - Add `localPosition`, `localEulerAngles` and `localScale` settings to `EquipmentModel`, so developer can model transform when equip equipment item.
 - Add `completeAfterTalked` to `QuestTask` it will being used if `taskType` is `TalkToNpc`, if this is `TRUE` it will complete quest immediately when talk to Npc (and all tasks have to be done).
@@ -1030,7 +1049,7 @@ This version gradually changes some codes structure, some RPC functions were mov
 ### Bugs Fixes
 - Fix wrong item was dismantled by bulk dismantle.
 
-### Improvements
+### Improvement
 - Change `BaseCharacterEntity`'s `onDead` to be `UnityEvent`.
 - Change `BaseCharacterEntity`'s `onRespawn` to be `UnityEvent`.
 - Change `BaseCharacterEntity`'s `onLevelUp` to be `UnityEvent`.
@@ -1101,7 +1120,7 @@ This version gradually changes some codes structure, some RPC functions were mov
 - Fix wrong functions name that were set in `[InspectorButton]` attributes.
 - Fix ground detection not detect nearest ground position by change how to find ground position by set ray origin to above finding position, it was find ground position by set ray origin to finding position which sometime it won't work if ground is above finding position.
 
-### Improvements
+### Improvement
 - Rename `CharacterModelManager` -> `fpsModelOffsets` to `fpsModelPositionOffsets`, use it to set FPS hand model position offsets to camera's transform.
 - Add `fpsModelRotationOffsets` to `CharacterModelManager` component, use it to set FPS hand model rotation offsets to camera's transform.
 - Add function to pickup nearby items. Now there is a function: `OnClickPickupNearbyItems()` in `UIPickupItemList` component which showing how to use it.
@@ -1180,7 +1199,7 @@ This version gradually changes some codes structure, some RPC functions were mov
 - Fix action animation -> anim speed rate not being calcualted when attack or reload or use skill.
 - Fix cannot press activate key to enter warp portal. 
 
-### Improvements
+### Improvement
 - [MMO] Change architecture, add database manager server, central server and map server will connect to this server to manage data. So database operation will not block gameplay.
 
 ![](../images/mmo_arch.png)
@@ -1226,7 +1245,7 @@ This version gradually changes some codes structure, some RPC functions were mov
 - Fix invalid `AmmoItem` create menu and its item type.
 - Fix `UIOwningAmmoAmount` not register events correctly.
 
-### Improvements
+### Improvement
 - Update `MySqlConnector` to version `1.0`, it have an breaking changes and have to changes namespace to `MySqlConnector`. So developer have to update `FacebookAuth` or `GooglePlayAuth` packages.
 - Make it don't change item's title text color if `ItemRefine` -> `titleColor` 's alpha is 0.
 - Use `GetOrAddComponent` (from `GenericUtils` class) to codes like:
@@ -1282,7 +1301,7 @@ if (!comp)
 - Fix `PlayerCharacterController` do action on target (activate building, NPC and so on) repeatly.
 - Fix `AnimatorCharacterModel` playing action/cast skill incorrectly by add `actionStateNames` and `castSkillStateNames` settings to force it play action animation and cast skill animation by state name. For developer who made custom animator controller for `AnimatorCharacterModel`, please read **Note** section.
 
-### Improvements
+### Improvement
 - Add `onActivateBuilding` event to `BasePlayerCharacterController`, developer may add event to the action with dev extension to do something when activate custom buildings.
 - Add `onBuildingConstruct` event to `BuildingEntity`, which will trigger when building just constructed.
 - Add `applyJumpForceMode` and `applyJumpForceFixedDuration` settings to `LegacyRigidBodyEntityMovement` and `RigidBodyEntityMovement`. `applyJumpForceFixedDuration` will be used while `applyJumpForceMode` is `ApplyAfterFixedDuration` to apply jump force after define duration. While `applyJumpForceMode` is `ApplyAfterJumpDuration` it will apply jump force after played jump animation.
