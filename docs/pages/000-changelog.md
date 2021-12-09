@@ -1,3 +1,13 @@
+## 1.72c2 (2021-12-09)
+### Bug Fixes
+- Fix wrong game messages.
+- Fix players can't get items from their corpses.
+- Fix party's item sharing option not working properly.
+- Fix monster always moving while it is in a safe area.
+- Try fix item random stats not vary enough by increase range of random seed.
+
+* * *
+
 ## 1.72c (2021-12-05)
 ### Bug Fixes
 - Fix in-scene vehicle entity is being destroyed when player disconnect (it mustn't be able to be destroyed).
