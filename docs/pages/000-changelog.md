@@ -1,3 +1,15 @@
+## 1.72c4 (2021-12-10)
+### Bug Fixes
+- Fix guild/party accept/decline messages not being sent to inviter clients.
+
+### Improvements
+- Make `BaseCharacterEntity` -> `CanAttack` function to be virtual function.
+- Make `BaseCharacterEntity` -> `CanUseSkill` function to be virtual function.
+- Make `BaseCharacterEntity` -> `CanUseItem` function to be virtual function.
+- Add `noInventoryWeightLimit` to `GameInstance`, if this is `TRUE`, weight limit won't be applied. Hope it won't be cause of any new bugs.
+
+* * *
+
 ## 1.72c3 (2021-12-10)
 ### Bug Fixes
 - Fix wrong retrieving character item's `randomSeed` data type.
