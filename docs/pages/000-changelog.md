@@ -1,3 +1,9 @@
+## 1.72c3 (2021-12-10)
+### Bug Fixes
+- Fix wrong retrieving character item's `randomSeed` data type.
+
+* * *
+
 ## 1.72c2 (2021-12-09)
 ### Bug Fixes
 - Fix wrong game messages.
