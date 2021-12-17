@@ -1,3 +1,14 @@
+## 1.72c5 (2021-12-17)
+### Bug Fixes
+- Fix `UIItemAmounts` wrong item amount counting.
+- Fix game instance's `canPickupItemsWhichDropsByPlayersImmediately` option not working properly.
+- Fix move item (from inventory or storage) to empty slot with amount set not working properly.
+
+### Improvements
+- Change all character model classes to be partial class.
+
+* * *
+
 ## 1.72c4 (2021-12-10)
 ### Bug Fixes
 - Fix guild/party accept/decline messages not being sent to inviter clients.
