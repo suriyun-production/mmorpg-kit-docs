@@ -1,3 +1,44 @@
+## 1.73 (2022-01-25)
+### New Features
+- Gacha, can create gacha game data by create menu -> `Create GameData` -> `Gacha`.
+- Guild icon, can create gacha game data by create menu -> `Create GameData` -> `Guild Icon`.
+
+### Structure changes
+- Moves structs/classes codes out from `UITuples` and `UIEvents`. `UITuples` and `UIEvents` files will be removed in future version.
+- Remove `TitleB` settings from game entity because it is not neccessary for guild title anymore, I've change how it sync guild info to client, now guild info will be requested from client and will be cached at client to not request it repeatedly. This change affect `UIBaseGameEntity` component, it won't has a text component reference for the `TitleB` anymore. To show guild title and guild icon, use `UIPlayerCharacterEntityGuild` component.
+- Separate entity layers and tags, now it have `playerLayer`, `monsterLayer`, `npcLayer`, `vehicleLayer` and `vehicleTag` settings added to game instance. This can affect your project you will have to change physic layer ignoring in `CollisionIgnore` component which is usually attached to game instance component or change it in Unity's physics settings (from menu `Edit` -> `Project Settgins` -> `Physics` tab) (Or you may try to change `playerLayer`, `monsterLayer`, `npcLayer` and `vehicleLayer` to `Character`).
+
+### Bug Fixes
+- Fix networking messages between database server and app servers not being read properly.
+- Fix LAN game character not being saved when exit the game or leave from host.
+- Fix `AreaBuffEntity` and `AreaDamageEntity` not spawned on client when client just connect to server after that entities was spawn, by change them to networked object.
+- Fix wrong animation playing when attack or use skills.
+- Fix player hack attack speed while using `DefaultCharacterAttackComponent` or `DefaultCharacterUseSkillComponent` to attack.
+- Fix empty item slots can be dragged and dropped to swap position with other slots.
+
+### Improvements
+- Reduce character item packet size when syncing empty slot.
+- Reduce database query time by use synchronous query functions, because Unity's async is slow, it does not have to use async functions because database server is running separately from game server.
+- Improve `UICharacterBuffs` list filtering codes by move it to `UICharacterBuffsUtils`, it will easier to read and fix issues.
+- Improve `UICashPackages` list filtering codes by move it to `UICashPackagesUtils`, it will easier to read and fix issues.
+- Improve `UICashShop` list filtering codes by move it to `UICashShopUtils`, it will easier to read and fix issues.
+- Improve `UICharacterItems` list filtering codes by move it to `UICharacterItemsUtils`, it will easier to read and fix issues.
+- Improve `UICraftingQueueItems` list filtering codes by move it to `UICraftingQueueItemsUtils`, it will easier to read and fix issues.
+- Improve `UIItemCraftFormulas` list filtering codes by move it to `UIItemCraftFormulasUtils`, it will easier to read and fix issues.
+- Improve `UICharacterQuests` list filtering codes by move it to `UICharacterQuestsUtils`, it will easier to read and fix issues.
+- Improve `UICharacterSkills` list filtering codes by move it to `UICharacterSkillsUtils`, it will easier to read and fix issues.
+- Add `questOnGoingStatusObjects` to `UICharacterQuest` it is list for game objects which will visible while quest status is on going.
+- Add `questTasksCompleteStatusObjects` to `UICharacterQuest` it is list for game objects which will visible while quest status is tasks complete.
+- Add `questCompleteStatusObjects` to `UICharacterQuest` it is list for game objects which will visible while quest status is complete.
+- Add `questIsTrackingObjects` to `UICharacterQuest` it is list for game objects which will visible while quest is tracking.
+- Add `questIsNotTrackingObjects` to `UICharacterQuest` it is list for game objects which will visible while quest is not tracking.
+- Improve character stats text generating, now it has a `CharacterStatsTextGenerateData` partial class which you can add fields for your custom stats, then implement dev extension named `GetText` to fill text component with your custom stats data, and also add `SetStatsGenerateTextData` and `SetRateStatsGenerateTextData` dev extension methods invoking to `UIBaseEquipmentBonus` and `UICharacterStats`.
+- Add `SummonedVisualRange` to `MonsterCharacter` game data, it will be used instead of `VisualRange` while monster character entity was summoned by another character.
+- Add respawn invincible duration to character entities.
+- Improve `RigidBodyEntityMovement2D`'s WASD movement.
+
+* * *
+
 ## 1.72c5 (2021-12-17)
 ### Bug Fixes
 - Fix `UIItemAmounts` wrong item amount counting.
