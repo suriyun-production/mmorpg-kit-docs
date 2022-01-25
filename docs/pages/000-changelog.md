@@ -37,6 +37,12 @@
 - Add respawn invincible duration to character entities.
 - Improve `RigidBodyEntityMovement2D`'s WASD movement.
 
+### Note about next version
+- I will update Unity editor to 2020.3.26f1.
+- `LegacyRigidBodyEntityMovement` will be removed.
+- `LegacyCharacterAttackComponent` will be removed.
+- `LegacyCharacterUseSkillComponent` will be removed.
+
 * * *
 
 ## 1.72c5 (2021-12-17)
