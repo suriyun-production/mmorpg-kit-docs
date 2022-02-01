@@ -1,3 +1,34 @@
+## 1.73b (2022-02-02)
+### Removed components
+- `LegacyRigidBodyEntityMovement`.
+- `LegacyCharacterAttackComponent`.
+- `LegacyCharacterUseSkillComponent`.
+- `SetAssetBundleNameByAddressableGroups` because I think no one will use it, except me.
+
+### Bug Fixes
+- Fix missing text component reference in `UILanguageText` component setting.
+- Fix item skills not being usable.
+- Fix `UIItemCraftFormulas`, list entry UI not being filtered properly.
+- Fix `UIBaseEquipmentBonus`, wrong stats rate value.
+- Fix gold and custom currencies not being updated properly when player buy cash shop item.
+- Fix wrong look direction while not aiming on enemy for 2D game mode.
+- Fix instantiated equipment model activation not being updated while character riding vehicle.
+- Fix wrong guild database loading logic (MMO).
+- Fix wrong party database loading logic (MMO).
+- Fix wrong storage items database loading logic (MMO).
+- Fix wrong connection ID when send social group data to client (When the client is connecting to the server).
+
+### Improvements
+- Add `textScaleValue(TextWrapper)`, `minValue(float)`, `maxValue(float)` settings to `CameraRotationSpeedScaleSetting` component, it is a component that I use for camera rotation speed scale setting for each kind of zooming.
+- Add `setEffectLayerFollowEntity(bool)` and `effectLayer` settings to `GameEntityModel`, if `setEffectLayerFollowEntity` is `TRUE` (it default value is `TRUE`), it will set effect layer follow entity's layer (An `PlayerCharacterEntity`/`MonsterCharacterEntity`/`VehicleEntity`/and so on).
+- Add `setEquipmentLayerFollowEntity(bool)` and `equipmentLayer` settings to `BaseCharacterModel`, if `setEquipmentLayerFollowEntity` is `TRUE` (it default value is `TRUE`), it will set equipment layer follow entity's layer (An `PlayerCharacterEntity`/`MonsterCharacterEntity`/`VehicleEntity`/and so on).
+
+### Note about next version
+- I will really update Unity editor to 2020.3.26f1.
+- I will focus on character movement and attacking player's experience improvement.
+
+* * *
+
 ## 1.73 (2022-01-25)
 ### New Features
 - Gacha, can create gacha game data by create menu -> `Create GameData` -> `Gacha`.
