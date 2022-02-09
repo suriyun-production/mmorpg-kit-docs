@@ -1,3 +1,13 @@
+## 1.73c (2022-02-09)
+### Bug Fixes
+- Fix reloading cause character freezing.
+- Fix wrong skill requirement value.
+
+### Improvements
+- Add `UIBuff` reference to `UICharacterItem`, use it for potion buff data showing.
+
+* * *
+
 ## 1.73b (2022-02-02)
 ### Removed components
 - `LegacyRigidBodyEntityMovement`.
