@@ -1,3 +1,49 @@
+## 1.74b (2022-04-18)
+### Bug Fixes
+- Fix character's attributes cannot be increased (wrong condition in UI component).
+
+* * *
+
+## 1.74 (2022-04-18)
+### Entity State Syncing Changes
+In this version, entity state syncing was changed, now client will send movement input, and action input (such as attack/use skill/reload) at the same time then when the server receive input from client it will process it and sync updated state later.
+
+### Hit Registration Changes
+In this version client will tell server when sphere cast hit or raycast hit other damageable entity (when missile damage entity hit still same with the old version) then server will validate it by roll back hitboxes based on client RTT, I did it to improve players experience, if you want to change how it register hit and validate, you can create class which implements `IHitRegistrationManager` (you can look at `DefaultHitRegistrationManager` to see how I implement it) and attach to the same game object with map network manager (`LanRpgNetworkManager`/`MapNetworkManager`) to use it.
+
+### Dev Extension Methods Changes
+I've added `GameExtensionInstance` class, we will use it to extend some functionality without core's codes changes because it will contain static delegate functions which will be invoked by other parts, for now, it have `onAddCharacterStats`, `onMultiplyCharacterStatsWithNumber`, `onMultiplyCharacterStats` and `onRandomCharacterStats` delegates. I also remove `CharacterStats` dev extension methods invoking and using the mentioned delegates functions to improve performance, you can see how to extend it in `DevExtDemo_GameExtensionInstance` and `DevExtDemo_CharacterStats`.
+
+### Missile Damage Entity Changes
+Now missile damage entity will use physics casting functions instead of collider component with trigger events, you can set `hitDetectionMode` to `Raycast` or `SphereCast` or `BoxCast`, it will casting from current position to last frame position to find hitting objects. In this version also have `ProjectileDamageEntity` which made by `moepi2k` added.
+
+### Minimap Improvement
+In this version, you can make minimap texture by using a tool that will capture images from the opened scene, you can access the tool from menu `MMORPG KIT/Minimap Creator` or by a component named `MinimapCreator`. The captured minimap texture will be used by `MinimapRenderer` component which is a component that will create `SpriteRenderer` and set the minimap texture as its rendering sprite. So now it can render minimap without rendering all map objects by just rendering the minimap sprite but you still have to set the minimap camera's culling mask to show the minimap sprite renderer and other minimap objects (such as character markers). The `MinimapRenderer` will be attached to `MinimapCamera` in the demo.
+
+### Auto Use Potion Item Setting
+In this version, I've added `AutoUseKey` to `IPotionItem` so you can set key to potion items, the key will being used by `AutoUsePotion` component to use potion automatically by defined condition. For example, if you have `HpPotionItem`, its `AutoUseKey` is `HpPotion`. Then in `AutoUsePotion` component, its `conditionType` is `Hp`, its `useWhenRateLessThan` is `0.5`, its `key` is `HpPotionItem`. Then while playing, if your character's HP < 50% it will use `HpPotionItem`.
+
+### Client Authoritative Entity Movement will be validated at server
+
+### Bug Fixes
+- Fix wrong use skill requirement calculation. (In `BaseSkill` -> `CanUse` function).
+- Fix FPS Model's jump and pickup animations not playing.
+- Fix chat messages missing when enter new messages after changed scene.
+- Fix unapplicable serializable callback by change `NpcDialogConditionData` to be `SerializableCallback<CharacterId (string), conditionPassResult (bool)>`.
+- Fix missing guild title format in `UIPlayerCharacterEntityGuild`.
+
+### Improvements
+- Add more skill level up requirement, now you can set required skill point, and required gold.
+- Add `onBeforeUseSkillHotkey` and `onBeforeUseItemHotkey` events to `PlayerCharacterController` and `ShooterPlayerCharacterController`.
+- Add `onAfterUseSkillHotkey` and `onAfterUseItemHotkey` events to `PlayerCharacterController` and `ShooterPlayerCharacterController`.
+- Add `buffToUserIfNoTarget` and `cannotBuffEnemy` to `Skill` setting, it will being used while `Skill`'s `skillBuffType` is `SkillBuffType.BuffToTarget`.
+- Add `clearSkillCooldownOnDead` setting to `GameInstance`, if this is `TRUE` it will clear skill cooldown when character dead.
+- Add timestamp to chat messages.
+- Add `limitSurfaceHitNormalAngle`, `limitSurfaceHitNormalAngleMin` and `limitSurfaceHitNormalAngleMax` to `BuildingEntity` to limit surface angle while constructing the building to not allow to constructing on a slope by the settings.
+- Add `startAttackDistance` setting to `DamageInfo`, it is a distance to start an attack, this does NOT distance to hit and apply damage, this value should be less than `hitDistance` or `missileDistance` to make sure it will hit the enemy properly. If this value <= 0 or > `hitDistance` or `missileDistance` it will re-calculate by `hitDistance` or `missileDistance`
+
+* * *
+
 ## 1.73c (2022-02-09)
 ### Bug Fixes
 - Fix reloading cause character freezing.
