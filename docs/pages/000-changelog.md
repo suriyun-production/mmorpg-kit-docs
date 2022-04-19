@@ -1,3 +1,11 @@
+## 1.74c (2022-04-19)
+### Bug Fixes
+- Fix `MinimapCreator` create button not working properly.
+- Fix wrong seed number when register hits.
+- Fix wrong physics casting direction for `MissileDamageEntity`.
+
+* * *
+
 ## 1.74b (2022-04-18)
 ### Bug Fixes
 - Fix character's attributes cannot be increased (wrong condition in UI component).
