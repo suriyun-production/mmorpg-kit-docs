@@ -160,9 +160,20 @@ public partial class PlayerCharacterEntity
 
 ## Support functions for CharacterStats struct
 
-**Implemented dev extension functions**
-- CharacterStats Add(CharacterStats a, CharacterStats b)
-- CharacterStats Multiply(CharacterStats a, float multiplier)
+It has no dev extension invoking for `CharacterStats` struct, but it has static delegate functions in `GameExtensionInstance` class, there are:
+
+- onAddCharacterStats(ref CharacterStats a, CharacterStats b)
+- onMultiplyCharacterStatsWithNumber(ref CharacterStats a, float b)
+- onMultiplyCharacterStats(ref CharacterStats a, CharacterStats b)
+
+*You can see `DevExtDemo_GameExtensionInstance.cs` and `DevExtDemo_CharacterStats.cs` as example.*
+
+## Supoort function for ItemRandomBonusCache class
+
+It has no dev extension invoking for `ItemRandomBonusCache` class, but it has static delegate functions in `GameExtensionInstance` class, there are:
+
+- onRandomCharacterStats(System.Random random, ItemRandomBonus randomBonus, RandomCharacterStats randomStats, ref CharacterStats stats, ref int appliedAmount)
+
 
 * * *
 
@@ -174,14 +185,14 @@ public partial class PlayerCharacterEntity
 
 * * *
 
-## Support functions for BuildingSaveDataExtension
+## Support functions for BuildingSaveDataExtensions
 
 **Implemented dev extension functions**
 - static void CloneTo(IBuildingSaveData from, IBuildingSaveData to)
 
 * * *
 
-## Support functions for PlayerCharacterDataExtension
+## Support functions for PlayerCharacterDataExtensions
 
 **Implemented dev extension functions**
 - static void CloneTo(IPlayerCharacterData from, IPlayerCharacterData to)
