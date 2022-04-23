@@ -31,6 +31,9 @@ In this version, you can make minimap texture by using a tool that will capture 
 ### Auto Use Potion Item Setting
 In this version, I've added `AutoUseKey` to `IPotionItem` so you can set key to potion items, the key will being used by `AutoUsePotion` component to use potion automatically by defined condition. For example, if you have `HpPotionItem`, its `AutoUseKey` is `HpPotion`. Then in `AutoUsePotion` component, its `conditionType` is `Hp`, its `useWhenRateLessThan` is `0.5`, its `key` is `HpPotionItem`. Then while playing, if your character's HP < 50% it will use `HpPotionItem`.
 
+### Change XXXExtension class file name to XXXExtensions
+Such as `CharacterDataExtension` to `CharacterDataExtensions`, `PlayerCharacterDataExtension` to `PlayerCharacterDataExtensions`.
+
 ### Client Authoritative Entity Movement will be validated at server
 
 ### Bug Fixes
