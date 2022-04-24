@@ -1,3 +1,10 @@
+## 1.74d (2022-04-24)
+### Bug Fixes
+- Fix `RigidbodyEntityMovement` and `CharacterControllerEntityMovement` keep jumping when client start jumping.
+- Add missing `Init` invoking to `MySQLDatabase`.
+
+* * *
+
 ## 1.74c (2022-04-19)
 ### Bug Fixes
 - Fix `MinimapCreator` create button not working properly.
