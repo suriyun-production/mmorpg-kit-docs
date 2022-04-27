@@ -1,3 +1,12 @@
+## 1.74e (2022-04-26)
+### Bug Fixes
+- Fix position sync issues when driving vehicles.
+- Fix action not being triggered while animation's trigger rate is 0.
+- Fix player's character not being saved immediately when exit game (`LanRpgNetworkManager`).
+- Fix share EXP and items by characters distant not working properly.
+
+* * *
+
 ## 1.74d (2022-04-24)
 ### Bug Fixes
 - Fix `RigidbodyEntityMovement` and `CharacterControllerEntityMovement` keep jumping when client start jumping.
