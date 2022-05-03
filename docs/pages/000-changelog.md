@@ -1,3 +1,20 @@
+## 1.75 (2022-05-03)
+### Add chat bubble
+Add `UIChatBubbleManager` component which you may attach it to the same game object with `UISceneGameplay` prefab. It will instantiates `UIChatMessage` by prefabs that being set in `UIChatBubbleManager` to `PlayerCharacterEntity` -> `chatBubbleTransform`.
+So you will have to set `PlayerCharacterEntity` -> `chatBubbleTransform` too, create a child transform and may set it above of your character's head and set that transform to the reference field.
+
+### Skill requirement structure changes
+With the old skill requirement, we can't set vary `attributeAmounts` and `skillLevels` for each level, so I change structure to make it able to do it, by add `requirementEachLevels` to `BaseSkill` it is array of requirement each level.
+But still keep old skill requirement as a tool for generate a new `requirementEachLevels` list.
+
+### Bug Fixes
+- Fix wrong character listing when create a new character (MMO).
+- Fix null data while attacking with `Hit Only Selected Target` melee damage info.
+- Fix dead party members still receives EXP.
+- Fix `Game Spawn Area` not working properly (wrong random level, not vary random level).
+
+* * *
+
 ## 1.74e (2022-04-26)
 ### Bug Fixes
 - Fix position sync issues when driving vehicles.
