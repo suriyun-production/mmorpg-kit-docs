@@ -1,3 +1,14 @@
+## 1.75b (2022-05-05)
+### Bug Fixes
+- Fix wrong skill level up requirement calculation in `UISkillRequirement`.
+
+### Improvements
+- Add `currencyAmounts` setting to skill's level up requirement setting, if character don't have enough currencies it won't be able to level up, and when level up, currencies will be decreased by the setting.
+- Add `itemAmounts` setting to skill's level up requirement setting, if character don't have enough items it won't be able to level up, and when level up, items will be decreased by the setting.
+- Add `disallow` setting to skill's level up requirement setting, set it to `TRUE` to disallow level up, you may use it in case you want character to learn skill from other ways such as use skill or talk to NPC.
+
+* * *
+
 ## 1.75 (2022-05-03)
 ### Add chat bubble
 Add `UIChatBubbleManager` component which you may attach it to the same game object with `UISceneGameplay` prefab. It will instantiates `UIChatMessage` by prefabs that being set in `UIChatBubbleManager` to `PlayerCharacterEntity` -> `chatBubbleTransform`.
