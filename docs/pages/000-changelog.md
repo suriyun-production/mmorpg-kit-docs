@@ -1,3 +1,17 @@
+## 1.75c (2022-05-06)
+### Bug Fixes
+- Fix `ProjectileDamageEntity` not hit entity properly.
+
+### Improvements
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to item refine settings.
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to item repair settings.
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to item dismantle settings.
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to item crafting settings.
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to sockted item removal settings.
+- Implement `requireCurrencies` (custom currencies) and `requireItems` to guild creating settings.
+
+* * *
+
 ## 1.75b (2022-05-05)
 ### Bug Fixes
 - Fix wrong skill level up requirement calculation in `UISkillRequirement`.
