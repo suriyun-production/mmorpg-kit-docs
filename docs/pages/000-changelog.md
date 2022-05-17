@@ -1,3 +1,13 @@
+## 1.75d (2022-05-18)
+### Bug Fixes
+- Fix wrong skill level-up requirement UI's skill level calculation.
+- Fix wrong skill point amount when reset skills.
+- Fix wrong condition to invokes NPC UI extension's events.
+- Fix missing refine item data when have not enough currency amount.
+- Fix combat texts not being updated while input field is active.
+
+* * *
+
 ## 1.75c (2022-05-06)
 ### Bug Fixes
 - Fix `ProjectileDamageEntity` not hit entity properly.
