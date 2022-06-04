@@ -1,13 +1,4 @@
-* * *
-
-MMORPG KIT — Getting Started (Singleplayer/LAN)
-===============================================
-
-### \*\*\* FOR UNITY 2018.2.17 or above, you have to find and remove System.Data.dll file \*\*\*
-
-![](https://cdn-images-1.medium.com/max/1600/1*bEMmwqy8w8lBwIzeS8PiVA.png)
-
-* * *
+# MMORPG KIT — Getting Started (Singleplayer/LAN)
 
 1.  Before import the package, you should to set **Scripting Runtime Version** to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
 
@@ -23,9 +14,9 @@ If there is no **.NET 4.x** choice in **Api Compatibility Level**, you should t
 
 * * *
 
-2\. Then import the package
+2. Then import the package package manager, if you are using Unity 2021, you have to do follows [this](pages/151-working-with-2021.md)
 
-3\. Then we’re going to build the test demo
+3. Then we’re going to build the test demo
 
 Click menu **File -> Build Settings**
 
@@ -37,11 +28,11 @@ Then drag **00Init, 01Home, Map001** scenes to **Build Settings** dialog
 
 Then press **Build** to build it
 
-4\. Now you can try a game, create your first character
+4. Now you can try a game, create your first character
 
 ![](https://cdn-images-1.medium.com/max/1600/0*O8ega95yhy_WA5TM)
 
-5\. Then start game
+5. Then start game
 
 ![](https://cdn-images-1.medium.com/max/1600/0*f5dB79OpE8_V1MrE)
 
