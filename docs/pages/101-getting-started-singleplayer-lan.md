@@ -17,17 +17,19 @@ After that, The Import dialog will be shown, Press `Import` to import the packag
 
 ![](../images/101/003.png)
 
+* * *
+
+## Use Unity 2021?
+
 If you are using Unity 2021, you have to do follows [this](pages/151-working-with-2021.md)
 
-Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
-
 * * *
+
+Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
 
 ![](../images/101/004.png)
 
 To test the demo, scene named `00Init` must be the first that enabled in the list, it's also have to add and enable `01Home`, `Map01` and `Map02` scenes
-
-* * *
 
 ![](../images/101/005.png)
 
