@@ -1,3 +1,17 @@
+## 1.75e (2022-06-06)
+### Bug Fixes
+- Fix player's character not being destroyed in instance map when player exit from game and re-enter again.
+- Fix ground damage apply at first frame when character's spawned.
+- Fix monster's target never switch.
+- Fix wrong attack direction while character model's hit trigger duration rate is 0.
+
+### Improvements
+- Move codes from `BaseCharacterEntity_NetworkSetup` to `BaseCharacterEntity_NetworkData`.
+- Move codes from `BasePlayerCharacterEntity_NetworkSetup` to `BasePlayerCharacterEntity_NetworkData`.
+- Add `MobileWithKeyInputs` option to `TestInEditorMode` in `GameInstance`, while `TestInEditorMode` is `MobileWithKeyInputs` you will be able to press keyboard's keys to controls character with mobile virtual joystick is enabled.
+
+* * *
+
 ## 1.75d (2022-05-18)
 ### Bug Fixes
 - Fix wrong skill level-up requirement UI's skill level calculation.
