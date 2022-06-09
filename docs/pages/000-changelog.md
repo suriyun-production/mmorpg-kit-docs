@@ -1,3 +1,20 @@
+## 1.75f (2022-06-09)
+### Bug Fixes
+- Fix `requireCurrencies` (custom currencies) not being shown in item refine settings.
+- Fix `requireCurrencies` (custom currencies) not being shown in item repair settings.
+- Fix `requireCurrencies` (custom currencies) not being shown in item crafting settings.
+- Fix `requireCurrencies` (custom currencies) not being shown in sockted item removal settings.
+- Fix issues when equip item in extra slots decreasing the extra slots can duplicate itself.
+
+### Improvements
+- Change `CharacterDeathSoundComponent`'s volume setting, now it will load setting from audio manager.
+- Set minimum reward amount to `Quest` game data, so for the case like when user set reward item amount to `0`, it will be set to `1` automatically.
+- Set minimum reward amount to `CashShopItem` game data, so for the case like when user set receive item amount to `0`, it will be set to `1` automatically.
+- Add `CurrentMoveSpeed` property to `IEntityMovement`, so we can get current move speed from entity, entity movement components.
+- Implement functionality to allow user to add conditions to allow to build an building to building area, you can create class which extended from `BaseBuildConditionForBuildingArea` to and set it into `BuildingArea`'s `buildConditions` to add the conditions.
+
+* * *
+
 ## 1.75e (2022-06-06)
 ### Bug Fixes
 - Fix player's character not being destroyed in instance map when player exit from game and re-enter again.
