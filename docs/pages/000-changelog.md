@@ -1,3 +1,30 @@
+## 1.76 (2022-07-06)
+### Bug Fixes
+- Fix wrong map's name when save buildings (MMO).
+- Fix character entity's `IsCharging` state not being set to `FALSE` after charged.
+- Fix monster's target never switch, and also add `switchTargetDelay` option to `MonsterActivityComponent`.
+- Fix wrong `NpcDialogConditionType.QuestOngoing` condition.
+- Fix `PlayableCharacterModel`'s charge played and transition to idle, it should be played and stop at last frame.
+- Fix jitter entity movement, it's kind of clients simulating issues.
+- Fix jump input not being applied at server sometime.
+
+### Improvements
+- Implement friend request/accept/decline and its notification.
+- Change `BaseCharacterEntity` -> `Mount` function to be virtual.
+- Improve attack layer setting by add `attackObstacleLayers` option to `GameInstance`, it will being used as a raycast's layer mask. 
+- Change `CharacterFootstepSoundComponent`'s volume setting, now it will load setting from audio manager.
+- Change `GameEffect`'s volume setting, now it will load setting from audio manager.
+- Change functions in `UINetworkSceneLoading` to be virtual.
+- Change functions in `UISceneLoading` to be virtual.
+- Change `BasePlayerCharacterEntity` -> `ChangeQuestTracking`, `AcceptQuest`, `AbandonQuest` and `CompleteQuest` functions to be virtual.
+- Change how `PlayableCharacterModel` working, now it won't create all states on initializing, it will create only states that being used (for playing and transitioning).
+- Add `leftHandWieldingWeaponAnimations` to `PlayableCharacterModel`, plan to use it in case that player equip weapon at right-hand, then in left-hand it has a torch, then animation in left-hand will overrides other animation by keep playing torch hold aniamtion (I didn't test it yet).
+- Add `customAnimations` to `PlayableCharacterModel`, plan to use it to play any custom animation such as dance, kneel, nod, use it for character emotes animation (it don't has a function which order it to play yet).
+- Smooth character turning, if you want to change setting, you can do it in `PlayerCharacterController` -> `turnSmoothSpeed`. For other controller such as `ShooterPlayerCharacterController` don't have this option, because its movement controlling are differences.
+- Improve `NavMeshEntityMovement`'s WASD controlling, now it is a lot smoother.
+
+* * *
+
 ## 1.75f (2022-06-09)
 ### Bug Fixes
 - Fix `requireCurrencies` (custom currencies) not being shown in item refine settings.
