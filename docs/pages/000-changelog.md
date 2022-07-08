@@ -1,3 +1,19 @@
+## 1.76b (2022-07-07)
+### Bug Fixes
+- Fix `CharacterFootstepSoundComponent` sounds not being played while character is under water properly.
+
+### Improvements
+- Improve `PlayableCharacterModel` to don't transition to the same animation clip.
+- Add `enableDropItemAction` option to `UICharacterItemDragHandler`, enable it to drop item when drop the dragged UI.
+- Add `enableUnequipItemAction` option to `UICharacterItemDragHandler`, enable it to unequip item when drop the dragged UI.
+- Add `enableMoveFromStorageAction` option to `UICharacterItemDragHandler`, enable it to move item from storage when drop the dragged UI.
+- Add `enablePickupFromContainerAction` option to `UICharacterItemDragHandler`, enable it to pick up item from container when drop the dragged UI.
+- Add `enableUnassignHotkeyAction` option to `UICharacterItemDragHandler`, enable it to unassign hotkey when drop the dragged UI.
+- Add `enableUnassignHotkeyAction` option to `UICharacterSkillDragHandler`, enable it to unassign hotkey when drop the dragged UI.
+- Add `maxDistanceFromSpawnPoint` option to  `MonsterActivityComponent`, set max distance to allow monster to move from spawn point, if it's <= 0, it will be determined that it is no limit.
+
+* * *
+
 ## 1.76 (2022-07-06)
 ### Bug Fixes
 - Fix wrong map's name when save buildings (MMO).
