@@ -1,3 +1,13 @@
+## 1.76c (2022-07-08)
+### Bug Fixes
+- Fix `CharacterControllerEntityMovement` and `RigidBodyEntityMovement` wrong character turning simulation.
+- Fix `UIList` wrong entries activation updating.
+
+### Improvements
+- Pass weapon, skill, and skill level to `CharacterEntity` -> `ReceivedDamage` when apply damage by buff/debuff.
+
+* * *
+
 ## 1.76b (2022-07-07)
 ### Bug Fixes
 - Fix `CharacterFootstepSoundComponent` sounds not being played while character is under water properly.
