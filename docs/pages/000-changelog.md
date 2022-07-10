@@ -1,3 +1,9 @@
+## 1.76c4 (2022-07-09)
+### Bug Fixes
+- Fix reload animation not playing locally.
+
+* * *
+
 ## 1.76c (2022-07-08)
 ### Bug Fixes
 - Fix `CharacterControllerEntityMovement` and `RigidBodyEntityMovement` wrong character turning simulation.
