@@ -1,3 +1,12 @@
+## 1.76d (2022-07-12)
+### Bug Fixes
+- Fix character input state not being sent to server when it just change extra movement states (crouch/crawl and so on).
+- Fix character keep reloading while there is no ammo in inventory.
+
+**I am on vacation for 2 weeks, will be back at 26 Jul**
+
+* * *
+
 ## 1.76c4 (2022-07-09)
 ### Bug Fixes
 - Fix reload animation not playing locally.
