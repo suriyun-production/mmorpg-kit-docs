@@ -1,3 +1,9 @@
+## 1.76d2 (2022-07-13)
+### Bug Fixes
+- Avoid null `uiContainer` data error which breaks next proceeding.
+
+* * *
+
 ## 1.76d (2022-07-12)
 ### Bug Fixes
 - Fix character input state not being sent to server when it just change extra movement states (crouch/crawl and so on).
