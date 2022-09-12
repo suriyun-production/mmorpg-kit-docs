@@ -11,8 +11,8 @@ This project is prepared following stats:
 * **Stamina** required to sprint (you actaully can use it as skill usage requirement too)
 * **Stamina Recovery**
 * **Stamina Leech Rate**
-* **Food** this will being used in survival games, if this value reduced to at some rate, it can reduce **Hp**
-* **Water**
+* **Food** this will be used in survival games, if this value is decreased at some rate, it can decrease **Hp** up to how you setup your game rule
+* **Water** this will be used in survival games, if this value is decreased at some rate, it can decrease **Hp** up to how you setup your game rule
 * **Accuracy** add chances to hit enemies
 * **Evasion** add chances to evade enemies
 * **Cri Rate** chances to occurs critical damage
@@ -26,5 +26,5 @@ This project is prepared following stats:
 * **Gold Rate** increase gold drop rate
 * **Exp Rate** increase exp increase rate
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3ODUzODc1NF19
+eyJoaXN0b3J5IjpbLTEwNDIxMjIwMzddfQ==
 -->
