@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — In-App Purchasing
-==============================
+# MMORPG KIT — In-App Purchasing
 
 For now, the In-App Purchasing is integrated for MMO mode only (Singleplayer/LAN will not works)
 
@@ -23,13 +20,13 @@ If you don’t want to use In-App Purchasing for your game, you can turn off Pur
 
 ![](https://cdn-images-1.medium.com/max/1600/1*TXIj6Wdhvp3Wa2gaLQP4iA.png)
 
-Open Services tab then link your app then turn this off
+Open Services tab then link your app then turn this off
 
 And you may remove button from CanvasGameplay / CanvasGameplay\_Survival / CanvasGameplayMobile / CanvasGameplayMobile\_Survival
 
 ![](https://cdn-images-1.medium.com/max/1600/1*vzikaUwY9spZarfHgqzhSw.png)
 
-Drag canvas prefabs that you want to remove cash shop button then find for ButtonCashShop then remove it
+Drag canvas prefabs that you want to remove cash shop button then find for ButtonCashShop then remove it
 
 * * *
 
@@ -42,9 +39,9 @@ All products above have to place in Cash Shop Database to make it available to s
 
 * * *
 
-#### **How to create Cash Shop Database**
+#### **How to create Cash Shop Database**
 
-You can create new cash package by right click in `Project` window select   
+You can create new cash package by right click in `Project` window select   
 **Create -> Create CashShop -> CashPackageDatabase** (The menu name should be CashShopDatabase I will change it later)
 
 ![](https://cdn-images-1.medium.com/max/1600/1*6PF7I3f4uSmmfrjXIAQyWA.png)
@@ -57,9 +54,9 @@ Then you will add an cash packages / cash shop items that you want to this datab
 
 * * *
 
-#### **How to create Cash package**
+#### **How to create Cash package**
 
-You can create new cash package by right click in `Project` window select   
+You can create new cash package by right click in `Project` window select   
 **Create -> Create CashShop -> CashPackage**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*6LVDQ5OpHHsyXRmD4eqqTA.png)
@@ -76,9 +73,9 @@ Then add it to **Cash Shop Database**
 
 * * *
 
-#### How to create Cash Shop Item
+#### How to create Cash Shop Item
 
-You can create new cash shop item by right click in `Project` window select   
+You can create new cash shop item by right click in `Project` window select   
 **Create -> Create CashShop -> CashShopItem**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*RvGtZZgMcWtuBVwiFwi00g.png)
@@ -94,3 +91,6 @@ Then set variables
 *   Receive Items, items player will receive when buy this package
 
 Then add it to **Cash Shop Database**
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTcxODM1MzAzXX0=
+-->
