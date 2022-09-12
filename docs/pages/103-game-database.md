@@ -29,7 +29,7 @@ This is database which store an game data, now there are following things that r
 There are 2 types of built-in game database that can be created:
 
 *   `Game Database`, with this game database you can set an game data to game database by drag created game data into its fields. You can create this kind of game database by right click in `Project` window, choose `Create -> GameDatabase -> Game Database`
-*   `Resources Folder Game Database`, with this game database you can set an game data to game database by create an game data in `Resources` folder (the folder with name `Resources` which can be created anywhere in Assets). You can create this kind of game database by right click in `Project` window, choose `Create -> GameDatabase -> Resources Folder Game Database`
+*   `Resources Folder Game Database`, with this game database you can set an game data to game database by create an game data in `Resources` folder (the folder with name `Resources` which can be created anywhere in `Assets` folder). You can create this kind of game database by right click in `Project` window, choose `Create -> GameDatabase -> Resources Folder Game Database`
 
 ![](../images/create-game-database-menu.png)
 
@@ -37,13 +37,17 @@ There are 2 types of built-in game database that can be created:
 
 ## Game Database Management Editor
 
-You can manage game data with game database management editor, which is a dialog which help your to find game data easily (and also have buttons for create, duplicate, delete game data), you can open the dialog by menu `MMORPG KIT -> Game Database`, after you select the menu, it will show a dialog to select your game database, then after selected your game database, it will shows list of all game data and its settings.
+You can manage game data with game database management editor, which is a dialog which help your to find game data easily (and also have buttons for create, duplicate, delete game data)
 
 The game database management editor was made for `Game Database` only, so if you uses `Resources Folder Game Database`, you won't be able to manage with game database management editor.
 
 You can open the editor via menu `MMORPG KIT -> Game Database`
 
 ![](../images/game-database-editor.png)
+
+After you select the menu, it will show a dialog to select your game database, then after selected your game database, it will shows list of all game data and its settings.
+
+![](../images/game-database-editor-2.png)
 
 * * *
 
@@ -82,5 +86,5 @@ And call following functions to add game data to game instance to use in gamepla
 
 **It might have other functions to add game data, game entity to game instance which I didn't add to this document**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjkzMzg3MDhdfQ==
+eyJoaXN0b3J5IjpbMzcyMTY0NDc2XX0=
 -->
