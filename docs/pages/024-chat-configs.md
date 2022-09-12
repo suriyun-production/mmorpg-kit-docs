@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Chat Configs
-=========================
+# MMORPG KIT — Chat Configs
 
 With this project it’s currently have following chat channels there are:
 
@@ -24,3 +21,6 @@ For chat commands, you can customize them in **UI Chat Handler**.
 For the demo, I’ve attached it to **CanvasGameplay -> Chat**, so if you want to customize it, you have to drag **CanvasGameplay** prefab to any scene then find for **UIChatHandler** then changes configs
 
 ![](https://cdn-images-1.medium.com/max/1600/1*1xb60jN5hJzXry6lnVOO6g.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIzNDQyNDc2MV19
+-->
