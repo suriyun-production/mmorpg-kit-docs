@@ -8,7 +8,7 @@ You can create interactable objects by create a new component which implements f
 ## Function Description
 
 ### Shared for all interfaces
-- **SetAsTargetInOneClick** - This must return `TRUE`, if you want controller to set this entity as target immediately in one click. if it is `FALSE`, first click will select it for information viewing, second will set it as target. for an item drop entities this will returns `TRUE` because, it
+- **SetAsTargetInOneClick** - This must return `TRUE`, if you want controller to set this entity as target immediately in one click. if it is `FALSE`, first click will select it for information viewing, second will set it as target. For example an item drop entities this will returns `TRUE` because, it can just pickup an items immediately it one-click, it is not like monster or other entities which should wait player to decide to attack or do something.
 
 ### IActivatableEntity
 
@@ -16,5 +16,5 @@ You can create interactable objects by create a new component which implements f
 
 ### IPickupActivatableEntity
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjIzODAzN119
+eyJoaXN0b3J5IjpbMTk2OTgxNDY5MV19
 -->
