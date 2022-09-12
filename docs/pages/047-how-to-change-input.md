@@ -1,7 +1,4 @@
-* * *
-
-How to change input
-==============
+# How to change input
 
 This project was override input system to make it able to set input keys for difference platform (PC/Mac/Mobile) easily
 
@@ -17,3 +14,6 @@ Then set following keys to Project Settings -> Input
 *   **Jump** key for jump
 *   **FindEnemy** key for find enemy
 *   **Reload** key for reload gun
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg0NjIzOTc4NF19
+-->
