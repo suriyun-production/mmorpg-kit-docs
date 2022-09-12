@@ -1,6 +1,6 @@
 # Playable Character Model
 
-This component was made by using Unity's [Playable API](https://docs.unity3d.com/Manual/Playables.html), recommend to using it over animator character model, you can convert from animator character model to this by context menu -> 
+This component was made by using Unity's [Playable API](https://docs.unity3d.com/Manual/Playables.html), recommend to using it over animator character model, you can convert from animator character model to this by context menu -> `Convert To Playable Character Model`.
 
 * * *
 
@@ -123,5 +123,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzExMjkyMDldfQ==
+eyJoaXN0b3J5IjpbLTE4MzcwMTg4NzldfQ==
 -->
