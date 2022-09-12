@@ -28,13 +28,7 @@ Then set map scene, and other settings
 * **Player Dead Drops Equip Weapons** - When character dead, it will drop equipping weapons or not?
 * **Player Dead Drops Equip Items** - When character dead, it will drop equipping items or not?
 * **Player Dead Drops Non Equip Items** - When character dead, it will drop non equipping items or not?
-        #endregion
-
-        #region Item Drop Rules
-        [Category("Item Drop Rules")]
-        [SerializeField]
-        private List<BaseItem> excludeItems = new List<BaseItem>();
-        public List<BaseItem> ExcludeItems { get { return excludeItems; } }
+* **Exclude Items** - These items will be excluded when monster dropping items
 
         [SerializeField]
         private List<AmmoType> excludeAmmoTypes = new List<AmmoType>();
@@ -94,5 +88,5 @@ Then set map scene, and other settings
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2NjM2NjUzLDUwNTQwNzI5NF19
+eyJoaXN0b3J5IjpbLTE4MTczNTg1NjcsNTA1NDA3Mjk0XX0=
 -->
