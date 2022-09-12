@@ -37,9 +37,11 @@ There are 2 types of built-in game database that can be created:
 
 ## Game Database Management Editor
 
+You can manage game data with game database management editor, which is a dialog which help your to find game data easily (and also have buttons for create, duplicate, delete game data), you can open the dialog by menu `MMORPG KIT -> Game Database`, after you select the menu, it will show a dialog to select your game database, then after selected your game database, it will shows list of all game data and its settings.
+
 The game database management editor was made for `Game Database` only, so if you uses `Resources Folder Game Database`, you won't be able to manage with game database management editor.
 
-You can open the editor via menu `MMORPG KIT` -> `Game Database`
+You can open the editor via menu `MMORPG KIT -> Game Database`
 
 ![](../images/game-database-editor.png)
 
@@ -79,3 +81,6 @@ And call following functions to add game data to game instance to use in gamepla
 *   `GameInstance.AddFactions` add factions to game instance.
 
 **It might have other functions to add game data, game entity to game instance which I didn't add to this document**
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1NjkzMzg3MDhdfQ==
+-->
