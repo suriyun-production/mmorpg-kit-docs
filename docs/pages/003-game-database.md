@@ -49,12 +49,12 @@ Then set your **Game Database** to **Game Instance** component in init scene (Fo
 
 ## Manage Game Data with Game Database Dialog
 
-You can manage game data with game database dialog by menu `MMORPG KIT -> Game Database`, after you select the menu, it will show a dialog to select your game database, then after selected your game database, it will shows list of all game data and its settings
+You can manage game data with game database dialog, which is a dialog which help your to find game data easily (and also have buttons for create, duplicate, delete game data), you can open the dialog by menu `MMORPG KIT -> Game Database`, after you select the menu, it will show a dialog to select your game database, then after selected your game database, it will shows list of all game data and its settings
 
 ## Load Game Data From Resources Folder
 I actaully not recommend to do this, but if you don’t want to use **Game Database**, and you just want to create game data and put into **Resources** folder, then leave **Game Database** in **Game Instance** component to be empty
 
 Then when game start it will load all game data which is located in **Resources** folder
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NzM2Nzc2OCwtMzQ5NzQ0MDQxXX0=
+eyJoaXN0b3J5IjpbOTg2MDIxOTgxLC0zNDk3NDQwNDFdfQ==
 -->
