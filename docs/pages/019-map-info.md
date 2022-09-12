@@ -21,18 +21,9 @@ Then set map scene, and other settings
 
 ![](https://cdn-images-1.medium.com/max/1600/0*qlyeR8iDp88w6MDT)
 
-
-
-        [Tooltip("This will be used when new character has been created, and this map data is the start map")]
-        [SerializeField]
-        private Vector3 = Vector3.zero;
-        public virtual Vector3 StartPosition { get { return startPosition; } }
-
-        [Tooltip("This will be used when new character has been created, and this map data is the start map")]
-        [SerializeField]
-        private Vector3 startRotation = Vector3.zero;
-        public virtual Vector3 StartRotation { get { return startRotation; } }
-        #endregion
+**Other Settings**
+* **Start Position** - This will be used when new character has been created to set its position, and this map data is the start map
+* **Start Rotation** - This will be used when new character has been created to set its rotation, and this map data is the start map
 
         #region Character Death Rules
         [Category("Character Death Rules")]
@@ -121,5 +112,5 @@ Then set map scene, and other settings
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDIwMTQ5MTEsNTA1NDA3Mjk0XX0=
+eyJoaXN0b3J5IjpbLTQ5MTUyOTcwLDUwNTQwNzI5NF19
 -->
