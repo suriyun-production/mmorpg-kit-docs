@@ -85,7 +85,8 @@ Before looking into animation clip settings list, you should to know about `Acti
 * **Anim Speed Rate** this is value which will be used to multiply with animation clip playing speed. If this <= 0, it will not be used to calculate with animation speed multiplier.
 * **Transition Duration** this is duration to transition from previos state to this state. If this <= 0, it will use default transition duration setting from model component.
 * **Is Additive**
-* **Apply Foot IK
+* **Apply Foot Ik**
+* **Apply Playable Ik** is 
 
 ### Action State
 
@@ -117,5 +118,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyODc3ODg2XX0=
+eyJoaXN0b3J5IjpbMTQwOTQ1NTIzMF19
 -->
