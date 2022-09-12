@@ -18,7 +18,9 @@ Then set following keys to Project Settings -> Input
 * **SwitchEquipWeaponSet** key for switch equip weapon set
 * **Sprint** key for sprint
 * **Crouch** key for crouch
-* 
+* **Crawl** key for crawl
+* **RotateLeft** key for rotate building
+* **RotateRight** key for rotate building
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODUwMzkyMDZdfQ==
+eyJoaXN0b3J5IjpbLTE3Nzg0MTIxOTFdfQ==
 -->
