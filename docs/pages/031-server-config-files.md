@@ -1,4 +1,4 @@
-# Server Config Files
+# Server Config Files
 
 From version 1.26 you will able to set configs via config files there are following config files:
 
@@ -15,7 +15,6 @@ From version 1.26 you will able to set configs via config files there are follow
   "machineAddress" : "yourdomain.com",
   
   "mapSpawnPort" : 6001,
-  "mapSpawnMaxConnections" : 2,
   "spawnExePath" : "./Build.exe",
   "notSpawnInBatchMode" : false,
   "spawnStartPort" : 8000,
@@ -54,3 +53,6 @@ From version 1.26 you will able to set configs via config files there are follow
 You will have to create config folder and config files by yourself next to project folder if you are gonna use config in editor, next to execution folder for built execution file
 
 Config priority from high to low is **Command Line -> Config files -> Component data**
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODI3MDUzMzI0XX0=
+-->
