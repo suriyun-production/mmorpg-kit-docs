@@ -78,6 +78,7 @@
 
   - [Gameplay Rule](pages/023-gameplay-rule)
   - [Party / Guild Settings (Social System Setting)](pages/020-social-system-setting)
+  - [How to create interactable objects](pages/152-how-to-create-interactable-objects)
   - [Guild War](pages/144-guildwar.md)
   - [How to change controller](pages/046-how-to-change-controller)
   - [How to change input](pages/047-how-to-change-input)
@@ -125,3 +126,6 @@
   - [Common troubleshooting steps](pages/054-troubleshooting-steps)
   - [Working with Unity 2021](pages/151-working-with-2021.md)
   
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MzcxMDAxOThdfQ==
+-->
