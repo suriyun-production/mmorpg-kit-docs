@@ -20,13 +20,13 @@ This is database which store an game data, now there are following things that r
 *   `Skill`, an character's skills.
 *   `Guild Skill`, skills that can be use when joined the guild.
 *   `Status Effects`, status effects which will apply to the character when attacking or being attacked.
-*   `Player Character`, the character which will be represent in game scene and can controls by players.
-*   `Monster Character`, the monster character which will be represent in game scene.
+*   `Player Character`, aka character's class, it is data for player character.
+*   `Monster Character`, it is data for monster character.
 *   `Harvestable`, type for harvestable entities, you can define items which will drops when harvestable entities destroyed.
 *   `Map Info`, map scenes that allowed player to accesses and settings for each maps.
-*   `Npc Dialog`, an NPC dialogs which will be shown when character talks to NPCs
 *   `Quest`, an character's quests.
 *   `Faction`, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game.
+*   `Gacha`, use it to get r
 
 * * *
 
@@ -92,5 +92,5 @@ And call following functions to add game data to game instance to use in gamepla
 
 **It might have other functions to add game data, game entity to game instance which I didn't add to this document**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjgzNTE3NSwzNzIxNjQ0NzZdfQ==
+eyJoaXN0b3J5IjpbLTEwNjU1MDg4NTksMzcyMTY0NDc2XX0=
 -->
