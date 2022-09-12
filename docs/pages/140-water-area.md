@@ -8,9 +8,12 @@ Water area can be any type of game object which attached collider components. Yo
 
 ## Settings relates to Swimming System
 
-Now, only characters which uses `RigidbodyEntityMovement` as their entity movement component will be able to swim.
+Now, only characters which uses `RigidbodyEntityMovement` and `CharacterControllerEntityMovement` as their entity movement component will be able to swim.
 
 There are new settings for swimming are:
 
 *   `Under Water Threshold` For example of how it work. If character height is `1`, `Under Water Threshold` set to `0.5` and water height is `0.55`. Character will start swimming. If water eight is `0.48`. Character won't start swimming.
 *   `Auto Swim To Surface` If this is turned on, character will swim up to surface automatically, turn it off if you want character able to diving.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI5OTc4OTQzMV19
+-->
