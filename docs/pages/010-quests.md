@@ -7,6 +7,8 @@ With this project you can define any quests as you wish, for each quest you can 
 * **Reward Gold**, gold that character will receive when complete the quest
 * **Reward Currencies**, currencies that character will receive when complete the quest
 * **Reward Items**, items that character will receive when complete the quest
+* **Selectable Reward Items**, items that character will receive when complete the quest, but you can select :)
+* **Random Reward Items**, items that character will receive when complete the quest, but it is random :)
 * **Can Repeat**, if this is **TRUE**, this quest will able to start repeatedly
 
 You can set **Quest** in **Npc** dialog to make it available to receive and complete it
@@ -18,5 +20,5 @@ You can create new quest by right click in `Project` window select
 
 You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other quest data) then define its data as you wish
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyOTUxOTg1MV19
+eyJoaXN0b3J5IjpbNDE1ODkyODA3XX0=
 -->
