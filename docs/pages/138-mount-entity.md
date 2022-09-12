@@ -3,7 +3,7 @@
 To create new mount, you have to prepare vehicle type, which made for character animtion specification while passenging vehicle, you can create new vehicle type by:
 
 - Right click on `Project` panel
-- Choose `Create` -> `Create Game Data` -> `Vehicle Type`
+- Choose `Create -> Create Game Data -> Vehicle Type`
 
 ![](../images/1-46-1.png)
 
@@ -59,3 +59,6 @@ After setup entity movement, then adjust colliders fit to character
 * * *
 
 After finish the setup, drag it to `Project` window to make prefab then add it to [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjAxNjY1Nzg5XX0=
+-->
