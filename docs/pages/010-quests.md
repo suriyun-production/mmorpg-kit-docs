@@ -3,6 +3,8 @@
 With this project you can define any quests as you wish, for each quest you can set following data:
 
 * **Tasks**, each task you can set its type set it to **Kill Monster** if you want player to kill monster to complete quest and set it to **Collect Item** if you want player to collect item to complete quest
+* ****, Quests which will be abandoned when accept this quest
+* **Change Character Class**, if this is set, your character's class will be changed as you set to this when complete the quest
 * **Reward Exp**, exp that character will gain when complete the quest
 * **Reward Gold**, gold that character will receive when complete the quest
 * **Reward Currencies**, currencies that character will receive when complete the quest
@@ -20,5 +22,5 @@ You can create new quest by right click in `Project` window select
 
 You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other quest data) then define its data as you wish
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE1ODkyODA3XX0=
+eyJoaXN0b3J5IjpbMTA2OTM5ODY0M119
 -->
