@@ -3,14 +3,14 @@
 This project is prepared following stats:
 
 * **Hp** as all we know if this value = 0, character will die (you actaully can use it as skill usage requirement too)
-* **Hp Recovery**
-* **Hp Leech Rate**
+* **Hp Recovery** this value will be calculated a
+* **Hp Leech Rate** this rate will be calculated and used to decrease enemy's **Hp** to recover your character's **Hp**
 * **Mp** required to use skills
 * **Mp Recovery**
-* **Mp Leech Rate**
+* **Mp Leech Rate** this rate will be calculated and used to decrease enemy's **Mp** to recover your character's **Mp**
 * **Stamina** required to sprint (you actaully can use it as skill usage requirement too)
 * **Stamina Recovery**
-* **Stamina Leech Rate** this rate will be calculated and used to decrease
+* **Stamina Leech Rate** this rate will be calculated and used to decrease enemy's **Stamina** to recover your character's **Stamina**
 * **Food** this will be used in survival games, if this value is decreased at some rate, it can decrease **Hp** up to how you setup your gameplay rule
 * **Water** this will be used in survival games, if this value is decreased at some rate, it can decrease **Hp** up to how you setup your gameplay rule
 * **Accuracy** add chances to hit enemies
@@ -26,5 +26,5 @@ This project is prepared following stats:
 * **Gold Rate** increase gold drop rate
 * **Exp Rate** increase exp increase rate
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTA4ODc0OV19
+eyJoaXN0b3J5IjpbMTc1MzE2MDgxN119
 -->
