@@ -2,9 +2,15 @@
 
 This project is prepared following stats:
 
-* **Hp** as all we know if this value = 0, character will die
-* **
+* **Hp** as all we know if this value = 0, character will die (you actaully can use it as skill usage requirement too)
+* **Hp Recovery**
+* **Hp Leech Rate**
 * **Mp** required to use skills
+* **Mp Recovery**
+* **Mp Leech Rate**
+* **Stamina** required to sprint (you actaully can use it as skill usage requirement too)
+* **Stamina Recovery**
+* **Stamina Leech Rate**
 * **Armor** reduce receiving damage from enemies
 * **Accuracy** add chances to hit enemies
 * **Evasion** add chances to evade enemies
@@ -16,5 +22,5 @@ This project is prepared following stats:
 * **Atk Speed** increase character attack speed
 * **Weight Limit** increase inventory weight limit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTg3NjU5MF19
+eyJoaXN0b3J5IjpbLTU5NzIwNzQ2M119
 -->
