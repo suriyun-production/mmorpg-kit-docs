@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — How to add Map
-===========================
+# How to add Map (Map Info)
 
 To add map you have to prepare map scene with NavMesh for an AI you can learn about how to build NavMesh from [this link](https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html)
 
@@ -15,7 +12,7 @@ Then you have to create Map Info, we will use Map Info to set map scene and mana
 
 After you have created your map scene you have to create **Map Info** and set map scene to **Map Info**
 
-You can create new map info by right click in `Project` window select   
+You can create new map info by right click in `Project` window select   
 **Create -> Create GameData -> MapInfo**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*7_a38hcHWo38MNM0)
@@ -25,3 +22,6 @@ You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResou
 Then set map scene
 
 ![](https://cdn-images-1.medium.com/max/1600/0*qlyeR8iDp88w6MDT)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTA1NDA3Mjk0XX0=
+-->
