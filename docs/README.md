@@ -1,4 +1,4 @@
-# MMORPG KIT — Setup guide table of content
+# MMORPG KIT — Setup guide table of content
 
 ![](https://cdn-images-1.medium.com/max/1600/1*181LgUonGXa8aTGEESkpsw.png)
 
@@ -8,7 +8,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 * [Roadmap](https://trello.com/b/u8UU1vML/mmorpg-kit-roadmap) - You can see under development features here
 * [Changelog](pages/000-changelog)
 
-### Table of content
+### Table of content
 
 *   [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan)
 *   [How to update to new version](pages/147-how-to-update-to-new-version)
@@ -82,6 +82,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 *   [Gameplay Rule](pages/023-gameplay-rule)
 *   [Party / Guild Settings (Social System Setting)](pages/020-social-system-setting)
+*   [How to create interactable objects](pages/152-how-to-create-interactable-objects)
 *   [Guild War](pages/144-guildwar.md)
 *   [How to change controller](pages/046-how-to-change-controller)
 *   [How to change input](pages/047-how-to-change-input)
@@ -140,3 +141,6 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA ':target=__blank')
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth ':target=__blank')
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth ':target=__blank')
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNzk0OTM0NDBdfQ==
+-->
