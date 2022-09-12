@@ -32,32 +32,20 @@ Then set map scene, and other settings
 * **Exclude Ammo Types** - Items with these ammo types will be excluded when monster dropping items
 * **Exclude Armor Types** - Items with these armor types will be excluded when monster dropping items
 * **Exclude Weapon Types** - Items with these weapon types will be excluded when monster dropping items
-* **Exclude Junk** - Junk items will be excluded when monster dropping items
-* **Exclude Armor** - Armor items will be excluded when monster dropping items
-* **Exclude Shield** - Shield items will be excluded when monster dropping items
-* **Exclude Weapon** - Weapon items will be excluded when monster dropping items
-* **Exclude Potion** - Potion items will be excluded when monster dropping items
-* **Exclude Ammo** - Ammo items will be excluded when monster dropping items
-* **Exclude Building** - Building items will be excluded when monster dropping items
-* **Exclude Pet** - Pet items will be excluded when monster dropping items
-
-        [Tooltip("Socket enhancer items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeSocketEnhancer = false;
-        public bool ExcludeSocketEnhancer { get { return excludeSocketEnhancer; } }
-
-        [Tooltip("Mount items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeMount = false;
-        public bool ExcludeMount { get { return excludeMount; } }
-
-        [Tooltip("Skill items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeSkill = false;
-        public bool ExcludeSkill { get { return excludeSkill; } }
+* **Exclude Junk** - Junk items will be excluded when monster dropping items or not?
+* **Exclude Armor** - Armor items will be excluded when monster dropping items or not?
+* **Exclude Shield** - Shield items will be excluded when monster dropping items or not?
+* **Exclude Weapon** - Weapon items will be excluded when monster dropping items or not?
+* **Exclude Potion** - Potion items will be excluded when monster dropping items or not?
+* **Exclude Ammo** - Ammo items will be excluded when monster dropping items or not?
+* **Exclude Building** - Building items will be excluded when monster dropping items or not?
+* **Exclude Pet** - Pet items will be excluded when monster dropping items or not?
+* **Exclude Socket Enhancer** - Socket enhancer items will be excluded when monster dropping items
+* **Exclude Mount** - Mount items will be excluded when monster dropping items
+* **Exclude Skill** - Skill items will be excluded when monster dropping items
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU1OTUzNTcsLTE4MTczNTg1NjcsNT
-A1NDA3Mjk0XX0=
+eyJoaXN0b3J5IjpbLTk3NjIxMDY5NiwtMTgxNzM1ODU2Nyw1MD
+U0MDcyOTRdfQ==
 -->
