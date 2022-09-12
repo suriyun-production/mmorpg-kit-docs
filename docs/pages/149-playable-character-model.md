@@ -81,9 +81,11 @@ Before looking into animation clip settings list, you should to know about `Acti
 
 ### Anim State
 
-*   `Clip` set `Animation Clip` which you want it to play when doing action.
-*   `Anim Speed Rate` this is value which will be used to multiply with animation clip playing speed. If this <= 0, it will not be used to calculate with animation speed multiplier.
-*   `Transition Duration` this is duration to transition from previos state to this state. If this <= 0, it will use default transition duration setting from model component.
+* **Clip** set `Animation Clip` which you want it to play when doing action.
+* **Anim Speed Rate** this is value which will be used to multiply with animation clip playing speed. If this <= 0, it will not be used to calculate with animation speed multiplier.
+* **Transition Duration** this is duration to transition from previos state to this state. If this <= 0, it will use default transition duration setting from model component.
+* **Is Additive**
+* **Apply Foot IK
 
 ### Action State
 
@@ -115,5 +117,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQyOTU5ODhdfQ==
+eyJoaXN0b3J5IjpbNTAyODc3ODg2XX0=
 -->
