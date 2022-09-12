@@ -113,9 +113,9 @@ All animation clip settings contains:
 * **Action Avatar Mask** it is a default action avatar mask setting which will be used when `avatarMask` in action state settings is `null`.
 * **Transition Duration** it is a default transition duration which will be used when `transitionDuration` in state settings is <= 0, it will use this value.
 * **Default Animations** this is contains default animation clips and action animations
-* **Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`.
-* **Left Hand Wielding Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`.
-* **Le
+* **Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`, it will play these animations while weapon with specified `Weapon Type` is equipped.
+* **Left Hand Wielding Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`, it will play these animations while weapon with specified `Weapon Type` is equipped in left-.
+* **Left Hand Shield Animations**
 * **Skill Animations** each of this is contains skill cast clip and activate skill action animation for specific `Skill`.
 * **Animator** set `Animator` which will be used to handle animation playing here.
 
@@ -123,5 +123,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4MDA5MzEyXX0=
+eyJoaXN0b3J5IjpbMTUxNjgyMDU1Ml19
 -->
