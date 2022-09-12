@@ -42,27 +42,7 @@ To enable it in your game, you have to set it in `Game Instance -> Gameplay Rule
 
 ## Game Database
 
-This is database which store an game data, now there is following things that required to add into game database to make them able to work in your game:
-
-*   `Attribute`, an attributes that can be increase by stat point to increase character stats.
-*   `Currency`, an custom currencies. If you want to use other currencies other than gold and cash you can create custom currencies.
-*   `Damage Element`, an elements of damage, you can make fire, ice, poison damage elements for more variety of gameplay. You can leave it empty if you don't want to have other damage elements than default damage element (which set to `Game Instance`).
-*   `Item`, an items.
-*   `Item Craft Formula`, formula for item crafting.
-*   `Armor Types`, type for an armor items, you can define equipping slots by armor types.
-*   `Weapon Types`, type for an weapon items, you can define how weapon working by weapon types.
-*   `Ammo Types`, type for an ammo items, you can define which kind of ammo is required for weapon in weapon type game data.
-*   `Skill`, an character's skills.
-*   `Guild Skill`, skills that can be use when joined the guild.
-*   `Status Effects`, status effects which will apply to the character when attacking or being attacked.
-*   `Play Character Entity`, the character which will be represent in game scene and can controls by players.
-*   `Monster Character Entity`, the monster character which will be represent in game scene.
-*   `Vehicle Entity`, the mountable animal or vehicle which will be represent in game scene.
-*   `Harvestable`, type for harvestable entities, you can define items which will drops when harvestable entities destroyed.
-*   `Map Info`, map scenes that allowed player to accesses and settings for each maps.
-*   `Npc Dialog`, an NPC dialogs which will be shown when character talks to NPCs
-*   `Quest`, an character's quests.
-*   `Faction`, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game.
+This is database which store an game data such as characters, monsters, quests, maps (and so on) that being used in your game.
 
 More Info: [Click Here](pages/103-game-database)
 
@@ -107,3 +87,6 @@ This is scene which used for manage connection and manage player's characters, y
 ## UI Scene Gameplay
 
 This is collection of an UIs which will be shown in gameplay scene, so you can change an UIs here, you can find `CanvasGameplay` (in `Project` window)  to see how I setup it or duplicate it to customize UIs based on the demo UIs to make your own UIs, set it to `Game Instance -> Ui Scene Gameplay Prefab` or `Game Instance -> Ui Scene Gameplay Mobile Prefab` if it's going to be used with mobile platforms
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDk4MTcwNzEzXX0=
+-->
