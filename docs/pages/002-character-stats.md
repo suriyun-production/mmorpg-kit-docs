@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Character Stats
-============================
+#  Character Stats
 
 This project is prepared following stats:
 
@@ -17,3 +14,6 @@ This project is prepared following stats:
 *   **Move Speed** increase character move speed
 *   **Atk Speed** increase character attack speed
 *   **Weight Limit** increase inventory weight limit
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NTU5NzYzMzBdfQ==
+-->
