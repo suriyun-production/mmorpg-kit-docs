@@ -1,7 +1,4 @@
-* * *
-
-MMORPG KIT — Customize UIs
-==========================
+# MMORPG KIT — Customize UIs
 
 To change gameplay UIs you may duplicate demo’s **CanvasGameplay** prefab and customize as you wish, for the demo there are **CanvasGameplay**, **CanvasGameplayMobile**, **CanvasGameplay\_Survival** and **CanvasGameplayMobile\_Survival** for the name with \_Survival it will add Food and Water indicator for survival gameplay
 
@@ -33,7 +30,7 @@ This project is not use **Text** component directly it use **Text Wrapper** to c
 
 * * *
 
-#### Input Field Wrapper
+#### Input Field Wrapper
 
 This is like Text Wrapper but for input field components
 
@@ -77,7 +74,7 @@ Each formats have tool tip which showing when your mouse cursor is on it in insp
 
 * * *
 
-#### Image for Gage / Progress
+#### Image for Gage / Progress
 
 Sometime I use **Image** component as gage / progress indicator to setup Image component for that you have to set **Image Type** as **Filled** then set other settings as you wish
 
@@ -85,7 +82,7 @@ Sometime I use **Image** component as gage / progress indicator to setup Image c
 
 * * *
 
-#### List UI Setting
+#### List UI Setting
 
 For every list UI setting, you have to set prefab and container, container is transform where it will instantiates prefab as its children.
 
@@ -97,7 +94,7 @@ You can learn about prefab from [this link](https://unity3d.com/learn/tutorials/
 
 * * *
 
-#### Key-Value UI Setting
+#### Key-Value UI Setting
 
 For every key-value UI setting, there are differences kind of key and value, value is reference to UI component, both key and value are required
 
@@ -107,11 +104,11 @@ For example **UI Character**, there are **Ui Character Attributes** which use **
 
 * * *
 
-#### **UI Scene Gameplay**
+#### **UI Scene Gameplay**
 
 It’s main ui handler which receive an events from playing character to update UIs and also receive events from player to toggle UIs in this component there are
 
-*   **Ui Characters** this is list of an **UI Character** component, why I made this as list ? because developer might want to set UIs to show character information in multiple places as this demo I made UI to show simple character stats (HP / MP) and the other is character dialog which show stats including EXP, Attributes, Stat Point and so on
+*   **Ui Characters** this is list of an **UI Character** component, why I made this as list ? because developer might want to set UIs to show character information in multiple places as this demo I made UI to show simple character stats (HP / MP) and the other is character dialog which show stats including EXP, Attributes, Stat Point and so on
 *   **Ui Target Character** this is UI to show selected character (attacking character / monster), its type is **UI Character**
 *   **Ui Equip Items** this is UI to show playing character’s equipped items
 *   **Ui Non Equip Items** this is UI to show playing character’s inventory
@@ -135,7 +132,7 @@ It’s main ui handler which receive an events from playing character to update 
 
 * * *
 
-#### UI Cash Packages Gateway
+#### UI Cash Packages Gateway
 
 This is component which deciding that cash packages dialog should be shown or open website with defined URL because on non mobile its payment method may difference but most game will make payment on website.
 
@@ -173,7 +170,7 @@ UI Character Attribute have following event functions that you can set to button
 
 * * *
 
-#### UI Equip Items
+#### UI Equip Items
 
 This is component which show equip items
 
@@ -187,7 +184,7 @@ I made close button to deselect selected UI to hide this dialog, as I mentioned 
 
 ![](https://cdn-images-1.medium.com/max/1600/1*B2jMdu1Ez5Hnt6s8ZnPtrQ.png)
 
-I just make an equip item slot to show just icon
+I just make an equip item slot to show just icon
 
 *   **Other Equip Slots**, this is list of **UI Character Item Pair** which use to show other equip items (not for right hand / left hand), This is key-value setting which use **Armor Type** as key and **UI Character Item** as value, you should see **Key-Value UI Setting** section for more information
 
@@ -195,11 +192,11 @@ You have to set **UI Character Item -> On Click Select** function to **Button ->
 
 ![](https://cdn-images-1.medium.com/max/1600/1*7_hId_p-8SkynhHzS59W0Q.png)
 
-For the demo, I have attached **Button** at the same game object with **UI Character Item** so I set **On Click** event with **On Click Select** function from the same game object
+For the demo, I have attached **Button** at the same game object with **UI Character Item** so I set **On Click** event with **On Click Select** function from the same game object
 
 * * *
 
-#### UI Non Equip Items
+#### UI Non Equip Items
 
 This is component which show non equip items (items in inventory)
 
@@ -259,7 +256,7 @@ UI Character Item have following event functions that you can set to buttons (or
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Zkl_Tkn3VckguGVqFviAhQ.png)
 
-I have set events to an buttons
+I have set events to an buttons
 
 * * *
 
@@ -318,7 +315,7 @@ This is component which show hotkey / shortcut to use item / skill, you can set 
 
 ![](https://cdn-images-1.medium.com/max/1600/1*GDXiX0rI6rM8SF6wo8BTAw.png)
 
-I have set function to an event when click on hotkeys
+I have set function to an event when click on hotkeys
 
 * * *
 
@@ -328,13 +325,13 @@ TODO
 
 * * *
 
-#### UI Npc Dialog
+#### UI Npc Dialog
 
 TODO
 
 * * *
 
-#### UI Refine Item
+#### UI Refine Item
 
 TODO
 
@@ -349,7 +346,7 @@ This is UI which showing when constructing the building, now I made this to show
 
 * * *
 
-#### UI Current Building
+#### UI Current Building
 
 This is UI which showing when select the building (by hold click on it), now I made this to show destroy dialog to destroy the building, there are following functions that can set to buttons
 
@@ -358,7 +355,7 @@ This is UI which showing when select the building (by hold click on it), now I m
 
 * * *
 
-#### UI Player Activate Menu
+#### UI Player Activate Menu
 
 This is UI which showing when player active other character (by press E when near other character) to show actions that player can do with another character, there are following functions that can set to buttons
 
@@ -372,7 +369,7 @@ The example that I set on click event to send dealing request to another charact
 
 * * *
 
-#### UI Dealing Request
+#### UI Dealing Request
 
 This is UI which showing when character receive dealing request from other character, there are following functions that can set to buttons
 
@@ -410,3 +407,6 @@ After made modification, save the prefab then set it to **GameInstance -> Ui Sce
 You can test mobile UIs in the editor by set **GameInstance -> Use Mobile In Editor** to **TRUE**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*W9AuXXyn_f9thiwZBDpLzg.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0NDAyNTM3NDddfQ==
+-->
