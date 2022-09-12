@@ -32,45 +32,14 @@ Then set map scene, and other settings
 * **Exclude Ammo Types** - Items with these ammo types will be excluded when monster dropping items
 * **Exclude Armor Types** - Items with these armor types will be excluded when monster dropping items
 * **Exclude Weapon Types** - Items with these weapon types will be excluded when monster dropping items
-* **Exclude Junk** - Junk items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeJunk = false;
-        public bool ExcludeJunk { get { return excludeJunk; } }
-
-        [Tooltip("Armor items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeArmor = false;
-        public bool ExcludeArmor { get { return excludeArmor; } }
-
-        [Tooltip("Shield items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeShield = false;
-        public bool ExcludeShield { get { return excludeShield; } }
-
-        [Tooltip("Weapon items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeWeapon = false;
-        public bool ExcludeWeapon { get { return excludeWeapon; } }
-
-        [Tooltip("Potion items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludePotion = false;
-        public bool ExcludePotion { get { return excludePotion; } }
-
-        [Tooltip("Ammo items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeAmmo = false;
-        public bool ExcludeAmmo { get { return excludeAmmo; } }
-
-        [Tooltip("Building items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludeBuilding = false;
-        public bool ExcludeBuilding { get { return excludeBuilding; } }
-
-        [Tooltip("Pet items will be excluded when monster dropping items")]
-        [SerializeField]
-        private bool excludePet = false;
-        public bool ExcludePet { get { return excludePet; } }
+* **Exclude Junk** - Junk items will be excluded when monster dropping items
+* **Exclude Armor** - Armor items will be excluded when monster dropping items
+* **Exclude Shield** - Shield items will be excluded when monster dropping items
+* **Exclude Weapon** - Weapon items will be excluded when monster dropping items
+* **Exclude Potion** - Potion items will be excluded when monster dropping items
+* **Exclude Ammo** - Ammo items will be excluded when monster dropping items
+* **Exclude Building** - Building items will be excluded when monster dropping items
+* **Exclude Pet** - Pet items will be excluded when monster dropping items
 
         [Tooltip("Socket enhancer items will be excluded when monster dropping items")]
         [SerializeField]
@@ -89,6 +58,6 @@ Then set map scene, and other settings
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM4MDY4NjAsLTE4MTczNTg1NjcsNT
+eyJoaXN0b3J5IjpbLTEwNjU1OTUzNTcsLTE4MTczNTg1NjcsNT
 A1NDA3Mjk0XX0=
 -->
