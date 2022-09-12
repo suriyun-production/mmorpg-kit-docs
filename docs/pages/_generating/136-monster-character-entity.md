@@ -4,7 +4,7 @@ Before create new monster character entity, you should know about `Player Charac
 
 ### Monster Character
 
-You can create monster character by right click in `Project` window then select `Create` -> `Create GameData` -> `Item`
+You can create monster character by right click in `Project` window then select `Create -> Create GameData -> Item`
 
 ![](../images/characters/003.png)
 
@@ -60,3 +60,6 @@ If your project is 3D game, you have to drag skinned mesh to empty scene then ad
 * * *
 
 !INCLUDE "./game-data/_entity-put-to-database.md"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTM3NTkwNDQwXX0=
+-->
