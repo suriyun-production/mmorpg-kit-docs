@@ -4,7 +4,7 @@ To add map you have to prepare map scene with NavMesh for an AI you can learn ab
 
 In map scenes, you can add Monster Character Entity, Npc Entity, Harvestable Entity, Warp Portal Entity, Monster Spawn Area and Harvestable Spawn Area. No any components required to add to map scenes.
 
-Then you have to create Map Info, we will use Map Info to set map scene and setup some ons (for now there are **Can Pvp** flag only)
+Then you have to create **Map Info**, we will use Map Info to set map scene and setup some settings
 
 * * *
 
@@ -23,5 +23,5 @@ Then set map scene, and other settings
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTM4MDc3Miw1MDU0MDcyOTRdfQ==
+eyJoaXN0b3J5IjpbLTM3MjAzNDExNSw1MDU0MDcyOTRdfQ==
 -->
