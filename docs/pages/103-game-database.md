@@ -6,6 +6,7 @@ This is database which store an game data, now there are following things that r
 *   `Player Character Entity`, the character which will be represent in game scene and can controls by players.
 *   `Monster Character Entity`, the monster character which will be represent in game scene.
 *   `Vehicle Entity`, the mountable animal or vehicle which will be represent in game scene.
+*   `Other Network Objects`, other network objects which will be represent in game scene.
 
 ## Game Data
 
@@ -26,7 +27,7 @@ This is database which store an game data, now there are following things that r
 *   `Map Info`, map scenes that allowed player to accesses and settings for each maps.
 *   `Quest`, an character's quests.
 *   `Faction`, factions that allowed player to select, you can leave it empty if you don't want to have factions in your game.
-*   `Gacha`, use it to get r
+*   `Gacha`, use it to get random rewards
 
 * * *
 
@@ -92,5 +93,5 @@ And call following functions to add game data to game instance to use in gamepla
 
 **It might have other functions to add game data, game entity to game instance which I didn't add to this document**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU1MDg4NTksMzcyMTY0NDc2XX0=
+eyJoaXN0b3J5IjpbODQyNzc1Mzg3LDM3MjE2NDQ3Nl19
 -->
