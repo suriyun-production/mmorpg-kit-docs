@@ -10,7 +10,7 @@ That is it
 
 Currency can be received by quest so in `Quest` game data is contains `rewardCurrencies` as currency amount when complete setting.
 
-And currency will be used to buy items from NPC, so in `NpcDialog` -> `sellItems` will contains `sellPrices` as item pricing.
+And currency will be used to buy items from NPC, so in `NpcDialog -> sellItems` will contains `sellPrices` as item pricing.
 
 * * *
 
@@ -18,3 +18,6 @@ And currency will be used to buy items from NPC, so in `NpcDialog` -> `sellItems
 
 - Added `uiRewardCurrencies`(`UICurrencyAmounts`) to In `UICharacterQuest`.
 - Added `uiSellPrices`(`UICurrencyAmounts`) to In `UINpcSellItem`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY2OTEwOTU4Ml19
+-->
