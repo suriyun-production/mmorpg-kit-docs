@@ -4,7 +4,7 @@ Before create new player character entity, you should know about `Player Charact
 
 ### Player Character
 
-You can create player character by right click in `Project` window then select `Create` -> `Create GameData` -> `Item`
+You can create player character by right click in `Project` window then select `Create -> Create GameData -> Item`
 
 ![](../images/characters/001.png)
 
@@ -62,3 +62,6 @@ If you want to make them play animation while mount horse correctly, you have to
 * * *
 
 !INCLUDE "./game-data/_entity-put-to-database.md"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NTA3NDI1MzBdfQ==
+-->
