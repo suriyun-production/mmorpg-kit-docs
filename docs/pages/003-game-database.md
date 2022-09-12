@@ -35,7 +35,7 @@ It is database for game data, it can store following data:
 * Gachas
 
 You can create new Game Database by right click in `Project` window then select  
-**Create -> Create GameDatabase -> GameDatabase**
+**Create -> Create GameDatabase -> Game Database**
 
 ![](https://cdn-images-1.medium.com/max/1600/1*BpIQ-B1sC0b3A8dEVDyC3g.png)
 
@@ -49,5 +49,5 @@ If you don’t want to use **Game Database** you can create game data into **Res
 
 Then when game start it will load all game data which is located in **Resources** folder
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyODQxMDc1XX0=
+eyJoaXN0b3J5IjpbLTM0OTc0NDA0MV19
 -->
