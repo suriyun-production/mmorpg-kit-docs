@@ -13,9 +13,9 @@ You can create new dialog by right click in graph then select `Multiplayer ARPG`
 `Npc Dialog` have following configs:
 
 - `Title` is default title. if you want to set title for specific language you can set it to `Titles`
-- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
+- `Titles` is language specific titles. You can set title for specific language key, language key must be the key which existed in `Language Manager -> Language List`
 - `Description` is default description. if you want to set description for specific language you can set it to `Descriptions`
-- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager` -> `Language List`
+- `Descriptions` is language specific descriptions. You can set description for specific language key, language key must be the key which existed in `Language Manager -> Language List`
 - `Icon` is icon which represent item appearance
 *   `Type` type of this dialog.
 *   `Menus` choices to next dialog, you also can set conditions to show the menu.
@@ -35,7 +35,7 @@ If your project is 3D game, you have to drag skinned mesh to empty scene then ad
 After finish the setup, drag it to `Project` window to make prefab then add it to [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 * * *
 
-### How to add Npcs directly to the scene
+### How to add Npcs directly to the scene
 
 You can add Npcs directly in game scene to make it appear in map scene, to do it you have to prepare `Npc Entity` then drag prepared `Npc Entity` to the map scene.
 
@@ -45,7 +45,7 @@ Then set created npc dialog graph to `Graph`.
 
 * * *
 
-### How to add Npcs to Npc Database to spawn to the scene later
+### How to add Npcs to Npc Database to spawn to the scene later
 
 To add Npcs via Npc Database you have to prepare `Npc Entity` prefab and `Npc Dialog Graph`.
 
@@ -58,3 +58,6 @@ Then in `Npc Database` you can set map which you wish to spawn an Npcs then each
 ![](../images/npcs/007.png)
 
 Then set `Npc Database` to `Game Instance -> Npc Database` in init scene.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgzMjU3NF19
+-->
