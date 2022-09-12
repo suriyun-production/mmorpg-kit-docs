@@ -21,7 +21,7 @@ You can create new quest by right click in `Project` window select
 
 ![](https://cdn-images-1.medium.com/max/1600/0*QAY5mNVzc5Wj6Bi2)
 
-You may place it in [**Resources**](https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html)  folder or anywhere but use [**GameDatabase**](https://medium.com/suriyun-production/mmorpg-kit-game-database-ce081169f097), then define its name which must be unique (Not same as other quest data) then define its data as you wish
+After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MzQ5OTU1XX0=
+eyJoaXN0b3J5IjpbMTEzODgzNjk4MV19
 -->
