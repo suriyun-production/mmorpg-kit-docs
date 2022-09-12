@@ -14,12 +14,16 @@ It is database for game data, it can store following data:
 *   Weapon Types
 *   Ammo Types
 *   Skills
-*   Guild Skil
-*   Npc Dialogs
-*   Quests
+*   Guild Skills
+*   Guild Icons
+*   Status Effects
 *   Player Characters
 *   Monster Characters
+*   Harvestables
 *   Map Infos
+*   Quests
+*   Factions
+*   Gachas
 
 You can create new Game Database by right click in `Project` window then select  
 **Create -> Create GameDatabase -> GameDatabase**
@@ -36,5 +40,5 @@ If you don’t want to use **Game Database** you can create game data into **Res
 
 Then when game start it will load all game data which is located in **Resources** folder
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI4MjM2NjhdfQ==
+eyJoaXN0b3J5IjpbLTIxMzM4OTU0XX0=
 -->
