@@ -6,9 +6,11 @@ MMORPG KIT — Game Database
 It is database for game data, it can store following data:
 
 **Game Entity**
+
 * Player Character Entities
 * Monster Character Entities
-* 
+* Vehicle Entities
+* Other Network Objects
 
 **Game Data**
 
@@ -47,5 +49,5 @@ If you don’t want to use **Game Database** you can create game data into **Res
 
 Then when game start it will load all game data which is located in **Resources** folder
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDM2MDY5Nl19
+eyJoaXN0b3J5IjpbNDIyODQxMDc1XX0=
 -->
