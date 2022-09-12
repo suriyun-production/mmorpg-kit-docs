@@ -1,8 +1,6 @@
-# Animator Character Model
+# Playable Character Model
 
-This component working by create [Animator Override Controller](https://docs.unity3d.com/Manual/AnimatorOverrideController.html) at runtime based on `Animator Controller` which set to `Animator Controller` field. Then when character change weapon it can change animation set (idle, move, dead and other animations) based on clip's names which set to `Animator Controller's states`.
-
-To setup this component, you should learn about [Mechanim Animation System](https://docs.unity3d.com/Manual/AnimationOverview.html) and [Animation Clip](https://docs.unity3d.com/Manual/AnimationClips.html).
+This component was made by using Unity's [Playable API](https://docs.unity3d.com/Manual/Playables.html), recommend to using it over animator character model
 
 * * *
 
@@ -62,5 +60,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NjgwMTg1NF19
+eyJoaXN0b3J5IjpbMTI4MzM0OTUxNl19
 -->
