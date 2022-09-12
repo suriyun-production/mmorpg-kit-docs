@@ -11,7 +11,8 @@ This project is prepared following stats:
 * **Stamina** required to sprint (you actaully can use it as skill usage requirement too)
 * **Stamina Recovery**
 * **Stamina Leech Rate**
-* **Armor** reduce receiving damage from enemies
+* **Food** this w
+* **Water**
 * **Accuracy** add chances to hit enemies
 * **Evasion** add chances to evade enemies
 * **Cri Rate** chances to occurs critical damage
@@ -21,6 +22,9 @@ This project is prepared following stats:
 * **Move Speed** increase character move speed
 * **Atk Speed** increase character attack speed
 * **Weight Limit** increase inventory weight limit
+* **Slot Limit** increase inventory slot limit
+* **Gold Rate** increase gold drop rate
+* **Exp Rate** increase exp increase rate
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzIwNzQ2M119
+eyJoaXN0b3J5IjpbMTQzNjgwODM1NF19
 -->
