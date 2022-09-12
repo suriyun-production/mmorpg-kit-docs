@@ -10,7 +10,7 @@ With this project it’s currently have following chat channels there are:
 
 * * *
 
-For local chat, you can set distance for the local chat at **Game Instance** -> **Local Chat Distance**
+For local chat, you can set distance for the local chat at `Game Instance -> Local Chat Distance`
 
 ![](https://cdn-images-1.medium.com/max/1600/1*6Nt_N7I-ycnACulVsJJX1A.png)
 
@@ -18,9 +18,9 @@ For local chat, you can set distance for the local chat at **Game Instance** -> 
 
 For chat commands, you can customize them in **UI Chat Handler**.
 
-For the demo, I’ve attached it to **CanvasGameplay -> Chat**, so if you want to customize it, you have to drag **CanvasGameplay** prefab to any scene then find for **UIChatHandler** then changes configs
+For the demo, I’ve attached it to `CanvasGameplay -> Chat`, so if you want to customize it, you have to drag **CanvasGameplay** prefab to any scene then find for **UIChatHandler** then changes configs
 
 ![](https://cdn-images-1.medium.com/max/1600/1*1xb60jN5hJzXry6lnVOO6g.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDQyNDc2MV19
+eyJoaXN0b3J5IjpbMTQ4NTAwMzQyMV19
 -->
