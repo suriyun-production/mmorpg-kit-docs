@@ -41,13 +41,14 @@ You can create new Game Database by right click in `Project` window then select
 
 Then place game data you want to use in your project into the list
 
-Then set your **Game Database** to **Game Instance** in Init scene
+Then set your **Game Database** to **Game Instance** in Init scene (For the demo it is `00Init`)
 
 ![](https://cdn-images-1.medium.com/max/1600/1*MB-6RRfwa4O5faoMiMRkJg.png)
 
-If you don’t want to use **Game Database** you can create game data into **Resources** folder, then leave **Game Database** in **Game Instance** to be empty
+## Load Game Data From Resources Folder
+I actaully not recommend to do this, but if you don’t want to use **Game Database** you can create game data into **Resources** folder, then leave **Game Database** in **Game Instance** to be empty
 
 Then when game start it will load all game data which is located in **Resources** folder
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTc0NDA0MV19
+eyJoaXN0b3J5IjpbLTM3OTE1MzcxLC0zNDk3NDQwNDFdfQ==
 -->
