@@ -29,64 +29,66 @@ Then set map scene, and other settings
 * **Player Dead Drops Equip Items** - When character dead, it will drop equipping items or not?
 * **Player Dead Drops Non Equip Items** - When character dead, it will drop non equipping items or not?
 * **Exclude Items** - These items will be excluded when monster dropping items
-
-        [SerializeField]
-        private List<AmmoType> excludeAmmoTypes = new List<AmmoType>();
-        public List<AmmoType> ExcludeAmmoTypes { get { return excludeAmmoTypes; } }
-
-        [SerializeField]
-        private List<ArmorType> excludeArmorTypes = new List<ArmorType>();
-        public List<ArmorType> ExcludeArmorTypes { get { return excludeArmorTypes; } }
-
-        [SerializeField]
-        private List<WeaponType> excludeWeaponTypes = new List<WeaponType>();
-        public List<WeaponType> ExcludeWeaponTypes { get { return excludeWeaponTypes; } }
-
+* **Exclude Ammo Types** - Items with these ammo types will be excluded when monster dropping items
+* **Exclude Armor Types** - Items with these armor types will be excluded when monster dropping items
+* **Exclude Weapon Types** - Items with these weapon types will be excluded when monster dropping items
+* **Exclude Junk** - Junk items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeJunk = false;
         public bool ExcludeJunk { get { return excludeJunk; } }
 
+        [Tooltip("Armor items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeArmor = false;
         public bool ExcludeArmor { get { return excludeArmor; } }
 
+        [Tooltip("Shield items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeShield = false;
         public bool ExcludeShield { get { return excludeShield; } }
 
+        [Tooltip("Weapon items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeWeapon = false;
         public bool ExcludeWeapon { get { return excludeWeapon; } }
 
+        [Tooltip("Potion items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludePotion = false;
         public bool ExcludePotion { get { return excludePotion; } }
 
+        [Tooltip("Ammo items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeAmmo = false;
         public bool ExcludeAmmo { get { return excludeAmmo; } }
 
+        [Tooltip("Building items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeBuilding = false;
         public bool ExcludeBuilding { get { return excludeBuilding; } }
 
+        [Tooltip("Pet items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludePet = false;
         public bool ExcludePet { get { return excludePet; } }
 
+        [Tooltip("Socket enhancer items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeSocketEnhancer = false;
         public bool ExcludeSocketEnhancer { get { return excludeSocketEnhancer; } }
 
+        [Tooltip("Mount items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeMount = false;
         public bool ExcludeMount { get { return excludeMount; } }
 
+        [Tooltip("Skill items will be excluded when monster dropping items")]
         [SerializeField]
         private bool excludeSkill = false;
         public bool ExcludeSkill { get { return excludeSkill; } }
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTczNTg1NjcsNTA1NDA3Mjk0XX0=
+eyJoaXN0b3J5IjpbLTE3MTM4MDY4NjAsLTE4MTczNTg1NjcsNT
+A1NDA3Mjk0XX0=
 -->
