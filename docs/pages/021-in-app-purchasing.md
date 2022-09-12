@@ -54,7 +54,7 @@ Then you will add an cash packages / cash shop items that you want to this datab
 
 * * *
 
-#### **How to create Cash package**
+## **How to create Cash package**
 
 You can create new cash package by right click in `Project` window select   
 **Create -> Create CashShop -> CashPackage**
@@ -76,7 +76,7 @@ Then add it to **Cash Shop Database**
 #### How to create Cash Shop Item
 
 You can create new cash shop item by right click in `Project` window select   
-**Create -> Create CashShop -> CashShopItem**
+`Create -> Create CashShop -> CashShopItem`
 
 ![](https://cdn-images-1.medium.com/max/1600/1*RvGtZZgMcWtuBVwiFwi00g.png)
 
@@ -92,5 +92,5 @@ Then set variables
 
 Then add it to **Cash Shop Database**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxODM1MzAzXX0=
+eyJoaXN0b3J5IjpbMzgwMTM4ODgxXX0=
 -->
