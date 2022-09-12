@@ -10,7 +10,7 @@ You can prepare it after prepared `Character Entity` then add `Playable Characte
 
 !INCLUDE "./game-data/_character-model-generic-config.md"
 
-*(Or use `Character Entity Creator` tool which can be accessed from menu `MMORPG KIT` -> `Character Entity Creator`)*
+*(Or use `Character Entity Creator` tool which can be accessed from menu `MMORPG KIT -> `Character Entity Creator`)*
 
 * * *
 
@@ -53,3 +53,6 @@ All animation clip settings contains:
 * * *
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNDA1MDE2OTVdfQ==
+-->
