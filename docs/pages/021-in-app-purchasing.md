@@ -1,6 +1,4 @@
-# MMORPG KIT — In-App Purchasing
-
-For now, the In-App Purchasing is integrated for MMO mode only (Singleplayer/LAN will not works)
+#  In-App Purchasing
 
 You have to enable **Unity Purchasing** as following steps via link [https://docs.unity3d.com/Manual/UnityIAPSettingUp.html](https://docs.unity3d.com/Manual/UnityIAPSettingUp.html)
 
@@ -14,7 +12,7 @@ Then you have to add ENABLE\_PURCHASE to Scripting Define Symbols
 
 * * *
 
-#### How to disable In-App Purchasing
+## How to disable In-App Purchasing
 
 If you don’t want to use In-App Purchasing for your game, you can turn off Purchasing in Services tab (for Services tab you can open it from menu Window -> General -> Services)
 
@@ -39,7 +37,7 @@ All products above have to place in Cash Shop Database to make it available to s
 
 * * *
 
-#### **How to create Cash Shop Database**
+## How to create Cash Shop Database
 
 You can create new cash package by right click in `Project` window select   
 **Create -> Create CashShop -> CashPackageDatabase** (The menu name should be CashShopDatabase I will change it later)
@@ -54,7 +52,7 @@ Then you will add an cash packages / cash shop items that you want to this datab
 
 * * *
 
-## **How to create Cash package**
+## How to create Cash package
 
 You can create new cash package by right click in `Project` window select   
 **Create -> Create CashShop -> CashPackage**
@@ -92,5 +90,5 @@ Then set variables
 
 Then add it to **Cash Shop Database**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwMTM4ODgxXX0=
+eyJoaXN0b3J5IjpbLTEwMDQ0OTI2NzldfQ==
 -->
