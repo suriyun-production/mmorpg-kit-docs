@@ -24,28 +24,10 @@ Then set map scene, and other settings
 **Other Settings**
 * **Start Position** - This will be used when new character has been created to set its position, and this map data is the start map
 * **Start Rotation** - This will be used when new character has been created to set its rotation, and this map data is the start map
-
-        #region Character Death Rules
-        [Category("Character Death Rules")]
-        [Tooltip("When character fall to this position, character will dead")]
-        [SerializeField]
-        private float deadY = -100f;
-        public virtual float DeadY { get { return deadY; } }
-
-        [Tooltip("When character dead, it will drop equipping weapons or not?")]
-        [SerializeField]
-        private bool playerDeadDropsEquipWeapons = false;
-        public virtual bool PlayerDeadDropsEquipWeapons { get { return playerDeadDropsEquipWeapons; } }
-
-        [Tooltip("When character dead, it will drop equipping items or not?")]
-        [SerializeField]
-        private bool playerDeadDropsEquipItems = false;
-        public virtual bool PlayerDeadDropsEquipItems { get { return playerDeadDropsEquipItems; } }
-
-        [Tooltip("When character dead, it will drop non equipping items or not?")]
-        [SerializeField]
-        private bool playerDeadDropsNonEquipItems = false;
-        public virtual bool PlayerDeadDropsNonEquipItems { get { return playerDeadDropsNonEquipItems; } }
+* **Dead Y** - When character fall to this position, character will dead
+* **Player Dead Drops Equip Weapons** - When character dead, it will drop equipping weapons or not?
+* **Player Dead Drops Equip Items** - When character dead, it will drop equipping items or not?
+* **Player Dead Drops Non Equip Items** - When character dead, it will drop non equipping items or not?
         #endregion
 
         #region Item Drop Rules
@@ -112,5 +94,5 @@ Then set map scene, and other settings
 
 After finish the setup, add it to your [game database](pages/103-game-database.md). If you're using `Resources Folder Game Database` as your [game database](pages/103-game-database.md), you must put it in `Resources` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTUyOTcwLDUwNTQwNzI5NF19
+eyJoaXN0b3J5IjpbNDQ2NjM2NjUzLDUwNTQwNzI5NF19
 -->
