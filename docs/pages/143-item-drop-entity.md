@@ -1,6 +1,6 @@
 # Item Drop Entity
 
-`Item Drop Entity` is a game entity which represent item which drop on the ground, the one which set to `Game Instance` -> `Item Drop Entity Prefab` is a place holder for `Item` -> `Drop Model`.
+`Item Drop Entity` is a game entity which represent item which drop on the ground, the one which set to `Game Instance -> Item Drop Entity Prefab` is a place holder for `Item -> Drop Model`.
 
 For the `Item Drop Entity` which placed on the scene is work differently, another thing which is different is character can earn more than one item when pickup in-scene `Item Drop Entity`, it is not a place holder for the drop model.
 
@@ -25,3 +25,6 @@ To make it can be spawned by `Item Drop Spawn Area` you have to make the `Item D
 Then you can create a empty game object, attach `Item Drop Spawn Area` component, then set `Item Drop Entity` prefab which you want to spawn when server start as you wish.
 
 ![](../images/143/5.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTkwMTQyMTk5MF19
+-->
