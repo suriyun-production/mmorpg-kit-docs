@@ -17,11 +17,15 @@ You can create interactable objects by create a new component which implements f
 - **ShouldBeAttackTarget** - If this returns `TRUE`, when set this entity as a target, character will move to it to attack. Otherwise it will move to it to activate.
 - **ShouldNotActivateAfterFollowed** - If this returns `TRUE`, when playing character followed this entity it won't activate, I've set this to `TRUE` for player character entity because I want it to activate player character entities only when press activate button.
 - **CanActivate** - Can activate or not? return `TRUE` if it can.
-- **OnActivate** - P
+- **OnActivate** - Put anything you want to do when interact the object.
 
 ### IHoldActivatableEntity
+- **CanHoldActivate** - Can activate or not? return `TRUE` if it can.
+- **OnHoldActivate** - Put anything you want to do when interact the object.
 
 ### IPickupActivatableEntity
+- **CanPickupActivate** - Can activate or not? return `TRUE` if it can.
+- **OnPickupActivate** - Put anything you want to do when interact the object.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM4NTQ0OF19
+eyJoaXN0b3J5IjpbMTM3NDQ1NjA1OF19
 -->
