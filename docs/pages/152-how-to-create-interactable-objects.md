@@ -7,11 +7,14 @@ You can create interactable objects by create a new component which implements f
 
 ## Function Description
 
+### Shared for all interfaces
+- **SetAsTargetInOneClick** - This must return `TRUE`, if you want controller to set this entity as target immediately in one click. if it is `FALSE`, first click will select it for information viewing, second will set it as target. for an item drop entities this will returns `TRUE` because, it
+
 ### IActivatableEntity
 
 ### IHoldActivatableEntity
 
 ### IPickupActivatableEntity
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzI1ODIzNV19
+eyJoaXN0b3J5IjpbLTY1MjIzODAzN119
 -->
