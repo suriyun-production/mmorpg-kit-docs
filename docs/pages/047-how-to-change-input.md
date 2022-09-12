@@ -8,12 +8,17 @@ For now, I didn't tested on Console platforms yet but I think it should work, I 
 
 Then set following keys to Project Settings -> Input
 
-*   **Activate** key for talk to NPC / show other character menu
-*   **PickUpItem** key for pick up dropped item
-*   **Attack** key for attack
-*   **Jump** key for jump
-*   **FindEnemy** key for find enemy
-*   **Reload** key for reload gun
+* **Activate** key for talk to NPC / show other character menu
+* **PickUpItem** key for pick up dropped item
+* **Attack** key for attack
+* **Jump** key for jump
+* **FindEnemy** key for find enemy
+* **Reload** key for reload gun
+* **ExitVehicle** key for exit from vehicle
+* **SwitchEquipWeaponSet** key for switch equip weapon set
+* **Sprint** key for sprint
+* **Crouch** key for crouch
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NjIzOTc4NF19
+eyJoaXN0b3J5IjpbLTIwODUwMzkyMDZdfQ==
 -->
