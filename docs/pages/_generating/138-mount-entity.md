@@ -3,7 +3,7 @@
 To create new mount, you have to prepare vehicle type, which made for character animtion specification while passenging vehicle, you can create new vehicle type by:
 
 - Right click on `Project` panel
-- Choose `Create` -> `Create Game Data` -> `Vehicle Type`
+- Choose `Create -> Create Game Data -> Vehicle Type`
 
 ![](../images/1-46-1.png)
 
@@ -36,3 +36,6 @@ And set other options as you wish.
 * * *
 
 !INCLUDE "./game-data/_entity-put-to-database.md"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3MzcyNzk5ODNdfQ==
+-->
