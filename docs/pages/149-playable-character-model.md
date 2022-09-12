@@ -114,8 +114,8 @@ All animation clip settings contains:
 * **Transition Duration** it is a default transition duration which will be used when `transitionDuration` in state settings is <= 0, it will use this value.
 * **Default Animations** this is contains default animation clips and action animations
 * **Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`, it will play these animations while weapon with specified `Weapon Type` is equipped.
-* **Left Hand Wielding Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`, it will play these animations while weapon with specified `Weapon Type` is equipped in left-.
-* **Left Hand Shield Animations**
+* **Left Hand Wielding Weapon Animations** each of this is contains animation clips and action animations for specific `Weapon Type`, it will play these animations while weapon with specified `Weapon Type` is equipped to character's left-hand.
+* **Left Hand Shield Animations** this is contains animation clips and action animations which will play while sheild is equipped to character's left-hand.
 * **Skill Animations** each of this is contains skill cast clip and activate skill action animation for specific `Skill`.
 * **Animator** set `Animator` which will be used to handle animation playing here.
 
@@ -123,5 +123,5 @@ All animation clip settings contains:
 
 After done you can save it as a prefab (drag to any folder in `Project` window).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNjgyMDU1Ml19
+eyJoaXN0b3J5IjpbLTI0NjQxNzE1OV19
 -->
