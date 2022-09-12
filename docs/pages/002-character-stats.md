@@ -16,15 +16,15 @@ This project is prepared following stats:
 * **Accuracy** add chances to hit enemies
 * **Evasion** add chances to evade enemies
 * **Cri Rate** chances to occurs critical damage
-* **Cri Dmg Rate** when critical damage occurs, damage will be multiplied with this value
+* **Cri Dmg Rate** when critical damage occurs, damage will be multiplied by this value
 * **Block Rate** chances to block damage
-* **Block Dmg Rate** when blocking, damage will be by this value
-* **Move Speed** increase character move speed
-* **Atk Speed** increase character attack speed
+* **Block Dmg Rate** when blocking, damage will be decreased by this value
+* **Move Speed** increase character's move speed
+* **Atk Speed** increase character's attack speed
 * **Weight Limit** increase inventory weight limit
 * **Slot Limit** increase inventory slot limit
 * **Gold Rate** increase gold drop rate
 * **Exp Rate** increase exp increase rate
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAzMTIzNTldfQ==
+eyJoaXN0b3J5IjpbLTE4NTM2MTY0OThdfQ==
 -->
