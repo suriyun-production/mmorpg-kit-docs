@@ -1,3 +1,8 @@
+## 1.77
+Writing..
+
+* * *
+
 ## 1.76d2 (2022-07-13)
 ### Bug Fixes
 - Avoid null `uiContainer` data error which breaks next proceeding.
@@ -2838,3 +2843,6 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Prepare some stats for survival mode
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg4MzM5MDI5OV19
+-->
