@@ -1,6 +1,6 @@
 ## 1.77
 ### Activatable Entity interfaces and Player Character Controller structure changes
-Now you can create component which implements activatable entity interfaces and add functionality to do something when player interact it (by activate key or pickup key or click on it), so you won't have to hard-code to add functional
+Now you can create component which implements activatable entity interfaces and add functionality to do something when player interact it (by activate key or pickup key or click on it), so you won't have to hard-code to add functionality to player character controller class, you can find some information about it [here]()
 
 ### Bug Fixes
 
@@ -2849,6 +2849,6 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ4ODAxMjMsMTE2NTI5MjI4NiwtMj
-U0MDg2OTI0LC00NzEzNTA2NTddfQ==
+eyJoaXN0b3J5IjpbNjIzMDk1Mjk1LDExNjUyOTIyODYsLTI1ND
+A4NjkyNCwtNDcxMzUwNjU3XX0=
 -->
