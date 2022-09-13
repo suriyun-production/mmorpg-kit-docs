@@ -30,6 +30,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Make it able to set custom format value to `UILocaleKeySetting`.
 - Add `cannotReset` to `Attribute`, if this is `TRUE` it won't being reset when resetting.
 - Add `cannotReset` to `BaseSkill`, if this is `TRUE` it won't being reset when resetting.
+- Add item drop exclusion rules to `BaseMapInfo`, you can find information about it [here](../pages/152-how-to-create-interactable-objects.md).
 
 * * *
 
@@ -2874,9 +2875,10 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMj
-k1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0
-LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MD
-Q4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5
-MCwxMTY1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1N119
+eyJoaXN0b3J5IjpbLTk1ODA1ODUyMywxMjgyMDkyNjQ0LDY3Mj
+Y1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2NzAs
+LTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNz
+MxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4
+OTksNzM1MjQxMTkwLDExNjUyOTIyODYsLTI1NDA4NjkyNCwtND
+cxMzUwNjU3XX0=
 -->
