@@ -33,7 +33,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `cannotReset` to `BaseSkill`, if this is `TRUE` it won't being reset when resetting.
 - Add item drop exclusion rules to `BaseMapInfo`, you can find information about it [here](../pages/019-map-info.md).
 - Kick online player when it is being logged in by another client.
-- 
+- Store online users about to database.
 
 * * *
 
@@ -2878,10 +2878,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC05NT
-gwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3
-LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOT
-IzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcw
-MDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMT
-Y1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1N119
+eyJoaXN0b3J5IjpbLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNT
+QxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2
+OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNj
+c5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0
+ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LD
+czNTI0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1
+MDY1N119
 -->
