@@ -7,7 +7,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Fix buff/item/skill cooldown visual bugs.
 - Fix status effect cause game freezing when character dead.
 - Fix wrong damage number visual bugs in `UICharacter`.
-- Fix move speed not affects playable character model's animations.
+- Fix move speed not affects playable character model's animations speed.
+- Fix area buff and area damage entities applies its effects to character when 
 
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
@@ -2861,8 +2862,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNz
-MxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4
-OTksNzM1MjQxMTkwLDExNjUyOTIyODYsLTI1NDA4NjkyNCwtND
-cxMzUwNjU3XX0=
+eyJoaXN0b3J5IjpbLTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNz
+Y4MTExNzIxLC0xNzMxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4
+NjQsLTE1ODQ2NzY4OTksNzM1MjQxMTkwLDExNjUyOTIyODYsLT
+I1NDA4NjkyNCwtNDcxMzUwNjU3XX0=
 -->
