@@ -11,6 +11,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Fix area buff and area damage entities applies its effects to characters at wrong position.
 - Fix wrong aim position while `ShooterPlayerCharacterController -> turnForwardWhileDoingAction` is `false`.
 - Fix character not moving properly while the game has low framerate (tested with 5 fps).
+- Fix character not rotating properly while the game has low framerate (tested with 5 fps).
+- Fix wrong teleport 
 
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
@@ -23,6 +25,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Don't set dead entity as aiming target.
 - Add guild name to chat messages.
 - Use ZString to improve string building, concat performance.
+- Make it able to set custom format value to `UILocaleKeySetting`.
+- 
 
 * * *
 
@@ -2867,9 +2871,9 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyOD
-YwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcy
-MSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNT
-g0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5
-MjQsLTQ3MTM1MDY1N119
+eyJoaXN0b3J5IjpbMjQxMDMxMzI4LDM2MjI5NTkyNywxODA3ND
+c1NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0NCwxMTkyMzMwMjYx
+LC03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNzA0ODU3MDA2LDczND
+E0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDExOTAsMTE2NTI5MjI4
+NiwtMjU0MDg2OTI0LC00NzEzNTA2NTddfQ==
 -->
