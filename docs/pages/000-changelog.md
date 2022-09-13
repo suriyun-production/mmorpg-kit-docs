@@ -9,6 +9,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Fix wrong damage number visual bugs in `UICharacter`.
 - Fix move speed not affects playable character model's animations speed.
 - Fix area buff and area damage entities applies its effects to characters at wrong position.
+- Fix wrong aim position while `ShooterCharacterController -> turnForwardWhileDoingAction` is `false`
+
 
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
@@ -18,6 +20,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for telling that the damage was received from damage over time debuff or not.
 - Add `DualWieldRestriction` setting to `WeaponType`, use it to set weapon wielding restriction for `DualWieldable` weapons.
 - Don't set dead entity as aiming target.
+- Add guild name to chat messages.
+- 
 
 * * *
 
@@ -2862,7 +2866,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzQ0MDIxMiwtMTY3OTU3MjM0NCwxMT
+eyJoaXN0b3J5IjpbMTMyMDIxMDY1MywtMTY3OTU3MjM0NCwxMT
 kyMzMwMjYxLC03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNzA0ODU3
 MDA2LDczNDE0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDExOTAsMT
 E2NTI5MjI4NiwtMjU0MDg2OTI0LC00NzEzNTA2NTddfQ==
