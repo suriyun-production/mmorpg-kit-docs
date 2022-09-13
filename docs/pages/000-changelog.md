@@ -19,10 +19,10 @@ So this affect to player character controller classes and entity classes (one ch
 - Improve character entity's pitch update to be updated smoother.
 - Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for telling that the damage was received from damage over time debuff or not.
 - Add `DualWieldRestriction` setting to `WeaponType`, use it to set weapon wielding restriction for `DualWieldable` weapons.
+- Add `buff` setting to `VehicleEntity`, use it to set buff while character riding it.
 - Don't set dead entity as aiming target.
 - Add guild name to chat messages.
 - Use ZString to improve string building, concat performance.
-- 
 
 * * *
 
@@ -2867,9 +2867,9 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nz
-k1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNzMxNTQ4
-NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4OTksNz
-M1MjQxMTkwLDExNjUyOTIyODYsLTI1NDA4NjkyNCwtNDcxMzUw
-NjU3XX0=
+eyJoaXN0b3J5IjpbMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyOD
+YwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcy
+MSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNT
+g0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5
+MjQsLTQ3MTM1MDY1N119
 -->
