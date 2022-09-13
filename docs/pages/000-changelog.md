@@ -9,8 +9,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Fix wrong damage number visual bugs in `UICharacter`.
 - Fix move speed not affects playable character model's animations speed.
 - Fix area buff and area damage entities applies its effects to characters at wrong position.
-- Fix wrong aim position while `ShooterCharacterController -> turnForwardWhileDoingAction` is `false`
-
+- Fix wrong aim position while `ShooterPlayerCharacterController -> turnForwardWhileDoingAction` is `false`.
+- Fix character not moving properly while the game has low framerate (tested with 5 fps).
 
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
@@ -2866,8 +2866,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDIxMDY1MywtMTY3OTU3MjM0NCwxMT
-kyMzMwMjYxLC03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNzA0ODU3
-MDA2LDczNDE0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDExOTAsMT
-E2NTI5MjI4NiwtMjU0MDg2OTI0LC00NzEzNTA2NTddfQ==
+eyJoaXN0b3J5IjpbNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOT
+IzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcw
+MDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMT
+Y1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1N119
 -->
