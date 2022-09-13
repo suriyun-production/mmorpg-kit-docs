@@ -16,7 +16,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Improve character entity's pitch update to be updated smoother.
 - Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for telling that the damage was received from damage over time debuff or not.
 - Add `DualWieldRestriction` setting to `WeaponType`, use it to set weapon wielding restriction for `DualWieldable` weapons.
-- 
+- Don't set dead entity as aiming target.
 
 * * *
 
@@ -2861,8 +2861,8 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1NDExNzQyLC03NjgxMTE3MjEsLTE3Mz
-E1NDg0MjEsNzA0ODU3MDA2LDczNDE0MDg2NCwtMTU4NDY3Njg5
-OSw3MzUyNDExOTAsMTE2NTI5MjI4NiwtMjU0MDg2OTI0LC00Nz
-EzNTA2NTddfQ==
+eyJoaXN0b3J5IjpbMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNz
+MxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4
+OTksNzM1MjQxMTkwLDExNjUyOTIyODYsLTI1NDA4NjkyNCwtND
+cxMzUwNjU3XX0=
 -->
