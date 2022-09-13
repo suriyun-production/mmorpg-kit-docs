@@ -28,8 +28,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Add guild name to chat messages.
 - Use ZString to improve string building, concat performance.
 - Make it able to set custom format value to `UILocaleKeySetting`.
-- Add `cannotReset` to `Attribute`, if this is `TRUE` it won't being reset wen.
-- Add `cannotReset` to `BaseSkill`.
+- Add `cannotReset` to `Attribute`, if this is `TRUE` it won't being reset when resetting.
+- Add `cannotReset` to `BaseSkill`, if this is `TRUE` it won't being reset when resetting.
 
 * * *
 
@@ -2874,7 +2874,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Mzg0NTQ1Nyw2NzI2NTI2OTQsMzYyMj
+eyJoaXN0b3J5IjpbMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMj
 k1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0
 LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MD
 Q4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5
