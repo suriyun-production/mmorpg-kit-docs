@@ -6,6 +6,7 @@ So this affect to player character controller classes and entity classes (one ch
 ### Bug Fixes
 
 ### Improvements
+- ฤก
 
 * * *
 
@@ -2850,7 +2851,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTkyODIxMSwtMTU4NDY3Njg5OSw3Mz
+eyJoaXN0b3J5IjpbLTUxOTk2NDM3MywtMTU4NDY3Njg5OSw3Mz
 UyNDExOTAsMTE2NTI5MjI4NiwtMjU0MDg2OTI0LC00NzEzNTA2
 NTddfQ==
 -->
