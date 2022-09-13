@@ -12,7 +12,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `leftHandShieldAnimations` setting to `PlayableCharacterModel` use it to set animations while equip shield.
 - Add `walkFootstepSettings` setting to `CharacterFootstepSoundComponent` use it to set footstep sound while walking.
 - Improve character entity's pitch update to be updated smoother.
-- Add 
+- Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for 
 
 * * *
 
@@ -2857,7 +2857,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM3NDIxMzQ5LDczNDE0MDg2NCwtMTU4ND
+eyJoaXN0b3J5IjpbNzA0ODU3MDA2LDczNDE0MDg2NCwtMTU4ND
 Y3Njg5OSw3MzUyNDExOTAsMTE2NTI5MjI4NiwtMjU0MDg2OTI0
 LC00NzEzNTA2NTddfQ==
 -->
