@@ -1,5 +1,5 @@
 ## 1.77
-### Interactable ObjectsPlayer Character Controller structure changes
+### Player Character Controller structure changes
 
 
 ### Bug Fixes
@@ -2849,6 +2849,6 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA5ODg5MzQsLTI1NDA4NjkyNCwtND
-cxMzUwNjU3XX0=
+eyJoaXN0b3J5IjpbMTE2NTI5MjI4NiwtMjU0MDg2OTI0LC00Nz
+EzNTA2NTddfQ==
 -->
