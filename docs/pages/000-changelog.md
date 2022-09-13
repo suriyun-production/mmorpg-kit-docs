@@ -15,6 +15,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Fix wrong teleport position while it has a bad network.
 - Fix fall damage being applied when walking up from water.
 - Fix wrong repair price sorting.
+- Fix MMO's wrong mail's cash claiming amount.
 
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
@@ -31,6 +32,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `cannotReset` to `Attribute`, if this is `TRUE` it won't being reset when resetting.
 - Add `cannotReset` to `BaseSkill`, if this is `TRUE` it won't being reset when resetting.
 - Add item drop exclusion rules to `BaseMapInfo`, you can find information about it [here](../pages/019-map-info.md).
+- Kick online player when it is being logged in by another client.
+- 
 
 * * *
 
@@ -2875,10 +2878,10 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE1MjA3NjEsLTk1ODA1ODUyMywxMj
-gyMDkyNjQ0LDY3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3
-OSw3MzI4NjA2NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNz
-Y4MTExNzIxLC0xNzMxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4
-NjQsLTE1ODQ2NzY4OTksNzM1MjQxMTkwLDExNjUyOTIyODYsLT
-I1NDA4NjkyNCwtNDcxMzUwNjU3XX0=
+eyJoaXN0b3J5IjpbMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC05NT
+gwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3
+LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOT
+IzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcw
+MDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMT
+Y1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1N119
 -->
