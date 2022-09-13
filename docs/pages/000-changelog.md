@@ -4,9 +4,13 @@ Now you can create component which implements activatable entity interfaces and 
 So this affect to player character controller classes and entity classes (one change which afffects to many code files is change `CacheTransform` property name to `EntityMovement`)
 
 ### Bug Fixes
+- Fix buff/item/skill cooldown visual bugs.
+- 
 
 ### Improvements
-- Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while 
+- Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
+- Add `leftHandShieldAnimations` setting to `PlayableCharacterModel` use it to set animations while equip shield.
+- 
 
 * * *
 
@@ -2851,7 +2855,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MzY0MjUyNywtMTU4NDY3Njg5OSw3Mz
-UyNDExOTAsMTE2NTI5MjI4NiwtMjU0MDg2OTI0LC00NzEzNTA2
-NTddfQ==
+eyJoaXN0b3J5IjpbNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNT
+I0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1
+N119
 -->
