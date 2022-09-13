@@ -10,7 +10,8 @@ So this affect to player character controller classes and entity classes (one ch
 ### Improvements
 - Add `leftHandWieldingWeaponAnimations` setting to `PlayableCharacterModel` use it to set animations while equip left-hand weapon.
 - Add `leftHandShieldAnimations` setting to `PlayableCharacterModel` use it to set animations while equip shield.
-- 
+- Add `walkFootstepSettings` setting to `CharacterFootstepSoundComponent` use it to set footstep sound while walking.
+- Improve character entity's pitch update smoother.
 
 * * *
 
@@ -2855,7 +2856,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNT
-I0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1
-N119
+eyJoaXN0b3J5IjpbLTEyOTk1MDE0NjAsNzM0MTQwODY0LC0xNT
+g0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5
+MjQsLTQ3MTM1MDY1N119
 -->
