@@ -21,6 +21,7 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `DualWieldRestriction` setting to `WeaponType`, use it to set weapon wielding restriction for `DualWieldable` weapons.
 - Don't set dead entity as aiming target.
 - Add guild name to chat messages.
+- Use ZString to improve string building, concat performance.
 - 
 
 * * *
@@ -2866,8 +2867,9 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOT
-IzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcw
-MDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMT
-Y1MjkyMjg2LC0yNTQwODY5MjQsLTQ3MTM1MDY1N119
+eyJoaXN0b3J5IjpbMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nz
+k1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNzMxNTQ4
+NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4OTksNz
+M1MjQxMTkwLDExNjUyOTIyODYsLTI1NDA4NjkyNCwtNDcxMzUw
+NjU3XX0=
 -->
