@@ -12,7 +12,8 @@ So this affect to player character controller classes and entity classes (one ch
 - Add `leftHandShieldAnimations` setting to `PlayableCharacterModel` use it to set animations while equip shield.
 - Add `walkFootstepSettings` setting to `CharacterFootstepSoundComponent` use it to set footstep sound while walking.
 - Improve character entity's pitch update to be updated smoother.
-- Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for 
+- Add `isDamageOverTime` parameter to `DamageableEntity -> ReceivedDamage` function, it will be used for telling that the damage was received from damage over time debuff or not.
+- 
 
 * * *
 
@@ -2857,7 +2858,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0ODU3MDA2LDczNDE0MDg2NCwtMTU4ND
-Y3Njg5OSw3MzUyNDExOTAsMTE2NTI5MjI4NiwtMjU0MDg2OTI0
-LC00NzEzNTA2NTddfQ==
+eyJoaXN0b3J5IjpbLTE3MzE1NDg0MjEsNzA0ODU3MDA2LDczND
+E0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDExOTAsMTE2NTI5MjI4
+NiwtMjU0MDg2OTI0LC00NzEzNTA2NTddfQ==
 -->
