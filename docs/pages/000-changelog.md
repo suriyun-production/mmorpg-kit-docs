@@ -2,7 +2,8 @@
 ### Bug Fixes
 - Fix `mysql_main.sql` wrong syntax (missing one `;`)
 - Fix `PickUpButtonActivator` can't find objects.
-- Fix ``
+- Fix `ActivateButtonActivator` can't find objects.
+- Fix `ItemDropEntity` which place on scene (not being spawned by spawner) don't being spawned.
 
 * * *
 
@@ -2886,11 +2887,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyODEwNTMsNTc3ODIxNzQsLTE2OTgyOT
-kwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMs
-MTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0Nz
-U0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEs
-LTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MT
-QwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2
-XX0=
+eyJoaXN0b3J5IjpbMTM4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5OD
+I5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUy
+MywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNz
+Q3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2
+MSwtNzY4MTExNzIxLC0xNzMxNTQ4NDIxLDcwNDg1NzAwNiw3Mz
+QxNDA4NjQsLTE1ODQ2NzY4OTksNzM1MjQxMTkwLDExNjUyOTIy
+ODZdfQ==
 -->
