@@ -30,6 +30,7 @@ You can create interactable objects by create a new component which implements f
 ### Example
 ```CSharp
 using MultiplayerARPG;
+
 public class LogHelloWorldOnActivate : MonoBehaviour, IActivatableEntity
 {
     public Transform EntityTransform => transform;
@@ -78,5 +79,5 @@ public class LogHelloWorldOnActivate : MonoBehaviour, IActivatableEntity
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODgzODY5NywxMzc0NDU2MDU4XX0=
+eyJoaXN0b3J5IjpbLTExODIwMjE4NDcsMTM3NDQ1NjA1OF19
 -->
