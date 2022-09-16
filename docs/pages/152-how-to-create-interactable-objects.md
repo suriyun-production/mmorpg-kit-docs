@@ -26,6 +26,11 @@ You can create interactable objects by create a new component which implements f
 ### IPickupActivatableEntity
 - **CanPickupActivate** - Can activate or not? return `TRUE` if it can.
 - **OnPickupActivate** - Put anything you want to do when interact the object.
+
+### Example
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDQ1NjA1OF19
+eyJoaXN0b3J5IjpbLTEyMjMyOTQ1MjUsMTM3NDQ1NjA1OF19
 -->
