@@ -28,13 +28,55 @@ You can create interactable objects by create a new component which implements f
 - **OnPickupActivate** - Put anything you want to do when interact the object.
 
 ### Example
-```
-namespace MultiplayerARPG {
-  public class WillLogOnActivate : MonoBehaviour, IActivatableEntity {
-
-  }
+```CSharp
+using MultiplayerARPG;
+public class LogHelloWorldOnActivate : MonoBehaviour, IActivatableEntity
+{
+    public Transform EntityTransform => transform;
+ 
+    public GameObject EntityGameObject => gameObject;
+ 
+    public bool CanActivate()
+    {
+        return true;
+    }
+ 
+    public float GetActivatableDistance()
+    {
+        return 10f;
+    }
+ 
+    public bool NotBeingSelectedOnClick()
+    {
+        return false;
+    }
+ 
+    public void OnActivate()
+    {
+        Debug.LogError("Hello, World");
+    }
+ 
+    public bool SetAsTargetInOneClick()
+    {
+        return false;
+    }
+ 
+    public bool ShouldBeAttackTarget()
+    {
+        return false;
+    }
+ 
+    public bool ShouldClearTargetAfterActivated()
+    {
+        return false;
+    }
+ 
+    public bool ShouldNotActivateAfterFollowed()
+    {
+        return false;
+    }
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxODkxMDA3LDEzNzQ0NTYwNThdfQ==
+eyJoaXN0b3J5IjpbLTQyODgzODY5NywxMzc0NDU2MDU4XX0=
 -->
