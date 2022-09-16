@@ -29,8 +29,10 @@ You can create interactable objects by create a new component which implements f
 
 ### Example
 ```
-
+namespace MultiplayerARPG {
+  public class WillLogOnActivate : 
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjMyOTQ1MjUsMTM3NDQ1NjA1OF19
+eyJoaXN0b3J5IjpbNzMwODYzMzM3LDEzNzQ0NTYwNThdfQ==
 -->
