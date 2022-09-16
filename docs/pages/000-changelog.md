@@ -1,3 +1,11 @@
+## 1.77b (2022-09-16)
+### Bug Fixes
+- Fix `mysql_main.sql` wrong syntax (missing one `;`)
+- Fix `PickUpButtonActivator` can't find objects.
+- Fix ``
+
+* * *
+
 ## 1.77 (2022-09-13)
 ### Activatable Entity interfaces and some structure changes
 Now you can create component which implements activatable entity interfaces and add functionality to do something when player interact it (by activate key or pickup key or click on it), so you won't have to hard-code to add functionality to player character controller class, you can find information about it [here](../pages/152-how-to-create-interactable-objects.md)
@@ -2878,11 +2886,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3ODIxNzQsLTE2OTgyOTkwOTQsMTQxMj
-A0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0
-NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyOD
-YwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcy
-MSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNT
-g0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2LC0yNTQwODY5
-MjRdfQ==
+eyJoaXN0b3J5IjpbNzEyODEwNTMsNTc3ODIxNzQsLTE2OTgyOT
+kwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMs
+MTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0Nz
+U0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEs
+LTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MT
+QwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5MCwxMTY1MjkyMjg2
+XX0=
 -->
