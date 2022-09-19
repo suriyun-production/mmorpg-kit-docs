@@ -2,7 +2,7 @@
 
 To integrate Facebook login you have to import [Facebook SDK for Unity](https://developers.facebook.com/docs/unity/) and the  `MMO_FacebookLogin` package which included in the kit. 
 
-To integrate Facebook login you have to create your Facebook app from [https://developers.facebook.com/](https://developers.facebook.com/docs/unity/downloads/)
+Then you will have to create your Facebook app from [Facebook Apps Dashboard](https://developers.facebook.com/apps/)
 
 You may see how to do it from
 
@@ -22,5 +22,5 @@ Then in your Login with Facebook button set **Facebook Login** component -> **On
 
 ![](https://cdn-images-1.medium.com/max/1600/1*qlY44CvGzdY84ETGrc-4ow.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDc3ODY0M119
+eyJoaXN0b3J5IjpbLTE0MzM2NDUxOTBdfQ==
 -->
