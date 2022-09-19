@@ -1,4 +1,4 @@
-# How to integrate Google Play Login
+# How to integrate Google Play Login
 
 To integrate Google Play login you have to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
 
@@ -56,7 +56,7 @@ Scroll down to `Authorisation` section then copy `OAuth2 Client ID`
 
 ![](../images/034/20.png)
 
-Then paste copied data to **Unity -> Google play games — Android Configuration -> Resources Definition**
+Then paste copied data to **{Your game init scene} -> MMOClientInstance **
 
 Then press **Setup**
 
@@ -182,3 +182,6 @@ Then set an event when Login success / fail, the Demo I make it show character l
 Then in your Login with Google Play button set **Google Play Login** component -> **On Click Google Play Login** at **On Click** event
 
 ![](../images/034/15.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0NDQ1MDMyNDddfQ==
+-->
