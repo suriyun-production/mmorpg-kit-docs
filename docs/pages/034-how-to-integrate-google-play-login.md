@@ -1,6 +1,6 @@
 # How to integrate Google Play Login
 
-To integrate Google Play login you have to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
+To integrate Google Play login you have to import `MMO_GooglePlayLogin` package which included in the kit, to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
 
 Set all `Store listing` / `Pricing & distribution` / `Content rating` and make it available for internal test (manage at `Release management` -> `App releases`) by upload signed APK file, then Save and Review to make it available for internal test
 
@@ -56,31 +56,9 @@ Scroll down to `Authorisation` section then copy `OAuth2 Client ID`
 
 ![](../images/034/20.png)
 
-Then paste copied data to **{Your game init scene} -> MMOClientInstance **
+Then paste copied data to **{Your game init scene} -> MMOClientInstance component -> GoogleWebClientId field**
 
-Then press **Setup**
-
-![](../images/034/8.png)
-
-![](../images/034/21.png)
-
-* * *
-
-## Setup Resource Definition
-
-Create **Events** or **Achievements** or **Leaderboards** then press Get resources button to copy export resources data
-
-![](../images/034/6.png)
-
-![](../images/034/7.png)
-
-Then paste copied data to **Unity -> Google play games — Android Configuration -> Resources Definition**
-
-Then press **Setup**
-
-![](../images/034/8.png)
-
-![](../images/034/9.png)
+And save the scene.
 
 * * *
 
@@ -183,5 +161,5 @@ Then in your Login with Google Play button set **Google Play Login** component -
 
 ![](../images/034/15.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ1MDMyNDddfQ==
+eyJoaXN0b3J5IjpbMTcyNTc3MTAxN119
 -->
