@@ -1,6 +1,8 @@
 # How to integrate Google Play Login
 
-To integrate Google Play login you have to import [Google Sign-In API plugin for Unity](https://github.com/insthync/google-signin-unity) and the  `MMO_GooglePlayLogin` package which included in the kit and , to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
+To integrate Google Play login you have to import [Google Sign-In API plugin for Unity](https://github.com/insthync/google-signin-unity) and the  `MMO_GooglePlayLogin` package which included in the kit. 
+
+Then you will have to create app at publisher console ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/))
 
 Set all `Store listing` / `Pricing & distribution` / `Content rating` and make it available for internal test (manage at `Release management` -> `App releases`) by upload signed APK file, then Save and Review to make it available for internal test
 
@@ -161,5 +163,5 @@ Then in your Login with Google Play button set **Google Play Login** component -
 
 ![](../images/034/15.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg0NzEzNV19
+eyJoaXN0b3J5IjpbLTQ4MDk1MDI0NF19
 -->
