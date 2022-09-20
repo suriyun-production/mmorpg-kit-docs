@@ -1,21 +1,18 @@
-* * *
+#  Getting Started (2D Singleplayer/LAN)
 
-MMORPG KIT — Getting Started (2D Singleplayer/LAN)
-==================================================
-
-Before import the package, you should to set **Scripting Runtime Version**to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
+Before import the package, you should to set **Scripting Runtime Version**to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
 
 Click menu Edit -> Project Settings -> Player
 
 ![](https://cdn-images-1.medium.com/max/1600/0*1taaUXKewT6ZOVMc)
 
-Then set **Scripting Runtime Version** to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
+Then set **Scripting Runtime Version** to **.NET 4.x Equivalent** and **Api Compatibility Level** to **.NET 4.x**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*AzhYdsPL_d-QrZFo)
 
-If there is no **.NET 4.x** choice in **Api Compatibility Level**, you should try to close the editor and reopen the project again
+If there is no **.NET 4.x** choice in **Api Compatibility Level**, you should try to close the editor and reopen the project again
 
-Then import the package, we’re going to build the test demo click menu   
+Then import the package, we’re going to build the test demo click menu   
 **File -> Build Settings**
 
 ![](https://cdn-images-1.medium.com/max/1600/0*i6_ocWDmzchYMHvv)
@@ -58,3 +55,6 @@ You can use Statpoint to increase attributes, in this Demo there are:
 *   **Dexterity** increase evasion and accuracy
 *   **Vitality** increase max HP
 *   **Intelligence** increase max MP
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzQzNDk4ODcwXX0=
+-->
