@@ -1,3 +1,6 @@
+## 1.77c (2022-09-20)
+
+
 ## 1.77b (2022-09-16)
 ### Bug Fixes
 - Fix `mysql_main.sql` wrong syntax (missing one `;`)
@@ -2887,11 +2890,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5OD
-I5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUy
-MywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNz
-Q3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2
-MSwtNzY4MTExNzIxLC0xNzMxNTQ4NDIxLDcwNDg1NzAwNiw3Mz
-QxNDA4NjQsLTE1ODQ2NzY4OTksNzM1MjQxMTkwLDExNjUyOTIy
-ODZdfQ==
+eyJoaXN0b3J5IjpbNjc1MjM0ODg0LDEzODgyMzQyNDIsNTc3OD
+IxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYx
+LC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMj
+k1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0
+LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MD
+Q4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5
+MF19
 -->
