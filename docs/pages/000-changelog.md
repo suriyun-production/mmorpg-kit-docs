@@ -1,5 +1,8 @@
 ## 1.77c (2022-09-20)
+### Improvements
+- 
 
+* * *
 
 ## 1.77b (2022-09-16)
 ### Bug Fixes
@@ -2890,11 +2893,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1MjM0ODg0LDEzODgyMzQyNDIsNTc3OD
-IxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYx
-LC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMj
-k1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0
-LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MD
-Q4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5
-MF19
+eyJoaXN0b3J5IjpbLTIwMzIxNzc2MjUsMTM4ODIzNDI0Miw1Nz
+c4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3
+NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNj
+IyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIz
+NDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNzMxNTQ4NDIxLD
+cwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4OTksNzM1MjQx
+MTkwXX0=
 -->
