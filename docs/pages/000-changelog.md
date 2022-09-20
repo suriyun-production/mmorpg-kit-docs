@@ -4,7 +4,7 @@
 - Add `disableDealing` option to `GameInstance`, turn it on to disable dealing features for all maps.
 - Add `ICharacterModelFactory` implement it to create character model option in character creator dialog.
 - Add `IEntityMovementFactory` implement it to create entity movement option in character creator dialog.
-- Server code exclusion with scripting define symbols conditions changed, now `CLIENT_BUILD` is removed, but you will have to use `MMO_BUILD` for MMO games, but it will exclude server codes from the build when it was built as unity server build.
+- Server code exclusion with scripting define symbols conditions changed, now `CLIENT_BUILD` is removed, but you will have to use `MMO_BUILD` for MMO games, it will exclude server codes from the build when it was built as unity server build.
 
 * * *
 
@@ -2897,11 +2897,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTYzMzY0NzMsMTM4ODIzNDI0Miw1Nz
-c4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3
-NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNj
-IyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIz
-NDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNzMxNTQ4NDIxLD
-cwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4OTksNzM1MjQx
-MTkwXX0=
+eyJoaXN0b3J5IjpbMTcxOTAzNDg4NiwxMzg4MjM0MjQyLDU3Nz
+gyMTc0LC0xNjk4Mjk5MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2
+MSwtOTU4MDU4NTIzLDEyODIwOTI2NDQsNjcyNjUyNjk0LDM2Mj
+I5NTkyNywxODA3NDc1NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0
+NCwxMTkyMzMwMjYxLC03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNz
+A0ODU3MDA2LDczNDE0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDEx
+OTBdfQ==
 -->
