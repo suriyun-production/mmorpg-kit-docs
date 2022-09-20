@@ -1,6 +1,6 @@
 ## 1.77c (2022-09-20)
 ### Improvements
-- 
+- Add `disableDealing` option to `GameInstance` and `BaseMapInfo`, if it is `TRUE` for `GameInstance` it will disa
 
 * * *
 
@@ -2893,7 +2893,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzIxNzc2MjUsMTM4ODIzNDI0Miw1Nz
+eyJoaXN0b3J5IjpbLTE3NzgzOTUzMTksMTM4ODIzNDI0Miw1Nz
 c4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3
 NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNj
 IyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIz
