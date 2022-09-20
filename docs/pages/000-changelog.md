@@ -2,7 +2,9 @@
 ### Improvements
 - Add `disableDealing` option to `BaseMapInfo`, turn it on to disable dealing features for specific map.
 - Add `disableDealing` option to `GameInstance`, turn it on to disable dealing features for all maps.
-- Add ``
+- Add `ICharacterModelFactory` implement it to create character model option in character creator dialog.
+- Add `IEntityMovementFactory` implement it to create entity movement option in character creator dialog.
+- Server code exclusion with 
 
 * * *
 
@@ -2895,7 +2897,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNDI0NTg1NCwxMzg4MjM0MjQyLDU3Nz
+eyJoaXN0b3J5IjpbMTQ3MDkxMzMzNywxMzg4MjM0MjQyLDU3Nz
 gyMTc0LC0xNjk4Mjk5MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2
 MSwtOTU4MDU4NTIzLDEyODIwOTI2NDQsNjcyNjUyNjk0LDM2Mj
 I5NTkyNywxODA3NDc1NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0
