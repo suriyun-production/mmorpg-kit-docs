@@ -15,7 +15,7 @@ Then add it into **MMOClientInstance** game object (In 00Init\_MMO scene)
 
 ## Client Production Build
 
-Before you build your game for players, you should add `MMO_BUILD` to `Project Settings -> Scripting Define Symbols`, then players won't be able to use your game to create private server. But for offline/LAN games you must delete it because they have to use codes from both the server and client sides.
+Before you build your game for players, use menu: `MMORPG KIT -> Setup For MMO Build` to setup scripting define symbols to exclude server codes from client.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTA5MDc0OTBdfQ==
+eyJoaXN0b3J5IjpbLTM1MjU2MTMwOCwtMTQ1MDkwNzQ5MF19
 -->
