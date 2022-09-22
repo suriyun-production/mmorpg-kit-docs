@@ -25,9 +25,9 @@ If you are using Unity 2021, you have to do follows [this](pages/151-working-wit
 
 * * *
 
-###
+## Building
 
-ThenSetup scripting define symbols by use menu: `MMORPG KIT -> Setup For Offline-Lan Build`
+Before you build, you should setup scripting define symbols by use menu: `MMORPG KIT -> Setup For Offline-Lan Build` to make sure that the build will work properly.
 
 Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
 
@@ -46,7 +46,9 @@ Then you can build the game to test Multiplayer gameplay, by press on `Build` bu
 
 * * *
 
-Then open up first client and host the game to let other to join later
+## Testing
+
+Open up first client and host the game to let other to join later
 
 Select `Multiplayer` and `Host`
 
@@ -100,5 +102,5 @@ When you kill monster, your character will gain XP, collect XP to level up. When
 
 And you Skill point to increase skill level
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTgyOTgwNl19
+eyJoaXN0b3J5IjpbLTQwOTc4NTM1NV19
 -->
