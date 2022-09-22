@@ -25,6 +25,10 @@ If you are using Unity 2021, you have to do follows [this](pages/151-working-wit
 
 * * *
 
+###
+
+ThenSetup scripting define symbols by use menu: `MMORPG KIT -> Setup For Offline-Lan Build`
+
 Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
 
 ![](../images/101/004.png)
@@ -95,3 +99,6 @@ When you kill monster, your character will gain XP, collect XP to level up. When
 *   `Intelligence` increase max MP
 
 And you Skill point to increase skill level
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc0NTgyOTgwNl19
+-->
