@@ -1,5 +1,7 @@
 # Getting Started (Singleplay/LAN)
 
+## Importing
+
 After download the package from Unity Asset Store, click on `Import` button
 
 ![](../images/101/001.png)
@@ -102,5 +104,5 @@ When you kill monster, your character will gain XP, collect XP to level up. When
 
 And you Skill point to increase skill level
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTc4NTM1NV19
+eyJoaXN0b3J5IjpbMTMyNDUxNDk5Nl19
 -->
