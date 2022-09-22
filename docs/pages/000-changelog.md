@@ -3,7 +3,7 @@
 - Fix `PlayableCharacterModel` movement animation speed not being updated properly.
 
 ### Improvements
-- Server code exclusion with scripting define symbols conditions changed (again :P), now `MMO_BUILD`, add`UNITY_SERVER` scripting define symbols, if you want to includes server codes to the build
+- Server code exclusion with scripting define symbols conditions changed (again :P), now `MMO_BUILD`, add`UNITY_SERVER` scripting define symbols, if you want to includes server codes to the build (it is requriqed for Offline/LAN games).
 - Add `MMORPG KIT -> Setup For Offline-Lan Build`, `MMORPG KIT -> Setup For MMO Build` and `MMORPG KIT -> Setup For MMO with Server Codes Build` menu, use any of them to setup scripting define symbols  for difference purporse.
 - Add `resetAttributes` to quest data, when quest complete it will reset character's attributes.
 - Add `resetSkills` to quest data, when quest complete it will reset character's skills.
@@ -2909,11 +2909,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDIyNDIzNCwxMzg4MjM0MjQyLDU3Nz
-gyMTc0LC0xNjk4Mjk5MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2
-MSwtOTU4MDU4NTIzLDEyODIwOTI2NDQsNjcyNjUyNjk0LDM2Mj
-I5NTkyNywxODA3NDc1NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0
-NCwxMTkyMzMwMjYxLC03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNz
-A0ODU3MDA2LDczNDE0MDg2NCwtMTU4NDY3Njg5OSw3MzUyNDEx
-OTBdfQ==
+eyJoaXN0b3J5IjpbMjQwMDY4ODMzLDEzODgyMzQyNDIsNTc3OD
+IxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYx
+LC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMj
+k1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0
+LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MD
+Q4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2ODk5LDczNTI0MTE5
+MF19
 -->
