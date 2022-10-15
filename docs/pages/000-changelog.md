@@ -1,5 +1,6 @@
 ## 1.78 (2022-10-15)
-### Structure Changes
+### Movement Secure Setting Changes
+Movement secure setting was moved to entity movement component, because while it is in game entity component it feels like it will be able to 
 
 ### Bug Fixes
 - Fix `PlayableCharacterModel` 's animation freezing while jump and use skill.
@@ -2938,7 +2939,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODEyMTM0NjgsLTkwODcyMjQwNiwtMT
+eyJoaXN0b3J5IjpbLTE1NjI5MTc5MTAsLTkwODcyMjQwNiwtMT
 czMTg5MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5
 MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLD
 EyODIwOTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1
