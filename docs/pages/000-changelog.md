@@ -15,6 +15,8 @@
 - Add `ReloadRestriction` settings to `IWeaponItem`.
 - Add `MovementRestrictionWhileUsingSkill` settings to `BaseSkill`.
 - Add `UseSkillRestriction` settings to `BaseSkill`.
+- Change vehicle riding workflow, now your character will ride the vehicle immediately after it was spawned.
+- 
 
 * * *
 
@@ -2935,11 +2937,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTY4NTc1LC0xNzMxODkzMDk3LDEzOD
-gyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1
-LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2Nz
-I2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcw
-LC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMT
-czMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2
-ODk5XX0=
+eyJoaXN0b3J5IjpbLTkwODcyMjQwNiwtMTczMTg5MzA5NywxMz
+g4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5MDk0LDE0MTIwNDMx
+NSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLDEyODIwOTI2NDQsNj
+cyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1NDc5LDczMjg2MDY3
+MCwtMTY3OTU3MjM0NCwxMTkyMzMwMjYxLC03NjgxMTE3MjEsLT
+E3MzE1NDg0MjEsNzA0ODU3MDA2LDczNDE0MDg2NCwtMTU4NDY3
+Njg5OV19
 -->
