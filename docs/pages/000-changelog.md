@@ -6,7 +6,8 @@
 - 
 
 ### Improvements
-- Improve constructi
+- Improve building material hit detection performance.
+- Add 
 
 * * *
 
@@ -2927,11 +2928,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyODY3MDIzLC0xNzMxODkzMDk3LDEzOD
-gyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1
-LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2Nz
-I2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcw
-LC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMT
-czMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2
-ODk5XX0=
+eyJoaXN0b3J5IjpbLTExMDAzNDQ1MzQsLTE3MzE4OTMwOTcsMT
+M4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQz
+MTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LD
+Y3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2
+NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC
+0xNzMxNTQ4NDIxLDcwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2
+NzY4OTldfQ==
 -->
