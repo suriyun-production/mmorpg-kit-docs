@@ -7,7 +7,12 @@
 
 ### Improvements
 - Improve building material hit detection performance.
-- Add 
+- Add `MovementRestrictionWhileReloading` to `IWeaponItem`.
+- Add `MovementRestrictionWhileCharging` to `IWeaponItem`.
+- Add `MovementRestrictionWhileAttacking` to `IWeaponItem`.
+- Add `MovementRestrictionWhileReloading` to `IWeaponItem`.
+- Add `AttackRestriction` to `IWeaponItem`.
+- Add `ReloadRestriction` to `IWeaponItem`.
 
 * * *
 
@@ -2928,7 +2933,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDAzNDQ1MzQsLTE3MzE4OTMwOTcsMT
+eyJoaXN0b3J5IjpbLTEzMjY2ODgwMzAsLTE3MzE4OTMwOTcsMT
 M4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQz
 MTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LD
 Y3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2
