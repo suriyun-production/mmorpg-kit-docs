@@ -1,6 +1,6 @@
 ## 1.78 (2022-10-15)
 ### Movement Secure Setting Changes
-Movement secure setting was moved to entity movement component, because while it is in game entity component it feels like it will be able to set movement secure for any entity movement component, and I have to implements both server auth and client auth movement in each component, which I feels not comportable with it because it has to use the setting as condition to implements entity movement. I feels more comfortable with one component for specific movement secure setting, so in the future
+Movement secure setting was moved to entity movement component, because while it is in game entity component it feels like it will be able to set movement secure for any entity movement component, and I have to implements both server auth and client auth movement in each component, which I feels not comportable with it because it has to use the setting as condition to implements entity movement. I feels more comfortable with one component for specific movement secure setting, so in the future it will be easier to implement new entity movement.
 
 ### Bug Fixes
 - Fix `PlayableCharacterModel` 's animation freezing while jump and use skill.
@@ -2939,11 +2939,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTUzMzEyNiwtOTA4NzIyNDA2LC0xNz
-MxODkzMDk3LDEzODgyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkw
-OTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMT
-I4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0
-NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLT
-c2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQw
-ODY0XX0=
+eyJoaXN0b3J5IjpbLTE4MjM2MDY0MDEsLTkwODcyMjQwNiwtMT
+czMTg5MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5
+MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLD
+EyODIwOTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1
+NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0NCwxMTkyMzMwMjYxLC
+03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNzA0ODU3MDA2LDczNDE0
+MDg2NF19
 -->
