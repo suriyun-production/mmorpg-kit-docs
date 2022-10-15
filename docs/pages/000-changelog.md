@@ -1,3 +1,12 @@
+## 1.78 (2022-10-15)
+### Bug Fixes
+- Fix `PlayableCharacterModel` 's animation freezing while jump and use skill.
+- Fix entity movement freezing after teleport (some time).
+- Fix mail data serialize issues.
+- 
+
+* * *
+
 ## 1.77d2 (2022-09-23)
 ### Bug Fixes
 - Fix server auth position not being updated after teleport.
@@ -2915,11 +2924,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE4OTMwOTcsMTM4ODIzNDI0Miw1Nz
-c4MjE3NCwtMTY5ODI5OTA5NCwxNDEyMDQzMTUsLTE1NDE1MjA3
-NjEsLTk1ODA1ODUyMywxMjgyMDkyNjQ0LDY3MjY1MjY5NCwzNj
-IyOTU5MjcsMTgwNzQ3NTQ3OSw3MzI4NjA2NzAsLTE2Nzk1NzIz
-NDQsMTE5MjMzMDI2MSwtNzY4MTExNzIxLC0xNzMxNTQ4NDIxLD
-cwNDg1NzAwNiw3MzQxNDA4NjQsLTE1ODQ2NzY4OTksNzM1MjQx
-MTkwXX0=
+eyJoaXN0b3J5IjpbMTUwODAzMjQ0LC0xNzMxODkzMDk3LDEzOD
+gyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1
+LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2Nz
+I2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcw
+LC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODExMTcyMSwtMT
+czMTU0ODQyMSw3MDQ4NTcwMDYsNzM0MTQwODY0LC0xNTg0Njc2
+ODk5XX0=
 -->
