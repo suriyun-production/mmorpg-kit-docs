@@ -5,6 +5,9 @@
 - Fix mail data serialize issues.
 - 
 
+### Improvements
+- Improve constructi
+
 * * *
 
 ## 1.77d2 (2022-09-23)
@@ -2924,7 +2927,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODAzMjQ0LC0xNzMxODkzMDk3LDEzOD
+eyJoaXN0b3J5IjpbMjIyODY3MDIzLC0xNzMxODkzMDk3LDEzOD
 gyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1
 LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5MjY0NCw2Nz
 I2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNzMyODYwNjcw
