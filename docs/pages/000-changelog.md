@@ -1,6 +1,6 @@
 ## 1.78 (2022-10-15)
 ### Movement Secure Setting Changes
-Movement secure setting was moved to entity movement component, because while it is in game entity component it feels like it will be able to set movement secure for any entity movement component, and I have to implements both server auth and client auth movement in each component, which I feels not comportable with it because it has to use the setting as condition to implements entity movement. I feels more comfortable with one component for specific movement secure setting, so in the future it will be easier to implement new entity movement.
+The movement secure setting was moved to the entity movement component because while it is stored in the game entity component it feels like it will be able to set movement secure for any entity movement components, and I have to implement both server auth and client auth movement in each component, which I feel not convenience to implements entity movement with it because it has to use the setting as a condition to implements entity movement. I feel more convenient with one component for a specific movement secure setting, so in the future, it will be easier to implement new entity movement.
 
 ### Bug Fixes
 - Fix `PlayableCharacterModel` 's animation freezing while jump and use skill.
@@ -2939,7 +2939,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM2MDY0MDEsLTkwODcyMjQwNiwtMT
+eyJoaXN0b3J5IjpbLTEyMDgyMDQ5NDIsLTkwODcyMjQwNiwtMT
 czMTg5MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5
 MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLD
 EyODIwOTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1
