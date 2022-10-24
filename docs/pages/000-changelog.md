@@ -3,8 +3,10 @@
 - Fix wrong `PlayableCharacterModel` 's holster and draw animations.
 - Fix guild war status not being sent to client when enter the game.
 - Fix wrong storage item's random seed type which is cause of item losing.
+- Fix stackable character buff not being saved to database.
+- Fix character try to teleport while it is dead.
 - Fix camp fire convert duration reducing by amount of same kind of items.
-- Fix d
+- Fix duplicating item when move item from capfire to inventory while converting.
 
 * * *
 
@@ -2949,7 +2951,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjAxNDE1NywtMTIwODIwNDk0MiwtOT
+eyJoaXN0b3J5IjpbMTUwOTMxNDc2NiwtMTIwODIwNDk0MiwtOT
 A4NzIyNDA2LC0xNzMxODkzMDk3LDEzODgyMzQyNDIsNTc3ODIx
 NzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC
 05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1
