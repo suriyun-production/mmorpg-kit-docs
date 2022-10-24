@@ -7,6 +7,7 @@
 - Fix character try to teleport while it is dead.
 - Fix camp fire convert duration reducing by amount of same kind of items.
 - Fix duplicating item when move item from capfire to inventory while converting.
+- Fix item 
 
 * * *
 
@@ -2951,11 +2952,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTMxNDc2NiwtMTIwODIwNDk0MiwtOT
-A4NzIyNDA2LC0xNzMxODkzMDk3LDEzODgyMzQyNDIsNTc3ODIx
-NzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC
-05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1
-OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LD
-ExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4
-NTcwMDZdfQ==
+eyJoaXN0b3J5IjpbLTY2MTMxMjQ1LDE1MDkzMTQ3NjYsLTEyMD
+gyMDQ5NDIsLTkwODcyMjQwNiwtMTczMTg5MzA5NywxMzg4MjM0
+MjQyLDU3NzgyMTc0LC0xNjk4Mjk5MDk0LDE0MTIwNDMxNSwtMT
+U0MTUyMDc2MSwtOTU4MDU4NTIzLDEyODIwOTI2NDQsNjcyNjUy
+Njk0LDM2MjI5NTkyNywxODA3NDc1NDc5LDczMjg2MDY3MCwtMT
+Y3OTU3MjM0NCwxMTkyMzMwMjYxLC03NjgxMTE3MjEsLTE3MzE1
+NDg0MjFdfQ==
 -->
