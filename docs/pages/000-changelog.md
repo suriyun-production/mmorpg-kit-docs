@@ -1,3 +1,11 @@
+## 1.78b (2022-10-25)
+### Buf Fixes
+- Fix wrong `PlayableCharacterModel` 's holster and draw animations.
+- Fix guild war status not being sent to client when enter the game.
+- Fix wrong storage item's 
+
+* * *
+
 ## 1.78 (2022-10-15)
 ### Movement Secure Setting Changes
 The movement secure setting was moved to the entity movement component because while it is stored in the game entity component it feels like it will be able to set movement secure for any entity movement components, and I have to implement both server auth and client auth movement in each component, which I feel not convenience to implements entity movement with it because it has to use the setting as a condition to implements entity movement. I feel more convenient with one component for a specific movement secure setting, so in the future, it will be easier to implement new entity movement.
@@ -2939,11 +2947,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgyMDQ5NDIsLTkwODcyMjQwNiwtMT
-czMTg5MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5
-MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLD
-EyODIwOTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1
-NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0NCwxMTkyMzMwMjYxLC
-03NjgxMTE3MjEsLTE3MzE1NDg0MjEsNzA0ODU3MDA2LDczNDE0
-MDg2NF19
+eyJoaXN0b3J5IjpbMTc5MzAxOTQ3MSwtMTIwODIwNDk0MiwtOT
+A4NzIyNDA2LC0xNzMxODkzMDk3LDEzODgyMzQyNDIsNTc3ODIx
+NzQsLTE2OTgyOTkwOTQsMTQxMjA0MzE1LC0xNTQxNTIwNzYxLC
+05NTgwNTg1MjMsMTI4MjA5MjY0NCw2NzI2NTI2OTQsMzYyMjk1
+OTI3LDE4MDc0NzU0NzksNzMyODYwNjcwLC0xNjc5NTcyMzQ0LD
+ExOTIzMzAyNjEsLTc2ODExMTcyMSwtMTczMTU0ODQyMSw3MDQ4
+NTcwMDZdfQ==
 -->
