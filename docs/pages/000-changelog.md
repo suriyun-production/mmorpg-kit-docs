@@ -1,7 +1,11 @@
+## 1.78c (2022-10-29)
+### Bug Fixes
+- Don't allow to move item while 
 
+* * *
 
 ## 1.78b (2022-10-25)
-### Buf Fixes
+### Bug Fixes
 - Fix wrong `PlayableCharacterModel` 's holster and draw animations.
 - Fix guild war status not being sent to client when enter the game.
 - Fix wrong storage item's random seed type which is cause of item losing.
@@ -2954,7 +2958,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTQ1NDI4MSw4MDc4NzIxNjksMTUwOT
+eyJoaXN0b3J5IjpbMTkzODc1MjQwMCw4MDc4NzIxNjksMTUwOT
 MxNDc2NiwtMTIwODIwNDk0MiwtOTA4NzIyNDA2LC0xNzMxODkz
 MDk3LDEzODgyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMT
 QxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5
