@@ -4,7 +4,8 @@
 - Don't allow player to enter game while the same ID is in game and loading the map (to enter game).
 
 ### Improvements
-- Don
+- Don't play audio while game instance is running in batch mode.
+- Change move item to/from storage workflow, now it able to move item from equipped slots (armor
 
 * * *
 
@@ -2968,11 +2969,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4MjQ1MzI1LDgwNzg3MjE2OSwxNTA5Mz
-E0NzY2LC0xMjA4MjA0OTQyLC05MDg3MjI0MDYsLTE3MzE4OTMw
-OTcsMTM4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5ODI5OTA5NCwxND
-EyMDQzMTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUyMywxMjgyMDky
-NjQ0LDY3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3OSw3Mz
-I4NjA2NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTEx
-NzIxXX0=
+eyJoaXN0b3J5IjpbMTEyOTY4MjU3MSw4MDc4NzIxNjksMTUwOT
+MxNDc2NiwtMTIwODIwNDk0MiwtOTA4NzIyNDA2LC0xNzMxODkz
+MDk3LDEzODgyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMT
+QxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5
+MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNz
+MyODYwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODEx
+MTcyMV19
 -->
