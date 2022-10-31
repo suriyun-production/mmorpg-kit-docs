@@ -1,3 +1,5 @@
+
+
 ## 1.78b (2022-10-25)
 ### Buf Fixes
 - Fix wrong `PlayableCharacterModel` 's holster and draw animations.
@@ -6,8 +8,8 @@
 - Fix stackable character buff not being saved to database.
 - Fix character try to teleport while it is dead.
 - Fix camp fire convert duration reducing by amount of same kind of items.
-- Fix duplicating item when move item from capfire to inventory while converting.
-- Fix item delay not being applied at client, so it can spam
+- Fix duplicating item when move item from camp fire to inventory while converting.
+- Fix item delay not being applied at client, so it can spam to use item (but it won't being used at server).
 
 * * *
 
@@ -2952,7 +2954,7 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDE1NjQ3Myw4MDc4NzIxNjksMTUwOT
+eyJoaXN0b3J5IjpbMTQ0OTQ1NDI4MSw4MDc4NzIxNjksMTUwOT
 MxNDc2NiwtMTIwODIwNDk0MiwtOTA4NzIyNDA2LC0xNzMxODkz
 MDk3LDEzODgyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMT
 QxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5
