@@ -1,4 +1,12 @@
+## 1.78f (2022-11-16)
+### Bug Fixes
+- Try
 
+## 1.78e (2022-11-08)
+### Bug Fixes
+- Try fix storage items race condition issues.
+
+* * *
 
 ## 1.78d (2022-10-31)
 ### Bug Fixes
@@ -2972,11 +2980,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTU0NTc5LDgwNzg3MjE2OSwxNTA5Mz
-E0NzY2LC0xMjA4MjA0OTQyLC05MDg3MjI0MDYsLTE3MzE4OTMw
-OTcsMTM4ODIzNDI0Miw1Nzc4MjE3NCwtMTY5ODI5OTA5NCwxND
-EyMDQzMTUsLTE1NDE1MjA3NjEsLTk1ODA1ODUyMywxMjgyMDky
-NjQ0LDY3MjY1MjY5NCwzNjIyOTU5MjcsMTgwNzQ3NTQ3OSw3Mz
-I4NjA2NzAsLTE2Nzk1NzIzNDQsMTE5MjMzMDI2MSwtNzY4MTEx
-NzIxXX0=
+eyJoaXN0b3J5IjpbLTE0NzQwNDY3MDUsODA3ODcyMTY5LDE1MD
+kzMTQ3NjYsLTEyMDgyMDQ5NDIsLTkwODcyMjQwNiwtMTczMTg5
+MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNjk4Mjk5MDk0LD
+E0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4NTIzLDEyODIw
+OTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxODA3NDc1NDc5LD
+czMjg2MDY3MCwtMTY3OTU3MjM0NCwxMTkyMzMwMjYxLC03Njgx
+MTE3MjFdfQ==
 -->
