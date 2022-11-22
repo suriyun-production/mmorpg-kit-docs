@@ -1,3 +1,10 @@
+## 1.78g (2022-11-23)
+### Bug Fixes
+- Try fix storage items race condition issues.
+- Change server codes exclusion to make it able to build offfline games for non-standalone platforms (Mobiles).
+
+* * *
+
 ## 1.78f (2022-11-16)
 ### Bug Fixes
 - Try fix storage items race condition issues.
@@ -2983,11 +2990,11 @@ More Info (https://medium.com/suriyun-production/1-38-updates-ef4586da2799)
 - Change gameplay rule class to be ScriptableObject
 - Change game instance extra to network settings so developers can changes network settings easily
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjg2MjA2OCw4MDc4NzIxNjksMTUwOT
-MxNDc2NiwtMTIwODIwNDk0MiwtOTA4NzIyNDA2LC0xNzMxODkz
-MDk3LDEzODgyMzQyNDIsNTc3ODIxNzQsLTE2OTgyOTkwOTQsMT
-QxMjA0MzE1LC0xNTQxNTIwNzYxLC05NTgwNTg1MjMsMTI4MjA5
-MjY0NCw2NzI2NTI2OTQsMzYyMjk1OTI3LDE4MDc0NzU0NzksNz
-MyODYwNjcwLC0xNjc5NTcyMzQ0LDExOTIzMzAyNjEsLTc2ODEx
-MTcyMV19
+eyJoaXN0b3J5IjpbMjI1MzQyNDI2LC05MTY4NjIwNjgsODA3OD
+cyMTY5LDE1MDkzMTQ3NjYsLTEyMDgyMDQ5NDIsLTkwODcyMjQw
+NiwtMTczMTg5MzA5NywxMzg4MjM0MjQyLDU3NzgyMTc0LC0xNj
+k4Mjk5MDk0LDE0MTIwNDMxNSwtMTU0MTUyMDc2MSwtOTU4MDU4
+NTIzLDEyODIwOTI2NDQsNjcyNjUyNjk0LDM2MjI5NTkyNywxOD
+A3NDc1NDc5LDczMjg2MDY3MCwtMTY3OTU3MjM0NCwxMTkyMzMw
+MjYxXX0=
 -->
