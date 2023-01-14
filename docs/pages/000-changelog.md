@@ -1,3 +1,22 @@
+## 1.79 (2023-01-14)
+### Bug Fixes
+- [#1831](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1831)
+- [#1824](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1824)
+- [#1811](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1811)
+- [#1794](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1794)
+- [#1793](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1793)
+- [#1756](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1756)
+
+### Improvements
+- Change character level, item amount, skill level and so on that were short to int [#1838](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1838)
+- Make it able to change packet version by component setting [#1829](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1829)
+- Implement buff restriction [#1799](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1799)
+- Make it able to set growth for difference level [#1786](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1786)
+- Implement NPC dialog confirm menu requirement [#1784](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1784)
+- Change game data classes and UI to be partial class [#1757](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1757)
+
+* * *
+
 ## 1.78g (2022-11-23)
 ### Bug Fixes
 - Try fix storage items race condition issues.
