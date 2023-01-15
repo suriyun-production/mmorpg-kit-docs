@@ -7,3 +7,4 @@ It may have folder structure changes in some versions. So to avoid the problem w
 - `Assets/UnityMultiplayerARPG/MMO/Plugins`
 - `Assets/UnityMultiplayerARPG/MMO/SQLs`
 - `Assets/UnityMultiplayerARPG/GuildWar`
+- `Assets/UnityMultiplayerARPG/Demo/Scripts`
