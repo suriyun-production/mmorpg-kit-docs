@@ -27,6 +27,28 @@ If you are using Unity 2021, you have to do follows [this](pages/151-working-wit
 
 * * *
 
+## Want to use Old Input Manager?
+
+If you want to use old input manager, you have to change `Active Input Handling` to `Input Manager (Old)`, you can find the setting from `Project Settings -> Player`
+
+![](../images/old_input_manager.png)
+
+## Want to use New Input System?
+
+If you want to use new input system, you have to install the package from package manager which you can access it via menu `Window -> Package Manager`
+
+Change packages scope to `Unity Registry` 
+
+![](../images/package-unity-registry.png)
+
+Then find for the input system and install it
+
+![](../images/package-find-input.png)
+
+And you have to change `Active Input Handling` to `Input System Package (New)`, you can find the setting from `Project Settings -> Player`
+
+* * *
+
 ## Building
 
 Before you build, you should setup scripting define symbols by use menu: `MMORPG KIT -> Setup For Offline-Lan Build` to make sure that the build will work properly.
