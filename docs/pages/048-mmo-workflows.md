@@ -20,6 +20,14 @@ Map Server X (map data) -> Cluster Server (broadcast: map data) -> Other Map Ser
                            Cluster Server (send: other map servers) -> Map Server X
 ```
 
+#### About Machine Address
+
+The machine address is for map-spawn-server and map-server, but if the map-server is spawned by map-spawn-server, map-server's machine address will be the value which receiving from map-spawn-server.
+
+If you can read codes, you can find which configs will be applied to which server in `MMOServerInstance`, you may try find `ARG_MACHINE_ADDRESS` and see where it was applied.
+
+* * *
+
 ### Client Workflow
 
 At client side, it will connect to **Central Server** to login and manage characters, after selected character to play, client will receive **Map Server** connection information after sent select character message to **Central Server**. Then client will disconnect from **Central Server** then connect to **Map Server** with received connection information.

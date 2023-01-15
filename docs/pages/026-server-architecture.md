@@ -2,7 +2,7 @@
 
 ![](../images/mmo_arch.png)
 
-For this project, there are 3 kind of servers are:
+For this project, there are 5 kind of servers are:
 
 *   `Central server`, this server will handle user login/register/character create/character delete more than that it is collects list of other servers.
 *   `Cluster server`, this server is part of central server, when central server starts this will starts too, it was made for handle app-servers (map-server, map-spawn-server) connections and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
