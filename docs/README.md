@@ -17,6 +17,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 #### Character and Monster
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
+*   [How Incremental Values Being Calculated](pages/153-how-incremental-calculated.md)
 *   [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info)
 *   [How to create character entity with `Character Entity Creator`](pages/148-how-to-create-character-with-editor)
 *   [How to create Player Character](pages/135-player-character-entity.md)
