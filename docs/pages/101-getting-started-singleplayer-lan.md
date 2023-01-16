@@ -45,7 +45,11 @@ Then find for the input system and install it
 
 ![](../images/package-find-input.png)
 
-And you have to change `Active Input Handling` to `Input System Package (New)`, you can find the setting from `Project Settings -> Player`
+Next, change `Active Input Handling` to `Input System Package (New)`, you can find the setting from `Project Settings -> Player`
+
+Then you can try use demo's input actions by set it in init scene (`00Init`) -> `GameInstance` -> `InputSettingManager`
+
+![](../images/input-actions-setup.png)
 
 * * *
 
