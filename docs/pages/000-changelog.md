@@ -1,3 +1,20 @@
+## 1.80 (2023-01-29)
+### Bug Fixes
+- [#1741](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1741)
+- [#1814](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1814)
+- [#1860](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1860)
+- [#1861](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1861)
+- [#1871](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1871)
+
+### Improvements
+- Add `Charge Duration` settings to weapon item data, it will be used while `Fire Type` is `Fire On Release`, if players press attack key shorter than this value their characters won't attack.
+- Add `Priority` to `Equipment Model`, use it in case you want to instantiate the equipment model to the same socket but want to hide others which having lesser priority. 
+- MMO games log message will be written separately by kind of messages (info/error/warning).
+- Make player character controller codes more modular by move building constructing codes to `IBuildAimController` and implements it.
+- Make player character controller codes more modular by move area skill aiming codes to `IAreaSkillAimController` and implements it.
+
+* * *
+
 ## 1.79b2 (2023-01-17)
 ### Improvements
 - Add `IsAiming` property to `AreaSkillControls`, can use it to detecting that player is aimming to target while using skill or not.
