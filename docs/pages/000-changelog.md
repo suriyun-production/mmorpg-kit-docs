@@ -1,7 +1,24 @@
+## 1.79b2 (2023-01-17)
+### Improvements
+- Add `IsAiming` property to `AreaSkillControls`, can use it to detecting that player is aimming to target while using skill or not.
+
+* * *
+
+## 1.79b (2023-01-17)
+### Bug Fixes
+- [#1812](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1812)
+- [#1782](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1782)
+
+### Improvements
+- Change incremental growth value to be float [#1847](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1847)
+
+* * *
+
 ## 1.79 (2023-01-14)
 ### Bug Fixes
 - [#1831](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1831)
 - [#1824](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1824)
+- [#1818](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1818)
 - [#1811](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1811)
 - [#1794](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1794)
 - [#1793](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1793)
