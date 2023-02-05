@@ -1,3 +1,23 @@
+## 1.80b (2023-02-06)
+### Bug Fixes
+- [1878](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1873)
+- [1878](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1878)
+- [1880](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1880)
+- [1881](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1881)
+- [1887](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1887)
+
+### Improvements
+
+- Add some parameter to custom quest task's get task progress function [1882](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1882)
+- Add `availableEnhancers` to `ItemRefine` -> `levels` entry, you can set available items which can use to enhance item refining's success rate, chance to not decrease level, chance to not destroy, decreate required gold amount [1785](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1785)
+- Add `icon` to NPC dialog's menu entry, set it to show icon in front of menu's message [1883](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1883)
+- Add `voice` to NPC dialog's, set it to play voice audio clip when enter the dialog [1883](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1883)
+- Add `imageIcon` to `UINpcDialogMenu`, set reference to image component which you wish to use it to show icon [1883](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1883)
+- Add `voiceSource` to `UINpcDialog`, set reference to audio source component which you wish to use it to play voice audio clip [1883](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1883)
+- Remove status effect's `chance` setting, add `failChance` to buff data, if it failed it won't apply buff to target [1886](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1886)
+
+* * *
+
 ## 1.80 (2023-01-29)
 ### Bug Fixes
 - [#1741](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1741)
