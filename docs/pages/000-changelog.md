@@ -4,7 +4,7 @@
 - [1891](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1891)
 
 ### Improvements
-- Remove `failChance` from buff data, and add `enableApplyChance` and `applyChance` to buff data, because I think `applyChance` is make sense than `failChance`, must has a `enableApplyChance` because buff data from an older version has no apply chance it is always 100% applying, so to not break other customer projects, I've decided to add `enableApplyChance`, set it to `TRUE` to make it applying buff by `applyChance`, otherwise it will 100% applying buff.
+- Remove `failChance` from buff data, and add `enableApplyChance` and `applyChance` to buff data, because I think `applyChance` is makes more sense than `failChance`, must has a `enableApplyChance` because buff data from an older version has no apply chance to setup, it is always 100% applying, so to not break other customer projects, I've decided to add `enableApplyChance`, set it to `TRUE` to make it applying buff by `applyChance`, otherwise it will 100% applying buff.
 - Add `removeBuffWhenAttackChance`, `removeBuffWhenAttackedChance`, `removeBuffWhenUseSkillChance`, `removeBuffWhenUseItemChance`, and `removeBuffWhenPickupItemChance` to buff data, use it to set chance to remove buff, for an example case if you want your character stop hiding when attacking an enemies, you may set `removeBuffWhenAttackChance` base value to `1` to make it remove the hide buff from your character.
 
 * * *
