@@ -1,3 +1,15 @@
+## 1.80c3 (2023-02-11)
+### Bug Fixes
+- [1778](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1778)
+- [1893](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1893)
+- [1896](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1896)
+
+### Improvements
+- Add amount of dropping/selling/buying items, to prevent hacking.
+- Add hit amount checking to prevent hit reg hacking.
+
+* * *
+
 ## 1.80c2 (2023-02-10)
 ### Bug Fixes
 - [1892](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1892)
