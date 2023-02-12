@@ -1,6 +1,6 @@
 ## 1.80d (2023-02-12)
 ### Bug Fixes
-- [1778](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1903)
+- [1903](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1903)
 
 ### New Features
 - Weapon sheat/unsheat, add `Sheath Models` and `Off Hand Sheath Models` settings to `Weapon Item` and `Shield Item`, they're models which will be instantiated when the weapons are sheathed. Add `Is Weapons Sheathed` to character entity, set it to `TRUE` to sheath the weapon.
