@@ -1,3 +1,9 @@
+## 1.80d2 (2023-02-14)
+### Bug Fixes
+- Hit regiseration manager not validating hit properly melee/missile/throwable can be hit more than 1 object.
+
+* * *
+
 ## 1.80d (2023-02-12)
 ### Bug Fixes
 - [1903](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1903)
