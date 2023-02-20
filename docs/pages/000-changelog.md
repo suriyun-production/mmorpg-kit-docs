@@ -1,3 +1,21 @@
+## 1.80e (2023-02-20)
+### Bug Fixes
+- [1906](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1906)
+- [1908](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1908)
+- [1911](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1911)
+- [1913](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1913)
+- [1917](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1917)
+
+### New Features
+- [1879](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1879)
+- [1918](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1918)
+- [1919](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1919)
+- [1920](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1920)
+
+I won't accept new free feature requests anymore, only bug report are accept. If you really want it, you have to pay for it. I want to focus on doing following the roadmap.
+
+* * *
+
 ## 1.80d2 (2023-02-14)
 ### Bug Fixes
 - Hit regiseration manager not validating hit properly melee/missile/throwable can be hit more than 1 object.
