@@ -1,3 +1,31 @@
+## 1.81 (2023-03-02)
+### New Feature: UIs Controlling for Console platforms
+To test it you should change active input handling to be `Input System`.
+Then change game instance's `Test In Editor Mode` setting in init scene to `Console`.
+I've made the character management demo for Offline/LAN game only, so you can try it from `00Init` scene.
+
+Because Unity's UI's navigation not good enough for me, so I have to make new UI components that you can find in `Assets/UnityMultiplayerARPG/Core/Scripts/UI/Selectables`.
+You can set multiple selectables as navigation target (`upSelectables`, `downSelectables`, `leftSelectables`, `rightSelectables`) in those components, so if any selectables are inactive it can use another in the selectable list.
+I also improve workflow for scroll rect to snap to those components, if you select it (any instance of those components) while it is not fully visible in scroll rect area it will move scroll rect's content transform to show it.
+
+I also made navigation making components `NavigationGroup` and `NavigationChild`, when `NavigationGroup` add `NavigationChild` it will make navigation target for `NavigationChild` so you won't have to setup navigation target, it will be done automatically.
+
+I don't plan to make all UIs for console platforms, just plan to make a demo to show that it is working in most case, console UIs controlling are just about navigation setup, you just have to setup it properly.
+I've added new components which improve Unity's components and I think it is enough for console UIs making, but it's not 100% yet, Unity's input field navigation not working properly, I will fix it later.
+I don't know that Unity's new UI system (UI Elements/UI Toolkit) have better navigation system or not, I didn't try it yet.
+
+### Bug Fixes
+- [1928](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1928)
+- [1929](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1929)
+- [1930](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1930)
+- [1931](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1931)
+- Fix equipment entities not being setup issues (previous releases will setup only equipped weapons and shields)
+
+### Improvements
+- [1933](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1933)
+
+* * *
+
 ## 1.80e (2023-02-20)
 ### Bug Fixes
 - [1906](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1906)
