@@ -1,3 +1,16 @@
+## 1.81b (2023-03-09)
+### Bug Fixes
+- [1939](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1939)
+- [1934](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1934)
+
+### Improvements
+- Add `uiNotBlockForStandalone`, `uiNotBlockForMobile`, and `uiNotBlockForConsole` settings to `PlayerCharacterController`, set it to `TRUE` to make it don't block controlling while any of `UIBlockController` component enabled, it might sounds not make sense because you guys should just remove the component to make it don't block controlling, but after I saw a customer report about it as a [bug](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1941) then I have to add those conditional variables.
+- Add some delay to `EventSystemManager` to make sure that the event system will be setup properly.
+- Update console UI controlling demo, add hotkey UIs.
+- Update console UI controlling demo, add event to select UIs after end editing input field, so I didn't make any changes to input field codes, just set on end edit event.
+
+* * *
+
 ## 1.81 (2023-03-02)
 ### New Feature: UIs Controlling for Console platforms
 To test it you should change active input handling to be `Input System`.
@@ -20,6 +33,7 @@ I don't know that Unity's new UI system (UI Elements/UI Toolkit) have better nav
 - [1930](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1930)
 - [1931](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1931)
 - Fix equipment entities not being setup issues (previous releases will setup only equipped weapons and shields)
+- Fix null attacker reference when performs hit validation.
 
 ### Improvements
 - [1933](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1933)
