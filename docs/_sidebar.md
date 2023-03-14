@@ -13,6 +13,7 @@
 - Character and Monster
 
   - [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
+  - [Character's Battle Points](pages/154-character-battle-points.md)
   - [How Incremental Values Being Calculated](pages/153-how-incremental-calculated.md)
   - [Damage Info (Melee Damage / Missile Damage / Missile Damage Entity)](pages/018-damage-info)
   - [How to create character entity with `Character Entity Creator`](pages/148-how-to-create-character-with-editor)
