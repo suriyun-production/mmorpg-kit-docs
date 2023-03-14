@@ -1,3 +1,28 @@
+## 1.81c (2023-03-14)
+### New Feature: Battle Point
+Battle point can be calculated by amount of `Attribute`, `Resistance`, `Armor`, `Damage`, `Skill` and `Character Stats`
+You can change amount of score in:
+- `Attribute` game data -> `battlePointScore`.
+- `Skill` game data -> `battlePointScore`.
+- `DamageElement` game data -> `resistanceBattlePointScore`.
+- `DamageElement` game data -> `armorBattlePointScore`.
+- `DamageElement` game data -> `damageBattlePointScore`.
+- `DefaultGameplayRule` game data -> in `Battle Points Score` section.
+
+### New Feature: Item expiring
+You can make an items expired by duration which set to `Item` game data -> `expireDuration`,
+if you set this value to `7` then when your character earn the item it will be expired and removed from inventory in next `7` hours.
+
+### Bug Fixes
+- [1945](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1945)
+- [1947](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1947)
+
+### Improvements
+I gradually move some character relates data codes to shared data repositories, I will make those repo to be public later, I hope that other developers can use them to develop web services/APIs part,
+I will make a new database management service based on that too, as an example.
+
+* * *
+
 ## 1.81b (2023-03-09)
 ### Bug Fixes
 - [1939](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1939)
