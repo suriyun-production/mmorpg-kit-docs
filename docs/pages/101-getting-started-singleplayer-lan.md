@@ -2,6 +2,26 @@
 
 ## Importing
 
+You must install newtonsoft-json, actually should do it before import the package but you can do it later
+
+You can do it by
+
+Go to your project folder then `/Packages` edit `manifest.json`, Add
+```
+ "com.unity.nuget.newtonsoft-json": "3.0.2"
+```
+Into dependencies
+
+![](../images/json-deps.png)
+
+Or use Package manager from menu `Window` -> `Package Manager`
+
+![](../images/json-package-install-1.png)
+
+![](../images/json-package-install-2.png)
+
+* * *
+
 After download the package from Unity Asset Store, click on `Import` button
 
 ![](../images/101/001.png)
