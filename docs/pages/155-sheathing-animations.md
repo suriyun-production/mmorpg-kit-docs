@@ -24,7 +24,7 @@ You can setup model and which transform to instantiates sheath item models like 
 
 ![](../images/155/setup-sheath-transforms.png)
 
-You can places equipment item model into those transform to see how it will be instantiated while playing the game to adjust containers transform position, rotation and so on.
+You can places equipment item model into those transforms to see how it will be instantiated while playing the game to adjust containers transform's position, rotation and so on.
 
 ![](../images/155/setup-sheath-transforms-2.png)
 
