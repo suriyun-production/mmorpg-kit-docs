@@ -1,6 +1,6 @@
 # Character's Battle Points
 
-Character's battle points can be calculated by amount of `Attribute`, `Resistance`, `Armor`, `Damage`, `Skill` and `Character Stats`
+Character's battle points will be calculated by amount of `Attribute`, `Resistance`, `Armor`, `Damage`, `Skill` and `Character Stats` from equipment, skills, increased attributes, and buffs.
 You can change amount of score in:
 - `Attribute` game data -> `battlePointScore`.
 - `Skill` game data -> `battlePointScore`.
