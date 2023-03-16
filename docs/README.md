@@ -28,6 +28,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [About Animation Character Model](pages/107-animation-character-model)
 *   [About Character Model 2D](pages/109-character-model-2d)
 *   [FPS Hands Model](pages/110-fps-hands-model)
+*   [Sheathing Animations](pages/155-sheathing-animations)
 
 
 #### Vehicle and Mount
