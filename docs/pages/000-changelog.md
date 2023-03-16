@@ -1,3 +1,13 @@
+## 1.81d (2023-03-16)
+### Improvements
+- Improve sheath/unsheath animation playing, when unequip the item it will play sheath animation not unsheath one.
+- Improve sheath/unsheath animation playing, add and implements shield sheathing animations setting: `leftHandShieldSheathingAnimation` to `DefaultAnimations`.
+- Change sheath/unsheath animation settings variable names: `rightHandHolsterAnimation` -> `rightHandWeaponSheathingAnimation`, `leftHandHolsterAnimation` -> `leftHandWeaponSheathingAnimation`, `holsterState` -> `sheathState`, `holsteredDurationRate` -> `sheathedDurationRate`, `drawState` -> `unsheathState`, and `drawnDurationRate` -> `unsheathedDurationRate`.
+- Improve battle point calculation, by including equipped weapons's pure damage.
+- Add `UIItemRandomBonus` component, use it to show available list of equipment item's bonus that can be randomed, create it and set it to `UICharacterItem` -> `uiItemRandomBonus`.
+
+* * *
+
 ## 1.81c (2023-03-14)
 ### New Feature: Battle Point
 Battle point can be calculated by amount of `Attribute`, `Resistance`, `Armor`, `Damage`, `Skill` and `Character Stats`
