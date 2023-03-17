@@ -1,3 +1,14 @@
+## 1.81f (2023-03-21)
+### Bug Fixes
+- [1953](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1953)
+
+### Improvements
+- [1905](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1905) - I've added `disallowSprint`, `disallowWalk`, `disallowJump`, `disallowCrouch`, and `disallowCrawl` to `Buff` data, but the old `disallowMove` will still disallow all movement.
+- [1944](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1944) - I've added `ItemRandomByWeightTable`, create this data, and set it to `MonsterCharacter` -> `itemRandomByWeightTables` to make it able to random items by weighted items table.
+- Include [UnityRestClient](https://github.com/insthync/unity-rest-client.git) to the core.
+
+* * *
+
 ## 1.81e2 (2023-03-20)
 ### Bug Fixes
 - [1953](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1953)
