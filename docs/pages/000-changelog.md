@@ -1,3 +1,13 @@
+## 1.81e (2023-03-20)
+### Bug Fixes
+- [1921](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1921)
+- [1952](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1952)
+
+### Improvements
+- Add `doNotRandomAnimation` and `animationResetDelay` settings to `DefaultCharacterAttackComponent`. `DefaultCharacterAttackComponent` is component which attached to character entity to handle character's attacking, those settings were made for developer who want to make the character plays animation sequently by set `doNotRandomAnimation` to `TRUE` and then if your character have 3 animations it will play from 1 to 3 not random, and `animationResetDelay` is delay before reset the sequence for example if you set it to `2` seconds, then if your character's attacking animation `#2` ended at `30` and no attacking before `32`, then when attack again it will start play attacking animation `#1` because it was reset.
+
+* * *
+
 ## 1.81d (2023-03-16)
 ### Improvements
 - Improve sheath/unsheath animation playing, when unequip the item it will play sheath animation not unsheath one.
