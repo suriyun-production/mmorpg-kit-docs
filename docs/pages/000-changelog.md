@@ -1,3 +1,10 @@
+## 1.81f2 (2023-03-21)
+### Bug Fixes
+- Monster entity's damage recording not working properly, it is cause of wrong giving EXP amount.
+- Character entity's data not recaching when equip weapons state changed, it is cause of wrong character's attacking data after equip weapons state changed.
+
+* * *
+
 ## 1.81f (2023-03-21)
 ### Bug Fixes
 - [1953](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1953)
