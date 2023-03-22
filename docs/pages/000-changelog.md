@@ -1,3 +1,10 @@
+## 1.81f3 (2023-03-22)
+### Bug Fixes
+- [1957](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1957)
+- [1958](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1958)
+
+* * *
+
 ## 1.81f2 (2023-03-21)
 ### Bug Fixes
 - Monster entity's damage recording not working properly, it is cause of wrong giving EXP amount.
