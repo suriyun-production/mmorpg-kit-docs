@@ -1,3 +1,15 @@
+## 1.81g (2023-03-25)
+### Bug Fixes
+- [1956](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1956)
+- [1959](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1959)
+- [1961](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1961)
+
+### Improvements
+- Add `uiRequireItemAmounts` and `uiRequireCurrencyAmounts` component reference fields to `UIRepairEquipItems` component.
+- Add `dontCalculateRandomBonus` option to `UICharacterItem`, turn it on to don't calculate random bonus in-case you want to show crafting UI you should turn it on to fix this issue [1956](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1956).
+
+* * *
+
 ## 1.81f3 (2023-03-22)
 ### Bug Fixes
 - [1957](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1957)
