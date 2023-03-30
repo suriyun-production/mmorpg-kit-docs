@@ -1,3 +1,21 @@
+## 1.81h2 (2023-03-30)
+### Bug Fixes
+- [1973](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1973)
+
+* * *
+
+## 1.81h (2023-03-29)
+### Bug Fixes
+- [1972](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1972)
+
+### Improvements
+- Quest monster kills progress will be shared with other party members.
+- Add `uiAppliedSocketEnhancerItems` which is reference to `UICharacterItems` component to `UIEquipmentSockets` component, can use it to show icons of socketed items.
+- Add `itemDropRate` to `CharacterStats`, use it to increase item drop chance.
+- Send reward given type along with rewarding messages, you can set events in `ClientGenericActions` class to tell players where the reward came from.
+
+* * *
+
 ## 1.81g (2023-03-25)
 ### Bug Fixes
 - [1956](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1956)
