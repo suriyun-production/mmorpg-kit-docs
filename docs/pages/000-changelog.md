@@ -1,3 +1,17 @@
+## 1.82 (2023-04-05)
+### Bug Fixes
+- [1989](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1989)
+- [1994](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1994)
+
+### Improvements
+- Update `LiteNetLib` to version 1.0.1.1
+- Add guild role's `canUseStorage` setting [1975](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1975)
+- Implemented custom animation playing, you can setup custom animations in `Playable Character Model` -> `Custom Animations`, you can use entity's `CallAllPlayCustomAnimation` function (can be called by server) to play animations, can see an usage example in `PlayCustomAnimationAfterIdle` component. Can use it to implement emotion posing system.
+- [1981](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1981)
+- [1984](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1984)
+
+* * *
+
 ## 1.81h2 (2023-03-31)
 ### Bug Fixes
 - [1389](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1389)
