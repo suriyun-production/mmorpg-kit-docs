@@ -77,6 +77,8 @@ Then you can try use demo's input actions by set it in init scene (`00Init`) -> 
 
 Before you build, you should setup scripting define symbols by use menu: `MMORPG KIT -> Setup For Offline-Lan Build` to make sure that the build will work properly.
 
+![](../images/setup-offline-lan.png)
+
 Next, make sure `Scenes in build` are correct, Open up the `Build Setting...` dialog from menu `File -> Build Settings...` 
 
 ![](../images/101/004.png)

@@ -1,8 +1,12 @@
 # Getting Started (MMO)
 
-**Before reading this you should read [Getting Started](pages/101-getting-started-singleplayer-lan) first from step 1–2**
+**Before reading this you should read [Getting Started](./101-getting-started-singleplayer-lan.md) first from step 1–2**
 
 * * *
+
+* Before start building, you have to do this: Click on menu `MMORPG KIT` -> `Setup For MMO with Server Codes Build`
+
+![](./images/../../images/setup-mmo-server.png)
 
 * MMO mode demo is located at `/UnityMultiplayerARPG/MMO/Demo/Scenes/`, add MMO demo scenes to Build Settings dialog and move `00Init_MMO` to top of list.
 
