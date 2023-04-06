@@ -1,3 +1,12 @@
+## 1.82b (2023-04-06)
+### Bug Fixes
+- [1995](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1995)
+
+### Improvements
+- Add `PlayableCharacterModel` animation tool [video](https://www.youtube.com/watch?v=T471ygX_PHw)
+
+* * *
+
 ## 1.82 (2023-04-05)
 ### Bug Fixes
 - [1989](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1989)
