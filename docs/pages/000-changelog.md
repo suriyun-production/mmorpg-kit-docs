@@ -1,3 +1,29 @@
+## 1.82c (2023-04-14)
+### Gradually Made Changes to Code Conventions
+I've gradually made changes to code conventions
+- `private`/`protected` field name are `camelCase` which prefixed with `_`.
+- But `private`/`protected` serialized field will not prefixed with `_`.
+- `private`/`protected` static field name are `camelCase` which prefixed with `s_`.
+- All properties are `PascalCase`.
+- All functions are `PascalCase`.
+It may affect some of your addons codes (As I found, it will affect player character controller, character model, entity movement codes) but it is not hard to fix, just change variable names by add `_` prefix, or change first property name character to be upper-case.
+
+### Database Service which runs externally from Unity instance
+Now the database service which runs externally from Unity instance is able to use, you can get it from [this repo](https://github.com/insthync/UnityMultiplayerARPG_DatabaseManager)
+it is not production ready yet, I want to make it more secured now anyone can access the service.
+
+If you want to try it, you have to set `Custom Database Client Source` in `MMO Server Instance`, you can see how I set it up in the `00Init_MMO` -> `MMOServerInstance` game object. then after the server built, you have to turn `useCustomDatabaseClient` on, by add config to server config file as: `"useCustomDatabaseClient": true`.
+
+I will write more info as an documents later (maybe next Monday).
+
+### Bug Fixes
+- [2015](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2015)
+- [2014](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2014)
+- [2006](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2006)
+- [2001](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2001)
+
+* * *
+
 ## 1.82b (2023-04-06)
 ### Bug Fixes
 - [1995](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1995)
