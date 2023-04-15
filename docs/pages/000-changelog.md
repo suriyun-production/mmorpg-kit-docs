@@ -1,3 +1,13 @@
+## 1.82c (2023-04-15)
+### Bug Fixes
+- [2017](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2017)
+
+### Improvements
+- Add `doNotUseEntityBones` to equipment item -> `EquipmentModel`, turn it on to not use bones from entity if this mesh is skinned mesh.
+- Add `doNotChangeScale` to equipment item -> `EquipmentModel`, turn it on to not change object scale when it is instantiated to character's hands (or other part of body)
+
+* * *
+
 ## 1.82c (2023-04-14)
 ### Gradually Made Changes to Code Conventions
 I've gradually made changes to code conventions
