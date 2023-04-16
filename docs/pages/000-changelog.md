@@ -1,4 +1,14 @@
-## 1.82c (2023-04-15)
+## 1.82c3 (2023-04-16)
+### Bug Fixes
+- [2019](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2019)
+- [2018](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2018)
+
+### Improvements
+- Implement Unity's IAP validation, you must setup IAP obfuscating first, this one also can fixes [1807](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1807)
+
+* * *
+
+## 1.82c2 (2023-04-15)
 ### Bug Fixes
 - [2017](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2017)
 
