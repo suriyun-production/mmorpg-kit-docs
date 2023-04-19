@@ -117,6 +117,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to integrate Facebook Login](pages/033-how-to-integrate-facebook-login)
 *   [How to integrate Google Play Login](pages/034-how-to-integrate-google-play-login)
 
+#### MMO Advance Content
+*   [Custom Database Client](pages/157-custom-database-client.md)
+
 #### Dedication Guide
 *   [Digital Ocean](dedicates/digitalocean)
 
