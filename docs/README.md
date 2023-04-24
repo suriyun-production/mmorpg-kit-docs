@@ -14,6 +14,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to update to new version](pages/147-how-to-update-to-new-version)
 *   [Game Instance and relates data](pages/102-game-instance-and-relates-data)
 *   [Game Database](pages/103-game-database)
+*   [Before you build](pages/160-before-you-build.md)
 
 #### Character and Monster
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
@@ -29,7 +30,6 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [About Character Model 2D](pages/109-character-model-2d)
 *   [FPS Hands Model](pages/110-fps-hands-model)
 *   [Sheathing Animations](pages/155-sheathing-animations)
-
 
 #### Vehicle and Mount
 *   [Vehicle Entity](pages/138-mount-entity)
@@ -136,6 +136,8 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 *   [Common troubleshooting steps](pages/054-troubleshooting-steps)
 *   [Working with Unity 2021](pages/151-working-with-2021.md)
+*   [Fix Newtonsoft JSON Not Found Error](pages/158-fix-newtonsoft-not-found-error.md)
+*   [Something Not Functional With My Built Game](pages/159-something-not-functional-with-my-built-game.md)
 
 #### Extensions
 

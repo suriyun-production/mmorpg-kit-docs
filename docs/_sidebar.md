@@ -9,6 +9,7 @@
   - [How to update to new version](pages/147-how-to-update-to-new-version)
   - [Game Instance and relates data](pages/102-game-instance-and-relates-data)
   - [Game Database](pages/103-game-database)
+  - [Before you build](pages/160-before-you-build.md)
 
 - Character and Monster
 
@@ -132,6 +133,8 @@
 
   - [Common troubleshooting steps](pages/054-troubleshooting-steps)
   - [Working with Unity 2021](pages/151-working-with-2021.md)
+  - [Fix Newtonsoft JSON Not Found Error](pages/158-fix-newtonsoft-not-found-error.md)
+  - [Something Not Functional With My Built Game](pages/159-something-not-functional-with-my-built-game.md)
   
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1MzcxMDAxOThdfQ==
