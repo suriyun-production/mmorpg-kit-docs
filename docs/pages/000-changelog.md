@@ -1,3 +1,23 @@
+## 1.82d (2023-04-24)
+### Bug Fixes
+- [2012](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2012)
+- [2036](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2036)
+- [2037](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2037)
+- [2041](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2041)
+
+### Guild War Service
+- Guild War Service is implemented, you can see the service part [here](https://github.com/insthync/mmorpg-kit-guild-war-service)
+- Guild castle occupying data will be stored into database by this service. So when the server restarted, occupied castles data won't be lost.
+- Add custom NPC dialog condition: `DefenderGuildNpcDialogCondition` use it to show menu for defender guild members only, can use it to show menu to warp members to defend the castle.
+
+### New Custom Npc Dialog Condition
+- Add new kind of `Condition Type`: `Custom By Scripting Object`.
+- You can create custom condition by create a new class which extends `BaseCustomNpcDialogCondition` (can see `DefenderGuildNpcDialogCondition` as example).
+- `IsPass` function in `BaseCustomNpcDialogCondition` can be async function, so we can connect to service/server to bring data to check condition asynchronously.
+- Old custom condition type which uses serialized callback data still there, I actually want to change parameter from character's ID to pass full character's data but I am afraid that it will break someone's projects.
+
+* * *
+
 ## 1.82c5 (2023-04-18)
 ### Bug Fixes
 - [2024](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2024)
