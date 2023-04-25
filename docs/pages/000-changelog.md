@@ -1,3 +1,13 @@
+## 1.82d2 (2023-04-26)
+### Bug Fixes
+- [2044](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2044)
+- [2046](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2046)
+
+### Improvements
+- Move entity movement codes to `BuiltInEntityMovementFunctions3D` class, `CharacterControllerEntityMovement`, `RigidBodyEntityMovement`, and `KCCEntityMovement` are using the same codes, just use different motor, so I move it.
+
+* * *
+
 ## 1.82d (2023-04-24)
 ### Bug Fixes
 - [2012](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2012)
