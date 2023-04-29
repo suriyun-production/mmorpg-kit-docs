@@ -1,3 +1,13 @@
+## 1.83 (2023-04-29)
+### Bug Fixes
+- [2048](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2048)
+
+### Improvements
+- Stop entity's updating when there is no subscribers [video](https://youtu.be/3LV7KpP1MaM).
+- Make MMO codes shareable with other C# projects, so you won't have to build server projects with Unity, It can speed up your server development, also may improve performance, but you still have to use Unity to build a map-server. You can develop Login, Character Management, Scene Management and Database Management systems outside of Unity [video](https://youtu.be/xiuTKrKzf5w), You can see the .NET console project [here](https://github.com/insthync/UnityMultiplayerARPG_MMO.NET.git).
+
+* * *
+
 ## 1.82d2 (2023-04-26)
 ### Bug Fixes
 - [2044](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2044)
