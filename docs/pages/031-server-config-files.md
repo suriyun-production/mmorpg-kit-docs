@@ -1,9 +1,11 @@
 # Server Config Files
 
-From version 1.26 you will able to set configs via config files there are following config files:
+You can change config by config files, config files will be created automatically if it has not existed, you can see the list of all config keys [here](../pages/027-server-configs.md), there are following files:
 
+## Server Config
 *   ./config/serverConfig.json
 
+### Example Content
 ```
 {
   "databaseOptionIndex" : 1,
@@ -30,16 +32,28 @@ From version 1.26 you will able to set configs via config files there are follow
 }
 ```
 
+* * * 
+
+## SQLite Config
+
+
 *   ./config/sqliteConfig.json
 
+### Example Content
 ```
 {
   "sqliteDbPath" : "./mmorpgtemplate.sqlite3"
 }
 ```
 
+* * *
+
+## MySQL Config
+
+
 *   ./config/mySqlConfig.json
 
+### Example Content
 ```
 {
   "mySqlAddress" : "localhost",
@@ -49,8 +63,6 @@ From version 1.26 you will able to set configs via config files there are follow
   "mySqlDbName" : "mmorpgtemplate"
 }
 ```
-
-You will have to create config folder and config files by yourself next to project folder if you are gonna use config in editor, next to execution folder for built execution file
 
 Config priority from high to low is **Command Line -> Config files -> Component data**
 <!--stackedit_data:

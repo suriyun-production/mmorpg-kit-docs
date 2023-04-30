@@ -4,40 +4,70 @@ As mentioned architecture, there are different kind of servers and it's have dif
 
 ![](https://cdn-images-1.medium.com/max/1600/0*RIhI1RLQVGr8ETSt)
 
-#### Central Network Manager important configs
+## Central Network Manager Configs
 
-*   `Network Port`, Central server's port. Clients, chat server, map spawn server and map server will connect to central server by this port.
-*   `Cluster Server Port`, Cluster server's port, cluster server is a server that will start along with central server to handle app-servers (map-server, map-spawn-server) connections and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
-*   `Max Connections`, maximum connections for clients including with other servers.
+*   `Network Port` (Args Key: `-centralPort`, Config File `serverConfig.json`, Config File Key: `centralPort`, Type: `Integer`), Central server's port. Clients, chat server, map spawn server and map server will connect to central server by this port.
+*   `Cluster Server Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), Cluster server's port, cluster server is a server that will start along with central server to handle app-servers (map-server, map-spawn-server) connections and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
+*   `Max Connections` (Args Key: `-centralMaxConnections`, Config File `serverConfig.json`, Config File Key: `centralMaxConnections`, Type: `Integer`), Maximum client connections.
 *   `Min Username Length`, Minimum username length.
 *   `Max Username Length`, Maximum username length.
 *   `Min Password Length`, Minimum password length.
 *   `Min Character Name Length`, Minimum character name length.
 *   `Max Character Name Length`, Maximum character name length.
 
-#### Map Spawn Network Manager important configs
+## Map Spawn Network Manager Configs
 
-*   `Network Port`, Map spawn server's port.
-*   `Cluster Network Address`, address where cluster server is running, it will be used by map spawn network manager to connect to server to tell what is machine address to this (map spawn server).
-*   `Cluster Network Port`, port where cluster server is running.
-*   `Machine Address`, public address to this server.
-*   `Exe Path`, path to execution file must set it correctly to start map servers.
-*   `Not Spawn In Batch Mode`, if this is `TRUE` it will run map server in non batch mode (have graphics and interactable).
-*   `Start Port`, Port which will be used to run map server then it will increasing when running next map server.
-*   `Spawning Scenes`, This is list of scenes which will be spawned when this server started.
-*   `Is Override Exe Path`, if this is `TRUE` it will use value from `Override Exe Path` to execute map server instead of `Exe Path` when running in editor.
+*   `Network Port` (Args Key: `-mapSpawnPort`, Config File `serverConfig.json`, Config File Key: `mapSpawnPort`, Type: `Integer`), Map spawn server's port.
+*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map spawn network manager to connect to server to tell what is machine address to this (map spawn server).
+*   `Cluster Network Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), port where cluster server is running.
+*   `Machine Address` (Args Key: `-machineAddress`, Config File `serverConfig.json`, Config File Key: `machineAddress`, Type: `String`), public address to this server.
+*   `Exe Path` (Args Key: `-spawnExePath`, Config File `serverConfig.json`, Config File Key: `spawnExePath`, Type: `String`), path to execution file (`.exe` file in Windows, `.app` in Mac) must set it correctly to start map servers.
+*   `Not Spawn In Batch Mode` (Args Key: `-notSpawnInBatchMode`, Config File `serverConfig.json`, Config File Key: `notSpawnInBatchMode`, Type: `Boolean`), if this is `TRUE` it will run map server in non batch mode (have graphics and interactable).
+*   `Start Port` (Args Key: `-spawnStartPort`, Config File `serverConfig.json`, Config File Key: `spawnStartPort`, Type: `Integer`), Port which will be used to run map server then it will increasing when running next map server.
+*   `Spawning Maps` (Args Key: `-spawnMaps`, Config File `serverConfig.json`, Config File Key: `spawnMaps`, Type: `String[]`), This is list of scenes which will be spawned when this server started.
+*   `Is Override Exe Path`, if this is turned on, it will use value from `Override Exe Path` to execute map server instead of `Exe Path` when running in editor.
 *   `Editor Not Spawn In Batch Mode`, if this is TRUE it will run map server in non batch mode (have graphics and interactable) when running in editor.
 
-#### Map Network Manager important configs
-
-*   `Network Port`, Map server's port.
-*   `Max Connections`, maximum connections for clients including with other servers.
-*   `Cluster Network Address`, address where cluster server is running, it will be used by map network manager to connect to server to tell what is machine address to this (map server).
-*   `Cluster Network Port`, port where cluster server is running.
-
-#### Database Network Manager important configs
+## Database Network Manager Configs
 
 *   `Database`, current connecting database server.
 *   `Database Options`, options of database server to connect.
 *   `Network Address`, address where database management server is running, it will be used by database network manager client to connect to server to manage database.
 *   `Network Port`, port where database management server is running.
+
+## Custom Database Client Configs
+
+*   `Use Custom Database Client`, if you turn this on it will use custom database client. You can setup database client by create a component which implements `IDatabaseClient`, then implement it, then attach that component to any game object and set the game object which has that component attached to `MMO Server Instance` -> `Custom Database Client Source`. Now it has only 1 built-in custom database client is `RestDatabaseClient`.
+
+## Map Network Manager Configs
+
+*   `Network Port` (Args Key: `-mapPort`, Config File `serverConfig.json`, Config File Key: `mapPort`, Type: `Integer`), Map server's port.
+*   `Max Connections` (Args Key: `-mapMaxConnections`, Config File `serverConfig.json`, Config File Key: `mapMaxConnections`, Type: `Integer`), maximum connections for clients including with other servers.
+*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map network manager to connect to server to tell what is machine address to this (map server).
+*   `Cluster Network Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), port where cluster server is running.
+
+* * *
+
+## Rest Database Client Configs
+
+*   `Api Url` (Config File `serverConfig.json`, Config File Key: `dbApiUrl`, Type: `String`), this is config which will be used by `RestDatabaseClient` component, this is URL to REST database service, if you runs REST database service at machine which have public IP is `128.199.78.31` and running on port `5757`, set this to `http://128.199.78.31:5757`
+*   `Secret Key` (Config File `serverConfig.json`, Config File Key: `dbSecretKey`, Type: `String`), this is config which will be used by `RestDatabaseClient` component, secret key which will be validated at REST database service to allow database client to use functions (It will set secret as a `Bearer` token).
+
+* * *
+
+## MySQL Database Configs
+
+*   `Address` (Config File `mySqlConfig.json`, Config File Key: `mySqlAddress`)
+*   `Port` (Config File `mySqlConfig.json`, Config File Key: `mySqlPort`)
+*   `Username` (Config File `mySqlConfig.json`, Config File Key: `mySqlUsername`)
+*   `Password` (Config File `mySqlConfig.json`, Config File Key: `mySqlPassword`)
+*   `Db Name` (Config File `mySqlConfig.json`, Config File Key: `mySqlDbName`)
+*   `Connection String` (Config File `mySqlConfig.json`, Config File Key: `mySqlConnectionString`)
+
+It will create a connection string by `Address`, `Port`, `Username`, `Password`, and `Db Name` (Example: `Server=127.0.0.1;Port=3306;Uid=root;Pwd="Password";Database=mmorpg_kit;SSL Mode=None;`), But if you set `Connection String`, it won't use generated connection string, it will use value from `Connection String`.
+
+* * *
+
+## SQLite Database Configs
+
+*   `Db Path` (Config File `sqliteConfig.json`, Config File Key: `sqliteDbPath`)
