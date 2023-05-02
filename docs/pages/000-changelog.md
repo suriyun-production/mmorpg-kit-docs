@@ -1,3 +1,15 @@
+## 1.83c (2023-05-03)
+### Bug Fixes
+- [2049](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2049)
+
+### Improvements
+- Add `showAllWhenNoTrackedQuests` to `UICharacterQuests`, you can turn it off if you feel that [this](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2060) is a bug.
+- Add `isLocked` to `Faction` data, turn it on if you don't want to show it in character creating faction list.
+- Add `changeCharacterFaction` to `Quest` data, when character finish the quest it will change faction to this value.
+- Add `enterDialogActionOnClient` and `enterDialogActionOnServer` to `BaseNpcDialog`, you can set action when enter the NPC dialog here, but before you can do this you have to make classes based on `BaseNpcDialogAction` and implement `DoAction` function, then you can implement any actions as you wish, you may give gold, exp, teleport, change respawn point, and so on when enter the NPC dialog.
+
+* * *
+
 ## 1.83 (2023-04-29)
 ### Bug Fixes
 - [2048](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2048)
