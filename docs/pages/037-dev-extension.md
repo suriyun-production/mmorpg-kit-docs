@@ -40,10 +40,10 @@ Here is the list of implemented dev extension functions:
 - onDisable()
 - onUpdate()
 - onLateUpdate()
-- onFixedUpdate()
 - onSetup()
 - onSetupNetElements()
 - onSetOwnerClient()
+- onIsUpdateEntityComponentsChanged(bool isUpdate)
 - onNetworkDestroy(byte reasons)
 
 You can add an events in `Awake` and remove in `OnDestroy` by create extension like this:

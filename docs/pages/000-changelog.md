@@ -1,3 +1,29 @@
+## 1.83d (2023-05-13)
+### Bug Fixes
+- [2063](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2063)
+- [2068](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2068)
+- [2070](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2070)
+
+### Performance Improvements
+- Change game entity updating to be updated by a manager (`BaseGameNetworkManager`), it will register entity to update when entity component is started, and unregister when destroy. In-case you want to understand how it work, read [this](https://blog.unity.com/engine-platform/10000-update-calls).
+- Reduce monster's enemy finding frequency, because it is finding by [Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) every frames, so I reduce it.
+- Prepare hitbox bounds immediately when it is instantiated instead of recalculate everytime when storing to history collection. But it will only supports following colliders: `BoxCollider`, `SphereCollider`, `BoxCollider2D` and `Rigidbody2D`.
+- Add `updateAnimationAtServer` to `GameInstance`, can turn it off to not play animations on server, if you don't making shooter games, which character's hitboxes will be moved follow character's animation, you should turn it off.
+
+### Improvements
+- Rework on `HitRegistrationManager`, change its workflow, make it work with `MissileDamageEntity`.
+
+### Changes
+- `DamageableHitBox` is only supports following colliders: `BoxCollider`, `SphereCollider`, `BoxCollider2D` and `Rigidbody2D`.
+- Remove `standaloneVSyncCount` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+- Remove `standaloneTargetFrameRate` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+- Remove `mobileVSyncCount` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+- Remove `mobileTargetFrameRate` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+- Remove `consoleVSyncCount` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+- Remove `consoleTargetFrameRate` setting from `GameInstance`, it is not neccessary for game networking and conflicting with graphic settings.
+
+* * *
+
 ## 1.83c (2023-05-03)
 ### Bug Fixes
 - [2049](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2049)
