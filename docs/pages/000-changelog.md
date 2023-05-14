@@ -1,3 +1,16 @@
+## 1.83d2 (2023-05-14)
+### Bug Fixes
+- [2071](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2071)
+- [2075](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2075)
+- Fix: exploding missile damage entity won't applies damage when explode.
+- Fix: wrong collider bounds size calculation.
+- Fix: raycast damage type which firing by client doesn't validated properly at server.
+
+### Improvements
+- Make it able to use `CapsuleCollider`, `CapsuleCollider2D` as hit box.
+
+* * *
+
 ## 1.83d (2023-05-13)
 ### Bug Fixes
 - [2063](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2063)
@@ -8,7 +21,7 @@
 - Change game entity updating to be updated by a manager (`BaseGameNetworkManager`), it will register entity to update when entity component is started, and unregister when destroy. In-case you want to understand how it work, read [this](https://blog.unity.com/engine-platform/10000-update-calls).
 - Remove `FixedUpdate` from game entity, so the `onFixedUpdate` event will also be removed too.
 - Reduce monster's enemy finding frequency, because it is finding by [Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) every frames, so I reduce it.
-- Prepare hitbox bounds immediately when it is instantiated instead of recalculate everytime when storing to history collection. But it will only supports following colliders: `BoxCollider`, `SphereCollider`, `BoxCollider2D` and `Rigidbody2D`.
+- Prepare hitbox bounds immediately when it is instantiated instead of recalculate everytime when storing to history collection. But it will only supports following colliders: `BoxCollider`, `SphereCollider`, `BoxCollider2D` and `CircleCollider2D`.
 - Add `updateAnimationAtServer` to `GameInstance`, can turn it off to not play animations on server, if you don't making shooter games, which character's hitboxes will be moved follow character's animation, you should turn it off.
 
 ### Improvements
