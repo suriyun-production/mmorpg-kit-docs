@@ -6,6 +6,7 @@
 
 ### Performance Improvements
 - Change game entity updating to be updated by a manager (`BaseGameNetworkManager`), it will register entity to update when entity component is started, and unregister when destroy. In-case you want to understand how it work, read [this](https://blog.unity.com/engine-platform/10000-update-calls).
+- Remove `FixedUpdate` from game entity, so the `onFixedUpdate` event will also be removed too.
 - Reduce monster's enemy finding frequency, because it is finding by [Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) every frames, so I reduce it.
 - Prepare hitbox bounds immediately when it is instantiated instead of recalculate everytime when storing to history collection. But it will only supports following colliders: `BoxCollider`, `SphereCollider`, `BoxCollider2D` and `Rigidbody2D`.
 - Add `updateAnimationAtServer` to `GameInstance`, can turn it off to not play animations on server, if you don't making shooter games, which character's hitboxes will be moved follow character's animation, you should turn it off.
