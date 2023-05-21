@@ -1,3 +1,13 @@
+## 1.83e (2023-05-20)
+### Bug Fixes
+- [2072](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2072)
+- [2081](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2081)
+- [2083](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2083)
+- [2088](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2088)
+- [2089](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2089)
+
+* * *
+
 ## 1.83d2 (2023-05-14)
 ### Bug Fixes
 - [2071](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2071)
