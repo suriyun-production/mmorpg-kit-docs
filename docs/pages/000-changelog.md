@@ -1,3 +1,14 @@
+## 1.83e2 (2023-05-22)
+### Bug Fixes
+- [2094](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2094)
+- Fix fire stagger seed not being calculated properly.
+
+### Improvements
+- [2093](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2093)
+- Add "in safe area" sign above character head.
+
+* * *
+
 ## 1.83e (2023-05-20)
 ### Bug Fixes
 - [2072](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2072)
