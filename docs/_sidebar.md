@@ -134,6 +134,7 @@
   - [Common troubleshooting steps](pages/054-troubleshooting-steps)
   - [Working with Unity 2021](pages/151-working-with-2021.md)
   - [Fix Newtonsoft JSON Not Found Error](pages/158-fix-newtonsoft-not-found-error.md)
+  - [How to fix: `Unable to add package [jillejr.newtonsoft.json-for-unity] Project has invalid dependencies: jillejr.newtonsoft.json-for-unity.converters: Package [jillejr.newtonsoft.json-for-unity.converters@1.5.1] cannot be found`](pages/162-fix-unable-to-add-package-jillejr-newtonsoft.md)
   - [Something Not Functional With My Built Game](pages/159-something-not-functional-with-my-built-game.md)
   
 <!--stackedit_data:
