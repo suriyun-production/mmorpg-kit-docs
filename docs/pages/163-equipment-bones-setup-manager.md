@@ -10,7 +10,7 @@ You also can create a new manager class by create a class which extended from `B
 
 * * *
 
-Change can create a manager scripting object from create menu and change the manager in `GameInstance`
+You can create a manager scripting object from create menu and change the manager in `GameInstance`
 
 ![](../images/163/1.png)
 
