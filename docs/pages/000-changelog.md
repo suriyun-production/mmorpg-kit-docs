@@ -1,3 +1,23 @@
+## 1.83f (2023-06-05)
+### Bug Fixes
+- [2062](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2062)
+- [2099](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2099)
+- [2103](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2103)
+- [2112](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2112)
+- [2118](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2118)
+- [2123](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2123)
+
+### Improvements
+- Implement [2101](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2101), [More info](../pages/163-equipment-bones-setup-manager.md)
+- Implement [2110](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2110), [More info](../pages/164-custom-quest-task-description.md)
+- [2093](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2093)
+- Change physic transforms syncing workflow, to make it sync manually in `BaseGameNetworkManager.Update()`, have to set `BaseGameNetworkManager.ShouldPhysicSyncTransforms` or `BaseGameNetworkManager.ShouldPhysicSyncTransforms2D` to sync transforms in that frame, it will do transforms syncing after network events proceeded and before entities updating.
+- Change speed hack validate workflow, for 3D entity movement, it will validate horizontal and vertical movement separately.
+- Make speed hack validate more accurate (hope it won't cause any new bugs :P).
+- Clear character caches when character entity destroy, when character data destructed.
+
+* * *
+
 ## 1.83e2 (2023-05-22)
 ### Bug Fixes
 - [2094](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2094)

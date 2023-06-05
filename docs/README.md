@@ -40,6 +40,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 #### Quest
 *   [Quests](pages/010-quests)
+*   [Custom Quest Task Description](pages/164-custom-quest-task-description.md)
 
 #### Skill
 *   [How to create Passive Skill](pages/127-create-passive-skill.md)
@@ -69,6 +70,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to create Skill Learn Item](pages/125-create-skill-learn-item.md)
 *   [How to create Skill Reset Item](pages/126-create-skill-reset-item.md)
 *   [Checklist for equipment items](pages/141-checklist-for-equipment-items.md)
+*   [Equipment bones setup manager](pages/163-equipment-bones-setup-manager.md)
 
 #### Map
 
