@@ -45,6 +45,14 @@ Here is the list of implemented dev extension functions:
 - onSetOwnerClient()
 - onIsUpdateEntityComponentsChanged(bool isUpdate)
 - onNetworkDestroy(byte reasons)
+- onCanMoveValidated(ref bool canMove)
+- onCanSprintValidated(ref bool canSprint)
+- onCanWalkValidated(ref bool canWalk)
+- onCanCrouchValidated(ref bool canCrouch)
+- onCanCrawlValidated(ref bool canCrawl)
+- onCanJumpValidated(ref bool canJump)
+- onCanTurnValidated(ref bool canTurn)
+- onJumpForceApplied(float verticalVelocity)
 
 You can add an events in `Awake` and remove in `OnDestroy` by create extension like this:
 

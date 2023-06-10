@@ -32,6 +32,7 @@
 
 - NPC
   - [How to create Npc](pages/139-npc-entity)
+  - [NPC Dialog Message By Keys](pages/165-npc-dialog-message-by-keys.md)
   - [NPC Workflows](pages/049-npc-workflows)
 
 - Quest

@@ -27,6 +27,10 @@ This project have a `CharacterStats` struct which contains:
 *   `Slot Limit` increase inventory slot limit
 *   `Gold Rate` rate of increasing Gold when kills monsters
 *   `Exp Rate` rate of increasing Exp when kills monsters
+*   `Item Drop Rate` increase item drop rate
+*   `Jump Height` increase character's jump height
+*   `Head Damage Absorbs` reduce head damage (received from head hitbox). Calculate example: `{Head Damage}` = `100`, `{Head Damage Absorbs}` = `0.25`, `{Damage}` = `{Head Damage}` - (`{Head Damage}` * `{Head Damage Absorbs}`) = `75` = `100` - (`100` * `0.25`)
+*   `Body Damage Absorbs` reduce body damage (received from body hitbox). Calculate example: `{Body Damage}` = `100`, `{Body Damage Absorbs}` = `0.25`, `{Damage}` = `{Body Damage}` - (`{Body Damage}` * `{Body Damage Absorbs}`) = `75` = `100` - (`100` * `0.25`)
 
 ##### How accuracy, evasion and hit chance calculated
 

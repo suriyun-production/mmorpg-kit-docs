@@ -1,3 +1,31 @@
+## 1.83g (2023-06-10)
+### Bug Fixes
+- [2062](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2062)
+- [2120](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2120)
+- [2129](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2129)
+- [2130](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2130)
+- [2131](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2131)
+- [2133](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2133)
+
+### Improvements
+- Implement [2074](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2074), [More info](../pages/165-npc-dialog-message-by-keys.md)
+- [2124](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2124)
+- Add `onCanMoveValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Move" in `CanMove` function, may use it to change validate result.
+- Add `onCanSprintValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Sprint" in `CanSprint` function, may use it to change validate result.
+- Add `onCanWalkValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Walk" in `CanWalk` function, may use it to change validate result.
+- Add `onCanCrouchValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Crouch" in `CanCrouch` function, may use it to change validate result.
+- Add `onCanCrawlValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Crawl" in `CanCrawl` function, may use it to change validate result.
+- Add `onCanJumpValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Jump" in `CanJump` function, may use it to change validate result.
+- Add `onCanTurnValidated` event to `BaseGameEntity`, it will be invoked when validate "Can Turn" in `CanTurn` function, may use it to change validate result.
+- Add `onJumpForceApplied` event to `BaseGameEntity`, it will be invoked when jump force applied, may use it to do something such as reduce stamina when jump.
+- Mark `RigidbodyEntityMovement` as a obsolete component, add function to convert to `CharacterControllerEntityMovement`.
+- Add `jumpHeight` to `CharacterStats`, increase it to increase character's jump height.
+- Add `headDamageAbsorbs` to `CharacterStats`, increase it to reduce head damage (received from head hitbox).
+- Add `bodyDamageAbsorbs` to `CharacterStats`, increase it to reduce body damage (received from body hitbox).
+- Add dialog to inform users when setup scripting define symbols.
+
+* * *
+
 ## 1.83f (2023-06-05)
 ### Bug Fixes
 - [2062](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2062)
