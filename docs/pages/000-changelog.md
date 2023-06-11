@@ -1,3 +1,17 @@
+## 1.83g2 (2023-06-11)
+### Bug Fixes
+- [2111](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2111)
+- [2138](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2138)
+
+### Improvements
+- Make it able to serialize/deserialize map info, so we can send some data which want client to change follow the server, to modifies some rules, for the best players' experience. This also can fix [2111](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2111).
+- Add `fallDamageAbsorbs` to `CharacterStats`, increase it to reduce fall damage.
+- Add `gravityRate` to `CharacterStats`, it will be multiplied with entity movement's gravity to apply entity's gravity.
+- Change `MessageManager` -> `ReplaceMessageKeys` function name to `ReplaceKeysToMessages`.
+- Change enter NPC dialog action to be list, so we can set multiple actions, and also add `IsPass` function, implement it to set conditions to enter NPC dialog.
+
+* * *
+
 ## 1.83g (2023-06-10)
 ### Bug Fixes
 - [2062](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2062)
