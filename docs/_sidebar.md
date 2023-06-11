@@ -33,6 +33,7 @@
 - NPC
   - [How to create Npc](pages/139-npc-entity)
   - [NPC Dialog Menu Conditions](pages/166-npc-dialog-menu-conditions.md)
+  - [NPC Dialog Custom Actions](pages/167-npc-dialog-custom-actions.md)
   - [NPC Dialog Message By Keys](pages/165-npc-dialog-message-by-keys.md)
   - [NPC Workflows](pages/049-npc-workflows)
 
