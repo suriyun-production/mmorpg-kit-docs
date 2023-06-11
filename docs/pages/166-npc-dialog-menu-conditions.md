@@ -29,7 +29,7 @@ To use it, you must create a new scriptable object of your class, then set to di
 
 ![](../images/166/2.png)
 
-### Custom By Callback
+## Custom By Callback
 
 This way you must create a new component or scriptable object class, which have any functions that has a string parameter and return boolean (such as `public bool AlwaysPass(string playerId) { return true; }`), it will pass player's ID to the parameter, so we can use it to find a player, and use the player data to setup condition to show the dialog's menu.
 
