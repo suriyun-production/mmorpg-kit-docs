@@ -1,3 +1,18 @@
+## 1.84b (2023-08-06)
+### Bug Fixes
+- [2176](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2176)
+- [2181](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2181)
+- [2184](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2184)
+- [2186](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2186)
+- [2187](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2187)
+- [2188](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2188)
+- [2189](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2189)
+- [2191](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2191)
+- [2192](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2192)
+- [2194](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2194)
+
+* * *
+
 ## 1.84 (2023-08-02)
 ### New Features
 - [307](https://github.com/suriyun-production/mmorpg-kit-docs/issues/307)
@@ -5,6 +20,7 @@
 - [1992](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1992)
 
 ### Bug Fixes
+- [2139](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2139)
 - [2150](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2150)
 - [2153](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2153)
 - [2159](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2159)
