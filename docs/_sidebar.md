@@ -95,6 +95,7 @@
   - [Mobile platform](pages/052-mobile-platform)
   - [Action Restriction and Movement Restriction](pages/156-action-restriction.md)
   - [PK](pages/170-pk.md)
+  - [Dueling](pages/171-dueling.md)
   <!--- [How Attack Function Work?](pages/142-how-attack-function-work)-->
 
 - Etc
