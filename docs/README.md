@@ -106,6 +106,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Localization](pages/053-localization)
 *   [Currency](pages/146-currency)
 *   [Custom Data](pages/168-custom-character-data)
+*   [Player Character Body Part](pages/169-player-character-body-part)
 
 #### MMO Content
 

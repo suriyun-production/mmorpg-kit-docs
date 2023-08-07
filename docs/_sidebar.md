@@ -103,6 +103,7 @@
   - [Localization](pages/053-localization)
   - [Currency](pages/146-currency)
   - [Custom Data](pages/168-custom-character-data)
+  - [Player Character Body Part](pages/169-player-character-body-part)
 
 - MMO Content
 
