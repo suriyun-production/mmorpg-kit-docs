@@ -111,6 +111,7 @@
 
   - [Getting Started (MMO)](pages/025-getting-started-mmo)
   - [Server Architecture](pages/026-server-architecture)
+  - [Channel](pages/172-channel.md)
   - [Server Configs](pages/027-server-configs)
   - [MMO Workflows](pages/048-mmo-workflows)
   - [Instance Dungeon](pages/050-instance-dungeon)
