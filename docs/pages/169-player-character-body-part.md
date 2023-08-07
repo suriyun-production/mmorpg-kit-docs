@@ -31,3 +31,9 @@ Color option settings will contains:
 ### Model Color Setting
 
 It has only `Materials`, which is list of materials that will be applied to model's mesh renderer's [materials](https://docs.unity3d.com/Manual/class-MeshRenderer.html)
+
+## UI components
+
+- `UI Body Part Model Option` it is a UI component for model options, we will create its prefab and set the prefab to `UIBodyPartManager` later.
+- `UI Body Part Color Option` it is a UI component for color options, we will create its prefab and set the prefab to `UIBodyPartManager` later.
+- `UI Body Part Manager` is a component which being used for body part management. It will activate `Ui Model Root` game object if selected character has a body part which its model setting Id is equals to `Model Setting Id`. Otherwise it will deactivate, so I use it to show/hide model options. Then it will instantiates `Ui Model Prefab` into `Ui Model Container` as a list's entries. And when entry selected it will show `Ui Selected Model`, you can set `Ui Selected Model` to be empty if you don't want to show anything. It will activate `Ui Color Root` game object if selected character has a body part which its color setting Id is equals to `Color Setting Id` and selected model have an options to select. Otherwise it will deactivate, so I use it to show/hide color options. Then it will instantiates `Ui Color Prefab` into `Ui Color Container` as a list's entries. And when entry selected it will show `Ui Selected Color`, you can set `Ui Selected Color` to be empty if you don't want to show anything.
