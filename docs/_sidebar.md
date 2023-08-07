@@ -102,6 +102,7 @@
   - [Chat Configs](pages/024-chat-configs)
   - [Localization](pages/053-localization)
   - [Currency](pages/146-currency)
+  - [Custom Data](pages/168-custom-character-data)
 
 - MMO Content
 
