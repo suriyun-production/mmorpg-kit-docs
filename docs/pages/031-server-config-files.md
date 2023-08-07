@@ -13,6 +13,18 @@ You can change config by config files, config files will be created automaticall
   "centralAddress" : "localhost",
   "centralPort" : 7000,
   "clusterPort" : 7010,
+  "channels" : [
+    {
+      "id": "1",
+      "title": "Channel 1",
+      "maxConnections": 500,
+    },
+    {
+      "id": "2",
+      "title": "Channel 2",
+      "maxConnections": 500,
+    }
+  ],
   "centralMaxConnections" : 1100,
   "machineAddress" : "yourdomain.com",
   
@@ -20,7 +32,14 @@ You can change config by config files, config files will be created automaticall
   "spawnExePath" : "./Build.exe",
   "notSpawnInBatchMode" : false,
   "spawnStartPort" : 8000,
+  "spawnChannels" : ["1","2"],
   "spawnMaps" : ["Map001","Map002"],
+  "spawnAllocateMaps" : [
+    {
+      "mapName": "Map001",
+      "allocateAmount": 10,
+    }
+  ]
 
   "databaseManagerAddress" : "localhost",
   "databaseManagerPort" : 6003,

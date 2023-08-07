@@ -23,6 +23,7 @@ You can change server configs when starting servers by command line arguments, t
 *   `-spawnExePath`, this will change map spawn server's `Exe Path` config
 *   `-notSpawnInBatchMode`, this will change map spawn server's `Not Spawn In Batch Mode` config to `true`
 *   `-spawnStartPort`, this will change map spawn server's `Start Port`
+*   `-spawnChannels`, this will change map spawn server's `Spawning Channel Ids`, its format is as "1|2|3" (It will spawn maps for channels: `1`, `2` and `3`)
 *   `-spawnMaps`, this will change map spawn server's `Spawning Scenes`, its format is as "Map001|Map002|Map003" (It will spawns: `Map001`, `Map002` and `Map003`)
 
 #### Map Server Configs

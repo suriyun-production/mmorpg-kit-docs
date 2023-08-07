@@ -1,3 +1,47 @@
+## 1.84b2 (2023-08-07)
+### Bug Fixes
+- [Wrong script version](https://github.com/insthync/unity-graphic-settings/commit/ccb90bd52a36e924b9f1e1f0321ba86c76b1cb65)
+
+In the next version, I will use Unity version `2022`, because it have some packages which beyond experiment such as `Entities`, `AI Navigation`.
+
+* * *
+
+## 1.84b (2023-08-06)
+### Bug Fixes
+- [2176](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2176)
+- [2181](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2181)
+- [2184](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2184)
+- [2186](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2186)
+- [2187](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2187)
+- [2188](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2188)
+- [2189](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2189)
+- [2191](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2191)
+- [2192](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2192)
+- [2194](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2194)
+
+* * *
+
+## 1.84 (2023-08-02)
+### New Features
+- [307](https://github.com/suriyun-production/mmorpg-kit-docs/issues/307)
+- [1968](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1968)
+- [1992](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1992)
+
+### Bug Fixes
+- [2139](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2139)
+- [2150](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2150)
+- [2153](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2153)
+- [2159](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2159)
+- [2160](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2160)
+- [2172](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2172)
+
+### Improvements
+- [2157](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2157)
+- [2166](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2166)
+- [2177](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2177)
+
+* * *
+
 ## 1.83g2 (2023-06-11)
 ### Bug Fixes
 - [2111](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2111)

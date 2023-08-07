@@ -6,14 +6,20 @@ As mentioned architecture, there are different kind of servers and it's have dif
 
 ## Central Network Manager Configs
 
-*   `Network Port` (Args Key: `-centralPort`, Config File `serverConfig.json`, Config File Key: `centralPort`, Type: `Integer`), Central server's port. Clients, chat server, map spawn server and map server will connect to central server by this port.
+*   `Network Port` (Args Key: `-centralPort`, Config File `serverConfig.json`, Config File Key: `centralPort`, Type: `Integer`), Central server's port, clients will connect by this port to register, login and manage characters.
 *   `Cluster Server Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), Cluster server's port, cluster server is a server that will start along with central server to handle app-servers (map-server, map-spawn-server) connections and listing, broadcasting chat messages, player's character updating from any map-server to other map-servers.
 *   `Max Connections` (Args Key: `-centralMaxConnections`, Config File `serverConfig.json`, Config File Key: `centralMaxConnections`, Type: `Integer`), Maximum client connections.
+*   `Map Spawn Millseconds Timeout` (Args Key: `-mapSpawnMillisecondsTimeout`, Config File `serverConfig.json`, Config File Key: `mapSpawnMillisecondsTimeout`, Type: `Integer`), a duration to wait for map-server to be spawned, set it to `0` to not have a timeout, if a timeout occurs it will not move players to the instance map-server. Time unit is milliseconds, so set it to 5000, if you want a 5 seconds duration.
+*   `Default Channel Max Connections` (Args Key: `-defaultChannelMaxConnections`, Config File `serverConfig.json`, Config File Key: `defaultChannelMaxConnections`, Type: `Integer`), a default maximum client connections to each channels, if channel's max connections not being set (or set to `<= 0`) it will use this value as its max connections.
+*   `Channels` (Config File `serverConfig.json`, Config File Key: `channels`, Type: `{"id": String, "title": String, "maxConnections": Integer}[]`), a list of channels each have `Id`, `Title`, and `Max Connections` settings, if `Max Connections` is `<= 0`, it will use `Default Channel Max Connections` as its max connections.
+*   `Disable Default Login`, turn it on to disable default login system, so user won't be able to register/login by username and password.
 *   `Min Username Length`, Minimum username length.
 *   `Max Username Length`, Maximum username length.
 *   `Min Password Length`, Minimum password length.
 *   `Min Character Name Length`, Minimum character name length.
 *   `Max Character Name Length`, Maximum character name length.
+*   `Require Email`, turn it on if it require user's email for registration.
+*   `Require Email Verification`, turn it on if it require user's email verification, but you have to develop email verification part by yourself.
 
 ## Map Spawn Network Manager Configs
 
@@ -24,7 +30,9 @@ As mentioned architecture, there are different kind of servers and it's have dif
 *   `Exe Path` (Args Key: `-spawnExePath`, Config File `serverConfig.json`, Config File Key: `spawnExePath`, Type: `String`), path to execution file (`.exe` file in Windows, `.app` in Mac) must set it correctly to start map servers.
 *   `Not Spawn In Batch Mode` (Args Key: `-notSpawnInBatchMode`, Config File `serverConfig.json`, Config File Key: `notSpawnInBatchMode`, Type: `Boolean`), if this is `TRUE` it will run map server in non batch mode (have graphics and interactable).
 *   `Start Port` (Args Key: `-spawnStartPort`, Config File `serverConfig.json`, Config File Key: `spawnStartPort`, Type: `Integer`), Port which will be used to run map server then it will increasing when running next map server.
-*   `Spawning Maps` (Args Key: `-spawnMaps`, Config File `serverConfig.json`, Config File Key: `spawnMaps`, Type: `String[]`), This is list of scenes which will be spawned when this server started.
+*   `Spawning Channel Ids` (Args Key: `-spawnChannels`, Config File `serverConfig.json`, Config File Key: `spawnChannels`, Type: `String[]`), this is list of channel IDs which will be used to spawn map-servers when the map-spawn server started.
+*   `Spawning Maps` (Args Key: `-spawnMaps`, Config File `serverConfig.json`, Config File Key: `spawnMaps`, Type: `String[]`), This is list of maps which will be spawned when the map-spawn server started.
+*   `Spawning Allocate Maps` (Config File `serverConfig.json`, Config File Key: `spawnAllocateMaps`, Type: `{"mapName": String, "allocateAmount": Integer}[]`), This is list of allocating instance maps which will be spawned when the map-spawn server started, `allocateAmount` is a spawn amount.
 *   `Is Override Exe Path`, if this is turned on, it will use value from `Override Exe Path` to execute map server instead of `Exe Path` when running in editor.
 *   `Editor Not Spawn In Batch Mode`, if this is TRUE it will run map server in non batch mode (have graphics and interactable) when running in editor.
 

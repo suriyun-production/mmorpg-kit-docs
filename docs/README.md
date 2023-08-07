@@ -97,6 +97,8 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [FPS gameplay](pages/051-fps-gameplay)
 *   [Mobile platform](pages/052-mobile-platform)
 *   [Action Restriction and Movement Restriction](pages/156-action-restriction.md)
+*   [PK](pages/170-pk.md)
+*   [Dueling](pages/171-dueling.md)
 <!--*   [How Attack Function Work?](pages/142-how-attack-function-work)-->
 
 #### Etc
@@ -105,11 +107,14 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Chat Configs](pages/024-chat-configs)
 *   [Localization](pages/053-localization)
 *   [Currency](pages/146-currency)
+*   [Custom Data](pages/168-custom-character-data)
+*   [Player Character Body Part](pages/169-player-character-body-part)
 
 #### MMO Content
 
 *   [Getting Started (MMO)](pages/025-getting-started-mmo)
 *   [Server Architecture](pages/026-server-architecture)
+*   [Channel](pages/172-channel.md)
 *   [Server Configs](pages/027-server-configs)
 *   [MMO Workflows](pages/048-mmo-workflows)
 *   [Instance Dungeon](pages/050-instance-dungeon)
