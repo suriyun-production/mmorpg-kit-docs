@@ -1,3 +1,9 @@
+## 1.84b2 (2023-08-07)
+### Bug Fixes
+- [Wrong script version](https://github.com/insthync/unity-graphic-settings/commit/ccb90bd52a36e924b9f1e1f0321ba86c76b1cb65)
+
+* * *
+
 ## 1.84b (2023-08-06)
 ### Bug Fixes
 - [2176](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2176)
