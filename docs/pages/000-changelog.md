@@ -1,3 +1,16 @@
+## 1.85
+### Bug Fixes
+- [2202](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2202)
+- [2217](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2217)
+- [2218](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2218)
+
+### Improvements
+- [1776](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1776)
+- [2030](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2030)
+- [2220](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2220)
+
+* * *
+
 ## 1.84b2 (2023-08-07)
 ### Bug Fixes
 - [Wrong script version](https://github.com/insthync/unity-graphic-settings/commit/ccb90bd52a36e924b9f1e1f0321ba86c76b1cb65)
