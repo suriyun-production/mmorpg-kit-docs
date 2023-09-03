@@ -1,13 +1,20 @@
 ## 1.85
 ### Bug Fixes
 - [2202](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2202)
+- [2210](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2210)
 - [2217](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2217)
 - [2218](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2218)
+- [2219](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2219)
+- [2223](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2223)
 
 ### Improvements
-- [1776](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1776)
-- [2030](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2030)
-- [2220](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2220)
+- Make it able to set items to storage buildings that placed on scene [1776](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1776)
+- Make it able to use buildings that placed on scene [2030](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2030)
+- Add `skillActivateEffects` setting to `BaseSkill`, these effects will be played after skill casted and being activated [2220](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2220)
+- Add category filtering to quest list UI [2241](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2241)
+- Make it able to set prefab which contains reference to icon component for an object's amount UIs (UIArmorAmounts, UIAttributeAmounts, UICurrencyAmounts, UIDamageElementAmounts, UIItemAmounts, UIResistanceAmounts) [2230](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2230)
+- Make it able to assign guild skill to hotbar [1644](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1644)
+
 
 * * *
 
