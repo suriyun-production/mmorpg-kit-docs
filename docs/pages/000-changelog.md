@@ -1,11 +1,17 @@
 ## 1.85
 ### Bug Fixes
+- [2103](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2103)
 - [2202](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2202)
+- [2206](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2206)
 - [2210](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2210)
 - [2217](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2217)
 - [2218](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2218)
 - [2219](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2219)
 - [2223](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2223)
+- [2224](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2224)
+- [2244](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2244)
+- [2247](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2247)
+- [2249](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2249)
 
 ### Improvements
 - Make it able to set items to storage buildings that placed on scene [1776](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1776)
@@ -14,7 +20,16 @@
 - Add category filtering to quest list UI [2241](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2241)
 - Make it able to set prefab which contains reference to icon component for an object's amount UIs (UIArmorAmounts, UIAttributeAmounts, UICurrencyAmounts, UIDamageElementAmounts, UIItemAmounts, UIResistanceAmounts) [2230](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2230)
 - Make it able to assign guild skill to hotbar [1644](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1644)
+- Make it able to assign multiple equipment model objects [2204](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2204)
+- Make random character stats real random [1560](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1560)
+- Add armor rate and damage rate to buff [2243](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2243)
+- Implement inventory item sorting [1602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1602)
+- Add `buildLimit` setting to `BuildingEntity` [699](https://github.com/suriyun-production/mmorpg-kit-docs/issues/699)
+- Add `BuffToAlly` and `BuffToEnemy` as an options for `skillBuffType` [2234](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2234)
 
+### New Features
+- Gold drop entity, EXP drop entity, and (Custom) Currency drop entity [2080](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2080)
+- 
 
 * * *
 
