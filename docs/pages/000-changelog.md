@@ -26,7 +26,7 @@
 - Implement inventory item sorting [1602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1602)
 - Add `buildLimit` setting to `BuildingEntity` [699](https://github.com/suriyun-production/mmorpg-kit-docs/issues/699)
 - Add `BuffToAlly` and `BuffToEnemy` as an options for `skillBuffType` [2234](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2234)
-- Add `repeatType` setting to `Quest` data, you can set it to daily or weekly [1294](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1294), [1279](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1279), [172](https://github.com/suriyun-production/mmorpg-kit-docs/issues/172)
+- Add `repeatType` setting to `Quest` data, you can set it to daily or weekly [1294](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1294), [1279](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1279), [824](https://github.com/suriyun-production/mmorpg-kit-docs/issues/824), [172](https://github.com/suriyun-production/mmorpg-kit-docs/issues/172)
 - Add `randomTasks` setting to `Quest` data, old `tasks` is deprecated, and it will be converted to `randomTasks` when start a game or when make changes to `Quest` data [1279](https://github.com/suriyun-production/mmorpg-kit-docs/issues/1279)
 - Add `faction` setting to `QuestRequirement`, only character with the specific class can receive quest [123](https://github.com/suriyun-production/mmorpg-kit-docs/issues/123)
 - Add `buff` setting to `Faction` data, player who join the faction can receive buff [123](https://github.com/suriyun-production/mmorpg-kit-docs/issues/123)
@@ -34,9 +34,11 @@
 - Add `restrictDealing` to item data, turn it on if you don't allow players to deal the item [2171](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2171)
 - Add `restractDropping` to item data, turn it on if you don't allow players to drop the item [2171](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2171)
 - Add `restrictSelling` to item data, turn it on if you don't allow players to sell the item [2171](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2171)
+- Add `vendingItemsLimit` to `GameInstance`, if it is `> 0` it will limit amount of vending items
 
 ### New Features
 - Gold drop entity, EXP drop entity, and (Custom) Currency drop entity [2080](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2080)
+- Building repairing, by weapon item and menu, can setup in `BuildingEntity` -> `repairs` [472](https://github.com/suriyun-production/mmorpg-kit-docs/issues/472)
 
 * * *
 
