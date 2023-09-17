@@ -24,6 +24,10 @@ Then set map scene, and other settings
 **Other Settings**
 * **Start Position** - This will be used when new character has been created to set its position, and this map data is the start map
 * **Start Rotation** - This will be used when new character has been created to set its rotation, and this map data is the start map
+* **Enable Pk Rules** - If this is `TRUE`, PK rules will enabled in this map, players whose turn Pk on can attacks each other
+* **Disable Dealing** - If this is `TRUE`, dealing feature will be disabled, all players in this map won't be able to deal items to each other
+* **Disable Vending** - If this is `TRUE`, vending feature will be disabled, all players won't be able to deal items to each other
+* **Disable Dueling** - If this is `TRUE`, dueling feature will be disabled, all players won't be able to deal items to each other
 * **Dead Y** - When character fall to this position, character will dead
 * **Player Dead Drops Equip Weapons** - When character dead, it will drop equipping weapons or not?
 * **Player Dead Drops Equip Items** - When character dead, it will drop equipping items or not?

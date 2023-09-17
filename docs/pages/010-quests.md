@@ -1,9 +1,9 @@
-#  Quests
+# Quests
 
 With this project you can define any quests as you wish, for each quest you can set following data:
 
 * **Requirement**, requirement to start a quest
-* **Tasks**, each task you can set its type set it to **Kill Monster** if you want player to kill monster to complete quest and set it to **Collect Item** if you want player to collect item to complete quest
+* **Random Tasks**, *collection* of task list, the *collection* will be randomed so you can set random tasks, the tasks list will contains tasks, each task you can set its type set it to **Kill Monster** if you want player to kill monster to complete quest and set it to **Collect Item** if you want player to collect item to complete quest
 * **Abandon Quests**, Quests which will be abandoned when accept this quest
 * **Change Character Class**, if this is set, your character's class will be changed as you set to this when complete the quest
 * **Reward Exp**, exp that character will gain when complete the quest
@@ -12,7 +12,7 @@ With this project you can define any quests as you wish, for each quest you can 
 * **Reward Items**, items that character will receive when complete the quest
 * **Selectable Reward Items**, items that character will receive when complete the quest, but you can select :)
 * **Random Reward Items**, items that character will receive when complete the quest, but it is random :)
-* **Can Repeat**, if this is **TRUE**, this quest will able to start repeatedly
+* **Repeat Type**, how the quest can be repeated, `None` = cannot repeat, `AnyTime` = can repeat anytime, `Daily` = can be repeat daily, `Weekly` = can be repeat weekly
 
 You can set **Quest** in **Npc** dialog to make it available to receive and complete it
 

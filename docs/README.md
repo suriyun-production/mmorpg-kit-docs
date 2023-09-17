@@ -54,6 +54,8 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [How to create Craft Skill](pages/132-create-craft-skill.md)
 *   [How to create Area Buff Skill](pages/133-create-area-buff-skill.md)
 *   [How to create Area Attack Skill](pages/134-create-area-attack-skill.md)
+*   [How to create Resurrection Skill](174-how-to-create-resurrection-skill.md)
+*   [How to add skill to character](pages/173-how-to-add-skill-to-character.md)
 
 #### Item
 *   [Item Drop (Item Drop Entity)](pages/007-item-drops-item-drop-entity)
@@ -75,11 +77,14 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Checklist for equipment items](pages/141-checklist-for-equipment-items.md)
 *   [Equipment bones setup manager](pages/163-equipment-bones-setup-manager.md)
 
+#### Building
+*   [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
+*   [Building repairing](pages/175-building-repairing.md)
+
 #### Map
 
 *   [How to add Map (Map Info)](pages/019-map-info)
 *   [Warp Portals (Warp Portal Entity / Warp Portal Database)](pages/011-warp-portals)
-*   [Buildings (Building Item / Building Entity / Building Material / Building Area)](pages/008-building-building-item-building-entity-building-material-building-area)
 *   [Harvestables (Harvestable Data / Harvestable Entity / Harvestable Spawn Area)](pages/012-harvestable-harvestable-data-harvestable-entity-harvestable-spawn-area)
 *   [Monster Spawn Area](pages/137-monster-spawn-area.md)
 *   [Item Drop Entity](pages/143-item-drop-entity.md)
