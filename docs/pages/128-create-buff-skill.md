@@ -30,6 +30,7 @@ There are following configs for `Buff Skill`
 - `Consume Mp` amount of Mp which required to use this skill. its `Base Amount` is amount of required Mp when skill level is 1. Its `Amount Increase Each Level` is increasing amount of required Mp when skill level > 0. This will be in-use with active skills and craft skills.
 - `Cooldown Duration` cooldown before allow to use skill next time. its `Base Amount` is duration when skill level is 1. Its `Amount Increase Each Level` is increasing duration when skill level > 0. This will be in-use with active skills and craft skills.
 - `Requirement` is requirement for level up this skill. if character hasn't pass this requirement. it will not able to level up this skill.
+
 ## Buff Configs
 
 - `Skill Buff Type` set it to `Buff To User` if you want this skill applies buff to user character only. `Buff To Nearby Allies` it will applies buff to nearby allies characters (such as party members, pets). `Buff To Nearby Characters` it will applies buff to nearby characters including with an enemies. `Buff To Target` have to select target character before use this skill, it will applies buff to selected character. `Toggle` this is like `Buff To User` but toggleable.
