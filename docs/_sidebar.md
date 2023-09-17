@@ -50,6 +50,8 @@
   - [How to create Craft Skill](pages/132-create-craft-skill.md)
   - [How to create Area Buff Skill](pages/133-create-area-buff-skill.md)
   - [How to create Area Attack Skill](pages/134-create-area-attack-skill.md)
+  - [How to create Resurrection Skill](174-how-to-create-resurrection-skill.md)
+  - [How to add skill to character](pages/173-how-to-add-skill-to-character.md)
 
 - Item
 
