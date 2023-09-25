@@ -1,4 +1,18 @@
-## 1.85
+## 1.85b (2023-09-25)
+### Bug Fixes
+- [2134](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2134)
+- [2214](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2214)
+- [2235](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2235)
+- [2257](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2257)
+- [2258](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2258)
+- [2259](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2259)
+
+### Improvements
+- Don't cache item random bonus for each random seed, just calculate and store as part of `calculated item buff` data, so it can reduce memory usage [2175](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2175)
+
+* * *
+
+## 1.85 (2023-09-18)
 ### Bug Fixes
 - [2103](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2103)
 - [2202](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2202)
