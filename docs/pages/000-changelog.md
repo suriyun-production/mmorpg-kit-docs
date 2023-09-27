@@ -1,3 +1,11 @@
+## 1.85b2 (2023-09-27)
+### Bug Fixes
+- Try to fix server-auth root motion issues [2257](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2257)
+- [2260](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2260)
+- [2261](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2261)
+
+* * *
+
 ## 1.85b (2023-09-25)
 ### Bug Fixes
 - [2134](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2134)
