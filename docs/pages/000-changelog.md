@@ -1,3 +1,13 @@
+## 1.85b3 (2023-09-28)
+### Bug Fixes
+- Attribute's increase resistances, armors, damages not being calculated.
+- Wrong simulate move direction on remote clients.
+
+### Improvements
+- Add code to avoid this uncaught exception [2264](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2264)
+
+* * *
+
 ## 1.85b2 (2023-09-27)
 ### Bug Fixes
 - Try to fix server-auth root motion issues [2257](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2257)
