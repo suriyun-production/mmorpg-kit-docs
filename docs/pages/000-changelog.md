@@ -1,19 +1,21 @@
 * * *
 
-## 1.85c (2023-10-01)
+## 1.85c (2023-10-22)
 ### New Features
 - Add `attackStatusEffects` settings to attack skill classes, so it can applies status effects when the skill hitting target.
 - Status effect resistances, if resistance's amount >= `1` (`100%` resist), the status effect won't be applied.
 
 ### Improvements
-- Hit register workflows changed again, now it will send origin and hit data from client to server, not only hit data like the older version. And also uses stored validation data to confirm skill activating although it is not an attack skill.
+- Hit register workflows changed again, now it will send origin and hit data from client to server, not only hit data like the older version. And also use it to store validation data to confirm skill activating although it is not an attack skill.
 - Move bult-in damage info codes into separated classes (`MeleeDamageInfo`, `MissileDamageInfo`, `RaycastDamageInfo`, and `ThrowableDamageInfo`), can use them as an example to create custom damage info.
 - Change function prefix `Server` to `Cmd`, `All` to `Rpc`, and `Target` to `TargetRpc`.
 
 ### Bug Fixes
+- [2256](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2256)
 - [2263](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2263)
 - [2267](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2267)
 - [2268](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2268)
+- [2269](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2269)
 - [2272](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2272)
 - [2275](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2275)
 - [2277](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2277)
