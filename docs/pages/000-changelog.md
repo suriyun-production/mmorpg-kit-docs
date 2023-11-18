@@ -1,3 +1,17 @@
+## 1.86 (2023-11-29)
+### Bug Fixes
+- [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
+- [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
+
+### Improvements
+- Add `isAttackBuildingFirst` setting to `MonsterActivityComponent` component, turn it on to make the monster attack building first if it can find a enemy's building.
+- Add `activatableDistance` setting to `WarpPortalEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `VehicleEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `NpcEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `BuildingEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+
+* * *
+
 ## 1.85c3 (2023-10-24)
 ### Bug Fixes
 - [2269](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2269)
