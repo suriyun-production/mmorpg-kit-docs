@@ -9,6 +9,10 @@
 - Add `activatableDistance` setting to `VehicleEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
 - Add `activatableDistance` setting to `NpcEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
 - Add `activatableDistance` setting to `BuildingEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `canBeAttacked` setting to `BuildingEntity` component, turn it off to make it immuned.
+- Add `extraMeshRenderers` setting to `BuildingEntity` component, set mesh renderers other than the `meshRenderer` to make it able to set those renderers' materials when state changing, must uses the same set of materials with `meshRenderer` to make it works properly.
+- Add `extraSpriteRenderers` setting to `BuildingEntity` component, set sprite renderers other than the `spriteRenderer` to make it able to set those renderers' color when state changing.
+- Add `extraTilemaps` setting to `BuildingEntity` component, set tilemaps other than the `tilemap` to make it able to set those tilemap' color when state changing.
 
 * * *
 
