@@ -4,6 +4,7 @@
 - [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
 
 ### Improvements
+- Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
 - Add `isAttackBuildingFirst` setting to `MonsterActivityComponent` component, turn it on to make the monster attack building first if it can find a enemy's building.
 - Add `activatableDistance` setting to `WarpPortalEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
 - Add `activatableDistance` setting to `VehicleEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
@@ -13,6 +14,10 @@
 - Add `extraMeshRenderers` setting to `BuildingEntity` component, set mesh renderers other than the `meshRenderer` to make it able to set those renderers' materials when state changing, must uses the same set of materials with `meshRenderer` to make it works properly.
 - Add `extraSpriteRenderers` setting to `BuildingEntity` component, set sprite renderers other than the `spriteRenderer` to make it able to set those renderers' color when state changing.
 - Add `extraTilemaps` setting to `BuildingEntity` component, set tilemaps other than the `tilemap` to make it able to set those tilemap' color when state changing.
+- Add `ammoItems` setting to `WeaponItem` game data, now you can use any kind of items to setup as ammo for weapons.
+- Add `rateOfFire` setting to `WeaponItem` game data, if this value > 0, it will fire by duration which being calculated by this value, default duration calculation formula is `60f / rate of fire`.
+- Add `reloadDuration` setting to `WeaponItem` game data, if this value > 0, it will reload by using this duration, NOT by animation length.
+- Add `overrideAmmoCapacity` setting to `AmmoItem` game data, If this value > 0 it will override weapon's ammo capacity when reload.
 
 * * *
 
