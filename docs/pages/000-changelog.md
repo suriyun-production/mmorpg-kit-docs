@@ -16,6 +16,7 @@
 - [2299](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2299)
 - [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
 - [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
+- [2311](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2311)
 
 ### Improvements
 - Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
@@ -34,7 +35,7 @@
 - Add `overrideAmmoCapacity` setting to `AmmoItem` game data, If this value > 0 it will override weapon's ammo capacity when reload.
 - Change status effect resistance workflow, now it will calculate resistance to resist by applying level. If status effect resistance is `1.5`, it will `100%` resist status effect level `1` and `50%` resist status effect level `2`.
 - Add settings to set resistance amount each levels named `maxResistanceAmountEachLevels`, if value is `[0.8, 0.5, 0.25]`, and your character's status effect resistance is `2.15`, it will have chance `80%` to resist status effect level `1`, `50%` to resist level `2`, and `15%` to resist level `3`.
-- Add applying status effect UI components.
+- Add applying status effect UI components [2302](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2302).
 
 * * *
 
