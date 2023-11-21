@@ -6,6 +6,9 @@
 - Remove `GetSummon` function, use/implements `TryGetSummon` instead.
 - Remove `GetMount` function, use/implements `TryGetMount` instead.
 - Remove `GetItemCraft` function, use/implements `TryGetItemCraft` instead.
+- Remove `GetBaseAttackDamageAmount` function, use/implements `TryGetBaseAttackDamageAmount` instead.
+- Remove `GetAttackWeaponDamageInflictions` function, use/implements `TryGetAttackWeaponDamageInflictions` instead.
+- Remove `GetAttackAdditionalDamageAmounts` function, use/implements `TryGetAttackAdditionalDamageAmounts` instead.
 
 *I actually want to remove `skillType` setting, and add something like `activable` setting, and make it able to be both active and passive, but I'm afraid that it can break any customer's projects*
 
