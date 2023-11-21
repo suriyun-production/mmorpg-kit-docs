@@ -1,4 +1,14 @@
 ## 1.86 (2023-11-29)
+### Skill data structure changes
+- Try to get rid of item craft skill type, so it will have active and passive, can use an active skills to craft item instead.
+- Remove `IsBuff`, `GetBuff` functions, use/implements `TryGetBuff` instead.
+- Remove `IsDebuff`, `GetDebuff` functions, use/implements `TryGetDebuff` instead.
+- Remove `GetSummon` function, use/implements `TryGetSummon` instead.
+- Remove `GetMount` function, use/implements `TryGetMount` instead.
+- Remove `GetItemCraft` function, use/implements `TryGetItemCraft` instead.
+
+*I actually want to remove `skillType` setting, and add something like `activable` setting, and make it able to be both active and passive, but I'm afraid that it can break any customer's projects*
+
 ### Bug Fixes
 - [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
 - [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
