@@ -13,6 +13,7 @@
 *I actually want to remove `skillType` setting, and add something like `activable` setting, and make it able to be both active and passive, but I'm afraid that it can break any customer's projects*
 
 ### Bug Fixes
+- [2299](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2299)
 - [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
 - [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
 
