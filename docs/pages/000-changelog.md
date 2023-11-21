@@ -18,6 +18,9 @@
 - Add `rateOfFire` setting to `WeaponItem` game data, if this value > 0, it will fire by duration which being calculated by this value, default duration calculation formula is `60f / rate of fire`.
 - Add `reloadDuration` setting to `WeaponItem` game data, if this value > 0, it will reload by using this duration, NOT by animation length.
 - Add `overrideAmmoCapacity` setting to `AmmoItem` game data, If this value > 0 it will override weapon's ammo capacity when reload.
+- Change status effect resistance workflow, now it will calculate resistance to resist by applying level. If status effect resistance is `1.5`, it will `100%` resist status effect level `1` and `50%` resist status effect level `2`.
+- Add settings to set resistance amount each levels named `maxResistanceAmountEachLevels`, if value is `[0.8, 0.5, 0.25]`, and your character's status effect resistance is `2.15`, it will have chance `80%` to resist status effect level `1`, `50%` to resist level `2`, and `15%` to resist level `3`.
+- Add applying status effect UI components.
 
 * * *
 
