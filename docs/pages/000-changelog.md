@@ -17,6 +17,7 @@
 - [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
 - [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
 - [2311](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2311)
+- [2313](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2313)
 
 ### Improvements
 - Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
