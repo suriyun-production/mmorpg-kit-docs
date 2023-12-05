@@ -21,6 +21,7 @@
 - [2314](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2314)
 - [2316](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2316)
 - [2317](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2317)
+- [2324](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2324)
 
 ### Improvements
 - Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
@@ -43,6 +44,25 @@
 - Add applying status effect UI components [2302](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2302).
 - Add `publicQueue` setting to `QueuedWorkbenchEntity`, If it is public queue, it will be queued publically, shared with other players [2305](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2305).
 - Add time unit setting for item's expire duration [2318](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2318).
+- Add `BuffToNearbyPartyMembers` skill buff type, it works alike `BuffToNearbyAllies` but it will applies buff to party members only.
+- Add `BuffToPartyMember` skill buff type, it works alike `BuffToAlly` but it will applies buff to party members only.
+- Add `isRevealsHide` to buff data, when character who is being buffed with this turned on will be able to see hidden characters.
+- Add `isBlind` to buff data, when character who is being buffed with this turned on will not be able to see all characters.
+- Add `UIStatusEffectApplyings` component, use it for status effect UIs implementation. It is part of `UIBuff`, `UICharacterItem`, `UICharacterSkill`, check it.
+- Add `uiTextMaxStack` (ref to `TextWrapper`) to `UIBuff`, it will write buff's max stack here.
+- Add `uiTextRemoveBuffWhenAttackChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when attack chance.
+- Add `uiTextRemoveBuffWhenAttackedChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when attacked chance.
+- Add `uiTextRemoveBuffWhenUseSkillChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when use skill chance.
+- Add `uiTextRemoveBuffWhenUseItemChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when use item chance.
+- Add `uiTextRemoveBuffWhenPickupItemChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when pick up item chance.
+- Add `freezeAnimationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `freezeAnimation` is turned on.
+- Add `isHideObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isHide` is turned on.
+- Add `isRevealsHideObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isRevealsHide` is turned on.
+- Add `isBlindObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isBlind` is turned on.
+- Add `doNotRemoveOnDeadObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `doNotRemoveOnDead` is turned on.
+- Add `muteFootstepSoundObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `muteFootstepSound` is turned on.
+- Add `isExtendDurationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isExtendDuration` is turned on.
+- Add `/visible` and `/invisible` GM commands, use it to show/hide character to/from other characters [2290](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2290).
 
 * * *
 
