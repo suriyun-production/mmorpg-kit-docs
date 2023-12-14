@@ -1,4 +1,4 @@
-## 1.86 (2023-11-29)
+## 1.86 (2023-12-16)
 ### Skill data structure changes
 - Try to get rid of item craft skill type, so it will have active and passive, can use an active skills to craft item instead.
 - Remove `IsBuff`, `GetBuff` functions, use/implements `TryGetBuff` instead.
@@ -22,6 +22,8 @@
 - [2316](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2316)
 - [2317](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2317)
 - [2324](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2324)
+- [2331](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2331)
+- [2336](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2336)
 
 ### Improvements
 - Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
@@ -44,6 +46,7 @@
 - Add applying status effect UI components [2302](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2302).
 - Add `publicQueue` setting to `QueuedWorkbenchEntity`, If it is public queue, it will be queued publically, shared with other players [2305](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2305).
 - Add time unit setting for item's expire duration [2318](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2318).
+- Add `BuffRemoval` to buff data, setup how other buffs will be removed when apply this buff here [2273](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2273).
 - Add `BuffToNearbyPartyMembers` skill buff type, it works alike `BuffToNearbyAllies` but it will applies buff to party members only.
 - Add `BuffToPartyMember` skill buff type, it works alike `BuffToAlly` but it will applies buff to party members only.
 - Add `isRevealsHide` to buff data, when character who is being buffed with this turned on will be able to see hidden characters.
@@ -62,6 +65,7 @@
 - Add `doNotRemoveOnDeadObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `doNotRemoveOnDead` is turned on.
 - Add `muteFootstepSoundObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `muteFootstepSound` is turned on.
 - Add `isExtendDurationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isExtendDuration` is turned on.
+- Add `duelersCanAttackEachOtherOnly` setting to `MapInfo`, turn it on to make only duelers can attacks each other, other characters cannot do it, duelers also cannot attacks other, turn it on to fix [2331](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2331) (If you think it is a bug :P).
 - Add `/visible` and `/invisible` GM commands, use it to show/hide character to/from other characters [2290](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2290).
 
 * * *
