@@ -1,3 +1,79 @@
+## 1.86 (2023-12-16)
+### Skill data structure changes
+- Try to get rid of item craft skill type, so it will have active and passive, can use an active skills to craft item instead.
+- Remove `IsBuff`, `GetBuff` functions, use/implements `TryGetBuff` instead.
+- Remove `IsDebuff`, `GetDebuff` functions, use/implements `TryGetDebuff` instead.
+- Remove `GetSummon` function, use/implements `TryGetSummon` instead.
+- Remove `GetMount` function, use/implements `TryGetMount` instead.
+- Remove `GetItemCraft` function, use/implements `TryGetItemCraft` instead.
+- Remove `GetBaseAttackDamageAmount` function, use/implements `TryGetBaseAttackDamageAmount` instead.
+- Remove `GetAttackWeaponDamageInflictions` function, use/implements `TryGetAttackWeaponDamageInflictions` instead.
+- Remove `GetAttackAdditionalDamageAmounts` function, use/implements `TryGetAttackAdditionalDamageAmounts` instead.
+
+*I actually want to remove `skillType` setting, and add something like `activable` setting, and make it able to be both active and passive, but I'm afraid that it can break any customer's projects*
+
+### Bug Fixes
+- [2299](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2299)
+- [2300](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2300)
+- [2309](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2309)
+- [2311](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2311)
+- [2313](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2313)
+- [2314](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2314)
+- [2316](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2316)
+- [2317](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2317)
+- [2324](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2324)
+- [2331](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2331)
+- [2336](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2336)
+
+### Improvements
+- Make it able to control aimming after click use button from item dialog on mobile platforms, it will instantiates a new joystick for temporary use. Attach `UITagHotkeyJoystickForDialogControlling` component to the game object with a hotkey joystick to make it works as hotkey joystick for dialog controlling.
+- Add `isAttackBuildingFirst` setting to `MonsterActivityComponent` component, turn it on to make the monster attack building first if it can find a enemy's building.
+- Add `activatableDistance` setting to `WarpPortalEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `VehicleEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `NpcEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `activatableDistance` setting to `BuildingEntity` component, set it more than `0` to make it uses this value instead of `GameInstance` -> `conversationDistance` as its activatable distance.
+- Add `canBeAttacked` setting to `BuildingEntity` component, turn it off to make it immuned.
+- Add `extraMeshRenderers` setting to `BuildingEntity` component, set mesh renderers other than the `meshRenderer` to make it able to set those renderers' materials when state changing, must uses the same set of materials with `meshRenderer` to make it works properly.
+- Add `extraSpriteRenderers` setting to `BuildingEntity` component, set sprite renderers other than the `spriteRenderer` to make it able to set those renderers' color when state changing.
+- Add `extraTilemaps` setting to `BuildingEntity` component, set tilemaps other than the `tilemap` to make it able to set those tilemap' color when state changing.
+- Add `ammoItems` setting to `WeaponItem` game data, now you can use any kind of items to setup as ammo for weapons.
+- Add `rateOfFire` setting to `WeaponItem` game data, if this value > 0, it will fire by duration which being calculated by this value, default duration calculation formula is `60f / rate of fire`.
+- Add `reloadDuration` setting to `WeaponItem` game data, if this value > 0, it will reload by using this duration, NOT by animation length.
+- Add `overrideAmmoCapacity` setting to `AmmoItem` game data, If this value > 0 it will override weapon's ammo capacity when reload.
+- Change status effect resistance workflow, now it will calculate resistance to resist by applying level. If status effect resistance is `1.5`, it will `100%` resist status effect level `1` and `50%` resist status effect level `2`.
+- Add settings to set resistance amount each levels named `maxResistanceAmountEachLevels`, if value is `[0.8, 0.5, 0.25]`, and your character's status effect resistance is `2.15`, it will have chance `80%` to resist status effect level `1`, `50%` to resist level `2`, and `15%` to resist level `3`.
+- Add `canBeCraftedWithoutSource` to `ItemCraftFormula`, turn it on to make it able to be crafted by player without source (queue workbench building).
+- Add applying status effect UI components [2302](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2302).
+- Add `publicQueue` setting to `QueuedWorkbenchEntity`, If it is public queue, it will be queued publically, shared with other players [2305](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2305).
+- Add time unit setting for item's expire duration [2318](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2318).
+- Add `BuffRemoval` to buff data, setup how other buffs will be removed when apply this buff here [2273](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2273).
+- Add `BuffToNearbyPartyMembers` skill buff type, it works alike `BuffToNearbyAllies` but it will applies buff to party members only.
+- Add `BuffToPartyMember` skill buff type, it works alike `BuffToAlly` but it will applies buff to party members only.
+- Add `isRevealsHide` to buff data, when character who is being buffed with this turned on will be able to see hidden characters.
+- Add `isBlind` to buff data, when character who is being buffed with this turned on will not be able to see all characters.
+- Add `UIStatusEffectApplyings` component, use it for status effect UIs implementation. It is part of `UIBuff`, `UICharacterItem`, `UICharacterSkill`, check it.
+- Add `uiTextMaxStack` (ref to `TextWrapper`) to `UIBuff`, it will write buff's max stack here.
+- Add `uiTextRemoveBuffWhenAttackChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when attack chance.
+- Add `uiTextRemoveBuffWhenAttackedChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when attacked chance.
+- Add `uiTextRemoveBuffWhenUseSkillChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when use skill chance.
+- Add `uiTextRemoveBuffWhenUseItemChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when use item chance.
+- Add `uiTextRemoveBuffWhenPickupItemChance` (ref to `TextWrapper`) to `UIBuff`, it will write buff's remove buff when pick up item chance.
+- Add `freezeAnimationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `freezeAnimation` is turned on.
+- Add `isHideObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isHide` is turned on.
+- Add `isRevealsHideObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isRevealsHide` is turned on.
+- Add `isBlindObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isBlind` is turned on.
+- Add `doNotRemoveOnDeadObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `doNotRemoveOnDead` is turned on.
+- Add `muteFootstepSoundObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `muteFootstepSound` is turned on.
+- Add `isExtendDurationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isExtendDuration` is turned on.
+- Add `duelersCanAttackEachOtherOnly` setting to `MapInfo`, turn it on to make only duelers can attacks each other, other characters cannot do it, duelers also cannot attacks other, turn it on to fix [2331](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2331) (If you think it is a bug :P).
+- Add `/visible` and `/invisible` GM commands, use it to show/hide character to/from other characters [2290](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2290).
+- Change bonus stats displaying from "stat: +1" to "+stat: 1".
+- Add `UIBlendshapeManager` and `UIBlendshapeOption` use them to create character's blendshape setting UIs [2319](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2319).
+- Don't launch damage entity at server if character is dead (to avoid damage applying while character is dead) [2337](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2337).
+- Change `BaseNpcDialog` -> `UniTaskVoid RenderUI(UINpcDialog uiNpcDialog)` to `UniTask RenderUI(UINpcDialog uiNpcDialog)`.
+
+* * *
+
 ## 1.85c3 (2023-10-24)
 ### Bug Fixes
 - [2269](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2269)
