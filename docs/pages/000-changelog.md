@@ -1,3 +1,12 @@
+## 1.86b (2023-12-16)
+### Bug Fixes
+- [2341](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2341)
+- [2343](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2343)
+- No migration scripts being called.
+- Invalid access token after disconnected from map-server.
+
+* * *
+
 ## 1.86 (2023-12-16)
 ### Skill data structure changes
 - Try to get rid of item craft skill type, so it will have active and passive, can use an active skills to craft item instead.
