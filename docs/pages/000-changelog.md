@@ -67,6 +67,10 @@
 - Add `isExtendDurationObject` (ref to `GameObject`) to `UIBuff`, this object will be activated when buff data's `isExtendDuration` is turned on.
 - Add `duelersCanAttackEachOtherOnly` setting to `MapInfo`, turn it on to make only duelers can attacks each other, other characters cannot do it, duelers also cannot attacks other, turn it on to fix [2331](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2331) (If you think it is a bug :P).
 - Add `/visible` and `/invisible` GM commands, use it to show/hide character to/from other characters [2290](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2290).
+- Change bonus stats displaying from "stat: +1" to "+stat: 1".
+- Add `UIBlendshapeManager` and `UIBlendshapeOption` use them to create character's blendshape setting UIs [2319](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2319).
+- Don't launch damage entity at server if character is dead (to avoid damage applying while character is dead) [2337](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2337).
+- Change `BaseNpcDialog` -> `UniTaskVoid RenderUI(UINpcDialog uiNpcDialog)` to `UniTask RenderUI(UINpcDialog uiNpcDialog)`.
 
 * * *
 
