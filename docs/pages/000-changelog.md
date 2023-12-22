@@ -1,3 +1,13 @@
+## 1.86c (2023-12-22)
+### Bug Fixes
+- [2348](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2348)
+- [2349](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2349)
+
+### Improvements
+- [2345](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2345)
+
+* * *
+
 ## 1.86b3 (2023-12-20)
 ### Bug Fixes
 - Fix invalid confirmed damage amounts (when validating by hit register)
