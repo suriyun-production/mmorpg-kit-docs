@@ -1,3 +1,16 @@
+## 1.86d (2023-12-27)
+### Bug Fixes
+- [2350](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2350)
+- [2353](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2353)
+- [2354](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2354)
+- [2356](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2356)
+
+### Improvements
+- Add `RefineEnhancerItemsLimit` setting to `GameInstance` [2355](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2355)
+- Add `DealingItemsLimit` setting to `GameInstance`.
+
+* * *
+
 ## 1.86c (2023-12-22)
 ### Bug Fixes
 - [2348](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2348)
