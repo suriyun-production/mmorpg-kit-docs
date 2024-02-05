@@ -2,6 +2,7 @@
 ### New Features
 - Logging component interface (You will have to implement it by yourself) [306](https://github.com/suriyun-production/mmorpg-kit-docs/issues/306)
 - IAP validation by web-service [2349](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2349)
+- Make it able to set conditions to wait until client loaded all objects before it is ready to connect to server [2403](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2403)
 
 ### Bug Fixes
 - Fix: no item decrease when remove enhancer from enhanced item.
