@@ -1,3 +1,30 @@
+## 1.87 (2024-01-03)
+### New Features
+- Logging component interface (You will have to implement it by yourself) [306](https://github.com/suriyun-production/mmorpg-kit-docs/issues/306)
+- IAP validation by web-service [2349](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2349)
+- Make it able to set conditions to wait until client loaded all objects before it is ready to connect to server [2403](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2403)
+
+### Bug Fixes
+- Fix: no item decrease when remove enhancer from enhanced item.
+- Fix: item drops on ground when return by dismentling.
+- [2358](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2358)
+- [2362](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2362)
+- [2366](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2366)
+- [2367](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2367)
+- [2368](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2368)
+- [2369](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2369)
+- [2384](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2384)
+- [2385](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2385)
+- [2386](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2386)
+- [2396](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2396)
+- [2397](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2397)
+- [2401](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2401)
+
+### Improvements
+- Make it not closing server immediately, it will have to wait until all data were updated [2333](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2333)
+
+* * *
+
 ## 1.86d (2023-12-27)
 ### Bug Fixes
 - [2350](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2350)
