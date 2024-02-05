@@ -246,6 +246,7 @@ public partial class PlayerCharacterEntity
 * * *
 
 ## Support functions for `SQLiteDatabase`
+
 **Implemented dev extension functions**
 - void Init()
 - void CreateCharacter(SqliteTransaction transaction, string userId, IPlayerCharacterData characterData)
@@ -256,6 +257,7 @@ public partial class PlayerCharacterEntity
 * * *
 
 ## Support functions for `MySQLDatabase`
+
 **Implemented dev extension functions**
 - void Init()
 - void CreateCharacter(MySqlConnection connection, MySqlTransaction transaction, string userId, IPlayerCharacterData characterData)
@@ -266,12 +268,14 @@ public partial class PlayerCharacterEntity
 * * *
 
 ## Support functions for `BaseGameData`
+
 **Implemented dev extension functions**
 - void PrepareRelatesData()
 
 * * *
 
 ## Support functions for `GameDatabase`
+
 **Implemented dev extension functions**
 - void LoadDataImplement(GameInstance gameInstance)
 - void LoadReferredData()
@@ -279,18 +283,21 @@ public partial class PlayerCharacterEntity
 * * *
 
 ## Support functions for `ResourcesFolderGameDatabase`
+
 **Implemented dev extension functions**
 - void LoadDataImplement(GameInstance gameInstance)
 
 * * *
 
 ## Support functions for `GameEntityModel` component
+
 **Implemented dev extension functions**
 - void SetEffectContainersBySetters()
 
 * * *
 
 ## Support functions for `BaseCharacterModel` component
+
 **Implemented dev extension functions**
 - void SetEquipmentContainersBySetters()
 
@@ -318,6 +325,7 @@ It has no dev extension invoking for `CharacterStats` struct, but it has static 
 * * *
 
 ## Support functions for `CharacterStatsTextGenerateData` class
+
 **Implemented dev extension functions**
 - void GetText(StringBuilder statsStringBuilder)
 
