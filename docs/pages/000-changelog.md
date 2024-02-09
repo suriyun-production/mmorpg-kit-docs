@@ -5,7 +5,7 @@
 
 ### Improvements
 - Add `No Slot Usage` to item data settings, while this is `TRUE` inventory/storage won't count it, you can use it for item like skin items.
-- Add `Equippable Slot Indexes` to weapon item data settings, usage example: If you want to make ASR to be equippable on 1st and 2nd weapon sets, set this to [0, 1].\r\nIf you want to make Pistol to be equippable on 3rd weapon set, set this to [2]. \r\nEach weapon set contains slots for right-hand and left-hand. Useful for shooter game, for an RPG games, set it to be empty.
+- Add `Equippable Slot Indexes` to weapon item data settings, usage example: If you want to make ASR to be equippable on 1st and 2nd weapon sets, set this to [0, 1]. If you want to make Pistol to be equippable on 3rd weapon set, set this to [2].  Each weapon set contains slots for right-hand and left-hand. Useful for shooter game, for an RPG games, set it to be empty.
 
 * * *
 
