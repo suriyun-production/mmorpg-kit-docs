@@ -1,4 +1,4 @@
-## 1.87 (2024-01-03)
+## 1.87 (2024-02-05)
 ### New Features
 - Logging component interface (You will have to implement it by yourself) [306](https://github.com/suriyun-production/mmorpg-kit-docs/issues/306)
 - IAP validation by web-service [2349](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2349)
