@@ -1,4 +1,13 @@
-## 1.87 (2024-01-03)
+## 1.88 (2024-02-09)
+### Bug Fixes
+- [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
+
+### Improvements
+- Add `No Slot Usage` to item data settings, while this is `TRUE` inventory/storage won't count it, you can use it for item like skin items.
+
+* * *
+
+## 1.87 (2024-02-05)
 ### New Features
 - Logging component interface (You will have to implement it by yourself) [306](https://github.com/suriyun-production/mmorpg-kit-docs/issues/306)
 - IAP validation by web-service [2349](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2349)
