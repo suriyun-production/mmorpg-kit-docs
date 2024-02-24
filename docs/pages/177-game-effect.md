@@ -22,9 +22,9 @@ You can changes follow settings:
 ### Generic Settings
 - `effectSocket` where in game entity model's `effectContainers` which effect will follow after instantiated.
 - `isLoop` the effects will be played looply or not, if not it will play just one time and destroy (or store back to pooling system's container).
+- `lifeTime` duration before the game effect will be destroyed (or store back to pooling system's container).
 
 ### Settings for audio clip playing
-- `lifeTime` duration before the game effect will be destroyed (or store back to pooling system's container).
 - `playMode` how audio clip will be played.
 - `settingType` which type of volume setting.
 - `otherSettingId` if `settingType` is `Other`, it will uses this value as setting type.
