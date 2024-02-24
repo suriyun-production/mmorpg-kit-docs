@@ -1,7 +1,5 @@
 # MMORPG KIT — Setup guide table of content
 
-![](https://cdn-images-1.medium.com/max/1600/1*181LgUonGXa8aTGEESkpsw.png)
-
 This is the guide for MMORPG KIT game template which selling at Unity Asset Store ([https://assetstore.unity.com/packages/templates/systems/mmorpg-kit-with-survival-mode-110188?aid=1100lGeN](https://assetstore.unity.com/packages/templates/systems/mmorpg-kit-with-survival-mode-110188?aid=1100lGeN))
 
 * [Issues Board](https://github.com/suriyun-production/mmorpg-kit-docs/issues) - You can use it to reports bugs / request features
@@ -30,6 +28,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [About Character Model 2D](pages/109-character-model-2d)
 *   [FPS Hands Model](pages/110-fps-hands-model)
 *   [Sheathing Animations](pages/155-sheathing-animations)
+
+#### Effects
+*   [Game Effect](pages/177-game-effect.md)
 
 #### Vehicle and Mount
 *   [Vehicle Entity](pages/138-mount-entity)
