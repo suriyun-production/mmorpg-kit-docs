@@ -90,7 +90,7 @@
   - [Item Drop Entity](pages/143-item-drop-entity.md)
   - [Water Area](pages/140-water-area)
   - [Day-Night Time](pages/145-day-night-time.md)
-  - [Custom Map System Loading Awaiting / Procedural Dungeon Generation](pages.176-custom-map-system-loading-awaiting-procedural-dungeon-generation.md)
+  - [Custom Map System Loading Awaiting / Procedural Dungeon Generation](pages/176-custom-map-system-loading-awaiting-procedural-dungeon-generation.md)
 
 - Gameplay
 
