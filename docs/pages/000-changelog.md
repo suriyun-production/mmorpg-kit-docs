@@ -1,4 +1,4 @@
-## 1.88 (2024-02-09)
+## 1.88 (2024-04-05)
 ### New Features
 - Addressable Assets integration, not 100% done yet.
 
