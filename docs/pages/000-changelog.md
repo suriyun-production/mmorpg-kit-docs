@@ -1,11 +1,16 @@
 ## 1.88 (2024-02-09)
+### New Features
+- Addressable Assets integration, not 100% done yet.
+
 ### Bug Fixes
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
 - [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
 
 ### Improvements
+- Reduce memory leak.
 - Add `No Slot Usage` to item data settings, while this is `TRUE` inventory/storage won't count it, you can use it for item like skin items.
 - Add `Equippable Slot Indexes` to weapon item data settings, usage example: If you want to make ASR to be equippable on 1st and 2nd weapon sets, set this to [0, 1]. If you want to make Pistol to be equippable on 3rd weapon set, set this to [2].  Each weapon set contains slots for right-hand and left-hand. Useful for shooter game, for an RPG games, set it to be empty.
+- Change `UNITY_SERVER` conditions to `!EXCLUDE_SERVER_CODES`, use it to exclude server codes from build (you can use `MMORPG KIT` menu to do it), I decides to change it because it is hard to work with when I try to exclude client codes (such as audio/particles playing which should be excluded from server).
 
 * * *
 
