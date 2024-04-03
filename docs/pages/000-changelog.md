@@ -1,10 +1,11 @@
 ## 1.88 (2024-04-05)
 ### New Features
-- Addressable Assets integration, not 100% done yet.
+- Addressable Assets integration (not 100% done yet).
 
 ### Bug Fixes
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
 - [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
+- Item amount not being updated properly when dealing items with another player.
 
 ### Improvements
 - Reduce memory leak.
