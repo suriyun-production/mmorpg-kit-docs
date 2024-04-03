@@ -1,6 +1,7 @@
 ## 1.88 (2024-04-05)
 ### New Features
 - Addressable Assets integration (not 100% done yet).
+- Guild joining request (not the invitation to join guild).
 
 ### Bug Fixes
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
