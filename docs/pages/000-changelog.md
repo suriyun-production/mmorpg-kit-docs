@@ -5,6 +5,7 @@
 - Swim up/down
 
 ### Bug Fixes
+- [2347](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2347)
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
 - [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
 - [2434](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2434)
