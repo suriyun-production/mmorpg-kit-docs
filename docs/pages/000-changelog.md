@@ -2,10 +2,12 @@
 ### New Features
 - Addressable Assets integration (not 100% done yet).
 - Guild joining request (not the invitation to join guild).
+- Swim up/down
 
 ### Bug Fixes
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
 - [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
+- [2434](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2434)
 - [2440](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2440)
 - [2445](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2445)
 - Item amount not being updated properly when dealing items with another player.
