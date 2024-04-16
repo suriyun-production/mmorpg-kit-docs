@@ -8,6 +8,7 @@
 - [2347](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2347)
 - [2402](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2402)
 - [2408](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2408)
+- [2430](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2430)
 - [2434](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2434)
 - [2440](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2440)
 - [2445](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2445)
