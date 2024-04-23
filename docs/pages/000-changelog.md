@@ -19,6 +19,7 @@
 - [2396](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2396)
 - [2397](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2397)
 - [2401](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2401)
+- [2456](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2456)
 
 ### Improvements
 - Make it not closing server immediately, it will have to wait until all data were updated [2333](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2333)
