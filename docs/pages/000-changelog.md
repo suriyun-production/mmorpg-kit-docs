@@ -1,4 +1,4 @@
-## 1.88 (2024-04-05)
+## 1.88 (2024-05-01)
 ### New Features
 - Addressable Assets integration (not 100% done yet).
 - Guild joining request (not the invitation to join guild).
@@ -47,6 +47,7 @@
 - [2396](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2396)
 - [2397](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2397)
 - [2401](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2401)
+- [2456](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2456)
 
 ### Improvements
 - Make it not closing server immediately, it will have to wait until all data were updated [2333](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2333)
