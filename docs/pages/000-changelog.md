@@ -1,3 +1,13 @@
+## 1.88b (2024-05-04)
+### New Features
+- Add `Immediately` to `GameInstance` -> `monsterDeadDropItemMode`, use it if you want to send items to player's inventory immediately as a reward when monster is killed.
+- Add `GameInstance` -> `goldStoreMode` setting, set it to `UserGoldOnly` to make it use only user gold (not character gold) to store gold.
+
+### Improvements
+- Change prefab usage priority, now priority is prefab > addressable prefab. Why? because if you set prefab then it will be loaded when the scene loads so it doesn't have to load later like addressable asset one, so it has no advantage to load addressable assets if prefabs were set.
+
+* * *
+
 ## 1.88 (2024-05-01)
 ### New Features
 - Addressable Assets integration (not 100% done yet).
