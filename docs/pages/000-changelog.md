@@ -1,3 +1,13 @@
+## 1.88c (2024-05-06)
+### New Features
+- `RigidBodyEntityMovement2D` force applying.
+- `NavMeshEntityMovement` force applying.
+
+### Bug Fixes
+- [2464](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2464)
+
+* * *
+
 ## 1.88b (2024-05-04)
 ### New Features
 - Add `Immediately` to `GameInstance` -> `monsterDeadDropItemMode`, use it if you want to send items to player's inventory immediately as a reward when monster is killed.
