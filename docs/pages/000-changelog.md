@@ -1,3 +1,9 @@
+## 1.88d (2024-05-12)
+### Bug Fixes
+- Ammo is updating at the client, it must not.
+
+* * *
+
 ## 1.88c (2024-05-06)
 ### New Features
 - `RigidBodyEntityMovement2D` force applying.
