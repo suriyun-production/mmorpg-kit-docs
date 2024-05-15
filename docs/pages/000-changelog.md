@@ -1,3 +1,16 @@
+## 1.88e (2024-05-15)
+### Bug Fixes
+- Amount of gold is `0` when entering the game while `GameInstance` -> `GoldStoreMode` is `Default`.
+- Invalid RTT calculation if server/client is in a different time zone.
+
+### Improvements
+- Add `ExpTable` scriptable object, you can store an amount of EXP for level up here.
+- Add `GameInstance` -> `ExpTable`, if it is not set (being `NULL` or empty) the old `ExpTree` configs will be migrated to be `ExpTable` when starting a game.
+- Add `SocialSystemSetting` -> `GuildExpTable`, if it is not set (being `NULL` or empty) the old `GuildExpTree` configs will be migrated to be `GuildExpTable` when starting a game.
+- Add `BaseCharacter` -> `ExpTable` configs, you can set created `ExpTable` here to use the table instead of `GameInstance` -> `ExpTable`.
+
+* * *
+
 ## 1.88d (2024-05-12)
 ### Bug Fixes
 - Ammo is updating at the client, it must not.
