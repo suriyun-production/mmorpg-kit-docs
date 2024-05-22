@@ -1,3 +1,9 @@
+## 1.89 (2024-06-01)
+### Bug Fixes
+- [2478](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2478)
+
+* * *
+
 ## 1.88e (2024-05-15)
 ### Bug Fixes
 - Amount of gold is `0` when entering the game while `GameInstance` -> `GoldStoreMode` is `Default`.
