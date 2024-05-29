@@ -6,7 +6,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 * [Roadmap](https://trello.com/b/u8UU1vML/mmorpg-kit-roadmap) - You can see under development features here
 * [Changelog](pages/000-changelog.md)
 
-### Table of content
+### Guide
 
 *   [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan.md)
 *   [How to update to new version](pages/147-how-to-update-to-new-version.md)
@@ -152,9 +152,11 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 #### Troubleshooting
 
 *   [Common troubleshooting steps](pages/054-troubleshooting-steps.md)
+<!--
 *   [Working with Unity 2021](pages/151-working-with-2021.md)
 *   [Fix Newtonsoft JSON Not Found Error](pages/158-fix-newtonsoft-not-found-error.md)
 *   [How to fix: `Unable to add package [jillejr.newtonsoft.json-for-unity] Project has invalid dependencies: jillejr.newtonsoft.json-for-unity.converters: Package [jillejr.newtonsoft.json-for-unity.converters@1.5.1] cannot be found`](pages/162-fix-unable-to-add-package-jillejr-newtonsoft.md)
+-->
 *   [Something Not Functional With My Built Game](pages/159-something-not-functional-with-my-built-game.md)
 
 #### Extensions
@@ -168,6 +170,3 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [UMA integration](https://github.com/insthync/UnityMultiplayerARPG_UMA ':target=__blank')
 *   [Google Play authentication](https://github.com/insthync/MMORPGKIT_GooglePlayAuth ':target=__blank')
 *   [Facebook authentication](https://github.com/insthync/MMORPGKIT_FacebookAuth ':target=__blank')
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk0OTM0NDBdfQ==
--->
