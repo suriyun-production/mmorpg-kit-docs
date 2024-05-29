@@ -6,7 +6,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 * [Roadmap](https://trello.com/b/u8UU1vML/mmorpg-kit-roadmap) - You can see under development features here
 * [Changelog](pages/000-changelog.md)
 
-### Guide
+### Generic
 
 *   [Getting Started (Singleplay/LAN)](pages/101-getting-started-singleplayer-lan.md)
 *   [How to update to new version](pages/147-how-to-update-to-new-version.md)
