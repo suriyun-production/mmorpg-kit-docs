@@ -1,5 +1,5 @@
 ## 1.88f4 (2024-06-02)
-### Buf Fixes
+### Bug Fixes
 - [2491](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2491)
 - [2492](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2492)
 
