@@ -1,3 +1,13 @@
+## 1.89 (2024-08-xx)
+### New Features
+- 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
+- 
+### Bug Fixes
+- [2494](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2494)
+- [2497](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2497)
+
+* * *
+
 ## 1.88f5 (2024-06-04)
 ### Bug Fixes
 - [2495](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2495)
