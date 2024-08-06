@@ -3,6 +3,8 @@
 - 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
 - 
 ### Bug Fixes
+- [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
+- [2475](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2475)
 - [2494](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2494)
 - [2497](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2497)
 
