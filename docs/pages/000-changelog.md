@@ -1,4 +1,8 @@
 ## 1.89 (2024-08-xx)
+
+### Removed Features
+- Simple Asset Bundle is removed from the project, it has a addressable asset implementation already, so use it instead :)
+
 ### New Features
 - 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
 
