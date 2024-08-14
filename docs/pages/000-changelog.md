@@ -6,6 +6,9 @@
 ### New Features
 - 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
 
+### Improvements
+- Add visible/invisible materials settings, objects activating, renderers enabling options to equipment entity, can use it to fix this issue [2514](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2514)
+
 ### Bug Fixes
 - [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
 - [2475](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2475)
