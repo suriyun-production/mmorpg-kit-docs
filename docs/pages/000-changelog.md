@@ -5,9 +5,14 @@
 
 ### New Features
 - 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
+- Object references to addressable asset reference converter.
 
 ### Improvements
 - Add visible/invisible materials settings, objects activating, renderers enabling options to equipment entity, can use it to fix this issue [2514](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2514)
+- Add skill cast/activate settings base on weapon type [2506](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2506) (Hope someone will help me write the document ;))
+- Add item title's color based on level settings to refine info [2029](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2029)
+- Can set randoming item level to item drop data [2515](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2515)
+- Add area skill's raycasting layer mask settings, can use it to fix [this](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2539)
 
 ### Bug Fixes
 - [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
