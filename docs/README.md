@@ -31,6 +31,7 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 
 #### Effects
 *   [Game Effect](pages/177-game-effect.md)
+*   [Impact Effect](pages/178-impact-effect.md)
 
 #### Vehicle and Mount
 *   [Vehicle Entity](pages/138-mount-entity.md)
