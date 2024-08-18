@@ -13,6 +13,7 @@
 - Add item title's color based on level settings to refine info [2029](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2029)
 - Can set randoming item level to item drop data [2515](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2515)
 - Add area skill's raycasting layer mask settings, can use it to fix [this](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2539)
+- Add `clipWhileMoving`, `avatarMaskWhileMoving`, `clipWhileSprinting`, `avatarMaskWhileSprinting`, `clipWhileAirbourne` and `avatarMaskWhileAirbourne` to `ActionState`, you can set clips and avatar masks which will be used for animation playing, instead of default `clip` and `avatarMask` while character doing difference movement.
 
 ### Bug Fixes
 - [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
