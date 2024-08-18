@@ -8,7 +8,11 @@ After menu selected, the impact effects scriptable object will be created, you c
 `Impact Effects` is a collection of effects which will be played when its source (melee damage, projectile effect) hit any objects in the scene,
 it will be played by object's tag, if tag isn't in the `Impact Effects` collection, it will play `Default Impact Effect`.
 
-You can set the created impact effects collection to weapon item -> damage info, monster character -> damage info (and so on)
+You can set the created impact effects collection to weapon type -> damage info, monster character -> damage info (and so on)
+
+![](../images/178/178-2.png)
+
+![](../images/178/178-3.png)
 
 Then when your character's attacks hit objects (may hit ground or wall, up to tag you've set) it will play effect,
 the effect transform will be set by where it is hitting.
