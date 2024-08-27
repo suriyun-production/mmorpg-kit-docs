@@ -16,6 +16,7 @@
 - Add `clipWhileMoving`, `avatarMaskWhileMoving`, `clipWhileSprinting`, `avatarMaskWhileSprinting`, `clipWhileAirbourne` and `avatarMaskWhileAirbourne` to `ActionState`, you can set clips and avatar masks which will be used for animation playing, instead of default `clip` and `avatarMask` while character doing difference movement.
 - Add `HomingMissleDamageEntity` component, a missile damage entity which will move follow target [2079](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2079)
 - Add `bool loop` parameter to `BaseGameEntity` -> `CallRpcPlayCustomAnimation` function, set it to `TRUE` to make it play custom animation looply properly [2427](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2427)
+- Add quest's next assign quests, auto track and can abandon options [2540](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2540)
 
 ### Bug Fixes
 - [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
