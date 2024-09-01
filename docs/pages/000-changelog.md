@@ -1,4 +1,4 @@
-## 1.89 (2024-08-xx)
+## 1.89 (2024-08-31)
 
 ### Removed Features
 - Simple Asset Bundle is removed from the project, it has a addressable asset implementation already, so use it instead :)
