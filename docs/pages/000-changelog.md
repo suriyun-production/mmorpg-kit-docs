@@ -1,3 +1,39 @@
+## 1.89 (2024-08-31)
+
+### Removed Features
+- Simple Asset Bundle is removed from the project, it has an addressable asset implementation already, so use it instead :)
+
+### Removed Packages
+- Remove `MMO_FacebookLogin.unitypackage` and `MMO_GoogleLogin.unitypackage` from the asset package (still can download from github page)
+
+### Changes
+- Change package demo's graphic pipeline from built-in graphic pipeline, to URP.
+
+### New Features
+- 3D Ladder Climbing [2196](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2196)
+- Add a tool to convert object references to addressable asset reference converters.
+
+### Improvements
+- Add visible/invisible materials settings, objects activating, renderers enabling options to equipment entity, can use it to fix this issue [2514](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2514)
+- Add skill cast/activate settings based on weapon type [2506](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2506) (Hope someone will help me write the document ;))
+- Add item title's color based on level settings to refine info [2029](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2029)
+- Can set randomly item level to item drop data [2515](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2515)
+- Add area skill's raycasting layer mask settings, can use it to fix [this](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2539)
+- Add `clipWhileMoving`, `avatarMaskWhileMoving`, `clipWhileSprinting`, `avatarMaskWhileSprinting`, `clipWhileAirbourne`, and `avatarMaskWhileAirbourne` to `ActionState`, you can set clips and avatar masks which will be used for animation playing, instead of default `clip` and `avatarMask` while character doing difference movement.
+- Add `HomingMissleDamageEntity` component, a missile damage entity that will move follow the target [2079](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2079)
+- Add `bool loop` parameter to `BaseGameEntity` -> `CallRpcPlayCustomAnimation` function, set it to `TRUE` to make it play custom animation looply properly [2427](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2427)
+- Add quest's next assigned quests, auto track, and abandon options [2540](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2540)
+
+### Bug Fixes
+- [2443](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2443)
+- [2475](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2475)
+- [2494](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2494)
+- [2497](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2497)
+- [2527](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2527)
+- [2533](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2533)
+
+* * *
+
 ## 1.88f5 (2024-06-04)
 ### Bug Fixes
 - [2495](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2495)
