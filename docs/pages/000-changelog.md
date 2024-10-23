@@ -1,3 +1,11 @@
+## 1.90 (2024-10-31)
+
+### Bug Fixes
+- [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
+- [2585](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2585)
+
+* * *
+
 ## 1.89 (2024-08-31)
 
 ### Removed Features
