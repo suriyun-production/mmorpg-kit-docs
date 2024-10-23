@@ -1,5 +1,8 @@
 ## 1.90 (2024-10-31)
 
+### Improvements
+- Invoke buff removal event when removed by toggle [2567](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2567)
+
 ### Bug Fixes
 - [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
 - [2585](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2585)
