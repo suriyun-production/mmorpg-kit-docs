@@ -3,6 +3,7 @@
 ### Improvements
 - Invoke buff removal event when removed by toggle [2567](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2567)
 - Notifies item rewarding while mode is `Immediately` [2598](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2598)
+- Add animation LOD disabling setting to game entity model to fix this [2602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2602)
 
 ### Bug Fixes
 - [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
