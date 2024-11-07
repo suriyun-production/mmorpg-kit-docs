@@ -7,6 +7,7 @@
 ### Bug Fixes
 - [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
 - [2582](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2582)
+- [2583](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2583)
 - [2584](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2584)
 - [2585](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2585)
 - [2586](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2586)
