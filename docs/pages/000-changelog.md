@@ -1,4 +1,4 @@
-## 1.90 (2024-10-31)
+## 1.90 (2024-11-14)
 
 ### Improvements
 - Invoke buff removal event when removed by toggle [2567](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2567)
