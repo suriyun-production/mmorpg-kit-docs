@@ -30,6 +30,8 @@
 - [2614](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2614)
 - [2615](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2615)
 
+  Yeah, I've fixed bugs much more than you guys saying thank to me
+
 * * *
 
 ## 1.89 (2024-08-31)
