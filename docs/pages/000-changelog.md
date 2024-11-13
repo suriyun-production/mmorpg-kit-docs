@@ -7,6 +7,7 @@
 - Monster skills can be levelup by monster level [2613](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2613)
 
 ### Bug Fixes
+- [2537](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2537)
 - [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
 - [2582](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2582)
 - [2583](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2583)
