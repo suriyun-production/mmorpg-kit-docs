@@ -5,7 +5,7 @@
 - Notifies item rewarding while mode is `Immediately` [2598](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2598)
 - Add animation LOD disabling setting to game entity model to fix this [2602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2602)
 - Monster skills can be levelup by monster level [2613](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2613)
-- Update some codes to make it work with Unity 6
+- Update some codes to make it work with Unity 6.
 
 ### Bug Fixes
 - [2537](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2537)
