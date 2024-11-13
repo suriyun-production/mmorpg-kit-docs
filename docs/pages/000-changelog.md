@@ -1,4 +1,4 @@
-## 1.90 (2024-11-14)
+## 1.90 (2024-11-13)
 
 ### Improvements
 - Invoke buff removal event when removed by toggle [2567](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2567)
@@ -34,7 +34,7 @@
 
 * * *
 
-## 1.89 (2024-08-31)
+## 1.89 (2024-08-13)
 
 ### Removed Features
 - Simple Asset Bundle is removed from the project, it has an addressable asset implementation already, so use it instead :)
