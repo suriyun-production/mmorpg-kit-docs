@@ -1,3 +1,37 @@
+## 1.90 (2024-11-14)
+
+### Improvements
+- Invoke buff removal event when removed by toggle [2567](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2567)
+- Notifies item rewarding while mode is `Immediately` [2598](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2598)
+- Add animation LOD disabling setting to game entity model to fix this [2602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2602)
+- Monster skills can be levelup by monster level [2613](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2613)
+- Update some codes to make it work with Unity 6.
+
+### Bug Fixes
+- [2537](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2537)
+- [2576](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2576)
+- [2582](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2582)
+- [2583](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2583)
+- [2584](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2584)
+- [2585](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2585)
+- [2586](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2586)
+- [2588](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2588)
+- [2589](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2589)
+- [2590](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2590)
+- [2591](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2591)
+- [2592](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2592)
+- [2595](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2595)
+- [2599](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2599)
+- [2602](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2602)
+- [2603](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2603)
+- [2604](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2604)
+- [2609](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2609)
+- [2612](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2612)
+- [2614](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2614)
+- [2615](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2615)
+
+* * *
+
 ## 1.89 (2024-08-31)
 
 ### Removed Features
