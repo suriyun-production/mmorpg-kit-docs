@@ -1,3 +1,17 @@
+## 1.90b (2024-11-14)
+### Improvements
+- [2617](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2617)
+
+### Bug Fixes
+- [2619](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2619)
+- [2620](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2620)
+- [2621](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2621)
+
+### Other Changes
+- Delete shared guild exp from player character data
+
+* * *
+
 ## 1.90 (2024-11-13)
 
 ### Improvements
