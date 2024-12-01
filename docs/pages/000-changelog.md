@@ -1,4 +1,4 @@
-## 1.91
+## 1.91 (2024-12-01)
 ### Improvements
 - [2636](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2636)
 - New character stats, `ammoCapacity` can use it to increase weapon's ammo capacity, so your weapon can contains more ammo.
