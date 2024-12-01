@@ -1,3 +1,32 @@
+## 1.91
+### Improvements
+- [2636](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2636)
+- New character stats, `ammoCapacity` can use it to increase weapon's ammo capacity, so your weapon can contains more ammo.
+- New character stats, `recoilRate` can use it to decrease gun recoil rate, so it will easier to aim enemy after fire.
+- New character stats, `rateOfFire` can use it to increase weapon's rate of fire, tp fire faster.
+- New character stats, `reloadDuration` can use it to decrease reload duration, to make it reload faster.
+- New character stats, `fireSpreadRangeRate` it can decrease spread range rate, so your bullets will hit enemy easily.
+- New character stats, `fireSpread` it can increase weapon's fire spread, to make it to have more bullets for one firing.
+- New character stats, `decreaseFoodDecreation` if this is more then it will slower your character hungriness.
+- New character stats, `decreaseWaterDecreation` if this is more then it will slower your character thirstiness.
+- New character stats, `decreaseStaminaDecreation` if this is more then it will slower your character tiredness.
+- New character stats, `buyItemPriceRate` you can decrease price of items that you buying from NPCs by this stats.
+- New character stats, `sellItemPriceRate` you can increase price of items that you selling to NPCs by this stats.
+- New kind of item, `WarpToSafeAreaItem`, when your character use it, your character will teleports to safe area in the map.
+- New kind of item, `SpecificRewardingItem` when your character use it, your character will receives items from specific list.
+- New kind of item, `RandomRewardingItem` when your character use it, your character will receives items randomly from drop table.
+- Change pet item workflow, now it don't destroy pet item after use, so you can see its current level and exp in item info dialog.
+
+### Bug Fixes
+- [2593](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2593)
+- [2626](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2626)
+- [2627](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2627)
+- [2630](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2630)
+- [2631](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2631)
+- [2638](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2638)
+
+* * *
+
 ## 1.90b (2024-11-14)
 ### Improvements
 - [2617](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2617)
