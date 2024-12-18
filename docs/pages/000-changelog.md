@@ -1,6 +1,7 @@
 ## 1.92 (2024-12-20)
 ### Bug Fixes
 - [2618](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2618)
+- [2647](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2647)
 - [2654](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2654)
 - [2656](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2656)
 - [2659](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2659)
