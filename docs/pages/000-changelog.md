@@ -1,3 +1,10 @@
+## 1.92b (2024-12-22)
+### Bug Fixes
+- [2678](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2678)
+- Invalid IAP validation request header.
+
+* * *
+
 ## 1.92 (2024-12-22)
 ### Bug Fixes
 - [2618](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2618)
