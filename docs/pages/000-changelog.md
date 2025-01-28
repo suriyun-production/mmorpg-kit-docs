@@ -1,3 +1,15 @@
+## 1.93 (2025-01-31)
+### Improvements
+- [2681](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2681)
+- [2685](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2685)
+- [2698](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2698)
+
+### Bug Fixes
+- [2682](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2682)
+- [2697](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2697)
+
+* * *
+
 ## 1.92b (2024-12-22)
 ### Bug Fixes
 - [2678](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2678)
