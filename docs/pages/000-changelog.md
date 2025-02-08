@@ -4,6 +4,7 @@
 - [2685](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2685)
 - [2698](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2698)
 - Raycast to back faces when proceeding hit finding to make sure it can hit inside objects.
+- Change default character action components workflow to avoid race condition issues.
 
 ### Bug Fixes
 - [2682](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2682)
