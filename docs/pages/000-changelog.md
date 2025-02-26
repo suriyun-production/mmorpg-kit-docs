@@ -11,6 +11,7 @@
 
 ### Bug Fixes
 - [2682](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2682)
+- [2691](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2691)
 - [2697](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2697)
 - [2700](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2700)
 - [2704](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2704)
