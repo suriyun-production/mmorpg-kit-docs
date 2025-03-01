@@ -1,3 +1,29 @@
+## 1.93 (2025-03-01)
+### Improvements
+- [2681](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2681)
+- [2685](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2685)
+- [2686](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2686)
+- [2698](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2698)
+- Raycast to back faces when proceeding hit finding to make sure it can hit inside objects.
+- Change default character action components workflow to avoid race condition issues.
+- Use jobified physic raycasting, physic overlapping functions to improve performance.
+- Use jobified grid spatial partitioning system to improve performance.
+- Can sell items from equip slots directly (don't have to unequip).
+- Can dismantle items from equip slots directly (don't have to unequip).
+- Remove [ObsoleteCharacterModels](https://github.com/suriyun-mmorpg/UnityMultiplayerARPG_ObsoleteCharacterModels) from the package.
+- Remove [ObsoleteEntityMovements](https://github.com/suriyun-mmorpg/UnityMultiplayerARPG_ObsoleteEntityMovements) from the package.
+
+### Bug Fixes
+- [2682](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2682)
+- [2691](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2691)
+- [2697](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2697)
+- [2700](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2700)
+- [2704](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2704)
+- [2708](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2708)
+- [2710](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2710)
+
+* * *
+
 ## 1.92b (2024-12-22)
 ### Bug Fixes
 - [2678](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2678)
