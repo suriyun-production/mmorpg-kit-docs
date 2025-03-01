@@ -1,4 +1,4 @@
-## 1.93 (2025-01-31)
+## 1.93 (2025-03-01)
 ### Improvements
 - [2681](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2681)
 - [2685](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2685)
@@ -8,6 +8,8 @@
 - Change default character action components workflow to avoid race condition issues.
 - Use jobified physic raycasting, physic overlapping functions to improve performances.
 - Use jobified grid spatial partitioning system to improve performances.
+- Remove [ObsoleteCharacterModels](https://github.com/suriyun-mmorpg/UnityMultiplayerARPG_ObsoleteCharacterModels) from the package.
+- Remove [ObsoleteEntityMovements](https://github.com/suriyun-mmorpg/UnityMultiplayerARPG_ObsoleteEntityMovements) from the package.
 
 ### Bug Fixes
 - [2682](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2682)
