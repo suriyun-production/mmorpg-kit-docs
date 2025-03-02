@@ -1,3 +1,14 @@
+## 1.93b (2025-03-03)
+- Cover codes with namespaces (`Insthync.AudioManager`).
+- Cover codes with namespaces (`Insthync.CameraAndInput`).
+- Cover codes with namespaces (`Insthync.DevExtension`).
+- Cover codes with namespaces (`Siccity.SerializableCallback`).
+- Cover codes with namespaces (`Insthync.SerialzationSurrogates`).
+- Cover codes with namespaces (`Insthync.UnityEditorUtils`).
+- Change `UtilsComponents` namespace to `MultiplayerARPG`.
+
+* * *
+
 ## 1.93 (2025-03-01)
 ### Improvements
 - [2681](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2681)
