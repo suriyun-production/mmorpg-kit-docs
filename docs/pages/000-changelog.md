@@ -1,4 +1,11 @@
+## 1.93c (2025-03-04)
+- Revert: Change `UtilsComponents` namespace to `MultiplayerARPG`, to make it not break an old project.
+- Revert: Cover codes with namespaces `MultiplayerARPG` for components without namespace, to make it not break an old project.
+
+* * *
+
 ## 1.93b (2025-03-03)
+- Cover codes with namespaces `MultiplayerARPG` for components without namespace.
 - Cover codes with namespaces (`Insthync.AudioManager`).
 - Cover codes with namespaces (`Insthync.CameraAndInput`).
 - Cover codes with namespaces (`Insthync.DevExtension`).
