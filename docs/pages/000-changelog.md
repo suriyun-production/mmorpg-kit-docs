@@ -1,3 +1,10 @@
+## 1.93d (2025-03-05)
+### Bug Fixes
+- MySQL/SQLite -> character item saving issues.
+- Invalid condition to check difference equipped weapons.
+
+* * *
+
 ## 1.93c (2025-03-04)
 - Revert: Change `UtilsComponents` namespace to `MultiplayerARPG`, to make it not break an old project.
 - Revert: Cover codes with namespaces `MultiplayerARPG` for components without namespace, to make it not break an old project.
