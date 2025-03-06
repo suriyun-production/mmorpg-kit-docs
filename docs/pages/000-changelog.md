@@ -1,3 +1,11 @@
+## 1.93d (2025-03-06)
+### Bug Fixes
+- Equip weapon set is always determined as changed which is cause of jitter animation (jitter to change weapons).
+- Ammo capacity not being sum with `CharacterStats` -> `AmmoCapacity`.
+- [2718](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2718) (SQLite part).
+
+* * *
+
 ## 1.93d (2025-03-05)
 ### Bug Fixes
 - MySQL/SQLite -> character item saving issues.
