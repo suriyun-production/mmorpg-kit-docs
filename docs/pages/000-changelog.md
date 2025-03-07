@@ -1,4 +1,11 @@
-## 1.93d (2025-03-06)
+## 1.93f (2025-03-07)
+### Bug Fixes
+- [2719](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2719)
+- [2720](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2720)
+
+* * *
+
+## 1.93e (2025-03-06)
 ### Bug Fixes
 - Equip weapon set is always determined as changed which is cause of jitter animation (jitter to change weapons).
 - Ammo capacity not being sum with `CharacterStats` -> `AmmoCapacity`.
