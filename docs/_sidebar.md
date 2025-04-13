@@ -112,6 +112,7 @@
 *   [Currency](pages/146-currency.md)
 *   [Custom Data](pages/168-custom-character-data.md)
 *   [Player Character Body Part](pages/169-player-character-body-part.md)
+*   [Addressable Assets](pages/179-addressable.md)
 
 #### MMO Content
 
