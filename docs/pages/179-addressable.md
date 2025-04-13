@@ -4,17 +4,17 @@ This kit is already implement Unity's addressable asset system, you can learn ab
 
 This kit is just implement reference to load asset from addressable asset system, so you should learn about catalog, group, how to add assets to group, asset reference, asset labels, and how to download addressable to use it properly. Then what you have to do it convert prefab references to addressable references.
 
-[](../images/179/001.png)
+![](../images/179/001.png)
 
-[](../images/179/001-02.png)
+![](../images/179/001-02.png)
 
 It's also have some tools you can use from `Tools` -> `Addressables`
 
-[](../images/179/002.png)
+![](../images/179/002.png)
 
 After you convert all prefab references to addressable references, then if you want to exclude prefab references codes, you can add `EXCLUDE_PREFAB_REFS` to project settings / scripting define symbols. Or you can use `MMORPG KIT` -> `Addressables` menus to do it.
 
-[](../images/179/003.png)
+![](../images/179/003.png)
 
 * * *
 
@@ -24,10 +24,10 @@ You will have to implement asset downloading by yourself, but if you really can'
 
 In `MMO Addressable Asset Download Manager Settings`, it have `Map Network Manager`, `Mmo Client Instance`, `Mmo Server Instance`, and `Game Instance` addressable asset references to setup, so you have make them to be prefabs and then add to addressable group and then set them here to make it instantiates objects follows proper order and initialize data properly.
 
-[](../images/179/004.png)
+![](../images/179/004.png)
 
 So you can set scenes in build to have only addressable downloading scene to exclude other assets from build (it will be downloaded later by `UIAddressableAssetDownloadManager` component)
 
-[](../images/179/005.png)
+![](../images/179/005.png)
 
 *You can see addressable demo in `UnityMultiplayerARPG/DemoAddressable` folder*
