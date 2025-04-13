@@ -1,77 +1,36 @@
 # Getting Started (Singleplay/LAN)
 
+## Create a new project
+
+When create a new project, select `Universal 3D`
+
+![](../images/101/2025/001.png)
+
 ## Importing
 
-You must install newtonsoft-json, actually should do it before import the package but you can do it later
+Import a package by package manager from `Window` -> `Package Manager` menu
 
-You can do it by
+![](../images/101/2025/002.png)
 
-Go to your project folder then `/Packages` edit `manifest.json`, Add
-```
- "com.unity.nuget.newtonsoft-json": "3.0.2"
-```
-Into dependencies
+Then in Package Manager window, select `My Assets` and find `MMORPG KIT`, download and import it
 
-![](../images/json-deps.png)
+![](../images/101/2025/003.png)
 
-Or use Package manager from menu `Window` -> `Package Manager`
+Then it will show project settings replacing warning dialog, select `Import`
 
-![](../images/json-package-install-1.png)
+![](../images/101/2025/004.png)
 
-![](../images/json-package-install-2.png)
+Then it will show package installing warning dialog, select `Install/Upgrade`
 
-* * *
+![](../images/101/2025/005.png)
 
-After download the package from Unity Asset Store, click on `Import` button
+Then it will show package content importing dialog, select `Next`
 
-![](../images/101/001.png)
+![](../images/101/2025/006.png)
 
-* * *
+And then it will show project settings importing dialog, select `Import`
 
-Then, Wait for a few seconds, it will ask you to Install/Upgrade Unity packages. Press `Skip` to skip it
-
-![](../images/101/002.png)
-
-
-* * *
-
-After that, The Import dialog will be shown, Press `Import` to import the package
-
-![](../images/101/003.png)
-
-* * *
-
-## Use Unity 2021?
-
-If you are using Unity 2021, you have to do follows [this](pages/151-working-with-2021.md)
-
-* * *
-
-## Want to use Old Input Manager?
-
-If you want to use old input manager, you have to change `Active Input Handling` to `Input Manager (Old)`, you can find the setting from `Project Settings -> Player`
-
-![](../images/old_input_manager.png)
-
-## Want to use New Input System?
-
-If you want to use new input system, you have to install the package from package manager which you can access it via menu `Window -> Package Manager`
-
-Change packages scope to `Unity Registry` 
-
-![](../images/package-unity-registry.png)
-
-Then find for the input system and install it
-
-![](../images/package-find-input.png)
-
-Next, change `Active Input Handling` to `Input System Package (New)`, you can find the setting from `Project Settings -> Player`
-
-Then you can try use demo's input actions by set it in init scene (`00Init`) -> `GameInstance` -> `InputSettingManager`
-
-![](../images/input-actions-setup.png)
-
-* * *
+![](../images/101/2025/007.png)
 
 ## Building
 
