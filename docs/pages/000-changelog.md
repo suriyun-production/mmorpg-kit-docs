@@ -5,6 +5,7 @@
 - [2736](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2736)
 - [2737](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2737)
 - [2740](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2740)
+- [2742](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2742)
 
 ### New Features
 Entity setting, scriptable object class: You may create a new class by extending `BaseEntitySetting` class and implementing functions to change required components, its setup.
