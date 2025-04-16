@@ -1,4 +1,4 @@
-## 1.94 (2025-04-07)
+## 1.94 (2025-04-17)
 ### Bug Fixes
 - [2709](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2709)
 - [2723](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2723)
