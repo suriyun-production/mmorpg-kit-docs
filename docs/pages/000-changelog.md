@@ -1,5 +1,6 @@
 ## 1.94 (2025-04-17)
 ### Bug Fixes
+- [2661](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2661)
 - [2709](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2709)
 - [2723](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2723)
 - [2736](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2736)
@@ -9,6 +10,10 @@
 
 ### New Features
 Entity setting, scriptable object class: You may create a new class by extending `BaseEntitySetting` class and implementing functions to change required components, its setup.
+
+### UIDragHandler Change
+Now `UIDragHandler` is changed, it won't move its parent to another but it will tell `UIDragManager` to create a `UIDragFakeTarget` instance for dragging, the `UIDragFakeTarget` instance will have only `Image` component attached for the icon, no other texts/objects components included.
+The new setup won't required UI cloning, it is unlike how we setup previously draggable UI which we have to create a new instance which will clone data from the source UI instance with drag handler component attached, we can just attach a drag handler directly to the source UI instance.
 
 * * *
 
