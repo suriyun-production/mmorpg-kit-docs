@@ -14,6 +14,9 @@ This is the guide for MMORPG KIT game template which selling at Unity Asset Stor
 *   [Game Database](pages/103-game-database.md)
 *   [Before you build](pages/160-before-you-build.md)
 
+#### Generic Issues Fixing
+*   [Zoom scrolling is too slow](pages/180-zoom-scrolling-slow.md)
+
 #### Character and Monster
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
 *   [Character's Battle Points](pages/154-character-battle-points.md)
