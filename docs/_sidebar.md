@@ -11,6 +11,7 @@
 
 #### Generic Issues Fixing
 *   [Zoom scrolling is too slow](pages/180-zoom-scrolling-slow.md)
+*   [Pink screen on Android (Unity 6)](pages/181-urp-android-pink.md)
 
 #### Character and Monster
 *   [Character Stats, Attribute and Damage Element](pages/104-character-stats-and-relates-data.md)
