@@ -4,7 +4,7 @@ You can change server configs when starting servers by command line arguments, t
 
 #### All Server Configs
 
-*   `-machineAddress`, this will change chat, map spawner and map server's `Machine Address` config
+*   `-publicAddress`, this will change chat, map spawner and map server's `Public Address` config
 *   `-useWebSocket`, servers will start as websocket server if this is `true`
 *   `-webSocketSecure`, if servers start as websocket server, it will start in secure mode if this is `true`
 *   `-webSocketCertPath`, path to certification file which its extension is `.pfx`, it is required if `webSocketSecure` is `true`

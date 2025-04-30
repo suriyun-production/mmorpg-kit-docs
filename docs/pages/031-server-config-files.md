@@ -26,7 +26,7 @@ You can change config by config files, config files will be created automaticall
     }
   ],
   "centralMaxConnections" : 1100,
-  "machineAddress" : "yourdomain.com",
+  "publicAddress" : "yourdomain.com",
   
   "mapSpawnPort" : 6001,
   "spawnExePath" : "./Build.exe",

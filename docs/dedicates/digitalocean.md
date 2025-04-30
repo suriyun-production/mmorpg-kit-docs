@@ -117,7 +117,7 @@ The "databaseOptionIndex"  in the serverconfig file indicates which Database typ
   "centralPort" : 7000,
   "clusterPort" : 7010,
   "centralMaxConnections" : 1000,
-  "machineAddress" : "128.199.78.31",
+  "publicAddress" : "128.199.78.31",
   
   "mapSpawnPort" : 6001,
   "mapSpawnMaxConnections" : 2,
@@ -135,7 +135,7 @@ The "databaseOptionIndex"  in the serverconfig file indicates which Database typ
   "webSocketCertPassword": "123456"
 }
 ```
-Set `centralAddress` and `machineAddress` to `128.199.78.31` because it is server address, set `spawnExePath` to `/root/Build.x86_64` because I going to upload server files to this path
+Set `centralAddress` and `publicAddress` to `128.199.78.31` because it is server address, set `spawnExePath` to `/root/Build.x86_64` because I going to upload server files to this path
 
 *   `./config/mySqlConfig.json` content:  
 ```

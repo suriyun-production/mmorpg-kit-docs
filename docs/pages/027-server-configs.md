@@ -24,9 +24,9 @@ As mentioned architecture, there are different kind of servers and it's have dif
 ## Map Spawn Network Manager Configs
 
 *   `Network Port` (Args Key: `-mapSpawnPort`, Config File `serverConfig.json`, Config File Key: `mapSpawnPort`, Type: `Integer`), Map spawn server's port.
-*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map spawn network manager to connect to server to tell what is machine address to this (map spawn server).
+*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map spawn network manager to connect to server to tell what is public address to this (map spawn server).
 *   `Cluster Network Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), port where cluster server is running.
-*   `Machine Address` (Args Key: `-machineAddress`, Config File `serverConfig.json`, Config File Key: `machineAddress`, Type: `String`), public address to this server.
+*   `Public Address` (Args Key: `-publicAddress`, Config File `serverConfig.json`, Config File Key: `publicAddress`, Type: `String`), public address to this server.
 *   `Exe Path` (Args Key: `-spawnExePath`, Config File `serverConfig.json`, Config File Key: `spawnExePath`, Type: `String`), path to execution file (`.exe` file in Windows, `.app` in Mac) must set it correctly to start map servers.
 *   `Not Spawn In Batch Mode` (Args Key: `-notSpawnInBatchMode`, Config File `serverConfig.json`, Config File Key: `notSpawnInBatchMode`, Type: `Boolean`), if this is `TRUE` it will run map server in non batch mode (have graphics and interactable).
 *   `Start Port` (Args Key: `-spawnStartPort`, Config File `serverConfig.json`, Config File Key: `spawnStartPort`, Type: `Integer`), Port which will be used to run map server then it will increasing when running next map server.
@@ -51,14 +51,14 @@ As mentioned architecture, there are different kind of servers and it's have dif
 
 *   `Network Port` (Args Key: `-mapPort`, Config File `serverConfig.json`, Config File Key: `mapPort`, Type: `Integer`), Map server's port.
 *   `Max Connections` (Args Key: `-mapMaxConnections`, Config File `serverConfig.json`, Config File Key: `mapMaxConnections`, Type: `Integer`), maximum connections for clients including with other servers.
-*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map network manager to connect to server to tell what is machine address to this (map server).
+*   `Cluster Network Address` (Args Key: `-centralAddress`, Config File `serverConfig.json`, Config File Key: `centralAddress`, Type: `String`), address where cluster server is running, it will be used by map network manager to connect to server to tell what is public address to this (map server).
 *   `Cluster Network Port` (Args Key: `-clusterPort`, Config File `serverConfig.json`, Config File Key: `clusterPort`, Type: `Integer`), port where cluster server is running.
 
 * * *
 
 ## Rest Database Client Configs
 
-*   `Api Url` (Config File `serverConfig.json`, Config File Key: `dbApiUrl`, Type: `String`), this is config which will be used by `RestDatabaseClient` component, this is URL to REST database service, if you runs REST database service at machine which have public IP is `128.199.78.31` and running on port `5757`, set this to `http://128.199.78.31:5757`
+*   `Api Url` (Config File `serverConfig.json`, Config File Key: `dbApiUrl`, Type: `String`), this is config which will be used by `RestDatabaseClient` component, this is URL to REST database service, if you runs REST database service at device which have public IP is `128.199.78.31` and running on port `5757`, set this to `http://128.199.78.31:5757`
 *   `Secret Key` (Config File `serverConfig.json`, Config File Key: `dbSecretKey`, Type: `String`), this is config which will be used by `RestDatabaseClient` component, secret key which will be validated at REST database service to allow database client to use functions (It will set secret as a `Bearer` token).
 
 * * *
