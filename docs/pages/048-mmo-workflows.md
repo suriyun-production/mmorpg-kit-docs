@@ -13,18 +13,18 @@ Next, about servers workflow, When **Central Server** is started, it will start 
 
 When **Map Spawn Server** connected to **Cluster Server**. Then **Map Spawn Server** will spawn **Map Server**, maps which will be spawned is set in `spawnMaps` config.
 
-When **Map Server** started, it will connects to **Cluster Server**. Then after connected, **Map Server** will send connection information (Machine address, port, connection key) to **Cluster Server**. After that **Cluster Server** will send other **Map Server**'s connection information to THIS **Map Server**. And finally, **Cluster Server** will collect the connection information to tell other **Map Server**s later.
+When **Map Server** started, it will connects to **Cluster Server**. Then after connected, **Map Server** will send connection information (Public address, port, connection key) to **Cluster Server**. After that **Cluster Server** will send other **Map Server**'s connection information to THIS **Map Server**. And finally, **Cluster Server** will collect the connection information to tell other **Map Server**s later.
 
 ```
 Map Server X (map data) -> Cluster Server (broadcast: map data) -> Other Map Servers
                            Cluster Server (send: other map servers) -> Map Server X
 ```
 
-#### About Machine Address
+#### About Public Address
 
-The machine address is for map-spawn-server and map-server, but if the map-server is spawned by map-spawn-server, map-server's machine address will be the value which receiving from map-spawn-server.
+The public address is for map-spawn-server and map-server, but if the map-server is spawned by map-spawn-server, map-server's public address will be the value which receiving from map-spawn-server.
 
-If you can read codes, you can find which configs will be applied to which server in `MMOServerInstance`, you may try find `ARG_MACHINE_ADDRESS` and see where it was applied.
+If you can read codes, you can find which configs will be applied to which server in `MMOServerInstance`, you may try find `ARG_PUBLIC_ADDRESS` and see where it was applied.
 
 * * *
 

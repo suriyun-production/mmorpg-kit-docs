@@ -27,10 +27,10 @@ For `Windows`, go to folder that you build the game create shortcut of execution
 -startDatabaseServer
 ```
 
-If you are going to test on LAN you should set machine address to your LAN address by the command
+If you are going to test on LAN you should set public address to your LAN address by the command
 
 ```
--publicAddress "Address to your machine"
+-publicAddress "Address to your server"
 ```
 
 So for example, If you build the game to `D:/MMO/MMO.exe` and my LAN address is `192.168.1.102` I will set value in shortcut's `Target` field to:
@@ -39,7 +39,7 @@ So for example, If you build the game to `D:/MMO/MMO.exe` and my LAN address is 
 D:\MMO\MMO.exe -startMapSpawnServer -spawnExePath "D:\MMO\MMO.exe" -startCentralServer -startDatabaseServer -publicAddress "192.168.1.102"
 ```
 
-May see this video for example of how to set shortcut's `Target` field (It's not set machine address so it can run locally only)
+May see this video for example of how to set shortcut's `Target` field (It's not set public address so it can run locally only)
 
 [https://www.youtube.com/watch?v=7V1ChDPY\_Ww](https://www.youtube.com/watch?v=7V1ChDPY_Ww)
 
