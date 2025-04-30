@@ -1,3 +1,11 @@
+### 1.94c (2025-04-30)
+### Bug Fixes
+- [2746](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2746)
+- [2747](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2747)
+- Unable to build to non-standalone platforms.
+
+* * *
+
 ## 1.94b (2025-04-21)
 ### Bug Fixes
 - [2713](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2713)
