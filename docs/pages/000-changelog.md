@@ -1,3 +1,18 @@
+### 1.94d (2025-05-01)
+### Bug Fixes
+- SQLite not working on linux
+
+### New Features
+- Make it able to create server list by text file, create text file named `serverList.txt`, place it in `StreamingAssets` folder, content format is: `SERVER_TITLE, ADDRESS, IS_WEBSOCKET_SECURE`, so you can put content like this
+
+```
+Local Server 1, 127.0.0.1:7000
+LAN Server 1, 192.168.1.1:7000
+WSS Server 1, www.yourdomain.com:7000, true
+```
+
+* * *
+
 ### 1.94c (2025-04-30)
 ### Bug Fixes
 - [2746](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2746)
