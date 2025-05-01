@@ -14,7 +14,7 @@ Generate / obtain an SSL certificate by using Let's Encrypt, you must have domai
 ```
 sudo apt update
 sudo apt install certbot
-sudo certbot certonly --standalone -d yourdomain.com
+sudo certbot certonly --key-type rsa --standalone -d yourdomain.com
 ```
 
 You'll get:
