@@ -13,6 +13,18 @@ Then add it into **MMOClientInstance** game object (In 00Init\_MMO scene)
 
 ![](https://cdn-images-1.medium.com/max/1600/0*q9oRrBn8gICMuCGm)
 
+## Server list by text file
+
+You also can make list of server by create a new text file named `serverList.txt` in [StreamingAssets](https://docs.unity3d.com/Manual/StreamingAssets.html) folder.
+Content format is: `SERVER_TITLE, ADDRESS, IS_WEBSOCKET_SECURE`, so you can put content like this:
+
+```
+Local Server 1, 127.0.0.1:7000
+LAN Server 1, 192.168.1.1:7000
+WSS Server 1, www.yourdomain.com:7000, true
+```
+
+
 ## Client Production Build
 
 Before you build your game for players, use menu: `MMORPG KIT -> Setup For MMO Build` to setup scripting define symbols to exclude server codes from client.
