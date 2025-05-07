@@ -96,6 +96,7 @@
 #### Gameplay
 
 *   [Gameplay Rule](pages/023-gameplay-rule.md)
+*   [Start Gold and Items](pages/182-start-gold-and-items.md)
 *   [Party / Guild Settings (Social System Setting)](pages/020-social-system-setting.md)
 *   [How to create interactable objects](pages/152-how-to-create-interactable-objects.md)
 *   [Guild War](pages/144-guildwar.md)
