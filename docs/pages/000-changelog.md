@@ -1,4 +1,27 @@
-### 1.94d (2025-05-01)
+## 1.95 (2025-07-14)
+### LiteNetLibManager Changes
+- `LiteNetLibSyncField` workflow changes, it will sync data unreliably when changes occurs then send packed reliably later if no changes occurs, it is faster than send reliably for all changes becasuse it doesn't have to wait to reorder before proceeding, so delivery method setting is removed.
+- Tick sync implemented, will gradually change hit registration, hitboxes rewinding, entity movement by using tick later.
+- Add `IsReliableOnly` to `ITransport` interface, use it to determine how to handle things if transport is reliable only (transport like WebSocket).
+
+### Bug Fixes
+- [2759](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2759)
+- [2760](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2760)
+- [2764](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2764)
+- [2769](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2769)
+- [2772](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2772)
+- [2776](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2776)
+
+### Improvements
+- [2568](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2568)
+- [2762](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2762)
+- Add `detectionMode` option to `SafeArea` component, it was detect by interface, which can determine that the object is enter safe area when its hitbox enter the area, so I add this option to detect by damageable component or interface.
+- Add `groundFindingType` option to detect grounded position to `GameArea` (base of spawn areas), can detect grounded position by navmesh -> position sample, or physic raycasting.
+- Add `randomPositionAmount`, `randomPositionSeed`, `randomSpacing` options for positions baking to `GameArea`, try setup it and press `Bake Random Positions` button, then you will positions in `randomedPosition3Ds`/`randomedPosition2Ds` and on scene gizmos.
+
+* * *
+
+## 1.94d (2025-05-01)
 ### Bug Fixes
 - SQLite not working on linux
 
@@ -13,7 +36,7 @@ WSS Server 1, www.yourdomain.com:7000, true
 
 * * *
 
-### 1.94c (2025-04-30)
+## 1.94c (2025-04-30)
 ### Bug Fixes
 - [2746](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2746)
 - [2747](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2747)
