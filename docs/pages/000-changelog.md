@@ -1,3 +1,23 @@
+## 1.96
+### Future plan
+After this version I want to change its Netcode to use [PurrNet](https://purrnet.gitbook.io/docs), because I like it API/workflow/better performance/better documents, it will be a free update, but it will takes long time and because it will have changes which will affects customers projects, so I a bit hesitates to make changes, but I decided that I will change it.
+
+### Bug Fixes
+- [2779](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2779)
+- [2781](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2781)
+- [2786](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2786)
+- [2787](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2787) Fixed by add new button to re-validate game data.
+- [2800](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2800)
+- [2821](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2821)
+
+### Improvements
+- [2809](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2809)
+- [2814](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2814)
+- [2816](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2816)
+- [2822](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2822)
+
+* * *
+
 ## 1.95 (2025-07-14)
 ### LiteNetLibManager Changes
 - `LiteNetLibSyncField` workflow changes, it will sync data unreliably when changes occurs then send packed reliably later if no changes occurs, it is faster than send reliably for all changes becasuse it doesn't have to wait to reorder before proceeding, so delivery method setting is removed.
