@@ -1,4 +1,4 @@
-## 1.96
+## 1.96b
 ### Bug Fixes
 - [2840](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2840)
 
