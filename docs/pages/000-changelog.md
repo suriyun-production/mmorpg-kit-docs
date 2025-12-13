@@ -1,4 +1,10 @@
 ## 1.96
+### Bug Fixes
+- [2840](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2840)
+
+* * *
+
+## 1.96
 ### Future plan
 After this version I want to change its Netcode to use [PurrNet](https://purrnet.gitbook.io/docs), because I like it API/workflow/better performance/better documents, it will be a free update, but it will takes long time and because it will have changes which will affects customers projects, so I a bit hesitates to make changes, but I decided that I will change it.
 
