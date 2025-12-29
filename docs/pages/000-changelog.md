@@ -1,3 +1,11 @@
+## 1.96g
+- [2835](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2835)
+- [2849](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2849)
+- [2850](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2850)
+- [2851](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2851)
+
+* * *
+
 ## 1.96f
 Just update demo to make it work with non-addressable setup (missile damage entities)
 
