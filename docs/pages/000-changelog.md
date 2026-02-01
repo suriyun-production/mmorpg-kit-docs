@@ -1,4 +1,31 @@
+## 1.97 (2026-02-01)
+This will be the final version sold on the Asset Store.
+The package will be removed from the store on February 14, 2026.
+
+All source code is fully open-source and available [here](https://github.com/orgs/suriyun-mmorpg/repositories) (You may want to check the CORE and MMO repositories.)
+
+Bug fixes will continue if issues are reported, but no new features will be added anymore (including paid features).
+
+The previously planned netcode refactor has been canceled.
+
+I may release a new package in the future, featuring:, with a new architecture design, engine agnostic backend, fewer features, more complexity to use, but significantly better performance.
+
+### Improvements
+- Reduce GC.Alloc() by using collection pools.
+
+### Bug Fixes
+- [2865](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2865)
+- [2864](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2864)
+- [2862](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2862)
+- [2860](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2860)
+- [2858](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2858)
+- [2856](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2856)
+- [2852](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2852)
+
+* * *
+
 ## 1.96g
+### Bug Fixes
 - [2835](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2835)
 - [2849](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2849)
 - [2850](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2850)
