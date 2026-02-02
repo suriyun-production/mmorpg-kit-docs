@@ -32,7 +32,7 @@ So you can set scenes in build to have only addressable downloading scene to exc
 
 *You can see addressable demo in `UnityMultiplayerARPG/DemoAddressable` folder, if it have many errors because of addresable assets, import `AddressableAssetsData.unitypackage` in `UnityMultiplayerARPG/DemoAddressable` folder (without it still work because it will load from prefab ref instead)*
 
-## Disable Addressable Assets
+## Disable/Enable Addressable Assets
 
-You can disable addressable assets features by `MMORPG KIT` -> `Addressables` -> `Disable Addressables` menu
-You can enable addressable assets features by `MMORPG KIT` -> `Addressables` -> `Enable Addressables` menu
+- You can disable addressable assets features by `MMORPG KIT` -> `Addressables` -> `Disable Addressables` menu
+- You can enable addressable assets features by `MMORPG KIT` -> `Addressables` -> `Enable Addressables` menu
