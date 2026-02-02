@@ -12,6 +12,7 @@ I may release a new package in the future, featuring:, with a new architecture d
 
 ### Improvements
 - Reduce GC.Alloc() by using collection pools.
+- Add `DISABLE_ADDRESSABLES` compiling condition, to make it able to disable addressable assets features.
 
 ### Bug Fixes
 - [2865](https://github.com/suriyun-production/mmorpg-kit-docs/issues/2865)
